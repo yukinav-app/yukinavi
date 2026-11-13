@@ -156,20 +156,27 @@ main{padding-block:18px 24px;}
 .weather-temp .wd{font-family:var(--font-body);font-size:11px;color:var(--text-muted);font-weight:500;}
 
 /* map tab */
-.map-wrap{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:320/560;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;}
+.map-wrap{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:1536.8191/1750.5018;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;}
 .map-svg{position:absolute;inset:0;width:100%;height:100%;}
-.map-svg ellipse,.map-svg circle{fill:var(--surface-2);stroke:var(--border);stroke-width:1.5;}
-.map-svg line{stroke:var(--border);stroke-width:1.2;}
+.map-svg path{fill:var(--surface-2) !important;stroke:var(--border) !important;stroke-width:1.2px !important;}
 .map-pins{position:absolute;inset:0;}
 .map-pin{
   position:absolute;transform:translate(-50%,-100%);border:none;background:transparent;cursor:pointer;
-  padding:0;line-height:0;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25));
+  padding:0;line-height:0;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25));z-index:2;
 }
 .map-pin .pin-dot{
   width:16px;height:16px;border-radius:50% 50% 50% 0;background:var(--accent);transform:rotate(45deg);
   display:block;border:2px solid var(--surface);
 }
 .map-pin.sel .pin-dot{background:#D93025;}
+.map-pin-mini{
+  position:absolute;transform:translate(-50%,-50%);border:none;background:transparent;cursor:pointer;
+  padding:0;line-height:0;z-index:1;
+}
+.map-pin-mini .pin-dot-mini{
+  width:6px;height:6px;border-radius:50%;background:var(--text-muted);display:block;
+  border:1px solid var(--surface);opacity:0.75;
+}
 .map-legend{text-align:center;font-size:11.5px;color:var(--text-muted);margin-top:10px;}
 .map-active-card{margin-top:16px;}
 
@@ -281,16 +288,7 @@ main{padding-block:18px 24px;}
       <h2 class="view-title" data-t="mapTitle"></h2>
       <div class="view-sub" data-t="mapSub"></div>
       <div class="map-wrap">
-        <svg class="map-svg" viewBox="0 0 320 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <ellipse cx="200" cy="55" rx="58" ry="42" transform="rotate(-10 200 55)"/>
-          <ellipse cx="208" cy="135" rx="30" ry="50" transform="rotate(-8 208 135)"/>
-          <ellipse cx="192" cy="228" rx="42" ry="48" transform="rotate(-5 192 228)"/>
-          <ellipse cx="155" cy="315" rx="58" ry="32" transform="rotate(5 155 315)"/>
-          <ellipse cx="143" cy="372" rx="24" ry="14"/>
-          <ellipse cx="100" cy="402" rx="34" ry="44" transform="rotate(5 100 402)"/>
-          <circle cx="60" cy="520" r="7"/>
-          <line x1="90" y1="460" x2="65" y2="513" stroke-dasharray="3 3"/>
-        </svg>
+        <div id="mapSvgContainer"></div>
         <div class="map-pins" id="mapPins"></div>
       </div>
       <div class="map-legend" id="mapLegend"></div>
@@ -377,15 +375,31 @@ function icon(name, size){
 }
 
 /* approximate pin positions in the simplified map illustration (viewBox 320x560) — not real GPS coordinates */
-const MAP_PINS = {
-  niseko:{x:195,y:48}, rusutsu:{x:178,y:63}, furano:{x:212,y:58},
-  zao:{x:212,y:150}, appi:{x:218,y:118}, inawashiro:{x:200,y:168},
-  myoko:{x:197,y:213}, naeba:{x:206,y:208}, hakuba:{x:184,y:226}, nozawa:{x:195,y:219},
-  shiga:{x:190,y:231}, karuizawa:{x:201,y:236}, tambara:{x:196,y:210}, marunuma:{x:199,y:204},
-  hunter:{x:206,y:199}, tateyama:{x:166,y:219},
-  washigatake:{x:171,y:271}, okuibuki:{x:154,y:291},
-  kuju:{x:100,y:400},
-};
+// 緯度経度 -> japan-map.svg (viewBox 0 0 1536.8191 1750.5018) の座標変換。
+// 全国10都道府県の実座標から最小二乗法でアフィン変換を推定（誤差は概ね viewBox の2〜4%程度、イラスト地図としては十分な精度）。
+const GEO_TO_SVG = { ax:63.832826, bx:10.479780, cx:-8440.033958, ay:1.996890, by:-91.171339, cy:3908.971942 };
+function geoToSvg(lat,lng){
+  return { x: GEO_TO_SVG.ax*lng + GEO_TO_SVG.bx*lat + GEO_TO_SVG.cx, y: GEO_TO_SVG.ay*lng + GEO_TO_SVG.by*lat + GEO_TO_SVG.cy };
+}
+const MAP_VIEWBOX = { w:1536.8191, h:1750.5018 };
+
+// ロングテール全国ゲレンデ（簡易情報のみ、data/resorts_all.jsonから読み込む）
+let ALL_RESORTS = [];
+async function loadAllResorts(){
+  try{
+    const res = await fetch("data/resorts_all.json");
+    ALL_RESORTS = await res.json();
+  }catch(e){
+    ALL_RESORTS = [];
+  }
+}
+async function loadMapSvg(){
+  try{
+    const res = await fetch("assets/japan-map.svg");
+    const svgText = await res.text();
+    document.getElementById("mapSvgContainer").innerHTML = svgText;
+  }catch(e){ /* オフライン初回アクセス等。地図は空のまま、ピンは座標パーセントで表示される */ }
+}
 
 const GEAR_CATEGORIES = [
   {id:"bag", ic:"backpack", ja:"バッグ", en:"Bag", real:true, productJa:"VOLKL RACE BOOT PACK（ブーツ用バッグ）", productEn:"VOLKL RACE BOOT PACK (boot bag)", url:"https://hb.afl.rakuten.co.jp/ichiba/575c1e8f.95c040c9.575c1e90.5e7d0fd7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanabesp%2Fcd63643%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"},
@@ -488,7 +502,7 @@ const STRINGS = {
     weatherTitle:"今日の天気",
     weatherSub:"主要ゲレンデの天気・積雪をまとめてチェック（サンプル値）",
     mapTitle:"地図で探す",
-    mapSub:"簡略化した日本列島のイラストです。実際の地図データではなく、おおよその位置の目安としてご覧ください。",
+    mapSub:"実際の緯度経度に基づいて配置しています。イラスト地図のため、厳密な位置は多少前後します。",
     mapLegend:"ピンをタップすると詳細が見られます",
     onsenTitle:"帰りの温泉",
     onsenDesc:"ゲレンデ周辺の日帰り温泉をGoogleマップで検索できます。",
@@ -583,7 +597,7 @@ const STRINGS = {
     weatherTitle:"Today's weather",
     weatherSub:"Weather and snow depth at a glance across major resorts (sample data)",
     mapTitle:"Find on map",
-    mapSub:"A simplified illustration of Japan, not real map data — use it as a rough location guide only.",
+    mapSub:"Pin positions are based on real coordinates. As a hand-drawn map, exact placement may be slightly approximate.",
     mapLegend:"Tap a pin to see details",
     onsenTitle:"Hot springs on the way home",
     onsenDesc:"Search day-trip hot springs near the resort on Google Maps.",
@@ -855,11 +869,21 @@ function renderWeatherTab(){
 
 function renderMapTab(){
   const pins = document.getElementById("mapPins");
-  pins.innerHTML = RESORTS.filter(r=>MAP_PINS[r.id]).map(r=>{
-    const p = MAP_PINS[r.id];
+  const mainNames = new Set(RESORTS.map(r=>r.nameJa));
+
+  const mainPinsHtml = RESORTS.map(r=>{
+    const p = geoToSvg(r.lat, r.lng);
     const name = state.lang==="ja" ? r.nameJa : r.nameEn;
-    return `<button class="map-pin" style="left:${(p.x/320*100).toFixed(1)}%;top:${(p.y/560*100).toFixed(1)}%" data-id="${r.id}" aria-label="${name}" title="${name}"><span class="pin-dot"></span></button>`;
+    return `<button class="map-pin" style="left:${(p.x/MAP_VIEWBOX.w*100).toFixed(2)}%;top:${(p.y/MAP_VIEWBOX.h*100).toFixed(2)}%" data-id="${r.id}" aria-label="${name}" title="${name}"><span class="pin-dot"></span></button>`;
   }).join("");
+
+  const miniPinsHtml = ALL_RESORTS.filter(r=>r.lat!=null && r.lng!=null && !mainNames.has(r.name)).map(r=>{
+    const p = geoToSvg(r.lat, r.lng);
+    const q = encodeURIComponent(`${r.name} ${r.pref}`);
+    return `<a class="map-pin-mini" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" style="left:${(p.x/MAP_VIEWBOX.w*100).toFixed(2)}%;top:${(p.y/MAP_VIEWBOX.h*100).toFixed(2)}%" aria-label="${r.name}" title="${r.name}"><span class="pin-dot-mini"></span></a>`;
+  }).join("");
+
+  pins.innerHTML = miniPinsHtml + mainPinsHtml;
   pins.querySelectorAll(".map-pin").forEach(btn=>{
     btn.addEventListener("click", ()=>openDetail(btn.dataset.id));
   });
@@ -1101,6 +1125,7 @@ document.getElementById("icGear").innerHTML = icon("backpack", 20);
 applyStaticText();
 setView("wizard");
 loadAllLiveWeather();
+Promise.all([loadAllResorts(), loadMapSvg()]).then(()=>{ if(state.view==="map") renderMapTab(); });
 
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{
