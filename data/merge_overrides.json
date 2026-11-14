@@ -1,0 +1,16 @@
+{
+ "_note": "マージ後に必ず適用する手動修正。exclude: 既存と重複する調査結果のsrcKey。coords: 位置の修正。",
+ "exclude": [
+  "w419"
+ ],
+ "coords": {
+  "niseko": [
+   42.8617,
+   140.6567
+  ],
+  "white_world_oze_iwakura": [
+   36.8223,
+   139.2066
+  ]
+ }
+}

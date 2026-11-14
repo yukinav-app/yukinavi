@@ -49,6 +49,8 @@ def main():
     allr = json.load(open(os.path.join(DATA, "resorts_all.json"), encoding="utf-8"))
     ids = {r["id"] for r in resorts}
     merged_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
+    _ov = os.path.join(DATA, "merge_overrides.json")
+    excluded = set(json.load(open(_ov, encoding="utf-8")).get("exclude", [])) if os.path.exists(_ov) else set()
     closed_keys, added, unknown, problems = set(), 0, 0, []
 
     for path in sorted(glob.glob(os.path.join(DATA, "batches", "out_*.json"))):
@@ -57,7 +59,7 @@ def main():
             if st in ("closed", "notski", "merged"):
                 closed_keys.add(x.get("key"))
                 continue
-            if x.get("key") in merged_keys:
+            if x.get("key") in merged_keys or x.get("key") in excluded:
                 continue
             if st != "open":
                 unknown += 1
@@ -89,6 +91,17 @@ def main():
             r["srcKey"] = x["key"]
             resorts.append(r)
             added += 1
+
+    ov_path = os.path.join(DATA, "merge_overrides.json")
+    if os.path.exists(ov_path):
+        ov = json.load(open(ov_path, encoding="utf-8"))
+        excl = set(ov.get("exclude", []))
+        resorts = [r for r in resorts if r.get("srcKey") not in excl]
+        closed_keys |= excl
+        for rid, (lat, lng) in ov.get("coords", {}).items():
+            for r in resorts:
+                if r["id"] == rid:
+                    r["lat"], r["lng"] = lat, lng
 
     # 閉鎖・スキー不可は地図から外し、詳細データ化したものは簡易ピンを二重に出さない
     detailed_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
