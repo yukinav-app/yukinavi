@@ -1,6 +1,6 @@
 {
-  "name": "YukiNav - ゲレンデ診断アプリ",
-  "short_name": "YukiNav",
+  "name": "YukiNavi - ゲレンデ診断アプリ",
+  "short_name": "YukiNavi",
   "description": "スキー・スノボのゲレンデ選びを3問で診断。天気・持ち物・行き方までまとめて提案します。",
   "start_url": "./index.html",
   "scope": "./",
