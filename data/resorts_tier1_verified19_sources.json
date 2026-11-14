@@ -1,0 +1,168 @@
+{
+  "niseko": {
+    "sources": [
+      "https://www.kiniseko.com/news/niseko-ski-resorts-25-26-everything-you-need-to-know",
+      "https://dmksnowboard.com/niseko-lift-tickets-finally-reach-12000-yen/",
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.niseko.ne.jp/en/lift/",
+      "https://surfsnow.jp/guide/htm/r0148gc1.htm",
+      "https://en.wikipedia.org/wiki/Niseko_United"
+    ],
+    "notes": "liftAdult=2025-26全山共通1日券レギュラー期(12/13-3/22)大人12,000円（早期・春8,400円）。liftStudent=中学生(13-15歳)10,200円。base/top=グラン・ヒラフ最下部260m/最上部1,200m（リフト到達点。ニセコアンヌプリ山頂1,308mは登高）。terrain=全山の公式比率見つからずnull（Wikipediaの34/37/29は非公式のため不採用）。lat/lngは元値がヒラフより約6km南だったためグラン・ヒラフ基地(OSM)に修正。参考：公式2026-27はピーク13,500円/レギュラー12,600円、13-15歳11,500/10,700円。"
+  },
+  "rusutsu": {
+    "sources": [
+      "https://tabiris.com/archives/rusutsu-ticket2026/",
+      "https://rusutsu.com/winter-lift-tickets/",
+      "https://surfsnow.jp/guide/htm/r0331gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26レギュラー期(12/20-3/15)窓口定価16,200円（オンライン12,000円）。liftStudent=シニア・中高生区分12,100円。標高・比率はsurfsnow（スキー場提供データ）。descJaの『遊園地で滑らない家族も』は遊園地が夏季営業のため修正。参考：公式2026-27は大人16,700円/13-18歳12,500円。"
+  },
+  "furano": {
+    "sources": [
+      "https://www.princehotels.co.jp/shinfurano/facility/furano_ski_2025_2026/",
+      "https://tabiris.com/archives/prince-price2026/",
+      "https://surfsnow.jp/guide/htm/r0118gc1.htm",
+      "https://www.skiing-hokkaido.com/ja/resorts/furano-ski-resort/"
+    ],
+    "notes": "liftAdult=2025-26シーズン期(12/6-3/22)大人8,000円（公式）。学生区分なし（中高生は大人料金、小学生以下無料）→liftStudent=null。terrain 40/40/20は公式。base 235はsurfsnow。english=多言語サイト・英語スクールあり。参考：2026-27は9,000円。"
+  },
+  "hakuba": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.japowdb.com/ja/resorts/hakuba-happo-one/lift-tickets/",
+      "https://www.happo-one.jp/ticket/",
+      "https://surfsnow.jp/guide/htm/r0142gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26ハイシーズン大人8,700円（初滑り5,000円・春5,500円）。こども区分は6-17歳で学生区分ではないためliftStudent=null。比率はsurfsnow。nameJaを正式名『白馬八方尾根スキー場』に。参考：公式2026-27ハイシーズン大人9,800円。"
+  },
+  "nozawa": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://nozawaski.com/winter/lift_price/",
+      "https://surfsnow.jp/guide/htm/r0028gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26通常期大人7,500円（tabiris集計）。こども=中学生以下・高校生は大人料金で学生区分なし→null。標高・比率はsurfsnow。参考：公式2026-27通常期大人7,800円。"
+  },
+  "shiga": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.shigakogen.gr.jp/area/index.html",
+      "https://ja.wikipedia.org/wiki/志賀高原スキー場",
+      "https://www.ichinose.gr.jp/article/feature/26090901/"
+    ],
+    "notes": "liftAdult=2025-26全山共通1日券大人9,000円。学生区分は確認できずnull。エリア数は19→18スキー場に修正（公式）。top 2,307m・標高差約1,000mは公式、base 1,330mはWikipedia（河原小屋）。全山の比率は公式になくnull。名称を公式ブランド『志賀高原マウンテンリゾート』に。参考：2026-27は9,500円。"
+  },
+  "myoko": {
+    "sources": [
+      "https://tabiris.com/archives/prince-price2026/",
+      "https://surfsnow.jp/guide/htm/r0132gc1.htm",
+      "https://surfsnow.jp/guide/htm/r0132s.htm"
+    ],
+    "notes": "liftAdult=2025-26大人8,000円（プリンス公表、前季7,000円から+14%）。小学生以下無料、学生区分なし→null。標高は元値500/1,200mが誤りで731/1,855m（標高差1,124m）に修正。lat/lngは元値が約5km離れていたためOSMで修正。english=Prince Hotelsの英語サイトあり→medium（元low）。"
+  },
+  "naeba": {
+    "sources": [
+      "https://tabiris.com/archives/prince-price2026/",
+      "https://www.ski-ichiba.jp/navi/article/595/",
+      "https://surfsnow.jp/guide/htm/r0047gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26苗場エリア1日券大人7,800円（苗場・かぐら共通Mt.Naeba券は9,800円）。小学生以下無料、学生区分なし→null。比率42/25/33はsurfsnow。lat/lngを約4km修正（OSM）。"
+  },
+  "karuizawa": {
+    "sources": [
+      "https://tabiris.com/archives/prince-price2026/",
+      "https://dmksnowboard.com/karuizawa-prince-hotel-ski-resort-lift-ticket-prices-hit-10000-yen-range-for-first-time-on-honshu/",
+      "https://surfsnow.jp/guide/htm/r0129gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26大人10,000円（事前WEB9,000円）。小学生以下無料、学生区分なし→null。base 1,000→940m、比率58/21/21はsurfsnow。english=high→medium（英語公式サイトはあるが英語スタッフ等の裏付けなし）。『東京から最速』の表現は根拠がないため削除。"
+  },
+  "zao": {
+    "sources": [
+      "https://www.visityamagata.jp/spot-zao-liftcharge/",
+      "https://www.meitoya.com/news/detail.php?id=949",
+      "https://zaomountainresort.com/chrage/",
+      "https://tenki.jp/season/ski/2/9/15190/information.html",
+      "https://zaomountainresort.com/"
+    ],
+    "notes": "liftAdult=2025-26レギュラー期大人7,500円（山形県観光サイト掲載。ピーク期はそれ以上、tabirisは8,000円と集計）。liftStudent=高校生（シニアと同額）6,700円。※別集計で7,000円/6,200円とする記載もあり、要注意。標高780/1,661m・比率40/40/20はtenki.jp。lat/lngは元値が約12km東にずれていたため修正。english=公式サイトが英・中・韓対応→medium（元low）。参考：公式2026-27レギュラー8,000円/ピーク9,000円、高校生7,200円。"
+  },
+  "washigatake": {
+    "sources": [
+      "https://tenki.jp/season/ski/5/24/15625/lift.html",
+      "https://ski.washigatake.jp/charge/",
+      "https://surfsnow.jp/guide/htm/r0224gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26単独1日券大人5,500円（ワシトピア共通券6,000円）。高校生料金は2026-27公式で4,000円だが2025-26値を確認できずnull。標高は元値830/1,670m（1,670mは鷲ヶ岳山頂付近の値）→910/1,350mに修正（surfsnow）。lat/lngを約5km修正。英語は機械翻訳のみ→low。参考：2026-27単独5,900円。"
+  },
+  "okuibuki": {
+    "sources": [
+      "https://www.okuibuki.co.jp/changename/",
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.okuibuki.co.jp/charge/",
+      "https://surfsnow.jp/guide/htm/r0244gc1.htm"
+    ],
+    "notes": "【名称変更】2019年に『奥伊吹スキー場』→『グランスノー奥伊吹（GRANSNOW OKUIBUKI）』。liftAdult=変動価格制（2025-26は約4,000〜6,300円、特定日7,000円）。代表値としてtabiris集計の6,300円（混雑日の通常価格）を採用。中高生は平日3,500円まで確認できたが休日価格未確認のためnull。標高700/1,250m・比率はsurfsnow。lat/lngを約4.5km修正。参考：2026-27はA4,200/B5,200/C6,500/D7,000円、中高生3,500/4,000円。"
+  },
+  "tambara": {
+    "sources": [
+      "https://www.tambara.co.jp/winter/ticket/",
+      "https://tenki.jp/season/ski/3/13/14114/information.html",
+      "https://tabiris.com/archives/lift-fees2026/"
+    ],
+    "notes": "liftAdult=変動価格制。2025-26は平日5,200円/土日祝(B)6,000円/年末年始・1-2月土日祝(C)6,500円。代表値として6,000円を採用（tabiris集計と一致）。大人=中学生以上で学生区分なし→null。標高1,250/1,550m・比率35/45/20はtenki.jp。lat/lngを約3km修正。参考：2026-27はB6,300円/C7,000円。"
+  },
+  "marunuma": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.ski-ichiba.jp/navi/article/589/",
+      "https://surfsnow.jp/guide/htm/r0025gc1.htm",
+      "https://www.marunuma.jp/winter/"
+    ],
+    "notes": "liftAdult=2025-26トップシーズン土日祝大人(高校生以上)6,300円（平日5,600円）。小・中学生区分のみで学生区分なし→null。標高1,400/2,000m・比率45/45/10はsurfsnow（他サイトに30/50/20の記載もあり不一致）。descの『上級コースも充実』は上級10%のため修正。lat/lngを約5.6km修正。"
+  },
+  "hunter": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://oyama-navi.com/hunter-mountain",
+      "https://surfsnow.jp/guide/htm/r0067gc1.htm",
+      "https://www.hunter.co.jp/"
+    ],
+    "notes": "liftAdult=2025-26休日大人6,500円（平日5,800円、特定日6,800円）。大人=中学生以上で学生区分なし→null。標高は元値1,150/1,470m→1,138/1,638m（surfsnow）。lat/lngは元値が約10kmずれていたためOSMで修正。english=公式サイトが英・韓・タイ・中対応、英語パンフあり→medium（元low）。"
+  },
+  "tateyama": {
+    "sources": [
+      "https://www.tateyama36.co.jp/price/",
+      "https://surfsnow.jp/guide/htm/r0821s.htm",
+      "https://www.tateyama36.co.jp/"
+    ],
+    "notes": "liftAdult=土・休日大人5,400円（平日5,000円）。2025-26の集計値と公式現行料金表が一致。liftStudent=学割（中学生・高校生・大学生、学生証提示）4,400円。標高は元値470/1,330m→450/1,188m（surfsnow）。比率30/50/20はsurfsnow。極楽坂・らいちょうバレーの2エリア構成。公式は日本語のみ→low。lat/lngを約4km修正。"
+  },
+  "appi": {
+    "sources": [
+      "https://tabiris.com/archives/lift-fees2026/",
+      "https://www.appi.co.jp/snow-mountain-resort/ticket/",
+      "https://surfsnow.jp/guide/htm/r0226gc1.htm"
+    ],
+    "notes": "liftAdult=2025-26窓口大人9,500円（中学生以上一律、中高生区分なし→null）。2026-27も9,500円（BLUE PASS）。標高620/1,328m・比率30/40/30はsurfsnow（他の資料では山頂1,304m・ベース500mの記載もあり不一致）。lat/lngを約7.6km修正。公式は英・中対応。"
+  },
+  "inawashiro": {
+    "sources": [
+      "https://www.inawashiro-ski.com/information/94/",
+      "https://www.inawashiro-ski.com/lift/",
+      "https://mag.snoway.jp/inawashiro/",
+      "https://surfsnow.jp/guide/htm/r0944gc1.htm"
+    ],
+    "notes": "【名称】現在は『絶景・猪苗代スキー場』として営業（運営：DMC aizu）。英語正式名は未確認のためnameEnは維持。liftAdult=ビジター1日券大人6,600円（無料会員なら平日無料・土日祝3,300円）。学生区分なし→null。標高は元値514/1,152m→675/1,255m、比率50/35/15（surfsnow）。2025-26は12/19-3/22営業。"
+  },
+  "kuju": {
+    "sources": [
+      "https://www.kujyuski.co.jp/",
+      "https://www.kujyuski.co.jp/about",
+      "https://www.kujyuski.co.jp/price",
+      "https://surfsnow.jp/guide/htm/r0940s.htm",
+      "https://travel.rakuten.co.jp/ski/344/lift.html"
+    ],
+    "notes": "【名称】公式サイトの名称は『くじゅうスキー場』、英語表記『KUJU FOREST PARK SNOW RESORT』（運営：九重森林公園株式会社）。liftAdult=入場料込みセット券、2025-26は土休日大人5,500円（平日5,000円）。学生区分なし→null。標高は元値1,330/1,450m→1,150/1,330m（surfsnow）。比率はsurfsnow(6コース)と公式(全8コース)でコース数が食い違うためnull。人工雪主体。lat/lngを約6km修正。参考：公式2026-27は料金体系変更（土日祝8時間セット大人7,000円、終日ロング7,500円）。"
+  }
+}
