@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
 :root{
   --bg:#EEF1F4;
@@ -31,6 +32,8 @@
   --good-soft:#DCF0E6;
   --cold:#2E6B8A;
   --cold-soft:#DCEAF1;
+  --navy:#1F3550;
+  --navy-ink:#1F3550;
   --font-display:'Oswald',sans-serif;
   --font-body:'Work Sans',sans-serif;
 }
@@ -39,14 +42,14 @@
     color-scheme: dark;
     --bg:#121820; --surface:#1B232D; --surface-2:#212B36; --text:#EDEFF2; --text-muted:#9AA7B4;
     --border:#2C3844; --accent:#F0924A; --accent-ink:#2A1204; --accent-soft:#3A2412;
-    --good:#4FBF86; --good-soft:#1C3A2B; --cold:#5FA8CC; --cold-soft:#1C3340;
+    --good:#4FBF86; --good-soft:#1C3A2B; --cold:#5FA8CC; --cold-soft:#1C3340; --navy-ink:#EDEFF2;
   }
 }
 :root[data-theme="dark"]{
   color-scheme: dark;
   --bg:#121820; --surface:#1B232D; --surface-2:#212B36; --text:#EDEFF2; --text-muted:#9AA7B4;
   --border:#2C3844; --accent:#F0924A; --accent-ink:#2A1204; --accent-soft:#3A2412;
-  --good:#4FBF86; --good-soft:#1C3A2B; --cold:#5FA8CC; --cold-soft:#1C3340;
+  --good:#4FBF86; --good-soft:#1C3A2B; --cold:#5FA8CC; --cold-soft:#1C3340; --navy-ink:#EDEFF2;
 }
 *{box-sizing:border-box;}
 body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:15px;line-height:1.5;}
@@ -84,9 +87,14 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 .nav-btn .nav-ic .ic-svg{vertical-align:0;}
 .nav-btn.active{color:var(--accent);}
 body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px));}
+body.map-mode{overflow:hidden;}
+body.map-mode main{padding:0;}
 
-.search-row{padding-block:14px 14px;display:flex;gap:10px;flex-wrap:wrap;}
-.search-box{flex:1 1 220px;position:relative;}
+.search-row{padding-block:12px 12px;display:flex;gap:10px;flex-wrap:wrap;}
+.search-box{flex:1 1 100%;position:relative;}
+.filter-scroll{flex:1 1 100%;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;}
+.filter-scroll::-webkit-scrollbar{display:none;}
+.filter-scroll > *{flex:0 0 auto;}
 .search-box input{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:14px;}
 .search-box input:focus{outline:2px solid var(--accent);outline-offset:1px;}
 select{padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:13.5px;}
@@ -170,42 +178,80 @@ main{padding-block:18px 24px;}
 .reco-secondary-btn{flex:1 1 auto;border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:10px;padding:11px;font-size:13.5px;font-weight:600;cursor:pointer;}
 .reco-detail-btn{flex:1 1 auto;border:none;background:var(--accent);color:#fff;border-radius:10px;padding:11px;font-size:13.5px;font-weight:600;cursor:pointer;}
 
-/* weather tab */
-.weather-grid{display:flex;flex-direction:column;gap:10px;}
-.weather-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;text-align:left;font-family:inherit;color:inherit;width:100%;}
-.weather-card:hover{border-color:var(--accent);}
-.weather-ic{font-size:28px;flex:0 0 auto;width:40px;text-align:center;}
-.weather-main{flex:1;min-width:0;}
-.weather-main h3{font-size:16px;}
-.live-badge{font-size:9.5px;font-weight:700;letter-spacing:0.05em;color:var(--good);background:var(--good-soft);border-radius:999px;padding:2px 6px;vertical-align:middle;}
-.weather-main .wsub{font-size:12px;color:var(--text-muted);margin-top:2px;}
-.weather-temp{font-family:var(--font-display);font-size:22px;flex:0 0 auto;text-align:right;}
-.weather-temp .wd{font-family:var(--font-body);font-size:11px;color:var(--text-muted);font-weight:500;}
+/* full-screen map (Toku-style) */
+.map-full{position:fixed;left:0;right:0;top:var(--hdr-h,64px);bottom:var(--nav-h,64px);z-index:5;background:#E8EEF3;}
+#leafletMap{position:absolute;inset:0;}
+.leaflet-container{font-family:var(--font-body);background:#E8EEF3;}
+.map-top{position:absolute;top:10px;left:10px;right:10px;z-index:500;display:flex;flex-direction:column;gap:8px;pointer-events:none;}
+.map-top > *{pointer-events:auto;}
+.map-search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:0 12px;box-shadow:0 4px 14px rgba(16,30,50,0.12);}
+.map-search-ic{color:var(--text-muted);display:flex;}
+.map-search input{flex:1;border:none;background:transparent;color:var(--text);font-size:15px;padding:12px 0;min-width:0;}
+.map-search input:focus{outline:none;}
+.map-suggest{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(16,30,50,0.14);}
+.map-suggest button{display:flex;justify-content:space-between;gap:10px;width:100%;border:none;border-bottom:1px solid var(--border);background:transparent;color:var(--text);text-align:left;padding:11px 14px;font-size:14px;cursor:pointer;font-family:inherit;}
+.map-suggest button:last-child{border-bottom:none;}
+.map-suggest .sg-pref{color:var(--text-muted);font-size:12px;flex:0 0 auto;}
+.map-chips{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;}
+.map-chips::-webkit-scrollbar{display:none;}
+.map-chip{flex:0 0 auto;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer;box-shadow:0 2px 8px rgba(16,30,50,0.10);display:inline-flex;align-items:center;gap:5px;font-family:inherit;}
+.map-chip.on{background:var(--navy);border-color:var(--navy);color:#fff;}
+.map-ctrls{position:absolute;right:12px;bottom:70px;z-index:500;display:flex;flex-direction:column;gap:8px;}
+.map-ctrl{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--navy-ink);font-size:20px;font-weight:600;cursor:pointer;box-shadow:0 3px 10px rgba(16,30,50,0.16);display:flex;align-items:center;justify-content:center;font-family:inherit;}
+.map-count{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:500;background:rgba(22,36,54,0.88);color:#fff;font-size:12px;font-weight:600;letter-spacing:0.04em;border-radius:8px;padding:6px 12px;white-space:nowrap;}
+.map-count .rd{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:1px;}
+.pref-box{background:var(--navy);color:#fff;border:1.5px solid rgba(255,255,255,0.85);border-radius:6px;padding:2px 6px;text-align:center;font-size:10.5px;line-height:1.25;font-weight:600;box-shadow:0 3px 10px rgba(16,30,50,0.3);white-space:nowrap;cursor:pointer;transform:translate(-50%,-50%);display:inline-block;}
+.pref-box .pc{font-family:var(--font-display);font-size:12px;letter-spacing:0.03em;}
+.rpin{transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;cursor:pointer;}
+.rpin .rpin-dot{width:30px;height:30px;border-radius:50%;background:var(--accent);border:2px solid #fff;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(16,30,50,0.35);}
+.rpin.mini .rpin-dot{width:22px;height:22px;background:#fff;border:2px solid var(--navy);color:var(--navy);}
+.rpin.sel .rpin-dot{transform:scale(1.25);background:#D93025;border-color:#fff;color:#fff;}
+.rpin .rpin-label{display:none;margin-top:3px;background:rgba(255,255,255,0.92);color:#1C2430;border-radius:5px;padding:1px 6px;font-size:11px;font-weight:600;white-space:nowrap;box-shadow:0 1px 4px rgba(16,30,50,0.2);}
+.show-labels .rpin .rpin-label{display:block;}
+.leaflet-div-icon.yn-icon{background:transparent;border:none;}
+.me-dot{width:16px;height:16px;border-radius:50%;background:#1A73E8;border:3px solid #fff;box-shadow:0 0 0 6px rgba(26,115,232,0.2);transform:translate(-50%,-50%);}
+.map-preview{position:absolute;left:10px;right:10px;bottom:56px;z-index:600;background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(16,30,50,0.22);max-width:520px;margin:0 auto;}
+.mp-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;}
+.mp-head h3{font-size:19px;line-height:1.2;}
+.mp-sub{color:var(--text-muted);font-size:12.5px;margin-top:2px;}
+.mp-stats{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;}
+.mp-stat{background:var(--surface-2);border-radius:10px;padding:7px 10px;font-size:12px;color:var(--text-muted);}
+.mp-stat b{display:block;font-family:var(--font-display);font-size:16px;color:var(--text);font-weight:600;}
+.mp-note{font-size:12.5px;color:var(--text-muted);margin:10px 0;}
+.mp-actions{display:flex;gap:8px;}
+.mp-actions a,.mp-actions button{flex:1;text-align:center;text-decoration:none;border-radius:10px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit;}
+.mp-primary{background:var(--accent);color:#fff;border:none;}
+.mp-secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--border);}
+.mini-terrain{display:flex;height:6px;border-radius:999px;overflow:hidden;margin-top:2px;}
 
-/* map tab */
-.map-wrap{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:1536.8191/1750.5018;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;}
-.map-svg{position:absolute;inset:0;width:100%;height:100%;}
-.map-svg path{fill:var(--surface-2) !important;stroke:var(--border) !important;stroke-width:1.2px !important;}
-.map-pins{position:absolute;inset:0;}
-.map-pin{
-  position:absolute;transform:translate(-50%,-100%);border:none;background:transparent;cursor:pointer;
-  padding:0;line-height:0;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25));z-index:2;
-}
-.map-pin .pin-dot{
-  width:16px;height:16px;border-radius:50% 50% 50% 0;background:var(--accent);transform:rotate(45deg);
-  display:block;border:2px solid var(--surface);
-}
-.map-pin.sel .pin-dot{background:#D93025;}
-.map-pin-mini{
-  position:absolute;transform:translate(-50%,-50%);border:none;background:transparent;cursor:pointer;
-  padding:0;line-height:0;z-index:1;
-}
-.map-pin-mini .pin-dot-mini{
-  width:6px;height:6px;border-radius:50%;background:var(--text-muted);display:block;
-  border:1px solid var(--surface);opacity:0.75;
-}
-.map-legend{text-align:center;font-size:11.5px;color:var(--text-muted);margin-top:10px;}
-.map-active-card{margin-top:16px;}
+/* favorites + snow */
+.fav-btn{border:none;background:transparent;color:var(--text-muted);font-size:20px;line-height:1;cursor:pointer;padding:2px 4px;}
+.fav-btn.on{color:#F2B01E;}
+.star-ic{color:#F2B01E;}
+.snow-badge{font-size:11px;font-weight:600;border-radius:7px;padding:3px 7px;background:var(--cold-soft);color:var(--cold);}
+.card-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
+
+/* deals tab */
+.deal-section{margin-bottom:26px;}
+.deal-section h3{font-size:17px;margin-bottom:10px;}
+.deal-list{display:flex;flex-direction:column;gap:10px;}
+.deal-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:15px;display:flex;flex-direction:column;gap:8px;}
+.deal-top{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;}
+.deal-cat{font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;background:var(--accent-soft);color:var(--accent-ink);}
+.deal-cat.student{background:var(--good-soft);color:var(--good);}
+.deal-cat.online{background:var(--cold-soft);color:var(--cold);}
+.deal-until{font-size:12px;color:var(--text-muted);}
+.deal-until.soon{color:#C2410C;font-weight:600;}
+.deal-card h4{font-size:15.5px;margin:0;font-family:var(--font-body);font-weight:700;}
+.deal-resort{font-size:12px;color:var(--text-muted);}
+.deal-desc{font-size:13px;color:var(--text);margin:0;}
+.deal-link{align-self:flex-start;background:var(--accent);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;border-radius:8px;padding:8px 12px;}
+.stu-row{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px;cursor:pointer;width:100%;text-align:left;font-family:inherit;color:inherit;}
+.stu-row .sr-name{font-weight:600;font-size:14px;}
+.stu-row .sr-pref{font-size:11.5px;color:var(--text-muted);}
+.stu-row .sr-price{text-align:right;font-size:12px;color:var(--text-muted);flex:0 0 auto;}
+.stu-row .sr-price b{font-family:var(--font-display);font-size:16px;color:var(--good);}
+.deal-empty{background:var(--surface-2);border:1px dashed var(--border);border-radius:14px;padding:20px;text-align:center;color:var(--text-muted);font-size:13px;}
 
 /* gear tab */
 .gear-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
@@ -264,9 +310,13 @@ main{padding-block:18px 24px;}
     <div class="search-box">
       <input id="searchInput" type="search" data-t-placeholder="searchPlaceholder">
     </div>
+    <div class="filter-scroll">
     <select id="regionSelect"></select>
+    <select id="sortSelect" aria-label="sort"></select>
     <label class="chip" id="chipStudent"><input type="checkbox"><svg class="ic-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v4c0 1.5 2.7 3 6 3s6-1.5 6-3v-4"/></svg> <span data-t="chipStudent"></span></label>
     <label class="chip" id="chipEnglish"><input type="checkbox"><svg class="ic-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg> <span data-t="chipEnglish"></span></label>
+    <label class="chip" id="chipFav"><input type="checkbox"><span class="star-ic" aria-hidden="true">★</span> <span data-t="chipFav"></span></label>
+    </div>
   </div>
 </header>
 
@@ -324,21 +374,29 @@ main{padding-block:18px 24px;}
       <div class="empty" id="emptyState" hidden></div>
     </div>
 
-    <div id="weatherView" hidden>
-      <h2 class="view-title" data-t="weatherTitle"></h2>
-      <div class="view-sub" data-t="weatherSub"></div>
-      <div class="weather-grid" id="weatherGrid"></div>
-      <div class="disclaimer" data-t="disclaimer" style="margin-top:16px"></div>
+    <div id="dealsView" hidden>
+      <h2 class="view-title" data-t="dealsTitle"></h2>
+      <div class="view-sub" data-t="dealsSub"></div>
+      <div id="dealsContent"></div>
     </div>
 
-    <div id="mapView" hidden>
-      <h2 class="view-title" data-t="mapTitle"></h2>
-      <div class="view-sub" data-t="mapSub"></div>
-      <div class="map-wrap">
-        <div id="mapSvgContainer"></div>
-        <div class="map-pins" id="mapPins"></div>
+    <div id="mapView" class="map-full" hidden>
+      <div id="leafletMap" aria-label="map"></div>
+      <div class="map-top">
+        <div class="map-search">
+          <span class="map-search-ic" id="mapSearchIc"></span>
+          <input id="mapSearch" type="search" autocomplete="off" data-t-placeholder="mapSearchPlaceholder">
+        </div>
+        <div class="map-suggest" id="mapSuggest" hidden></div>
+        <div class="map-chips" id="mapChips"></div>
       </div>
-      <div class="map-legend" id="mapLegend"></div>
+      <div class="map-ctrls">
+        <button class="map-ctrl" id="mapZoomIn" aria-label="zoom in">＋</button>
+        <button class="map-ctrl" id="mapZoomOut" aria-label="zoom out">－</button>
+        <button class="map-ctrl" id="mapLocate" aria-label="current location"></button>
+      </div>
+      <div class="map-count" id="mapCount"></div>
+      <div class="map-preview" id="mapPreview" hidden></div>
     </div>
 
     <div id="gearView" hidden>
@@ -354,9 +412,9 @@ main{padding-block:18px 24px;}
 <nav class="bottom-nav">
   <div class="bottom-nav-inner">
     <button class="nav-btn active" id="navWizard"><span class="nav-ic" id="icWizard"></span><span data-t="tabWizard"></span></button>
-    <button class="nav-btn" id="navNearby"><span class="nav-ic" id="icNearby"></span><span data-t="tabNearby"></span></button>
-    <button class="nav-btn" id="navWeather"><span class="nav-ic" id="icWeather"></span><span data-t="tabWeather"></span></button>
     <button class="nav-btn" id="navMap"><span class="nav-ic" id="icMap"></span><span data-t="tabMap"></span></button>
+    <button class="nav-btn" id="navNearby"><span class="nav-ic" id="icNearby"></span><span data-t="tabNearby"></span></button>
+    <button class="nav-btn" id="navDeals"><span class="nav-ic" id="icDeals"></span><span data-t="tabDeals"></span></button>
     <button class="nav-btn" id="navGear"><span class="nav-ic" id="icGear"></span><span data-t="tabGear"></span></button>
   </div>
 </nav>
@@ -365,6 +423,7 @@ main{padding-block:18px 24px;}
   <div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 const RESORTS = [
   {id:"niseko",lat:42.862,lng:140.6984,nameJa:"ニセコユナイテッド",nameEn:"Niseko United",prefJa:"北海道",prefEn:"Hokkaido",region:"hokkaido",cityJa:"札幌",cityEn:"Sapporo",distKm:100,timeJa:"バスで約2時間",timeEn:"~2h by bus",flight:true,base:260,top:1200,terrain:null,liftAdult:13500,liftStudent:11500,english:"high",weather:null,descJa:"グラン・ヒラフ、花園、ニセコビレッジ、アンヌプリの4スキー場を全山共通券で滑れる世界的なパウダーエリア。公式サイトは英語対応で、海外からの来場者が多い。",descEn:"Four linked resorts (Grand Hirafu, Hanazono, Niseko Village, Annupuri) on one All Mountain Pass, world-famous for powder. Official site in English and a large international visitor base.",priceSeason:"2026-27"},
@@ -403,8 +462,8 @@ const RESORTS = [
   {id:"kawaba",lat:36.7780541,lng:139.1194661,nameJa:"川場スキー場",nameEn:"Kawaba Ski Resort",prefJa:"群馬県",prefEn:"Gunma",region:"kanto",cityJa:"前橋",cityEn:"Maebashi",distKm:60,timeJa:"車で約1時間30分",timeEn:"~1h30m by car",flight:false,base:1230,top:1870,terrain:[30,50,20],liftAdult:7900,liftStudent:null,english:"low",weather:null,descJa:"全11コース、標高1,230〜1,870mに広がるゲレンデ。中級コースが50%を占め、関東圏から日帰りしやすい規模感。",descEn:"11 courses spread between 1,230m and 1,870m elevation. Half the terrain is intermediate, and it's an easy day-trip size from the greater Tokyo area.",priceSeason:"2026-27"},
   {id:"manza",lat:36.6400581,lng:138.4999501,nameJa:"万座温泉スキー場",nameEn:"Manza Onsen Ski Resort",prefJa:"群馬県",prefEn:"Gunma",region:"kanto",cityJa:"前橋",cityEn:"Maebashi",distKm:90,timeJa:"バスで約2時間",timeEn:"~2h by bus",flight:false,base:1654,top:1990,terrain:[50,30,20],liftAdult:6300,liftStudent:null,english:"low",weather:null,descJa:"ゲレンデトップ1,990mと日本でも標高の高いスキー場のひとつで、「粉雪の万座」と呼ばれる雪質が自慢。滑走後は標高1,800m地点から湧く万座温泉の白濁湯に入れる。",descEn:"With a top elevation of 1,990m, it's one of Japan's highest ski resorts, known for the powder snow nicknamed 'Manza no Konayuki.' After skiing, soak in the milky-white Manza Onsen hot spring, which rises from 1,800m.",priceSeason:"2026-27"},
   {id:"kusatsu",lat:36.6309616,lng:138.5780638,nameJa:"草津温泉スキー場",nameEn:"Kusatsu Onsen Ski Resort",prefJa:"群馬県",prefEn:"Gunma",region:"kanto",cityJa:"前橋",cityEn:"Maebashi",distKm:75,timeJa:"バスで約1時間40分",timeEn:"~1h40m by bus",flight:false,base:1245,top:1600,terrain:[50,30,20],liftAdult:6000,liftStudent:5200,english:"low",weather:null,descJa:"最長滑走距離4.3kmのロングコースが名物で、滑走後は日本三名泉の一つ草津温泉の湯につかれるのが魅力。初級コースが50%を占め、家族連れにも向く。",descEn:"Famous for a 4.3km long run, and the chance to soak afterward in Kusatsu Onsen, one of Japan's three most celebrated hot springs. Half the terrain is beginner-level, making it family-friendly too.",priceSeason:"2026-27"},
-  {id:"takasu",lat:36.0005515,lng:136.8647326,nameJa:"高鷲スノーパーク",nameEn:"Takasu Snow Park",prefJa:"岐阜県",prefEn:"Gifu",region:"chubu",cityJa:"名古屋",cityEn:"Nagoya",distKm:110,timeJa:"車で約2時間",timeEn:"~2h by car",flight:false,base:950,top:1550,terrain:[42,30,28],liftAdult:6400,liftStudent:4200,english:"low",weather:null,descJa:"隣接するダイナランドと共通リフト券・ゴンドラで一体運用され、合わせて31コース・総滑走距離43kmに迫る西日本最大級のゲレンデ規模を誇る。",descEn:"Operated jointly with neighboring Dynaland via a shared lift ticket and gondola; combined, the two resorts offer 31 courses and nearly 43km of runs — one of the largest ski areas in western Japan.",priceSeason:"2026-27"},
-  {id:"dynaland",lat:35.9846033,lng:136.881913,nameJa:"ダイナランドスキー場",nameEn:"Dynaland Ski Resort",prefJa:"岐阜県",prefEn:"Gifu",region:"chubu",cityJa:"名古屋",cityEn:"Nagoya",distKm:110,timeJa:"車で約2時間",timeEn:"~2h by car",flight:false,base:983,top:1430,terrain:[40,32,28],liftAdult:6400,liftStudent:4200,english:"low",weather:null,descJa:"高鷲スノーパークと共通リフト券・ゴンドラでつながる全18コースのゲレンデ。23時までのナイター営業「ヨルダイナ」が名物。",descEn:"18 courses connected to Takasu Snow Park via a shared lift ticket and gondola. Known for 'Yoru Dyna,' its night skiing that runs until 11pm.",priceSeason:"2026-27"},
+  {id:"takasu",lat:36.0005515,lng:136.8647326,nameJa:"高鷲スノーパーク",nameEn:"Takasu Snow Park",prefJa:"岐阜県",prefEn:"Gifu",region:"chubu",cityJa:"名古屋",cityEn:"Nagoya",distKm:110,timeJa:"車で約2時間",timeEn:"~2h by car",flight:false,base:950,top:1550,terrain:[42,30,28],liftAdult:6200,liftStudent:3900,english:"low",weather:null,descJa:"隣接するダイナランドと共通リフト券・ゴンドラで一体運用され、合わせて31コース・総滑走距離43kmに迫る西日本最大級のゲレンデ規模を誇る。",descEn:"Operated jointly with neighboring Dynaland via a shared lift ticket and gondola; combined, the two resorts offer 31 courses and nearly 43km of runs — one of the largest ski areas in western Japan.",priceSeason:"2026-27"},
+  {id:"dynaland",lat:35.9846033,lng:136.881913,nameJa:"ダイナランドスキー場",nameEn:"Dynaland Ski Resort",prefJa:"岐阜県",prefEn:"Gifu",region:"chubu",cityJa:"名古屋",cityEn:"Nagoya",distKm:110,timeJa:"車で約2時間",timeEn:"~2h by car",flight:false,base:983,top:1430,terrain:[40,32,28],liftAdult:5900,liftStudent:4200,english:"low",weather:null,descJa:"高鷲スノーパークと共通リフト券・ゴンドラでつながる全18コースのゲレンデ。23時までのナイター営業「ヨルダイナ」が名物。",descEn:"18 courses connected to Takasu Snow Park via a shared lift ticket and gondola. Known for 'Yoru Dyna,' its night skiing that runs until 11pm.",priceSeason:"2026-27"},
   {id:"rokko",lat:34.76698309,lng:135.24190716,nameJa:"六甲山スノーパーク",nameEn:"Rokkosan Snow Park",prefJa:"兵庫県",prefEn:"Hyogo",region:"kansai",cityJa:"大阪",cityEn:"Osaka",distKm:35,timeJa:"電車・ケーブル・バスで約1時間30分",timeEn:"~1h30m by train, cable car and bus",flight:false,base:813,top:855,terrain:[80,20,0],liftAdult:6100,liftStudent:null,english:"low",weather:null,descJa:"神戸・大阪から最も近い都市型スキー場のひとつ。コースはなだらかな2本のみとコンパクトで、入園料+リフト券（平日実質4,400円）という独自の料金体系。雪ゾリ専用の「スノーランド」も併設。",descEn:"One of the closest ski areas to Kobe and Osaka. Compact, with just two gentle courses; pricing combines a park entry fee plus lift ticket (about ¥4,400 on weekdays). A separate 'Snowland' area is set aside for sledding.",priceSeason:"2026-27"},
   {id:"skijam_katsuyama",lat:36.0701883,lng:136.5559197,nameJa:"JAM福井勝山マウンテンリゾート（旧スキージャム勝山）",nameEn:"JAM Fukui Katsuyama Mountain Resort (formerly Ski Jam Katsuyama)",prefJa:"福井県",prefEn:"Fukui",region:"hokuriku",cityJa:"福井",cityEn:"Fukui",distKm:40,timeJa:"車で約1時間",timeEn:"~1h by car",flight:false,base:610,top:1320,terrain:[30,40,30],liftAdult:6200,liftStudent:null,english:"low",weather:null,descJa:"全16コース、最長滑走距離5,800mのロングクルージングが楽しめる北陸最大級のゲレンデ。旧称スキージャム勝山から改称している。",descEn:"16 courses with a 5,800m longest run for long cruising — one of the largest ski areas in the Hokuriku region. Formerly known as Ski Jam Katsuyama.",priceSeason:"2026-27"},
   {id:"sapporo_kokusai",lat:43.0730147,lng:141.0702386,nameJa:"札幌国際スキー場",nameEn:"Sapporo Kokusai Ski Resort",prefJa:"北海道",prefEn:"Hokkaido",region:"hokkaido",cityJa:"札幌",cityEn:"Sapporo",distKm:55,timeJa:"車で約1時間10分",timeEn:"~1h10m by car",flight:false,base:630,top:1100,terrain:[30,50,20],liftAdult:7000,liftStudent:4000,english:"low",weather:null,descJa:"札幌市南区定山渓エリアに位置し、市街地より安定した積雪量とパウダースノーが自慢。晴れた日には小樽湾・石狩湾を望める。",descEn:"Located in the Jozankei area of Sapporo's Minami Ward, known for more reliable snowfall and powder than the city center. On clear days you can see Otaru Bay and Ishikari Bay.",priceSeason:"2026-27"},
@@ -441,20 +500,15 @@ const ICONS = {
   gradCap:'<path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v4c0 1.5 2.7 3 6 3s6-1.5 6-3v-4"/>',
   globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
   ski:'<path d="M4.3 18l13.4-13M8.3 18l13.4-13M2 19l4-1M18 6l4-1"/>',
+  mountain:'<path d="M2.5 19.5l7-12 4 6.8 2.6-4.1 5.4 9.3z"/><path d="M7.4 11.1l2.1 1.2 2-1.2"/>',
+  tag:'<path d="M3 12.2V4h8.2l9.6 9.6-8.2 8.2z"/><circle cx="7.6" cy="8.2" r="1.4"/>',
+  search:'<circle cx="10.8" cy="10.8" r="6.6"/><path d="M15.7 15.7l5 5"/>',
+  locate:'<circle cx="12" cy="12" r="7.2"/><circle cx="12" cy="12" r="2.6"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>',
 };
 function icon(name, size){
   size = size || 18;
   return `<svg class="ic-svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]||""}</svg>`;
 }
-
-/* approximate pin positions in the simplified map illustration (viewBox 320x560) — not real GPS coordinates */
-// 緯度経度 -> japan-map.svg (viewBox 0 0 1536.8191 1750.5018) の座標変換。
-// 全国10都道府県の実座標から最小二乗法でアフィン変換を推定（誤差は概ね viewBox の2〜4%程度、イラスト地図としては十分な精度）。
-const GEO_TO_SVG = { ax:63.832826, bx:10.479780, cx:-8440.033958, ay:1.996890, by:-91.171339, cy:3908.971942 };
-function geoToSvg(lat,lng){
-  return { x: GEO_TO_SVG.ax*lng + GEO_TO_SVG.bx*lat + GEO_TO_SVG.cx, y: GEO_TO_SVG.ay*lng + GEO_TO_SVG.by*lat + GEO_TO_SVG.cy };
-}
-const MAP_VIEWBOX = { w:1536.8191, h:1750.5018 };
 
 // ロングテール全国ゲレンデ（簡易情報のみ、data/resorts_all.jsonから読み込む）
 let ALL_RESORTS = [];
@@ -466,14 +520,6 @@ async function loadAllResorts(){
     ALL_RESORTS = [];
   }
 }
-async function loadMapSvg(){
-  try{
-    const res = await fetch("assets/japan-map.svg");
-    const svgText = await res.text();
-    document.getElementById("mapSvgContainer").innerHTML = svgText;
-  }catch(e){ /* オフライン初回アクセス等。地図は空のまま、ピンは座標パーセントで表示される */ }
-}
-
 const GEAR_CATEGORIES = [
   {id:"bag", ic:"backpack", ja:"バッグ", en:"Bag", real:true, productJa:"VOLKL RACE BOOT PACK（ブーツ用バッグ）", productEn:"VOLKL RACE BOOT PACK (boot bag)", url:"https://hb.afl.rakuten.co.jp/ichiba/575c1e8f.95c040c9.575c1e90.5e7d0fd7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanabesp%2Fcd63643%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"},
   {id:"boots", ic:"boots", ja:"ブーツ", en:"Boots", real:true, productJa:"DALBELLO DRS WC S", productEn:"DALBELLO DRS WC S", url:"https://a.r10.to/hPs2xw"},
@@ -490,13 +536,13 @@ const GEAR_CATEGORIES = [
 const STRINGS = {
   ja:{
     tagline:"3問であなたにぴったりのゲレンデを",
-    tabWizard:"おまかせ診断",
-    tabNearby:"近くのスキー場",
-    tabWeather:"今日の天気",
-    tabMap:"地図で探す",
-    tabGear:"装備を探す",
+    tabWizard:"診断",
+    tabMap:"地図",
+    tabNearby:"検索",
+    tabDeals:"お得",
+    tabGear:"装備",
     searchPlaceholder:"ゲレンデ名・都道府県で検索",
-    chipStudent:"学割あり",
+    chipStudent:"学生・ユース割",
     chipEnglish:"英語対応",
     regionAll:"全エリア",
     regionHokkaido:"北海道",
@@ -511,16 +557,16 @@ const STRINGS = {
     resultCount:(n)=>`${n}件のゲレンデ`,
     emptyState:"条件に合うゲレンデが見つかりませんでした。検索条件を変えてみてください。",
     priceUnit:"大人1日券",
-    studentBadge:"学割あり",
+    studentBadge:"学生・ユース割",
     nearestFrom:"最寄り都市",
     flightNote:"✈ 東京からは新千歳空港経由がおすすめ",
-    depthLabel:"積雪",
+    depthLabel:"積雪（推定）",
     windLabel:"風速",
     terrainLabel:"コース難易度の内訳",
     terrainBeginner:"初級",
     terrainIntermediate:"中級",
     terrainAdvanced:"上級",
-    liftLabel:"リフト券（大人/学生）",
+    liftLabel:"1日券（大人/学生・ユース）",
     englishLabel:"英語対応レベル",
     englishHigh:"高い：英語スタッフ・メニューあり",
     englishMedium:"中程度：一部案内が英語対応",
@@ -538,11 +584,57 @@ const STRINGS = {
     gearTitle:"スキー・スノボグッズ",
     gearDesc:"レンタル・購入どちらもこのゲレンデ名でECサイト検索できます。",
     gearBtn:"グッズを探す（楽天市場へ）",
-    disclaimer:"※天気・積雪はOpen-Meteoの気象データをリアルタイムで表示しています。価格・アクセス情報・英語対応レベルは順次、実際のデータへ更新中です。",
+    disclaimer:"※天気・降雪・積雪はOpen-Meteoの気象モデルによる推定値で、スキー場が発表する積雪とは異なる場合があります。リフト券は各スキー場の公式発表に基づく通常期の窓口価格です（時期・曜日・購入方法で変わります）。",
     liveWeatherBadge:"ライブ",
     close:"閉じる",
     wizardIntro:"3つだけ答えてください。あとは私がぜんぶ決めます。",
     heroTitle:"次の休み、どこ滑る？",
+    chipFav:"お気に入り",
+    sortAccess:"アクセスが近い順",
+    sortSnow:"降雪予報が多い順",
+    sortPrice:"1日券が安い順",
+    favToggle:"お気に入りに追加・解除",
+    favEmpty:"★をタップするとお気に入りに追加できます",
+    snow7dShort:(n)=>`7日で${n}cm`,
+    mapSearchPlaceholder:"スキー場・都道府県を検索",
+    mfAll:"すべて",
+    mfDetail:"詳細データあり",
+    mfBeginner:"初心者向け",
+    mfSnow:"降雪予報あり",
+    mfStudent:"学生・ユース割",
+    mfEnglish:"英語OK",
+    mfFav:"★ お気に入り",
+    mapCountPref:(n,p)=>`${n.toLocaleString()} 件 ・ ${p} エリア`,
+    mapCountView:(v,n)=>`${v} / ${n.toLocaleString()} 件`,
+    mpAdult:"大人1日券",
+    mpVertical:"標高差",
+    mpTemp:"気温（中腹）",
+    mpSnow7d:"7日間の降雪予報",
+    mpDetail:"詳細を見る",
+    mpGmaps:"Googleマップ",
+    mpNoData:"このスキー場の詳細データは準備中です。今は名前と場所だけ掲載しています。",
+    mpSearchWeb:"公式サイトを検索",
+    locateFail:"現在地を取得できませんでした",
+    snowYesterdayLabel:"昨日の降雪（推定）",
+    snow7dLabel:"今後7日の降雪予報",
+    tempAtLabel:(e)=>`気温（標高${e}m地点）`,
+    dealsTitle:"お得情報",
+    dealsSub:"今シーズンのリフト券を安くする方法をまとめました。",
+    dealSecNational:"全国キャンペーン",
+    dealSecResort:"スキー場のお得（期限が近い順）",
+    dealSecStudent:"学生・ユース料金があるスキー場",
+    dealCat_student:"学割・若者向け",
+    dealCat_early:"早割・前売り",
+    dealCat_online:"ネット購入割",
+    dealCat_campaign:"期間限定",
+    dealUntil:(d)=>`${d}まで`,
+    dealNational:"全国",
+    dealLink:"公式ページで確認",
+    dealsEmpty:"お得情報を集めています。もうしばらくお待ちください。",
+    dealsNote:"掲載している情報は公式サイトで確認したものです。期限が過ぎた情報は自動で非表示になります。購入前に必ず公式ページで最新の条件をご確認ください。",
+    stuSave:(n)=>`大人より ¥${n.toLocaleString()} お得`,
+    adultDayLabel:"大人1日券",
+    studentYouth:"学生・ユース",
     priceUnknown:"料金は公式サイトで確認",
     weatherLoading:"天気を取得中",
     terrainUnknown:"公式のコース比率は公表されていません",
@@ -576,11 +668,6 @@ const STRINGS = {
     packCold:"ホッカイロ",
     packCold2:"インナーダウン",
     packSnow:"防水スプレー",
-    weatherTitle:"今日の天気",
-    weatherSub:"主要ゲレンデの天気・積雪をまとめてチェック（サンプル値）",
-    mapTitle:"地図で探す",
-    mapSub:"実際の緯度経度に基づいて配置しています。イラスト地図のため、厳密な位置は多少前後します。",
-    mapLegend:"ピンをタップすると詳細が見られます",
     onsenTitle:"帰りの温泉",
     onsenDesc:"ゲレンデ周辺の日帰り温泉をGoogleマップで検索できます。",
     onsenBtn:"周辺の温泉を見る（Googleマップへ）",
@@ -589,13 +676,13 @@ const STRINGS = {
   },
   en:{
     tagline:"Find your perfect ski resort in 3 questions",
-    tabWizard:"Recommend",
-    tabNearby:"Nearby resorts",
-    tabWeather:"Today's weather",
+    tabWizard:"Match",
     tabMap:"Map",
-    tabGear:"Find gear",
+    tabNearby:"Search",
+    tabDeals:"Deals",
+    tabGear:"Gear",
     searchPlaceholder:"Search by resort name or prefecture",
-    chipStudent:"Student discount",
+    chipStudent:"Student / youth rate",
     chipEnglish:"English support",
     regionAll:"All regions",
     regionHokkaido:"Hokkaido",
@@ -610,16 +697,16 @@ const STRINGS = {
     resultCount:(n)=>`${n} resorts`,
     emptyState:"No resorts match your filters. Try broadening your search.",
     priceUnit:"adult day pass",
-    studentBadge:"Student discount",
+    studentBadge:"Student / youth rate",
     nearestFrom:"Nearest city",
     flightNote:"✈ From Tokyo, flying via New Chitose Airport is recommended",
-    depthLabel:"Snow depth",
+    depthLabel:"Snow depth (est.)",
     windLabel:"Wind",
     terrainLabel:"Terrain difficulty mix",
     terrainBeginner:"Beginner",
     terrainIntermediate:"Intermediate",
     terrainAdvanced:"Advanced",
-    liftLabel:"Lift pass (adult / student)",
+    liftLabel:"1-day pass (adult / student-youth)",
     englishLabel:"English support level",
     englishHigh:"High — English-speaking staff and menus",
     englishMedium:"Medium — some signage/info in English",
@@ -637,11 +724,57 @@ const STRINGS = {
     gearTitle:"Gear & equipment",
     gearDesc:"Search rental or purchase options tagged to this resort.",
     gearBtn:"Find gear (Rakuten Ichiba)",
-    disclaimer:"Weather and snow depth are shown in real time from Open-Meteo. Price, access details, and English-support info are being updated with verified data on an ongoing basis.",
+    disclaimer:"Weather, snowfall and snow depth are model estimates from Open-Meteo and may differ from resort-reported snow. Lift prices are standard window prices from each resort's official announcement and vary by date and purchase method.",
     liveWeatherBadge:"LIVE",
     close:"Close",
     wizardIntro:"Just answer 3 quick questions. We'll handle the rest.",
     heroTitle:"Where will you ski next?",
+    chipFav:"Favorites",
+    sortAccess:"Closest access",
+    sortSnow:"Most snow forecast",
+    sortPrice:"Cheapest day pass",
+    favToggle:"Add or remove favorite",
+    favEmpty:"Tap ★ to save resorts to your favorites",
+    snow7dShort:(n)=>`${n}cm in 7 days`,
+    mapSearchPlaceholder:"Search resorts or prefectures",
+    mfAll:"All",
+    mfDetail:"Full details",
+    mfBeginner:"Beginner-friendly",
+    mfSnow:"Snow on the way",
+    mfStudent:"Student / youth rate",
+    mfEnglish:"English OK",
+    mfFav:"★ Favorites",
+    mapCountPref:(n,p)=>`${n.toLocaleString()} resorts · ${p} areas`,
+    mapCountView:(v,n)=>`${v} / ${n.toLocaleString()} resorts`,
+    mpAdult:"Adult day pass",
+    mpVertical:"Vertical",
+    mpTemp:"Temp (mid-mountain)",
+    mpSnow7d:"7-day snowfall",
+    mpDetail:"View details",
+    mpGmaps:"Google Maps",
+    mpNoData:"Detailed data for this resort is coming soon. For now only its name and location are listed.",
+    mpSearchWeb:"Search official site",
+    locateFail:"Couldn't get your location",
+    snowYesterdayLabel:"Yesterday's snowfall (est.)",
+    snow7dLabel:"Next 7 days snowfall",
+    tempAtLabel:(e)=>`Temp at ${e}m`,
+    dealsTitle:"Deals",
+    dealsSub:"Ways to save on lift passes this season.",
+    dealSecNational:"Nationwide campaigns",
+    dealSecResort:"Resort deals (ending soonest)",
+    dealSecStudent:"Resorts with student / youth rates",
+    dealCat_student:"Student / youth",
+    dealCat_early:"Early bird",
+    dealCat_online:"Online discount",
+    dealCat_campaign:"Limited time",
+    dealUntil:(d)=>`Until ${d}`,
+    dealNational:"Nationwide",
+    dealLink:"Check official page",
+    dealsEmpty:"We're collecting deals. Check back soon.",
+    dealsNote:"Every deal listed here was checked on the official site. Expired deals are hidden automatically. Always confirm the latest terms on the official page before buying.",
+    stuSave:(n)=>`Save ¥${n.toLocaleString()} vs adult`,
+    adultDayLabel:"Adult day pass",
+    studentYouth:"Student / youth",
     priceUnknown:"See official site for prices",
     weatherLoading:"Loading weather",
     terrainUnknown:"Official course breakdown not published",
@@ -675,11 +808,6 @@ const STRINGS = {
     packCold:"Hand warmers",
     packCold2:"Thermal layer",
     packSnow:"Waterproof spray",
-    weatherTitle:"Today's weather",
-    weatherSub:"Weather and snow depth at a glance across major resorts (sample data)",
-    mapTitle:"Find on map",
-    mapSub:"Pin positions are based on real coordinates. As a hand-drawn map, exact placement may be slightly approximate.",
-    mapLegend:"Tap a pin to see details",
     onsenTitle:"Hot springs on the way home",
     onsenDesc:"Search day-trip hot springs near the resort on Google Maps.",
     onsenBtn:"Find nearby onsen (Google Maps)",
@@ -688,7 +816,16 @@ const STRINGS = {
   }
 };
 
-const state = {lang:"ja", query:"", region:"all", studentOnly:false, englishOnly:false, view:"wizard"};
+const state = {lang:"ja", query:"", region:"all", studentOnly:false, englishOnly:false, favOnly:false, sort:"access", view:"wizard"};
+
+const FAV_KEY = "yukinav_favs";
+let FAVS = new Set();
+try{ FAVS = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]")); }catch(e){}
+function isFav(id){ return FAVS.has(id); }
+function toggleFav(id){
+  if(FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
+  try{ localStorage.setItem(FAV_KEY, JSON.stringify([...FAVS])); }catch(e){}
+}
 const wiz = {block:null, prefIdx:null, trip:null, level:null, lastId:null, shown:[]};
 const terrainColors = ["var(--good)","var(--cold)","var(--accent)"];
 
@@ -843,6 +980,8 @@ function applyStaticText(){
   const regionSelect = document.getElementById("regionSelect");
   const opts = [["all","regionAll"],["hokkaido","regionHokkaido"],["nagano","regionNagano"],["niigata","regionNiigata"],["tohoku","regionTohoku"],["chubu","regionChubu"],["kansai","regionKansai"],["kanto","regionKanto"],["hokuriku","regionHokuriku"],["kyushu","regionKyushu"]];
   regionSelect.innerHTML = opts.map(([v,k])=>`<option value="${v}" ${state.region===v?"selected":""}>${t(k)}</option>`).join("");
+  const sortSelect = document.getElementById("sortSelect");
+  sortSelect.innerHTML = [["access","sortAccess"],["snow","sortSnow"],["price","sortPrice"]].map(([v,k])=>`<option value="${v}" ${state.sort===v?"selected":""}>${t(k)}</option>`).join("");
 
   buildBlockPills();
   if(wiz.block){ document.getElementById("prefBlockWrap").hidden = false; buildPrefPills(); }
@@ -860,6 +999,7 @@ function matches(r){
   if(state.region!=="all" && r.region!==state.region) return false;
   if(state.studentOnly && !r.liftStudent) return false;
   if(state.englishOnly && r.english==="low") return false;
+  if(state.favOnly && !isFav(r.id)) return false;
   return true;
 }
 
@@ -872,32 +1012,57 @@ function wmoToCondition(code){
   return {ja:"曇り", en:"Cloudy"};
 }
 
-async function fetchLiveWeather(r){
-  try{
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${r.lat}&longitude=${r.lng}&current=temperature_2m,weather_code,wind_speed_10m,snow_depth&timezone=Asia%2FTokyo`;
-    const res = await fetch(url);
-    if(!res.ok) throw new Error("weather http " + res.status);
-    const data = await res.json();
-    const cond = wmoToCondition(data.current.weather_code);
-    r.weather = {
-      tempC: Math.round(data.current.temperature_2m),
-      condJa: cond.ja,
-      condEn: cond.en,
-      wind: Math.round(data.current.wind_speed_10m),
-      depth: Math.round((data.current.snow_depth || 0) * 100),
-    };
-    r.liveWeather = true;
-  }catch(err){
-    console.warn("live weather fetch failed for", r.id, err);
+function applyWeather(r, d){
+  if(!d || !d.current) return;
+  const cond = wmoToCondition(d.current.weather_code);
+  const sf = (d.daily && d.daily.snowfall_sum) || [];
+  r.weather = {
+    tempC: Math.round(d.current.temperature_2m),
+    condJa: cond.ja,
+    condEn: cond.en,
+    wind: Math.round(d.current.wind_speed_10m),
+    depth: Math.round((d.current.snow_depth || 0) * 100),
+    snowYesterday: sf.length ? Math.round(sf[0]) : null,
+    snow7d: sf.length > 1 ? Math.round(sf.slice(1).reduce((a,b)=>a+(b||0),0)) : null,
+    elevation: d.elevation!=null ? Math.round(d.elevation) : null,
+  };
+  r.liveWeather = true;
+}
+
+async function fetchWeatherBatch(list, useElev){
+  for(let i=0;i<list.length;i+=50){
+    const chunk = list.slice(i,i+50);
+    const q = new URLSearchParams({
+      latitude: chunk.map(r=>r.lat).join(","),
+      longitude: chunk.map(r=>r.lng).join(","),
+      current: "temperature_2m,weather_code,wind_speed_10m,snow_depth",
+      daily: "snowfall_sum",
+      past_days: "1",
+      forecast_days: "7",
+      timezone: "Asia/Tokyo",
+    });
+    if(useElev) q.set("elevation", chunk.map(r=>Math.round((r.base+r.top)/2)).join(","));
+    try{
+      const res = await fetch("https://api.open-meteo.com/v1/forecast?" + q.toString());
+      if(!res.ok) throw new Error("weather http " + res.status);
+      const data = await res.json();
+      const arr = Array.isArray(data) ? data : [data];
+      arr.forEach((d,j)=>applyWeather(chunk[j], d));
+    }catch(err){
+      console.warn("live weather batch failed", err);
+    }
   }
 }
 
 async function loadAllLiveWeather(){
-  await Promise.all(RESORTS.filter(r=>r.lat).map(fetchLiveWeather));
+  const list = RESORTS.filter(r=>r.lat!=null && r.lng!=null);
+  const withElev = list.filter(r=>r.base!=null && r.top!=null);
+  const noElev = list.filter(r=>!(r.base!=null && r.top!=null));
+  await Promise.all([fetchWeatherBatch(withElev,true), fetchWeatherBatch(noElev,false)]);
   render();
 }
 
-const NO_WX = {tempC:null,condJa:"",condEn:"",wind:null,depth:null};
+const NO_WX = {tempC:null,condJa:"",condEn:"",wind:null,depth:null,snowYesterday:null,snow7d:null,elevation:null};
 function wx(r){ return r.weather || NO_WX; }
 function nv(v, unit){ return v==null ? "—" : `${v}${unit||""}`; }
 function weatherIcon(condJa){
@@ -908,23 +1073,51 @@ function weatherIcon(condJa){
   return icon("sun",18);
 }
 
+function escapeHtml(str){
+  return String(str==null?"":str).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function safeUrl(u){ return /^https:\/\//.test(u||"") ? escapeHtml(u) : "#"; }
+
+function snowBadge(r){
+  const w = r.weather;
+  if(!w || w.snow7d==null || w.snow7d < 1) return "";
+  return `<span class="snow-badge">${icon("snow",12)} ${t("snow7dShort")(w.snow7d)}</span>`;
+}
+
+function sortList(list){
+  const arr = list.slice();
+  if(state.sort==="snow") arr.sort((a,b)=>((b.weather&&b.weather.snow7d)||0)-((a.weather&&a.weather.snow7d)||0));
+  else if(state.sort==="price") arr.sort((a,b)=>(a.liftAdult==null?1e9:a.liftAdult)-(b.liftAdult==null?1e9:b.liftAdult));
+  else arr.sort((a,b)=>a.distKm-b.distKm);
+  return arr;
+}
+
 function renderGrid(){
-  const list = RESORTS.filter(matches).slice().sort((a,b)=>a.distKm-b.distKm);
+  const list = sortList(RESORTS.filter(matches));
   document.getElementById("resultCount").textContent = t("resultCount")(list.length);
   const grid = document.getElementById("grid");
   const empty = document.getElementById("emptyState");
-  if(list.length===0){ grid.innerHTML=""; empty.hidden=false; empty.textContent=t("emptyState"); return; }
+  if(list.length===0){
+    grid.innerHTML="";
+    empty.hidden=false;
+    empty.textContent = state.favOnly && FAVS.size===0 ? t("favEmpty") : t("emptyState");
+    return;
+  }
   empty.hidden = true;
   grid.innerHTML = list.map(r=>{
     const name = state.lang==="ja" ? r.nameJa : r.nameEn;
     const pref = state.lang==="ja" ? r.prefJa : r.prefEn;
     const city = state.lang==="ja" ? r.cityJa : r.cityEn;
     const time = state.lang==="ja" ? r.timeJa : r.timeEn;
+    const fav = isFav(r.id);
     return `
-    <button class="card" data-id="${r.id}">
+    <div class="card" role="button" tabindex="0" data-id="${r.id}">
       <div class="card-top">
         <div><h3>${name}</h3><div class="region-tag">${pref}</div></div>
-        <div class="weather-chip">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div>
+        <div style="display:flex;align-items:center;gap:2px;flex:0 0 auto">
+          <div class="weather-chip">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div>
+          <button class="fav-btn ${fav?"on":""}" data-fav="${r.id}" aria-label="${t("favToggle")}" aria-pressed="${fav}">${fav?"★":"☆"}</button>
+        </div>
       </div>
       <div class="meta-row">
         <span>${t("nearestFrom")}: ${city} <span class="num">${r.distKm}km</span></span>
@@ -932,55 +1125,275 @@ function renderGrid(){
       </div>
       <div class="price-row">
         <div class="price">${r.liftAdult!=null ? `¥<span class="num">${r.liftAdult.toLocaleString()}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="unit">${t("priceUnknown")}</span>`}</div>
-        ${r.liftStudent ? `<span class="badge student">${t("studentBadge")}</span>` : ""}
+        <div class="card-badges">${snowBadge(r)}${r.liftStudent ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
       </div>
-    </button>`;
+    </div>`;
   }).join("");
 }
 
-function renderWeatherTab(){
-  const list = RESORTS.slice().sort((a,b)=>a.distKm-b.distKm);
-  const grid = document.getElementById("weatherGrid");
-  grid.innerHTML = list.map(r=>{
-    const name = state.lang==="ja" ? r.nameJa : r.nameEn;
-    const pref = state.lang==="ja" ? r.prefJa : r.prefEn;
-    const cond = (state.lang==="ja" ? wx(r).condJa : wx(r).condEn) || t("weatherLoading");
-    return `
-    <button class="weather-card" data-id="${r.id}">
-      <div class="weather-ic">${weatherIcon(wx(r).condJa)}</div>
-      <div class="weather-main">
-        <h3>${name} ${r.liveWeather ? `<span class="live-badge">${t("liveWeatherBadge")}</span>` : ""}</h3>
-        <div class="wsub">${pref} ・ ${cond} ・ ${t("depthLabel")} <span class="num">${nv(wx(r).depth,"cm")}</span> ・ ${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div>
-      </div>
-      <div class="weather-temp"><span class="num">${nv(wx(r).tempC,"°")}</span><div class="wd">C</div></div>
-    </button>`;
-  }).join("");
-  grid.querySelectorAll(".weather-card").forEach(btn=>{
-    btn.addEventListener("click", ()=>openDetail(btn.dataset.id));
-  });
+/* ---------- map (Leaflet + 国土地理院タイル) ---------- */
+const PREF_EN = {"北海道":"Hokkaido","青森県":"Aomori","岩手県":"Iwate","宮城県":"Miyagi","秋田県":"Akita","山形県":"Yamagata","福島県":"Fukushima","茨城県":"Ibaraki","栃木県":"Tochigi","群馬県":"Gunma","埼玉県":"Saitama","千葉県":"Chiba","東京都":"Tokyo","神奈川県":"Kanagawa","新潟県":"Niigata","富山県":"Toyama","石川県":"Ishikawa","福井県":"Fukui","山梨県":"Yamanashi","長野県":"Nagano","岐阜県":"Gifu","静岡県":"Shizuoka","愛知県":"Aichi","三重県":"Mie","滋賀県":"Shiga","京都府":"Kyoto","大阪府":"Osaka","兵庫県":"Hyogo","奈良県":"Nara","和歌山県":"Wakayama","鳥取県":"Tottori","島根県":"Shimane","岡山県":"Okayama","広島県":"Hiroshima","山口県":"Yamaguchi","徳島県":"Tokushima","香川県":"Kagawa","愛媛県":"Ehime","高知県":"Kochi","福岡県":"Fukuoka","佐賀県":"Saga","長崎県":"Nagasaki","熊本県":"Kumamoto","大分県":"Oita","宮崎県":"Miyazaki","鹿児島県":"Kagoshima","沖縄県":"Okinawa"};
+function prefLabel(ja){ return state.lang==="ja" ? ja : (PREF_EN[ja]||ja); }
+
+function distKmBetween(a,b){
+  const R=6371, toRad=x=>x*Math.PI/180;
+  const dLat=toRad(b.lat-a.lat), dLng=toRad(b.lng-a.lng);
+  const h=Math.sin(dLat/2)**2+Math.cos(toRad(a.lat))*Math.cos(toRad(b.lat))*Math.sin(dLng/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
 }
 
-function renderMapTab(){
-  const pins = document.getElementById("mapPins");
-  const mainNames = new Set(RESORTS.map(r=>r.nameJa));
-
-  const mainPinsHtml = RESORTS.map(r=>{
-    const p = geoToSvg(r.lat, r.lng);
-    const name = state.lang==="ja" ? r.nameJa : r.nameEn;
-    return `<button class="map-pin" style="left:${(p.x/MAP_VIEWBOX.w*100).toFixed(2)}%;top:${(p.y/MAP_VIEWBOX.h*100).toFixed(2)}%" data-id="${r.id}" aria-label="${name}" title="${name}"><span class="pin-dot"></span></button>`;
-  }).join("");
-
-  const miniPinsHtml = ALL_RESORTS.filter(r=>r.lat!=null && r.lng!=null && !mainNames.has(r.name)).map(r=>{
-    const p = geoToSvg(r.lat, r.lng);
-    const q = encodeURIComponent(`${r.name} ${r.pref}`);
-    return `<a class="map-pin-mini" href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener" style="left:${(p.x/MAP_VIEWBOX.w*100).toFixed(2)}%;top:${(p.y/MAP_VIEWBOX.h*100).toFixed(2)}%" aria-label="${r.name}" title="${r.name}"><span class="pin-dot-mini"></span></a>`;
-  }).join("");
-
-  pins.innerHTML = miniPinsHtml + mainPinsHtml;
-  pins.querySelectorAll(".map-pin").forEach(btn=>{
-    btn.addEventListener("click", ()=>openDetail(btn.dataset.id));
+let MAP_POINTS = [];
+function buildMapPoints(){
+  const main = RESORTS.filter(r=>r.lat!=null&&r.lng!=null).map(r=>({kind:"main", id:r.id, lat:r.lat, lng:r.lng, prefJa:r.prefJa, r}));
+  const mini = [];
+  ALL_RESORTS.forEach((x,i)=>{
+    if(x.lat==null||x.lng==null) return;
+    // 詳細データのあるスキー場と同じ場所（1.5km以内）は二重表示しない
+    if(main.some(m=>distKmBetween(m,x)<1.5)) return;
+    mini.push({kind:"mini", id:"a"+i, lat:x.lat, lng:x.lng, prefJa:x.pref, nameJa:x.name});
   });
-  document.getElementById("mapLegend").textContent = t("mapLegend");
+  MAP_POINTS = main.concat(mini);
+}
+function pointName(p){ return p.kind==="main" ? (state.lang==="ja"?p.r.nameJa:p.r.nameEn) : p.nameJa; }
+
+const MAP_FILTERS = [
+  {id:"all", key:"mfAll", test:()=>true},
+  {id:"detail", key:"mfDetail", test:p=>p.kind==="main"},
+  {id:"beginner", key:"mfBeginner", test:p=>p.kind==="main" && !!p.r.terrain && p.r.terrain[0]>=40},
+  {id:"snow", key:"mfSnow", test:p=>p.kind==="main" && !!p.r.weather && p.r.weather.snow7d>=5},
+  {id:"student", key:"mfStudent", test:p=>p.kind==="main" && !!p.r.liftStudent},
+  {id:"english", key:"mfEnglish", test:p=>p.kind==="main" && !!p.r.english && p.r.english!=="low"},
+  {id:"fav", key:"mfFav", test:p=>p.kind==="main" && isFav(p.id)},
+];
+const mapState = {filter:"all", selected:null, map:null, layer:null, me:null};
+
+function updateLayoutVars(){
+  const root = document.documentElement;
+  const hdr = document.querySelector("header").getBoundingClientRect().bottom;
+  const nav = window.innerHeight - document.querySelector(".bottom-nav").getBoundingClientRect().top;
+  root.style.setProperty("--hdr-h", Math.max(0,hdr) + "px");
+  root.style.setProperty("--nav-h", Math.max(0,nav) + "px");
+}
+
+function initMap(){
+  if(mapState.map || typeof L==="undefined") return;
+  const m = L.map("leafletMap", {zoomControl:false, minZoom:5, maxZoom:16, zoomSnap:0.5, maxBounds:[[20,118],[50,154]], maxBoundsViscosity:0.8});
+  L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png", {
+    maxZoom:18, maxNativeZoom:18,
+    attribution:'<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>'
+  }).addTo(m);
+  L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png", {maxZoom:18, maxNativeZoom:16, opacity:0.28}).addTo(m);
+  mapState.map = m;
+  mapState.layer = L.layerGroup().addTo(m);
+  if(m.getContainer().clientWidth < 640) m.setView([37.6,138.5], 5.6);
+  else m.fitBounds([[31.0,129.6],[45.4,145.6]], {padding:[6,6]});
+  m.on("moveend", renderMapLayer);
+  m.on("click", closeMapPreview);
+}
+
+function visiblePoints(){
+  const f = MAP_FILTERS.find(x=>x.id===mapState.filter) || MAP_FILTERS[0];
+  return MAP_POINTS.filter(f.test);
+}
+
+function setMapCount(html){ document.getElementById("mapCount").innerHTML = `<span class="rd"></span>${html}`; }
+
+function renderMapLayer(){
+  const m = mapState.map;
+  if(!m || state.view!=="map") return;
+  const z = m.getZoom();
+  const pts = visiblePoints();
+  mapState.layer.clearLayers();
+  m.getContainer().classList.toggle("show-labels", z>=10);
+  if(z < 8){
+    const groups = {};
+    pts.forEach(p=>{
+      const g = groups[p.prefJa] || (groups[p.prefJa]={n:0,lat:0,lng:0});
+      g.n++; g.lat+=p.lat; g.lng+=p.lng;
+    });
+    Object.entries(groups).forEach(([pref,g])=>{
+      const c = [g.lat/g.n, g.lng/g.n];
+      const ic = L.divIcon({className:"yn-icon", html:`<div class="pref-box">${escapeHtml(prefLabel(pref))}<br><span class="pc">${g.n}</span></div>`, iconSize:null});
+      L.marker(c,{icon:ic, title:prefLabel(pref)}).on("click",(e)=>{ L.DomEvent.stopPropagation(e); m.flyTo(c, 9.5); }).addTo(mapState.layer);
+    });
+    setMapCount(t("mapCountPref")(pts.length, Object.keys(groups).length));
+    return;
+  }
+  const view = m.getBounds();
+  const pad = view.pad(0.25);
+  const near = pts.filter(p=>pad.contains([p.lat,p.lng]));
+  near.sort((a,b)=> a.kind===b.kind ? 0 : (a.kind==="mini" ? -1 : 1));
+  near.forEach(p=>{
+    const sel = mapState.selected===p.id ? " sel" : "";
+    const html = `<div class="rpin${p.kind==="mini"?" mini":""}${sel}"><span class="rpin-dot">${icon("mountain", p.kind==="main"?16:12)}</span><span class="rpin-label">${escapeHtml(pointName(p))}</span></div>`;
+    const ic = L.divIcon({className:"yn-icon", html, iconSize:null});
+    L.marker([p.lat,p.lng],{icon:ic, title:pointName(p), zIndexOffset: (p.kind==="main"?1000:0) + (sel?2000:0)})
+      .on("click",(e)=>{ L.DomEvent.stopPropagation(e); selectMapPoint(p); })
+      .addTo(mapState.layer);
+  });
+  const shown = pts.filter(p=>view.contains([p.lat,p.lng])).length;
+  setMapCount(t("mapCountView")(shown, pts.length));
+}
+
+function renderMapChips(){
+  document.getElementById("mapChips").innerHTML = MAP_FILTERS.map(f=>`<button class="map-chip ${mapState.filter===f.id?"on":""}" data-f="${f.id}">${t(f.key)}</button>`).join("");
+}
+
+function selectMapPoint(p){
+  mapState.selected = p.id;
+  renderMapLayer();
+  const el = document.getElementById("mapPreview");
+  if(p.kind==="main"){
+    const r = p.r, w = wx(r);
+    const name = state.lang==="ja" ? r.nameJa : r.nameEn;
+    const city = state.lang==="ja" ? r.cityJa : r.cityEn;
+    const gq = encodeURIComponent(r.nameJa);
+    const fav = isFav(r.id);
+    el.innerHTML = `
+      <div class="mp-head">
+        <div><h3>${name}</h3><div class="mp-sub">${prefLabel(r.prefJa)} ・ ${t("nearestFrom")}: ${city} <span class="num">${r.distKm}km</span></div></div>
+        <div style="display:flex;gap:2px;flex:0 0 auto"><button class="fav-btn ${fav?"on":""}" id="mpFav" aria-label="${t("favToggle")}" aria-pressed="${fav}">${fav?"★":"☆"}</button><button class="close-btn" id="mpClose" aria-label="${t("close")}">✕</button></div>
+      </div>
+      <div class="mp-stats">
+        <div class="mp-stat"><b>${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</b>${t("mpAdult")}</div>
+        <div class="mp-stat"><b>${r.base!=null&&r.top!=null ? (r.top-r.base)+"m" : "—"}</b>${t("mpVertical")}</div>
+        <div class="mp-stat"><b>${nv(w.tempC,"°C")}</b>${t("mpTemp")}</div>
+        <div class="mp-stat"><b>${w.snow7d!=null ? w.snow7d+"cm" : "—"}</b>${t("mpSnow7d")}</div>
+      </div>
+      ${r.terrain ? `<div class="mini-terrain">${r.terrain.map((v,i)=>`<div style="width:${v}%;background:${terrainColors[i]}"></div>`).join("")}</div>
+      <div class="terrain-legend" style="margin:6px 0 12px">${r.terrain.map((v,i)=>`<span><span class="swatch" style="background:${terrainColors[i]}"></span>${[t("terrainBeginner"),t("terrainIntermediate"),t("terrainAdvanced")][i]} <span class="num">${v}%</span></span>`).join("")}</div>` : ""}
+      <div class="mp-actions">
+        <button class="mp-primary" id="mpDetail">${t("mpDetail")}</button>
+        <a class="mp-secondary" href="https://www.google.com/maps/search/?api=1&query=${gq}" target="_blank" rel="noopener">${t("mpGmaps")}</a>
+      </div>`;
+    el.hidden = false;
+    document.getElementById("mpDetail").addEventListener("click", ()=>openDetail(r.id));
+    document.getElementById("mpFav").addEventListener("click", ()=>{ toggleFav(r.id); selectMapPoint(p); });
+  } else {
+    const gq = encodeURIComponent(p.nameJa + " " + p.prefJa);
+    const sq = encodeURIComponent(p.nameJa + " " + p.prefJa + " 公式");
+    el.innerHTML = `
+      <div class="mp-head">
+        <div><h3>${escapeHtml(p.nameJa)}</h3><div class="mp-sub">${escapeHtml(prefLabel(p.prefJa))}</div></div>
+        <button class="close-btn" id="mpClose" aria-label="${t("close")}">✕</button>
+      </div>
+      <div class="mp-note">${t("mpNoData")}</div>
+      <div class="mp-actions">
+        <a class="mp-primary" href="https://www.google.com/maps/search/?api=1&query=${gq}" target="_blank" rel="noopener">${t("mpGmaps")}</a>
+        <a class="mp-secondary" href="https://www.google.com/search?q=${sq}" target="_blank" rel="noopener">${t("mpSearchWeb")}</a>
+      </div>`;
+    el.hidden = false;
+  }
+  document.getElementById("mpClose").addEventListener("click", closeMapPreview);
+}
+
+function closeMapPreview(){
+  const el = document.getElementById("mapPreview");
+  if(el.hidden && !mapState.selected) return;
+  mapState.selected = null;
+  el.hidden = true;
+  renderMapLayer();
+}
+
+function searchPoints(q){
+  q = q.trim().toLowerCase();
+  if(!q) return [];
+  return MAP_POINTS.filter(p=>{
+    const hay = (p.kind==="main" ? p.r.nameJa+" "+p.r.nameEn+" "+p.r.prefJa+" "+p.r.prefEn : p.nameJa+" "+p.prefJa+" "+(PREF_EN[p.prefJa]||"")).toLowerCase();
+    return hay.includes(q);
+  }).sort((a,b)=> a.kind===b.kind ? 0 : (a.kind==="main" ? -1 : 1)).slice(0,6);
+}
+
+function renderSuggest(){
+  const box = document.getElementById("mapSuggest");
+  const res = searchPoints(document.getElementById("mapSearch").value);
+  if(!res.length){ box.hidden = true; box.innerHTML = ""; return; }
+  box.innerHTML = res.map((p,i)=>`<button data-i="${i}"><span>${escapeHtml(pointName(p))}</span><span class="sg-pref">${escapeHtml(prefLabel(p.prefJa))}</span></button>`).join("");
+  box.hidden = false;
+  box.querySelectorAll("button").forEach(btn=>btn.addEventListener("click", ()=>{
+    const p = res[+btn.dataset.i];
+    box.hidden = true;
+    document.getElementById("mapSearch").blur();
+    if(!MAP_FILTERS.find(f=>f.id===mapState.filter).test(p)){ mapState.filter = "all"; renderMapChips(); }
+    mapState.map.flyTo([p.lat,p.lng], 12);
+    mapState.map.once("moveend", ()=>selectMapPoint(p));
+  }));
+}
+
+function locateMe(){
+  if(!navigator.geolocation){ setMapCount(t("locateFail")); return; }
+  navigator.geolocation.getCurrentPosition(pos=>{
+    const c = [pos.coords.latitude, pos.coords.longitude];
+    if(mapState.me) mapState.me.setLatLng(c);
+    else mapState.me = L.marker(c,{icon:L.divIcon({className:"yn-icon", html:'<div class="me-dot"></div>', iconSize:null}), interactive:false, zIndexOffset:3000}).addTo(mapState.map);
+    mapState.map.flyTo(c, 9);
+  }, ()=>setMapCount(t("locateFail")), {enableHighAccuracy:false, timeout:8000});
+}
+
+function showMap(){
+  window.scrollTo(0,0);
+  updateLayoutVars();
+  initMap();
+  if(!mapState.map) return;
+  if(!MAP_POINTS.length) buildMapPoints();
+  requestAnimationFrame(()=>{ mapState.map.invalidateSize(); renderMapChips(); renderMapLayer(); });
+}
+
+/* ---------- deals ---------- */
+let DEALS = [];
+async function loadDeals(){
+  try{
+    const res = await fetch("data/deals_2026_27.json");
+    if(res.ok) DEALS = await res.json();
+  }catch(e){ DEALS = []; }
+}
+function localToday(){
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+}
+function fmtDate(iso){
+  const [y,m,d] = iso.split("-").map(Number);
+  return state.lang==="ja" ? `${y}年${m}月${d}日` : new Date(y,m-1,d).toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric"});
+}
+function daysUntil(iso){
+  const [y,m,d] = iso.split("-").map(Number);
+  const now = new Date(); now.setHours(0,0,0,0);
+  return Math.round((new Date(y,m-1,d) - now) / 86400000);
+}
+function dealCard(d){
+  const r = d.resortId ? RESORTS.find(x=>x.id===d.resortId) : null;
+  const title = state.lang==="ja" ? d.titleJa : (d.titleEn || d.titleJa);
+  const desc = state.lang==="ja" ? d.descJa : (d.descEn || d.descJa);
+  const soon = daysUntil(d.validUntil) <= 14;
+  const where = r ? `${state.lang==="ja"?r.nameJa:r.nameEn} ・ ${prefLabel(r.prefJa)}` : t("dealNational");
+  return `
+    <div class="deal-card">
+      <div class="deal-top"><span class="deal-cat ${escapeHtml(d.category)}">${t("dealCat_"+d.category) || escapeHtml(d.category)}</span><span class="deal-until ${soon?"soon":""}">${t("dealUntil")(fmtDate(d.validUntil))}</span></div>
+      <h4>${escapeHtml(title)}</h4>
+      <div class="deal-resort">${escapeHtml(where)}</div>
+      <p class="deal-desc">${escapeHtml(desc)}</p>
+      <a class="deal-link" href="${safeUrl(d.url)}" target="_blank" rel="noopener">${t("dealLink")}</a>
+    </div>`;
+}
+function renderDeals(){
+  const el = document.getElementById("dealsContent");
+  const today = localToday();
+  const active = DEALS.filter(d=>d && d.validUntil && d.validUntil>=today).sort((a,b)=>a.validUntil.localeCompare(b.validUntil));
+  const national = active.filter(d=>!d.resortId);
+  const perResort = active.filter(d=>d.resortId && RESORTS.some(r=>r.id===d.resortId));
+  const stu = RESORTS.filter(r=>r.liftStudent && r.liftAdult).sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent));
+  let html = "";
+  if(national.length) html += `<div class="deal-section"><h3>${t("dealSecNational")}</h3><div class="deal-list">${national.map(dealCard).join("")}</div></div>`;
+  if(perResort.length) html += `<div class="deal-section"><h3>${t("dealSecResort")}</h3><div class="deal-list">${perResort.map(dealCard).join("")}</div></div>`;
+  if(!national.length && !perResort.length) html += `<div class="deal-section"><div class="deal-empty">${t("dealsEmpty")}</div></div>`;
+  html += `<div class="deal-section"><h3>${t("dealSecStudent")}</h3><div class="deal-list">${stu.map(r=>`
+    <button class="stu-row" data-id="${r.id}">
+      <div><div class="sr-name">${state.lang==="ja"?r.nameJa:r.nameEn}</div><div class="sr-pref">${prefLabel(r.prefJa)}</div></div>
+      <div class="sr-price">¥${r.liftAdult.toLocaleString()} → <b>¥${r.liftStudent.toLocaleString()}</b><br>${t("stuSave")(r.liftAdult-r.liftStudent)}</div>
+    </button>`).join("")}</div></div>`;
+  html += `<div class="disclaimer">${t("dealsNote")}</div>`;
+  el.innerHTML = html;
+  el.querySelectorAll(".stu-row").forEach(btn=>btn.addEventListener("click", ()=>openDetail(btn.dataset.id)));
 }
 
 const gearState = {selected: GEAR_CATEGORIES[0].id};
@@ -1038,14 +1451,19 @@ function openDetail(id){
         <h2>${name}</h2>
         <div class="sheet-sub">${pref} ・ ${t("nearestFrom")}: ${city} <span class="num">${r.distKm}km</span> ・ ${time}${r.flight?`<br>${t("flightNote")}`:""}</div>
       </div>
-      <button class="close-btn" id="closeBtn" aria-label="${t('close')}">✕</button>
+      <div style="display:flex;gap:2px;flex:0 0 auto">
+        <button class="fav-btn ${isFav(r.id)?"on":""}" id="detailFav" aria-label="${t("favToggle")}" aria-pressed="${isFav(r.id)}">${isFav(r.id)?"★":"☆"}</button>
+        <button class="close-btn" id="closeBtn" aria-label="${t('close')}">✕</button>
+      </div>
     </div>
     <p>${desc}</p>
     <div class="info-cards">
       <div class="info-card"><div class="big num">${r.base!=null&&r.top!=null ? `${r.base}–${r.top}m` : "—"}</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>
-      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${cond} ・ ${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
+      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+" ・ " : ""}${cond} ・ ${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
+      <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
+      <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
-      <div class="info-card"><div class="big num">${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"} / ${r.liftStudent?"¥"+r.liftStudent.toLocaleString():t("noStudentDiscount")}</div><div class="label">${t("liftLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}</div></div>
+      <div class="info-card"><div class="big num">${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent ? `${t("studentYouth")} <span class="num">¥${r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
     </div>
     <div class="section-label">${t("terrainLabel")}</div>
     ${r.terrain ? `
@@ -1066,6 +1484,12 @@ function openDetail(id){
   `;
   document.getElementById("overlay").hidden = false;
   document.getElementById("closeBtn").addEventListener("click", closeDetail);
+  document.getElementById("detailFav").addEventListener("click", ()=>{
+    toggleFav(r.id);
+    const on = isFav(r.id), b = document.getElementById("detailFav");
+    b.classList.toggle("on", on); b.textContent = on ? "★" : "☆"; b.setAttribute("aria-pressed", on);
+    if(state.view==="nearby") renderGrid();
+  });
   sheet.scrollTop = 0;
 }
 function closeDetail(){ document.getElementById("overlay").hidden = true; }
@@ -1152,30 +1576,27 @@ function resetWizard(){
   applyStaticText();
 }
 
+const VIEWS = [["wizard","navWizard","wizardView"],["map","navMap","mapView"],["nearby","navNearby","nearbyView"],["deals","navDeals","dealsView"],["gear","navGear","gearView"]];
 function setView(view){
   state.view = view;
-  document.getElementById("navWizard").classList.toggle("active", view==="wizard");
-  document.getElementById("navNearby").classList.toggle("active", view==="nearby");
-  document.getElementById("navWeather").classList.toggle("active", view==="weather");
-  document.getElementById("navMap").classList.toggle("active", view==="map");
-  document.getElementById("navGear").classList.toggle("active", view==="gear");
-  document.getElementById("wizardView").hidden = view!=="wizard";
-  document.getElementById("nearbyView").hidden = view!=="nearby";
-  document.getElementById("weatherView").hidden = view!=="weather";
-  document.getElementById("mapView").hidden = view!=="map";
-  document.getElementById("gearView").hidden = view!=="gear";
+  VIEWS.forEach(([v,nav,el])=>{
+    document.getElementById(nav).classList.toggle("active", v===view);
+    document.getElementById(el).hidden = v!==view;
+  });
   document.getElementById("searchRow").hidden = view!=="nearby";
+  document.body.classList.toggle("map-mode", view==="map");
+  if(view!=="map") document.getElementById("mapPreview").hidden = true;
   if(view==="nearby") renderGrid();
-  if(view==="weather") renderWeatherTab();
-  if(view==="map") renderMapTab();
+  if(view==="map") showMap();
+  if(view==="deals") renderDeals();
   if(view==="gear") renderGearTab();
 }
 
 function render(){
   applyStaticText();
   if(state.view==="nearby") renderGrid();
-  if(state.view==="weather") renderWeatherTab();
-  if(state.view==="map") renderMapTab();
+  if(state.view==="map"){ renderMapChips(); renderMapLayer(); }
+  if(state.view==="deals") renderDeals();
   if(state.view==="gear") renderGearTab();
   if(state.view==="wizard" && !document.getElementById("wizardResult").hidden && wiz.lastId){
     const idx = wiz.shown.indexOf(wiz.lastId);
@@ -1186,41 +1607,61 @@ function render(){
 
 document.getElementById("btnJa").addEventListener("click", ()=>{state.lang="ja"; render();});
 document.getElementById("btnEn").addEventListener("click", ()=>{state.lang="en"; render();});
-document.getElementById("navWizard").addEventListener("click", ()=>setView("wizard"));
-document.getElementById("navNearby").addEventListener("click", ()=>setView("nearby"));
-document.getElementById("navWeather").addEventListener("click", ()=>setView("weather"));
-document.getElementById("navMap").addEventListener("click", ()=>setView("map"));
-document.getElementById("navGear").addEventListener("click", ()=>setView("gear"));
+VIEWS.forEach(([v,nav])=>document.getElementById(nav).addEventListener("click", ()=>setView(v)));
 document.getElementById("wizardSubmit").addEventListener("click", renderRecommendation);
 document.getElementById("searchInput").addEventListener("input", (e)=>{state.query=e.target.value; renderGrid();});
 document.getElementById("regionSelect").addEventListener("change", (e)=>{state.region=e.target.value; renderGrid();});
-document.getElementById("chipStudent").addEventListener("click", ()=>{
-  state.studentOnly = !state.studentOnly;
-  document.getElementById("chipStudent").classList.toggle("on", state.studentOnly);
-  renderGrid();
-});
-document.getElementById("chipEnglish").addEventListener("click", ()=>{
-  state.englishOnly = !state.englishOnly;
-  document.getElementById("chipEnglish").classList.toggle("on", state.englishOnly);
-  renderGrid();
+document.getElementById("sortSelect").addEventListener("change", (e)=>{state.sort=e.target.value; renderGrid();});
+[["chipStudent","studentOnly"],["chipEnglish","englishOnly"],["chipFav","favOnly"]].forEach(([id,key])=>{
+  document.getElementById(id).addEventListener("click", (e)=>{
+    e.preventDefault();
+    state[key] = !state[key];
+    document.getElementById(id).classList.toggle("on", state[key]);
+    renderGrid();
+  });
 });
 document.getElementById("grid").addEventListener("click", (e)=>{
+  const favBtn = e.target.closest("[data-fav]");
+  if(favBtn){ toggleFav(favBtn.dataset.fav); renderGrid(); return; }
   const card = e.target.closest(".card");
   if(card) openDetail(card.dataset.id);
 });
+document.getElementById("grid").addEventListener("keydown", (e)=>{
+  if(e.key!=="Enter" && e.key!==" ") return;
+  const card = e.target.closest(".card");
+  if(card && e.target===card){ e.preventDefault(); openDetail(card.dataset.id); }
+});
+document.getElementById("mapChips").addEventListener("click", (e)=>{
+  const b = e.target.closest("[data-f]");
+  if(!b) return;
+  mapState.filter = b.dataset.f;
+  closeMapPreview();
+  renderMapChips(); renderMapLayer();
+});
+document.getElementById("mapSearch").addEventListener("input", renderSuggest);
+document.getElementById("mapSearch").addEventListener("keydown", (e)=>{
+  if(e.key==="Enter"){ const first = document.querySelector("#mapSuggest button"); if(first) first.click(); }
+});
+document.getElementById("mapZoomIn").addEventListener("click", ()=>mapState.map && mapState.map.zoomIn());
+document.getElementById("mapZoomOut").addEventListener("click", ()=>mapState.map && mapState.map.zoomOut());
+document.getElementById("mapLocate").addEventListener("click", locateMe);
+window.addEventListener("resize", ()=>{ if(state.view==="map"){ updateLayoutVars(); mapState.map && mapState.map.invalidateSize(); } });
 document.getElementById("overlay").addEventListener("click", (e)=>{ if(e.target.id==="overlay") closeDetail(); });
 document.addEventListener("keydown", (e)=>{ if(e.key==="Escape") closeDetail(); });
 
 document.getElementById("icWizard").innerHTML = icon("sparkle", 20);
-document.getElementById("icNearby").innerHTML = icon("pin", 20);
-document.getElementById("icWeather").innerHTML = icon("sun", 20);
 document.getElementById("icMap").innerHTML = icon("map", 20);
+document.getElementById("icNearby").innerHTML = icon("search", 20);
+document.getElementById("icDeals").innerHTML = icon("tag", 20);
 document.getElementById("icGear").innerHTML = icon("backpack", 20);
+document.getElementById("mapSearchIc").innerHTML = icon("search", 18);
+document.getElementById("mapLocate").innerHTML = icon("locate", 20);
 
 applyStaticText();
 setView("wizard");
 loadAllLiveWeather();
-Promise.all([loadAllResorts(), loadMapSvg()]).then(()=>{ renderHeroStat(); if(state.view==="map") renderMapTab(); });
+loadAllResorts().then(()=>{ renderHeroStat(); buildMapPoints(); if(state.view==="map") renderMapLayer(); });
+loadDeals().then(()=>{ if(state.view==="deals") renderDeals(); });
 
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{
