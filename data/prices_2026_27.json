@@ -1,0 +1,430 @@
+{
+  "niseko": {
+    "liftAdult": 13500,
+    "liftStudent": 11500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.niseko.ne.jp/ja/lift/",
+      "https://tabiris.com/archives/skilift2027/"
+    ],
+    "notes": "全山共通1日券。ピーク期(12/24-2/28)窓口大人13,500円を採用。レギュラー期(12/12-23・3/1-22)12,600円、早期・春8,800円、ファイナル6,300円。liftStudent=13-15歳ピーク11,500円（レギュラー10,700円）。前季12,000円→+1,500円。"
+  },
+  "rusutsu": {
+    "liftAdult": 16700,
+    "liftStudent": 12500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://rusutsu.com/winter-lift-tickets/",
+      "https://tabiris.com/archives/rusutsu2027/"
+    ],
+    "notes": "レギュラー期(12/19-3/14)窓口大人16,700円（オンライン13,200円、要ルスツアプリ）。liftStudent=ユース13-18歳12,500円（シニアと同額、オンライン9,800円）。早期7,900/10,500円、春10,500円。前季16,200円→+500円。"
+  },
+  "furano": {
+    "liftAdult": 9000,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/furano/2026.2027_sk_iresorts_infor/",
+      "https://dmksnowboard.com/ski-resort-lift-ticket-price-2026-27/"
+    ],
+    "notes": "シーズン期(12/5-3/22)一般大人9,000円（SEIBU PRINCE会員7,500円）。初滑り・春7,500円。学生区分なし（小学生以下無料）。前季8,000円→+1,000円。"
+  },
+  "hakuba": {
+    "liftAdult": 9800,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.happo-one.jp/ticket/",
+      "https://tabiris.com/archives/happo2027/"
+    ],
+    "notes": "ハイシーズン(12/19-3/22)大人9,800円。シーズンイン・春6,400円。こども区分は6-17歳（学生区分ではない）→null。前季8,700円→+1,100円。"
+  },
+  "nozawa": {
+    "liftAdult": 7800,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://nozawaski.com/winter/lift_price/"
+    ],
+    "notes": "通常期(12/19-3/28)大人7,800円。こども=中学生以下、高校生は大人料金で学生区分なし→null。前季7,500円。"
+  },
+  "shiga": {
+    "liftAdult": 9500,
+    "liftStudent": 6500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.ichinose.gr.jp/article/feature/26090901/",
+      "https://tabiris.com/archives/ski-lift20260913/"
+    ],
+    "notes": "全山共通1日券 窓口大人9,500円（11/1以降オンライン8,500円）。liftStudent=高校生6,500円（前季データでは未確認だった区分）。こども4,000円、シニア8,000円。出典は一の瀬観光の告知記事（志賀高原の公式料金表ページ自体は取得できず）。前季9,000円。"
+  },
+  "myoko": {
+    "liftAdult": 9000,
+    "liftStudent": 8400,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/myoko/winter/lift/"
+    ],
+    "notes": "オンシーズン(12/19-3/28)一般大人9,000円（会員8,200円）。liftStudent=『シニア・高校生』区分の一般8,400円（会員7,800円）。小学生以下無料。前季8,000円。"
+  },
+  "naeba": {
+    "liftAdult": 9800,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/naeba/winter/lift/",
+      "https://dmksnowboard.com/ski-resort-lift-ticket-price-2026-27/"
+    ],
+    "notes": "苗場エリア1日券 一般大人9,800円（会員9,000円）。Mt.Naeba（かぐら共通）11,800円。大人=中学生以上、小学生以下無料→学生null。前季7,800円→+2,000円（+26%）。"
+  },
+  "karuizawa": {
+    "liftAdult": 10000,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/",
+      "https://tabiris.com/archives/ski-lift20260913/"
+    ],
+    "notes": "シーズン期(12/19-3/22)窓口大人10,000円（WEB・会員9,500円）。トップシーズン12,000円、ハイトップシーズン13,000円、初滑り・春8,000円。小学生無料→学生null。前季と同額。"
+  },
+  "zao": {
+    "liftAdult": 8000,
+    "liftStudent": 7200,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://zaomountainresort.com/chrage/",
+      "https://tabiris.com/archives/ski-lift20260913/"
+    ],
+    "notes": "レギュラー期大人8,000円を採用（ピーク期12/26-1/3・1/30-2/28は9,000円、春7,000円、オープン/ファイナル4,800円）。liftStudent=高校生レギュラー7,200円（ピーク8,100円）。集計サイトdmksnowboardはピーク9,000円を前年比+17%と記載。前季7,500円。"
+  },
+  "washigatake": {
+    "liftAdult": 5900,
+    "liftStudent": 4000,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://ski.washigatake.jp/charge/",
+      "https://dmksnowboard.com/ski-resort-lift-ticket-price-2026-27/"
+    ],
+    "notes": "単独1日券大人（中学生以上）5,900円。liftStudent=中高生4,000円。別途ICデポジット500円。前季5,500円。"
+  },
+  "okuibuki": {
+    "liftAdult": 6500,
+    "liftStudent": 4000,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.okuibuki.co.jp/charge/"
+    ],
+    "notes": "変動価格制A4,200/B5,200/C6,500/D7,000円。前季と同じ考え方で混雑日の通常価格C日程6,500円を採用。liftStudent=中高生C/D日程4,000円（A/B 3,500円）。dmksnowboardは6,300円（据え置き）と集計しているが公式2026-27表を優先。"
+  },
+  "tambara": {
+    "liftAdult": 6300,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.tambara.co.jp/winter/ticket/"
+    ],
+    "notes": "変動価格制A5,500/B6,300/C7,000円（C=土日祝・年末等の特定日）。代表値としてB6,300円を採用（前季と同じ考え方）。学生区分なし→null。前季6,000円。"
+  },
+  "marunuma": {
+    "liftAdult": 6700,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.marunuma.jp/winter/ticket/",
+      "https://dmksnowboard.com/ski-resort-lift-ticket-price-2026-27/"
+    ],
+    "notes": "トップシーズン土日祝 大人（高校生以上）6,700円（平日6,000円、特定日7,000円、初すべり5,200円）。小・中学生区分のみで学生区分なし→null。前季6,300円。"
+  },
+  "hunter": {
+    "liftAdult": 6500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.hunter.co.jp/winter/ticket/"
+    ],
+    "notes": "休日 大人（中学生以上）6,500円（平日6,000円、特定日7,500円）。学生区分なし→null。今季は小学生平日無料。前季6,500円（平日5,800円）から休日据え置き・平日と特定日は値上げ。"
+  },
+  "tateyama": {
+    "liftAdult": 5400,
+    "liftStudent": 4400,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.snownavi.com/topics/news_26092501",
+      "https://www.tateyama36.co.jp/price/"
+    ],
+    "notes": "休日大人5,400円（平日5,000円）。liftStudent=中高生・大学生（60歳以上と同額）休日4,400円（平日4,000円）。前季から据え置き。公式料金表にはシーズン表記がないため、2026-27の確認はスノーナビ告知記事による。"
+  },
+  "appi": {
+    "liftAdult": 9500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.appi.co.jp/snow-mountain-resort/ticket/"
+    ],
+    "notes": "レギュラーシーズン(12/19-3/28)BLUE PASS大人9,500円（窓口・オンライン共通）。GOLD PASS 14,500円、アーリー・春4,900円。中学生以上一律で学生区分なし→null。別途デポジット500円。dmksnowboardは9,000円と集計しているが公式を採用。"
+  },
+  "inawashiro": {
+    "liftAdult": 6600,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.inawashiro-ski.com/lift/"
+    ],
+    "notes": "ビジター1日券大人6,600円（平日・土日祝とも）。無料会員『いなスキ！クラブ』は平日無料・土日祝半額など大幅割引。学生区分なし→null。前季と同額。"
+  },
+  "kuju": {
+    "liftAdult": 7000,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.kujyuski.co.jp/price"
+    ],
+    "notes": "入場料込みセット券。2026-27は料金体系変更：土日祝8時間セット大人7,000円を採用（前季の土休日セット券に相当）。土日祝終日7,500円、平日8時間6,500円。学生区分なし→null。前季5,500円→+1,500円。"
+  },
+  "hakuba_goryu": {
+    "liftAdult": 10000,
+    "liftStudent": 6500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.snownavi.com/topics/news_26100101",
+      "https://dmksnowboard.com/hakuba-lift-ticket-2026-2027/"
+    ],
+    "notes": "白馬五竜&Hakuba47共通1日券 窓口大人(23-64歳)10,000円（ICデポジット500円込み、実質9,500円）。liftStudent=ユース13-22歳6,500円（窓口のみ・年齢による区分で学生証ではない）。オンライン新規9,500円/リピート8,200円。前季9,500円。"
+  },
+  "hakuba_iwatake": {
+    "liftAdult": 7500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://iwatake-mountain-resort.com/2026/08/31/2026-2027%E6%97%A9%E5%89%B2%E3%83%AA%E3%83%95%E3%83%88%E5%88%B8%E3%80%809%E6%9C%881%E6%97%A5%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B%EF%BC%81",
+      "https://tabiris.com/archives/ski-lift20260913/"
+    ],
+    "notes": "通常1日券大人7,500円（別途ICデポジット1,000円）、こども4,300円。学生区分は確認できず→null。前季7,000円。"
+  },
+  "hakuba47": {
+    "liftAdult": 10000,
+    "liftStudent": 6500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.snownavi.com/topics/news_26100101",
+      "https://www.hakuba47.co.jp/winter/ticket/lift_ticket/"
+    ],
+    "notes": "白馬五竜と共通券。窓口大人10,000円（ICデポジット500円込み）。liftStudent=ユース13-22歳6,500円（窓口のみ・年齢区分）。※index.htmlでは五竜に6,500円、47にnullが入っており不統一だったため同一券として揃えた。前季9,500円。"
+  },
+  "hakuba_cortina": {
+    "liftAdult": 6500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.hakunori.com/ticket/",
+      "https://dmksnowboard.com/ski-resort-lift-ticket-price-2026-27/"
+    ],
+    "notes": "白馬コルチナ・白馬乗鞍温泉共通1日券 大人6,500円（Web6,100円、2回目以降Webチャージ5,800円）、小学生3,800円。初・春5,500円。学生区分なし→null。前季6,200円（index.htmlの6,500円は今季価格と一致）。コルチナ公式料金ページはメンテナンス中で乗鞍側公式を参照。"
+  },
+  "tsugaike": {
+    "liftAdult": 9800,
+    "liftStudent": 8000,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.tsugaike.gr.jp/snow/price",
+      "https://tabiris.com/archives/skilift2027/"
+    ],
+    "notes": "レギュラー期(12/12-3/22)窓口大人9,800円。liftStudent=中高生8,000円（学生証要、シニアと同額）。初滑り・春大人8,000円。前季8,200円→+1,600円（+20%）。index.htmlの9,800円は今季価格と一致。"
+  },
+  "tomamu": {
+    "liftAdult": 9500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.snowtomamu.jp/winter/ski/ticket/"
+    ],
+    "notes": "通常シーズン(12/21-3/28)窓口大人(12歳以上)9,500円（オンライン9,200円）。アーリー・春5,000円。大人=12歳以上で学生区分なし→null。dmksnowboardによる前季は8,000円。"
+  },
+  "kiroro": {
+    "liftAdult": 9200,
+    "liftStudent": 8000,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.snownavi.com/topics/news_26082801",
+      "https://tabiris.com/archives/skilift2027/"
+    ],
+    "notes": "窓口大人9,200円（別途デポジット500円）。liftStudent=13-18歳8,000円（65歳以上と同額・年齢区分）。前季8,800円。"
+  },
+  "zao_raiza": {
+    "liftAdult": 5000,
+    "liftStudent": 3500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.zaoliza.co.jp/wntr/lift/"
+    ],
+    "notes": "公式2026-2027料金表で大人1日券5,000円、シニア4,800円。liftStudent=U22（22歳以下・身分証要、食事券1,000円付）3,500円。前季は大人4,800円（index.htmlの値）。"
+  },
+  "gala_yuzawa": {
+    "liftAdult": 8000,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "http://gala.co.jp/winter/hours-pricing/",
+      "https://tabiris.com/archives/gala-ticket2027/"
+    ],
+    "notes": "ゴンドラ&リフト1日券 窓口大人8,000円（WEB7,500円）、小学生4,000円。学生区分なし→null。前季7,300円。南エリア休止。"
+  },
+  "ishiuchi_maruyama": {
+    "liftAdult": 8500,
+    "liftStudent": 4200,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://ishiuchi.or.jp/winter/price/",
+      "https://tabiris.com/archives/ski-lift20260913/"
+    ],
+    "notes": "フレックスタイム1日券(8.5時間)窓口大人8,500円を採用（集計サイトの比較対象と同じ券種）。オールデイ1日券は9,400円（index.htmlの値はこちらと一致）。WEB事前購入は変動価格5,200〜6,800円。liftStudent=中高生フレックス4,200円（オールデイ4,700円）。前季フレックス7,900円。"
+  },
+  "iwappara": {
+    "liftAdult": 5500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://iwa-ppara.com/price/"
+    ],
+    "notes": "2026-27 1日入場券 大人（中学生以上）5,500円、ナイター込み5,800円。公式に『料金据え置き』と記載。学生区分なし→null。"
+  },
+  "kagura": {
+    "liftAdult": 8500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/kagura/winter/lift/"
+    ],
+    "notes": "かぐらエリア1日券 一般大人8,500円（会員8,000円）。Mt.Naeba（苗場共通）11,800円。大人=中学生以上、小学生無料→学生null。dmksnowboardはかぐら9,800円と集計しているが公式のかぐらエリア券は8,500円で公式を採用。"
+  },
+  "nekoma_mountain": {
+    "liftAdult": 6500,
+    "liftStudent": 4500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.nekoma.co.jp/price/",
+      "https://prtimes.jp/main/html/rd/p/000002571.000033064.html"
+    ],
+    "notes": "窓口通常1日券大人6,500円、中高生4,500円、シニア6,000円。WEB割1日券は大人5,900円/中高生4,200円。南エリアのバトウチェアは今季お試しで無料開放。前季6,300円。※公式ページの窓口価格の適用期間表記が不明瞭（取得時11/4-12/13と表示）なため要再確認。"
+  },
+  "grandeco": {
+    "liftAdult": 5500,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://grandecoresort.co.jp/snow/ticket/"
+    ],
+    "notes": "オンシーズン(12/12-3/22)土日祝 大人(13-49歳)5,500円を採用（平日4,300円、年末年始は休日料金）。プレ・春は4,300円以下。学生区分なし→null。index.htmlの4,300円は平日価格に相当。dmksnowboardは前季6,500円→5,500円の値下げと集計。"
+  },
+  "kawaba": {
+    "liftAdult": 7900,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.kawaba.co.jp/lift-prices/"
+    ],
+    "notes": "土日祝 大人7,900円（平日7,600円、特定日8,400円）。中学生・小学生が同一区分（5,200円）で学生区分ではない→null。前季6,800円（平日6,500円）→+16%。"
+  },
+  "manza": {
+    "liftAdult": 6300,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/manza/winter/lift/"
+    ],
+    "notes": "1日券一般大人（中学生以上）6,300円（会員5,800円）。小学生以下無料→学生null。前季と同額。3年ぶりフルオープン予定。"
+  },
+  "kusatsu": {
+    "liftAdult": 6000,
+    "liftStudent": 5200,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.932-onsen.com/winter/ryokin/"
+    ],
+    "notes": "通常期間(12/26-3/22)大人6,000円。liftStudent=中高生（シニアと同額）5,200円。オープニング・春3,500円。前季と同額（index.htmlの値と一致）。"
+  },
+  "takasu": {
+    "liftAdult": 6400,
+    "liftStudent": 4200,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.takasu.gr.jp/charge/"
+    ],
+    "notes": "index.htmlの値に合わせ高鷲・ダイナランド共通1日券 大人6,400円・中高生(13-18歳)4,200円を採用（ICデポジット500円込み）。高鷲単独1日券は大人6,200円・中高生3,900円（平日は大人4,100円）。単独/共通どちらを使うかは要判断。前季共通6,000円。"
+  },
+  "dynaland": {
+    "liftAdult": 6400,
+    "liftStudent": 4200,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.dynaland.co.jp/charge/"
+    ],
+    "notes": "index.htmlの値に合わせ高鷲・ダイナランド共通1日券 大人6,400円・中高生(13-18歳)4,200円を採用。ダイナランド単独1日券は大人5,900円・中高生4,200円。単独/共通どちらを使うかは要判断。"
+  },
+  "rokko": {
+    "liftAdult": 6100,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.rokkosan.com/ski/fee/",
+      "https://harimap.com/rokkosan-snowpark-price-2026-27/"
+    ],
+    "notes": "入園料とリフト券が別料金。土日祝：入園2,800円＋リフト1日券3,300円＝6,100円を採用。平日は2,800＋1,600＝4,400円（index.htmlの4,400円は平日合計に相当）。学生（中学生以上）は学生証提示で入園料500円引き（リフト券の学生区分なし）→null。公式料金ページにはシーズン表記がなく、2026-27の確認ははりまっぷ記事による。"
+  },
+  "skijam_katsuyama": {
+    "liftAdult": 6200,
+    "liftStudent": null,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://jamresort.jp/activity-white/lift-ticket/"
+    ],
+    "notes": "土日祝 大人（中学生以上）6,200円（平日5,500円、特定日6,500円、インアウト4,500円）。別途ICデポジット500円。学生区分なし→null。dmksnowboardの6,500円は特定日価格。前季6,000円。"
+  },
+  "sapporo_kokusai": {
+    "liftAdult": 7000,
+    "liftStudent": 4000,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.sapporo-kokusai.jp/price/",
+      "https://tabiris.com/archives/skilift2027/"
+    ],
+    "notes": "通常期(11/20-3/31)窓口一般7,000円（WEB6,700円）。liftStudent=中高生4,000円（WEB3,700円）。春6,500円。前季6,000円→+1,000円（index.htmlの7,000円は今季価格と一致）。"
+  },
+  "sapporo_teine": {
+    "liftAdult": 9800,
+    "liftStudent": 8500,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://sapporo-teine.com/snow/lift-time"
+    ],
+    "notes": "レギュラー期(12/19-3/7)窓口大人9,800円（オンライン8,800円）。早期9,400円、春7,600円。liftStudent=中高生13-18歳8,500円（シニアと同額）。dmksnowboardは9,400円（据え置き）と集計しているが公式レギュラー期を採用。index.htmlの8,400円から+1,400円。"
+  },
+  "niseko_hanazono": {
+    "liftAdult": 12500,
+    "liftStudent": 10600,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://hanazononiseko.com/en/winter/resort/lift-tickets",
+      "https://www.grand-hirafu.jp/snow/tickets/"
+    ],
+    "notes": "HANAZONO単独券はなく、グラン・ヒラフ&HANAZONO共通券。ニセコ全山と同じくピーク期(12/24-2/28)窓口大人12,500円を採用（レギュラー11,600円、早期・春7,800円）。liftStudent=13-15歳ピーク10,600円。"
+  },
+  "niseko_grand_hirafu": {
+    "liftAdult": 12500,
+    "liftStudent": 10600,
+    "priceSeason": "2026-27",
+    "sources": [
+      "https://www.grand-hirafu.jp/snow/tickets/"
+    ],
+    "notes": "グラン・ヒラフ&HANAZONO共通1日券。ピーク期(12/24-2/28)窓口大人12,500円（オンライン11,800円）、レギュラー期11,600円、早期7,800円、春8,300円。liftStudent=13-15歳ピーク10,600円（65歳以上と同額）。index.htmlの12,600円はニセコ全山レギュラー価格と同値で、ヒラフ券の値ではない可能性。"
+  },
+  "zao_sarukura": {
+    "liftAdult": 4500,
+    "liftStudent": null,
+    "priceSeason": "2025-26",
+    "sources": [
+      "https://www.zao-sarukura.co.jp/winter.html"
+    ],
+    "notes": "公式料金表は一日券 大人（高校生以上）4,500円・小人3,000円・シニア3,500円。料金表にシーズン表記はないが、サイトは2025-26シーズン営業時の内容のまま（2026年3月クローズ告知）で、2026-27料金は未公表のため2025-26とした。index.htmlの3,800円は公式と不一致。高校生は大人料金→学生null。"
+  }
+}
