@@ -1,0 +1,452 @@
+[
+{
+"key": "w170",
+"nameJa": "後三年スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.3608287,
+"lng": 140.5481513,
+"wikiStatus": "営業中"
+},
+{
+"key": "w171",
+"nameJa": "ジュネス栗駒スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.1601146,
+"lng": 140.7272005,
+"wikiStatus": "営業中"
+},
+{
+"key": "w172",
+"nameJa": "水晶山スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 40.1747573,
+"lng": 140.7611607,
+"wikiStatus": "営業中"
+},
+{
+"key": "w173",
+"nameJa": "太平山スキー場オーパス",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w174",
+"nameJa": "たざわ湖スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.7623755,
+"lng": 140.7705657,
+"wikiStatus": "営業中"
+},
+{
+"key": "w175",
+"nameJa": "鳥海高原矢島スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.1886506,
+"lng": 140.0850745,
+"wikiStatus": "営業中"
+},
+{
+"key": "w176",
+"nameJa": "天下森スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.1589751,
+"lng": 140.6177349,
+"wikiStatus": "営業中"
+},
+{
+"key": "w177",
+"nameJa": "花輪スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 40.1878564,
+"lng": 140.8222803,
+"wikiStatus": "営業中"
+},
+{
+"key": "w178",
+"nameJa": "藤里町営スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 40.3229272,
+"lng": 140.2907779,
+"wikiStatus": "営業中"
+},
+{
+"key": "w179",
+"nameJa": "薬師山スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 40.2124244,
+"lng": 140.2772166,
+"wikiStatus": "営業中"
+},
+{
+"key": "w180",
+"nameJa": "Asahi自然観スノーパーク",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.3059229,
+"lng": 140.0471881,
+"wikiStatus": "営業中"
+},
+{
+"key": "w181",
+"nameJa": "秋山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.8659645,
+"lng": 140.2419613,
+"wikiStatus": "営業中"
+},
+{
+"key": "w182",
+"nameJa": "小野川温泉スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 37.8783265,
+"lng": 140.0615817,
+"wikiStatus": "営業中"
+},
+{
+"key": "w183",
+"nameJa": "月山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.5276865,
+"lng": 140.0082498,
+"wikiStatus": "営業中"
+},
+{
+"key": "w184",
+"nameJa": "神室スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.9199131,
+"lng": 140.3942438,
+"wikiStatus": "営業中"
+},
+{
+"key": "w185",
+"nameJa": "櫛引たらのきだいスキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w186",
+"nameJa": "黒伏高原スノーパークジャングル・ジャングル",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w187",
+"nameJa": "小鳥山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.3602066,
+"lng": 140.2011386,
+"wikiStatus": "営業中"
+},
+{
+"key": "w190",
+"nameJa": "白鷹町営スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.2348346,
+"lng": 140.1567648,
+"wikiStatus": "営業中"
+},
+{
+"key": "w191",
+"nameJa": "新庄市民スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.795795,
+"lng": 140.3603406,
+"wikiStatus": "営業中"
+},
+{
+"key": "w192",
+"nameJa": "天元台高原スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 37.7663144,
+"lng": 140.1393688,
+"wikiStatus": "営業中"
+},
+{
+"key": "w193",
+"nameJa": "天童高原スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.3454618,
+"lng": 140.4843734,
+"wikiStatus": "営業中"
+},
+{
+"key": "w194",
+"nameJa": "手ノ子スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.0077537,
+"lng": 139.9722845,
+"wikiStatus": "営業中"
+},
+{
+"key": "w195",
+"nameJa": "道照寺平スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.0914479,
+"lng": 139.9780192,
+"wikiStatus": "営業中"
+},
+{
+"key": "w196",
+"nameJa": "西川町民スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.4382556,
+"lng": 140.1260518,
+"wikiStatus": "営業中"
+},
+{
+"key": "w197",
+"nameJa": "羽黒山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.6952415,
+"lng": 139.9894374,
+"wikiStatus": "営業中"
+},
+{
+"key": "w198",
+"nameJa": "八森山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.6849455,
+"lng": 139.6624568,
+"wikiStatus": "営業中"
+},
+{
+"key": "w199",
+"nameJa": "花笠高原スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.5319569,
+"lng": 140.509828,
+"wikiStatus": "営業中"
+},
+{
+"key": "w200",
+"nameJa": "松山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.8591167,
+"lng": 139.9822148,
+"wikiStatus": "営業中"
+},
+{
+"key": "w201",
+"nameJa": "やまがた赤倉温泉スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.7001425,
+"lng": 140.5453551,
+"wikiStatus": "営業中"
+},
+{
+"key": "w202",
+"nameJa": "山形市少年自然の家スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.9053655,
+"lng": 140.2485983,
+"wikiStatus": "営業中"
+},
+{
+"key": "w204",
+"nameJa": "湯殿山スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.5688967,
+"lng": 139.9478819,
+"wikiStatus": "営業中"
+},
+{
+"key": "w205",
+"nameJa": "湯の台スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.6102183,
+"lng": 140.183951,
+"wikiStatus": "営業中"
+},
+{
+"key": "w206",
+"nameJa": "横根スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 38.0702909,
+"lng": 139.7308229,
+"wikiStatus": "営業中"
+},
+{
+"key": "w207",
+"nameJa": "米沢スキー場",
+"prefJa": "山形県",
+"region": "tohoku",
+"lat": 37.8659048,
+"lng": 140.2353485,
+"wikiStatus": "営業中"
+},
+{
+"key": "w208",
+"nameJa": "星野リゾートアルツ磐梯",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w210",
+"nameJa": "裏磐梯スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.6290188,
+"lng": 140.0683401,
+"wikiStatus": "営業中"
+},
+{
+"key": "w212",
+"nameJa": "沼尻スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.6228949,
+"lng": 140.2303411,
+"wikiStatus": "営業中"
+},
+{
+"key": "w213",
+"nameJa": "星野リゾート猫魔スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.6052304,
+"lng": 140.0429719,
+"wikiStatus": "営業中"
+},
+{
+"key": "w214",
+"nameJa": "三ノ倉スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.747557,
+"lng": 139.8673622,
+"wikiStatus": "営業中"
+},
+{
+"key": "w215",
+"nameJa": "リステルスキーファンタジア",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.546325,
+"lng": 140.1527485,
+"wikiStatus": "営業中"
+},
+{
+"key": "w216",
+"nameJa": "会津高原だいくらスキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.1787702,
+"lng": 139.6302567,
+"wikiStatus": "営業中"
+},
+{
+"key": "w217",
+"nameJa": "会津高原たかつえスキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.1156484,
+"lng": 139.6309622,
+"wikiStatus": "営業中"
+},
+{
+"key": "w218",
+"nameJa": "会津高原高畑スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.0920436,
+"lng": 139.4589011,
+"wikiStatus": "営業中"
+},
+{
+"key": "w219",
+"nameJa": "会津高原南郷スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.4616593,
+"lng": 139.84393,
+"wikiStatus": "営業中"
+},
+{
+"key": "w220",
+"nameJa": "只見スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.3478,
+"lng": 139.3083767,
+"wikiStatus": "営業中"
+},
+{
+"key": "w221",
+"nameJa": "檜枝岐温泉スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.0318072,
+"lng": 139.3973481,
+"wikiStatus": "営業中"
+},
+{
+"key": "w222",
+"nameJa": "フェアリーランドかねやまスキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.4425526,
+"lng": 139.5416913,
+"wikiStatus": "営業中"
+},
+{
+"key": "w223",
+"nameJa": "あだたら高原スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.6219455,
+"lng": 140.3189795,
+"wikiStatus": "営業中"
+},
+{
+"key": "w224",
+"nameJa": "二本松塩沢スキー場",
+"prefJa": "福島県",
+"region": "tohoku",
+"lat": 37.6383517,
+"lng": 140.3287679,
+"wikiStatus": "営業中"
+}
+]

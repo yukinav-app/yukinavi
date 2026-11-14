@@ -1,0 +1,497 @@
+[
+{
+"key": "w0",
+"nameJa": "石狩平原スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.2621986,
+"lng": 141.5035841,
+"wikiStatus": "営業中"
+},
+{
+"key": "w1",
+"nameJa": "恵庭市民スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.845541,
+"lng": 141.4878688,
+"wikiStatus": "営業中"
+},
+{
+"key": "w2",
+"nameJa": "クラッセスノーパーク",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9705866,
+"lng": 141.5289383,
+"wikiStatus": "営業中"
+},
+{
+"key": "w5",
+"nameJa": "さっぽろばんけいスキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.0270025,
+"lng": 141.2772196,
+"wikiStatus": "営業中"
+},
+{
+"key": "w6",
+"nameJa": "札幌藻岩山スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.01555,
+"lng": 141.3283563,
+"wikiStatus": "営業中"
+},
+{
+"key": "w7",
+"nameJa": "ダイナスティスキーリゾート",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9286176,
+"lng": 141.4509583,
+"wikiStatus": "営業中"
+},
+{
+"key": "w8",
+"nameJa": "滝野スノーワールド",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9180318,
+"lng": 141.3870013,
+"wikiStatus": "営業中"
+},
+{
+"key": "w9",
+"nameJa": "ノヴェル・マウンテンパーク",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w10",
+"nameJa": "フッズスノーエリア",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.950222,
+"lng": 141.2760119,
+"wikiStatus": "営業中"
+},
+{
+"key": "w11",
+"nameJa": "グリーンピア大沼スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.0082235,
+"lng": 140.5956897,
+"wikiStatus": "営業中"
+},
+{
+"key": "w12",
+"nameJa": "知内町営スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.5932014,
+"lng": 140.4062892,
+"wikiStatus": "営業中"
+},
+{
+"key": "w13",
+"nameJa": "ニヤマ高原スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.9365662,
+"lng": 140.6288993,
+"wikiStatus": "営業中"
+},
+{
+"key": "w14",
+"nameJa": "函館臼尻スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.9279217,
+"lng": 140.9447826,
+"wikiStatus": "営業中"
+},
+{
+"key": "w15",
+"nameJa": "函館七飯スノーパーク",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.9732342,
+"lng": 140.7595948,
+"wikiStatus": "営業中"
+},
+{
+"key": "w16",
+"nameJa": "ふるさとの森スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.6822529,
+"lng": 140.4298778,
+"wikiStatus": "営業中"
+},
+{
+"key": "w17",
+"nameJa": "八雲町営スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.2129371,
+"lng": 140.2338009,
+"wikiStatus": "営業中"
+},
+{
+"key": "w18",
+"nameJa": "今金町種川スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9868079,
+"lng": 144.3812476,
+"wikiStatus": "営業中"
+},
+{
+"key": "w19",
+"nameJa": "上ノ国町民スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.746377,
+"lng": 140.2442752,
+"wikiStatus": "営業中"
+},
+{
+"key": "w20",
+"nameJa": "太鼓山スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 41.9221149,
+"lng": 140.2353564,
+"wikiStatus": "営業中"
+},
+{
+"key": "w21",
+"nameJa": "大成スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9161043,
+"lng": 143.0697898,
+"wikiStatus": "営業中"
+},
+{
+"key": "w22",
+"nameJa": "富岡スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1973394,
+"lng": 140.9891099,
+"wikiStatus": "営業中"
+},
+{
+"key": "w23",
+"nameJa": "丹羽スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.4420782,
+"lng": 139.9580288,
+"wikiStatus": "営業中"
+},
+{
+"key": "w24",
+"nameJa": "ピリカスキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.4613409,
+"lng": 140.2036639,
+"wikiStatus": "営業中"
+},
+{
+"key": "w25",
+"nameJa": "旭ヶ丘スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9008036,
+"lng": 140.7312696,
+"wikiStatus": "営業中"
+},
+{
+"key": "w26",
+"nameJa": "朝里川温泉スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1384508,
+"lng": 141.0292794,
+"wikiStatus": "営業中"
+},
+{
+"key": "w27",
+"nameJa": "IWANAI RESORT",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.9470848,
+"lng": 140.5147662,
+"wikiStatus": "営業中"
+},
+{
+"key": "w28",
+"nameJa": "小樽天狗山スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1736595,
+"lng": 140.9711167,
+"wikiStatus": "営業中"
+},
+{
+"key": "w30",
+"nameJa": "積丹町野外スポーツ林スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.2915821,
+"lng": 140.6039406,
+"wikiStatus": "営業中"
+},
+{
+"key": "w31",
+"nameJa": "スノークルーズ・オーンズ",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1439013,
+"lng": 141.1278189,
+"wikiStatus": "営業中"
+},
+{
+"key": "w32",
+"nameJa": "中山峠スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.8472866,
+"lng": 141.0950452,
+"wikiStatus": "営業中"
+},
+{
+"key": "w33",
+"nameJa": "仁木町民スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1157753,
+"lng": 140.7312791,
+"wikiStatus": "営業中"
+},
+{
+"key": "w34",
+"nameJa": "ニセコアンヌプリ国際スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.8749957,
+"lng": 140.6588448,
+"wikiStatus": "営業中"
+},
+{
+"key": "w37",
+"nameJa": "ニセコビレッジスキーリゾート",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.8465577,
+"lng": 140.6760317,
+"wikiStatus": "営業中"
+},
+{
+"key": "w38",
+"nameJa": "ニセコモイワスキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 42.8554241,
+"lng": 140.6314647,
+"wikiStatus": "営業中"
+},
+{
+"key": "w40",
+"nameJa": "岩見沢萩の山市民スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1649185,
+"lng": 141.8097559,
+"wikiStatus": "営業中"
+},
+{
+"key": "w41",
+"nameJa": "桂沢国設スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.2489887,
+"lng": 141.9794088,
+"wikiStatus": "営業中"
+},
+{
+"key": "w42",
+"nameJa": "かもい岳国際スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.5201093,
+"lng": 142.0131735,
+"wikiStatus": "営業中"
+},
+{
+"key": "w43",
+"nameJa": "M's resort Ashibetsu",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.5277826,
+"lng": 142.1947474,
+"wikiStatus": "営業中"
+},
+{
+"key": "w44",
+"nameJa": "そっち岳スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.5365344,
+"lng": 141.7976136,
+"wikiStatus": "営業中"
+},
+{
+"key": "w45",
+"nameJa": "長沼スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.0382003,
+"lng": 141.7430318,
+"wikiStatus": "営業中"
+},
+{
+"key": "w46",
+"nameJa": "沼田町営高穂スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w47",
+"nameJa": "美唄国設スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.3193683,
+"lng": 141.9465694,
+"wikiStatus": "営業中"
+},
+{
+"key": "w48",
+"nameJa": "北海道グリーンランドホワイトパーク",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w49",
+"nameJa": "マウントレースイ",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.0465836,
+"lng": 141.9796442,
+"wikiStatus": "営業中"
+},
+{
+"key": "w50",
+"nameJa": "旭岳スキーコース",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w51",
+"nameJa": "伊ノ沢市民スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.7475195,
+"lng": 142.3319615,
+"wikiStatus": "営業中"
+},
+{
+"key": "w52",
+"nameJa": "音威富士スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 44.721153,
+"lng": 142.2779874,
+"wikiStatus": "営業中"
+},
+{
+"key": "w53",
+"nameJa": "上川町営中山スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.8518759,
+"lng": 142.77988,
+"wikiStatus": "営業中"
+},
+{
+"key": "w54",
+"nameJa": "カムイスキーリンクス",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.7009475,
+"lng": 142.1993446,
+"wikiStatus": "営業中"
+},
+{
+"key": "w55",
+"nameJa": "キャンモアスキービレッジ",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.7308885,
+"lng": 142.5408216,
+"wikiStatus": "営業中"
+},
+{
+"key": "w56",
+"nameJa": "国設占冠中央スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w57",
+"nameJa": "国設南ふらのスキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 43.1568571,
+"lng": 142.5466881,
+"wikiStatus": "営業中"
+},
+{
+"key": "w58",
+"nameJa": "サンタプレゼントパーク・マロースゲレンデ",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w59",
+"nameJa": "士別市あさひスキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 44.1225503,
+"lng": 142.5974441,
+"wikiStatus": "営業中"
+},
+{
+"key": "w60",
+"nameJa": "士別市日向スキー場",
+"prefJa": "北海道",
+"region": "hokkaido",
+"lat": 44.2662152,
+"lng": 142.3377624,
+"wikiStatus": "営業中"
+}
+]

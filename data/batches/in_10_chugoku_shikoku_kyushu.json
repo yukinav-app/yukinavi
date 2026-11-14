@@ -1,0 +1,344 @@
+[
+{
+"key": "w470",
+"nameJa": "鏡ヶ成スキー場",
+"prefJa": "鳥取県",
+"region": "chugoku",
+"lat": 35.3456004,
+"lng": 133.5936832,
+"wikiStatus": "営業中"
+},
+{
+"key": "w471",
+"nameJa": "だいせんホワイトリゾート",
+"prefJa": "鳥取県",
+"region": "chugoku",
+"lat": 35.3975029,
+"lng": 133.5362661,
+"wikiStatus": "営業中"
+},
+{
+"key": "w472",
+"nameJa": "大山ますみず高原スノーパーク",
+"prefJa": "鳥取県",
+"region": "chugoku",
+"lat": 35.3696581,
+"lng": 133.5181488,
+"wikiStatus": "営業中"
+},
+{
+"key": "w473",
+"nameJa": "わかさ氷ノ山スキー場",
+"prefJa": "鳥取県",
+"region": "chugoku",
+"lat": 35.347259,
+"lng": 134.4897479,
+"wikiStatus": "営業中"
+},
+{
+"key": "w474",
+"nameJa": "安蔵公園スキー場",
+"prefJa": "鳥取県",
+"region": "chugoku",
+"lat": 35.4043144,
+"lng": 134.064877,
+"wikiStatus": "営業中"
+},
+{
+"key": "w475",
+"nameJa": "琴引フォレストパーク",
+"prefJa": "島根県",
+"region": "chugoku",
+"lat": 35.0517846,
+"lng": 132.7719574,
+"wikiStatus": "営業中"
+},
+{
+"key": "w476",
+"nameJa": "三井野原スキー場",
+"prefJa": "島根県",
+"region": "chugoku",
+"lat": 35.0865098,
+"lng": 133.1100731,
+"wikiStatus": "営業中"
+},
+{
+"key": "w477",
+"nameJa": "瑞穂ハイランド",
+"prefJa": "島根県",
+"region": "chugoku",
+"lat": 34.7978716,
+"lng": 132.3837615,
+"wikiStatus": "営業中"
+},
+{
+"key": "w478",
+"nameJa": "いぶきの里スキー場",
+"prefJa": "岡山県",
+"region": "chugoku",
+"lat": 35.1650047,
+"lng": 133.4074632,
+"wikiStatus": "営業中"
+},
+{
+"key": "w479",
+"nameJa": "恩原高原スキー場",
+"prefJa": "岡山県",
+"region": "chugoku",
+"lat": 35.3146354,
+"lng": 133.9826629,
+"wikiStatus": "営業中"
+},
+{
+"key": "w480",
+"nameJa": "ひるぜんベアバレースキー場",
+"prefJa": "岡山県",
+"region": "chugoku",
+"lat": 35.2595602,
+"lng": 133.5982395,
+"wikiStatus": "営業中"
+},
+{
+"key": "w481",
+"nameJa": "ひるぜんキッズスノーパーク",
+"prefJa": "岡山県",
+"region": "chugoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w482",
+"nameJa": "津黒高原スキー場",
+"prefJa": "岡山県",
+"region": "chugoku",
+"lat": 35.2567049,
+"lng": 133.7966975,
+"wikiStatus": "営業中"
+},
+{
+"key": "w483",
+"nameJa": "恐羅漢スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 34.5954165,
+"lng": 132.1314195,
+"wikiStatus": "営業中"
+},
+{
+"key": "w484",
+"nameJa": "道後山高原スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 35.0109318,
+"lng": 133.1782422,
+"wikiStatus": "営業中"
+},
+{
+"key": "w485",
+"nameJa": "芸北高原大佐スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 34.7473327,
+"lng": 132.2203989,
+"wikiStatus": "営業中"
+},
+{
+"key": "w486",
+"nameJa": "県立もみの木森林公園スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w487",
+"nameJa": "ひろしま県民の森スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 35.0676833,
+"lng": 133.0656902,
+"wikiStatus": "営業中"
+},
+{
+"key": "w488",
+"nameJa": "めがひらスキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 34.4967803,
+"lng": 132.1297827,
+"wikiStatus": "営業中"
+},
+{
+"key": "w489",
+"nameJa": "やわたハイランド191リゾート",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 34.6942835,
+"lng": 132.15537,
+"wikiStatus": "営業中"
+},
+{
+"key": "w490",
+"nameJa": "ユートピアサイオト",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 34.7815113,
+"lng": 132.3237463,
+"wikiStatus": "営業中"
+},
+{
+"key": "w491",
+"nameJa": "りんご今日話国スキー場",
+"prefJa": "広島県",
+"region": "chugoku",
+"lat": 35.0213731,
+"lng": 132.8761772,
+"wikiStatus": "営業中"
+},
+{
+"key": "w492",
+"nameJa": "十種ヶ峰スキー場",
+"prefJa": "山口県",
+"region": "chugoku",
+"lat": 34.4466876,
+"lng": 131.6959488,
+"wikiStatus": "営業中"
+},
+{
+"key": "w493",
+"nameJa": "石鎚スキー場",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": 33.7677799,
+"lng": 133.1151038,
+"wikiStatus": "営業中"
+},
+{
+"key": "w494",
+"nameJa": "久万スキーランド",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": 33.720028,
+"lng": 132.8779831,
+"wikiStatus": "営業中"
+},
+{
+"key": "w495",
+"nameJa": "SOL-FAオダススキーゲレンデ",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w496",
+"nameJa": "プラーナ(旧サレガランドプラーナ)",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w497",
+"nameJa": "美川スキー場",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": 33.4604241,
+"lng": 132.5564281,
+"wikiStatus": "営業中"
+},
+{
+"key": "w498",
+"nameJa": "アクロス重信",
+"prefJa": "愛媛県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w499",
+"nameJa": "スノーパーク雲辺寺",
+"prefJa": "香川県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w500",
+"nameJa": "雲辺寺山頂公園",
+"prefJa": "香川県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w501",
+"nameJa": "井川スキー場腕山",
+"prefJa": "徳島県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w502",
+"nameJa": "剣山スキー場",
+"prefJa": "徳島県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w503",
+"nameJa": "天狗高原スキー場",
+"prefJa": "高知県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w504",
+"nameJa": "柿ノ木スキー場",
+"prefJa": "高知県",
+"region": "shikoku",
+"lat": 33.5034529,
+"lng": 133.909454,
+"wikiStatus": "不明"
+},
+{
+"key": "w505",
+"nameJa": "別府スキー場",
+"prefJa": "高知県",
+"region": "shikoku",
+"lat": 33.7541029,
+"lng": 134.0275812,
+"wikiStatus": "不明"
+},
+{
+"key": "w506",
+"nameJa": "昇川スキー場(現・昇川スカイパーク)",
+"prefJa": "高知県",
+"region": "shikoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w508",
+"nameJa": "五ヶ瀬ハイランドスキー場",
+"prefJa": "宮崎県",
+"region": "kyushu",
+"lat": 32.583129,
+"lng": 131.1084696,
+"wikiStatus": "営業中"
+}
+]

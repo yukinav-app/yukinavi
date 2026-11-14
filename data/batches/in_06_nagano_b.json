@@ -1,0 +1,380 @@
+[
+{
+"key": "w296",
+"nameJa": "よませ温泉スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.788957,
+"lng": 138.41091,
+"wikiStatus": "営業中"
+},
+{
+"key": "w297",
+"nameJa": "龍王スキーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7793424,
+"lng": 138.4741092,
+"wikiStatus": "営業中"
+},
+{
+"key": "w298",
+"nameJa": "飯綱高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7056753,
+"lng": 138.1414208,
+"wikiStatus": "営業中"
+},
+{
+"key": "w299",
+"nameJa": "かんばやしスキー&スノーボードパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w300",
+"nameJa": "ごりん高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w301",
+"nameJa": "信濃平スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.8849169,
+"lng": 138.3785259,
+"wikiStatus": "営業中"
+},
+{
+"key": "w302",
+"nameJa": "聖山パノラマスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w303",
+"nameJa": "斑尾高原豊田スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w304",
+"nameJa": "あさひプライムスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.1174276,
+"lng": 137.8284494,
+"wikiStatus": "営業中"
+},
+{
+"key": "w305",
+"nameJa": "御岳スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.8659489,
+"lng": 137.5270084,
+"wikiStatus": "営業中"
+},
+{
+"key": "w306",
+"nameJa": "開田高原マイアスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.9280251,
+"lng": 137.5042326,
+"wikiStatus": "営業中"
+},
+{
+"key": "w307",
+"nameJa": "きそふくしまスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.8585701,
+"lng": 137.7036693,
+"wikiStatus": "営業中"
+},
+{
+"key": "w308",
+"nameJa": "車山高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7409642,
+"lng": 138.4160932,
+"wikiStatus": "営業中"
+},
+{
+"key": "w309",
+"nameJa": "小海リエックス・スキーバレー",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w310",
+"nameJa": "駒ヶ根高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w311",
+"nameJa": "治部坂高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.351727,
+"lng": 137.6762184,
+"wikiStatus": "営業中"
+},
+{
+"key": "w312",
+"nameJa": "シャトレーゼスキーリゾート八ヶ岳",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w313",
+"nameJa": "白樺高原国際スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.1269231,
+"lng": 138.2805703,
+"wikiStatus": "営業中"
+},
+{
+"key": "w314",
+"nameJa": "白樺湖ロイヤルヒルスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.0968371,
+"lng": 138.2387193,
+"wikiStatus": "営業中"
+},
+{
+"key": "w315",
+"nameJa": "白樺2in1スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.0951141,
+"lng": 138.2599653,
+"wikiStatus": "営業中"
+},
+{
+"key": "w316",
+"nameJa": "白樺リゾートスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.1096901,
+"lng": 138.2433043,
+"wikiStatus": "営業中"
+},
+{
+"key": "w317",
+"nameJa": "信州松本野麦峠スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.0468741,
+"lng": 137.7304481,
+"wikiStatus": "営業中"
+},
+{
+"key": "w318",
+"nameJa": "千曲戸スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w319",
+"nameJa": "蕨科東急スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w320",
+"nameJa": "中央道伊那スキーリゾート",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.8153393,
+"lng": 137.9127556,
+"wikiStatus": "営業中"
+},
+{
+"key": "w321",
+"nameJa": "ピラタス蕨科スノーリゾート",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w322",
+"nameJa": "平谷高原赤坂スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w323",
+"nameJa": "ファミリーゲレンデ霧ヶ峰",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.0964517,
+"lng": 138.1622336,
+"wikiStatus": "営業中"
+},
+{
+"key": "w324",
+"nameJa": "富士見高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.9192809,
+"lng": 138.3078356,
+"wikiStatus": "営業中"
+},
+{
+"key": "w325",
+"nameJa": "富士見パノラマリゾート",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.9091758,
+"lng": 138.1882506,
+"wikiStatus": "営業中"
+},
+{
+"key": "w326",
+"nameJa": "ブランシュたかやまスキーリゾート",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w327",
+"nameJa": "ヘブンスそのはらSNOW WORLD",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.4520731,
+"lng": 137.6361266,
+"wikiStatus": "営業中"
+},
+{
+"key": "w328",
+"nameJa": "Mt.乗鞍",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7815003,
+"lng": 137.801417,
+"wikiStatus": "営業中"
+},
+{
+"key": "w329",
+"nameJa": "八千穂高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.0688207,
+"lng": 138.3755531,
+"wikiStatus": "営業中"
+},
+{
+"key": "w330",
+"nameJa": "やぶはら高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 35.9576987,
+"lng": 137.7284255,
+"wikiStatus": "営業中"
+},
+{
+"key": "w331",
+"nameJa": "サンアルピナ鹿島槍スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w332",
+"nameJa": "猿ヶ岳スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w337",
+"nameJa": "白馬さのさかスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.6194479,
+"lng": 137.8346984,
+"wikiStatus": "営業中"
+},
+{
+"key": "w341",
+"nameJa": "ヤナバスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.5946882,
+"lng": 137.844503,
+"wikiStatus": "営業中"
+},
+{
+"key": "w342",
+"nameJa": "サンアルピナ青木湖スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w343",
+"nameJa": "大町スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w344",
+"nameJa": "白馬ハイランドスノーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+}
+]

@@ -36,6 +36,10 @@ def km(a, b):
     return 2 * r * math.asin(math.sqrt(h))
 
 
+def norm(name):
+    return re.sub(r"(スキー場|スノーパーク|\s|・)", "", name or "")
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9_]", "", (s or "").lower().replace("-", "_").replace(" ", "_"))
 
@@ -45,13 +49,13 @@ def main():
     allr = json.load(open(os.path.join(DATA, "resorts_all.json"), encoding="utf-8"))
     ids = {r["id"] for r in resorts}
     merged_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
-    closed_names, added, unknown, problems = set(), 0, 0, []
+    closed_keys, added, unknown, problems = set(), 0, 0, []
 
     for path in sorted(glob.glob(os.path.join(DATA, "batches", "out_*.json"))):
         for x in json.load(open(path, encoding="utf-8")):
             st = x.get("status")
-            if st == "closed":
-                closed_names.add((x.get("nameJa"), x.get("prefJa")))
+            if st in ("closed", "notski", "merged"):
+                closed_keys.add(x.get("key"))
                 continue
             if x.get("key") in merged_keys:
                 continue
@@ -64,6 +68,13 @@ def main():
             city = x.get("cityJa")
             if city not in HUBS:
                 problems.append(f"unknown hub {city}: {x.get('nameJa')}")
+                continue
+            dup = next((e for e in resorts if norm(e["nameJa"]) == norm(x.get("nameJa")) or
+                        (e.get("lat") is not None and km((e["lat"], e["lng"]), (x["lat"], x["lng"])) < 0.3)), None)
+            if dup:
+                # 既に詳細データがあるスキー場と同じ場所：簡易ピンだけ外す
+                closed_keys.add(x.get("key"))
+                problems.append(f"duplicate of existing {dup['nameJa']}: {x.get('nameJa')} (pin removed)")
                 continue
             r = {k: x.get(k) for k in FIELDS}
             base_id = slug(x.get("id")) or slug(x.get("nameEn")) or x["key"]
@@ -79,12 +90,13 @@ def main():
             resorts.append(r)
             added += 1
 
-    if closed_names:
-        allr = [a for a in allr if (a["name"], a["pref"]) not in closed_names]
+    # 閉鎖・スキー不可は地図から外し、詳細データ化したものは簡易ピンを二重に出さない
+    detailed_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
+    allr = [a for a in allr if a.get("key") not in closed_keys and a.get("key") not in detailed_keys]
 
     json.dump(resorts, open(os.path.join(DATA, "resorts.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     json.dump(allr, open(os.path.join(DATA, "resorts_all.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    print(f"added {added}, closed removed {len(closed_names)}, unknown {unknown}, total detailed {len(resorts)}")
+    print(f"added {added}, closed/notski {len(closed_keys)}, unknown {unknown}, total detailed {len(resorts)}, name-only pins {len(allr)}")
     for p in problems:
         print("WARN", p)
     return 0

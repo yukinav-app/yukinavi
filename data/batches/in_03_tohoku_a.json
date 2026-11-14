@@ -1,0 +1,452 @@
+[
+{
+"key": "w119",
+"nameJa": "アップルヒルスキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w120",
+"nameJa": "岩木山百沢スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.6349195,
+"lng": 140.327458,
+"wikiStatus": "営業中"
+},
+{
+"key": "w121",
+"nameJa": "兎沢スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.531039,
+"lng": 141.3256066,
+"wikiStatus": "営業中"
+},
+{
+"key": "w122",
+"nameJa": "大鰐温泉スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.51027,
+"lng": 140.5789952,
+"wikiStatus": "営業中"
+},
+{
+"key": "w123",
+"nameJa": "於法岳スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 41.2629206,
+"lng": 140.9575939,
+"wikiStatus": "営業中"
+},
+{
+"key": "w124",
+"nameJa": "金ヶ沢スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.5400425,
+"lng": 140.4064703,
+"wikiStatus": "営業中"
+},
+{
+"key": "w125",
+"nameJa": "釜臥山スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 41.2667271,
+"lng": 141.134111,
+"wikiStatus": "営業中"
+},
+{
+"key": "w126",
+"nameJa": "五所川原市嘉瀬スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.8820176,
+"lng": 140.4782897,
+"wikiStatus": "営業中"
+},
+{
+"key": "w127",
+"nameJa": "七戸町営スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.6993346,
+"lng": 141.0976518,
+"wikiStatus": "営業中"
+},
+{
+"key": "w128",
+"nameJa": "そうまロマントピアスキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.573934,
+"lng": 140.3913976,
+"wikiStatus": "営業中"
+},
+{
+"key": "w129",
+"nameJa": "創遊村229スキーランド",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w130",
+"nameJa": "奥入瀬渓流温泉スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.5855055,
+"lng": 140.9834952,
+"wikiStatus": "営業中"
+},
+{
+"key": "w131",
+"nameJa": "中泊町営宮野沢スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w132",
+"nameJa": "青森スプリング・スキーリゾート",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.6859424,
+"lng": 140.2828771,
+"wikiStatus": "営業中"
+},
+{
+"key": "w133",
+"nameJa": "八甲田スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.8227455,
+"lng": 140.7356776,
+"wikiStatus": "営業中"
+},
+{
+"key": "w134",
+"nameJa": "manogamiスキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w135",
+"nameJa": "みどりの大地とロマンの森公園スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.7844845,
+"lng": 141.2045653,
+"wikiStatus": "営業中"
+},
+{
+"key": "w136",
+"nameJa": "モヤヒルズ",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.7330295,
+"lng": 140.7965629,
+"wikiStatus": "営業中"
+},
+{
+"key": "w137",
+"nameJa": "夜越山スキー場",
+"prefJa": "青森県",
+"region": "tohoku",
+"lat": 40.9197391,
+"lng": 140.9840688,
+"wikiStatus": "営業中"
+},
+{
+"key": "w139",
+"nameJa": "網張温泉スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.8277164,
+"lng": 140.9357129,
+"wikiStatus": "営業中"
+},
+{
+"key": "w140",
+"nameJa": "岩手高原スノーパーク",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.8225425,
+"lng": 140.9655638,
+"wikiStatus": "営業中"
+},
+{
+"key": "w141",
+"nameJa": "奥中山高原スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 40.086,
+"lng": 141.1791352,
+"wikiStatus": "営業中"
+},
+{
+"key": "w142",
+"nameJa": "国見平スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.0539713,
+"lng": 140.9689761,
+"wikiStatus": "営業中"
+},
+{
+"key": "w143",
+"nameJa": "夏油高原スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.2364668,
+"lng": 140.9058882,
+"wikiStatus": "営業中"
+},
+{
+"key": "w144",
+"nameJa": "雫石スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.78443,
+"lng": 140.9203218,
+"wikiStatus": "営業中"
+},
+{
+"key": "w145",
+"nameJa": "田山スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 40.1306692,
+"lng": 140.9503572,
+"wikiStatus": "営業中"
+},
+{
+"key": "w146",
+"nameJa": "遠野市赤羽根スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.2468104,
+"lng": 141.5938641,
+"wikiStatus": "営業中"
+},
+{
+"key": "w147",
+"nameJa": "西和賀町営湯田スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.3397503,
+"lng": 140.7866669,
+"wikiStatus": "営業中"
+},
+{
+"key": "w148",
+"nameJa": "八幡平リゾート下倉スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w149",
+"nameJa": "八幡平リゾートパノラマスキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w150",
+"nameJa": "花巻温泉スキー場(鉛温泉)",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.3930827,
+"lng": 141.1104516,
+"wikiStatus": "営業中"
+},
+{
+"key": "w151",
+"nameJa": "平庭高原スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 40.0847402,
+"lng": 141.5049712,
+"wikiStatus": "営業中"
+},
+{
+"key": "w152",
+"nameJa": "ひめかゆスキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w153",
+"nameJa": "祭畤スノーパーク",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.0157014,
+"lng": 140.8775374,
+"wikiStatus": "営業中"
+},
+{
+"key": "w154",
+"nameJa": "盛岡市立生出スキー場",
+"prefJa": "岩手県",
+"region": "tohoku",
+"lat": 39.8750265,
+"lng": 141.1335125,
+"wikiStatus": "営業中"
+},
+{
+"key": "w155",
+"nameJa": "泉ヶ岳スキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.3940856,
+"lng": 140.71996,
+"wikiStatus": "営業中"
+},
+{
+"key": "w156",
+"nameJa": "上野々スキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.733704,
+"lng": 140.7136557,
+"wikiStatus": "営業中"
+},
+{
+"key": "w157",
+"nameJa": "オニコウベスキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.7816279,
+"lng": 140.6344747,
+"wikiStatus": "営業中"
+},
+{
+"key": "w158",
+"nameJa": "スプリングバレー泉高原スキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.4184306,
+"lng": 140.7223182,
+"wikiStatus": "営業中"
+},
+{
+"key": "w159",
+"nameJa": "みやぎ蔵王えぼしスキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w160",
+"nameJa": "みやぎ蔵王七ヶ宿スキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 37.9963602,
+"lng": 140.3752465,
+"wikiStatus": "営業中"
+},
+{
+"key": "w161",
+"nameJa": "みやぎ蔵王白石スキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.068572,
+"lng": 140.5098066,
+"wikiStatus": "営業中"
+},
+{
+"key": "w162",
+"nameJa": "みやぎ蔵王スキー場すみかわスノーパーク",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w163",
+"nameJa": "やくらいファミリースキー場",
+"prefJa": "宮城県",
+"region": "tohoku",
+"lat": 38.5755343,
+"lng": 140.71484,
+"wikiStatus": "営業中"
+},
+{
+"key": "w164",
+"nameJa": "秋田八幡平スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.9770355,
+"lng": 140.8087261,
+"wikiStatus": "営業中"
+},
+{
+"key": "w165",
+"nameJa": "阿仁スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.9647674,
+"lng": 140.5086477,
+"wikiStatus": "営業中"
+},
+{
+"key": "w166",
+"nameJa": "稲川スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w167",
+"nameJa": "大曲ファミリースキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.4417889,
+"lng": 140.4307783,
+"wikiStatus": "営業中"
+},
+{
+"key": "w168",
+"nameJa": "大台スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.5191064,
+"lng": 140.6596516,
+"wikiStatus": "営業中"
+},
+{
+"key": "w169",
+"nameJa": "協和スキー場",
+"prefJa": "秋田県",
+"region": "tohoku",
+"lat": 39.6770465,
+"lng": 140.4020754,
+"wikiStatus": "営業中"
+}
+]

@@ -1,0 +1,461 @@
+[
+{
+"key": "w225",
+"nameJa": "エーデルワイススキーリゾート",
+"prefJa": "栃木県",
+"region": "kanto",
+"lat": 36.9190866,
+"lng": 139.7518912,
+"wikiStatus": "営業中"
+},
+{
+"key": "w226",
+"nameJa": "日光湯元温泉スキー場",
+"prefJa": "栃木県",
+"region": "kanto",
+"lat": 36.8045425,
+"lng": 139.4138476,
+"wikiStatus": "営業中"
+},
+{
+"key": "w228",
+"nameJa": "オグナほたかスキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.781835,
+"lng": 139.1667393,
+"wikiStatus": "営業中"
+},
+{
+"key": "w229",
+"nameJa": "かたしな高原スキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.8102621,
+"lng": 139.2218897,
+"wikiStatus": "営業中"
+},
+{
+"key": "w231",
+"nameJa": "スノーパーク尾瀬戸倉",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.8520159,
+"lng": 139.2445837,
+"wikiStatus": "営業中"
+},
+{
+"key": "w233",
+"nameJa": "ホワイトワールド尾瀬岩鞍",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.8223059,
+"lng": 139.2066144,
+"wikiStatus": "営業中"
+},
+{
+"key": "w235",
+"nameJa": "奥利根スノーパーク",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.7969615,
+"lng": 139.0111491,
+"wikiStatus": "営業中"
+},
+{
+"key": "w236",
+"nameJa": "谷川岳天神平スキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.8250102,
+"lng": 138.9550114,
+"wikiStatus": "営業中"
+},
+{
+"key": "w237",
+"nameJa": "ノルンみなかみスキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w238",
+"nameJa": "ホワイトバレースキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.7956227,
+"lng": 138.9654567,
+"wikiStatus": "営業中"
+},
+{
+"key": "w239",
+"nameJa": "水上高原スキーリゾート",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.8572076,
+"lng": 139.0806838,
+"wikiStatus": "営業中"
+},
+{
+"key": "w240",
+"nameJa": "水上高原藤原スキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w241",
+"nameJa": "群馬みなかみほうだいぎスキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w242",
+"nameJa": "鹿沢スノーエリア",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.4656101,
+"lng": 138.4246239,
+"wikiStatus": "営業中"
+},
+{
+"key": "w245",
+"nameJa": "パルコール嬬恋スキーリゾート",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.5566331,
+"lng": 138.4560061,
+"wikiStatus": "営業中"
+},
+{
+"key": "w247",
+"nameJa": "赤城山スキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.5552373,
+"lng": 139.1782291,
+"wikiStatus": "不明"
+},
+{
+"key": "w248",
+"nameJa": "赤沢スキー場",
+"prefJa": "群馬県",
+"region": "kanto",
+"lat": 36.7310295,
+"lng": 138.8278752,
+"wikiStatus": "不明"
+},
+{
+"key": "w249",
+"nameJa": "狭山スキー場",
+"prefJa": "埼玉県",
+"region": "kanto",
+"lat": 35.7675001,
+"lng": 139.4188695,
+"wikiStatus": "営業中"
+},
+{
+"key": "w250",
+"nameJa": "スノーヴァ新横浜",
+"prefJa": "神奈川県",
+"region": "kanto",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w400",
+"nameJa": "カムイみさかスキー場",
+"prefJa": "山梨県",
+"region": "chubu",
+"lat": 35.5795409,
+"lng": 138.7543253,
+"wikiStatus": "営業中"
+},
+{
+"key": "w401",
+"nameJa": "サンメドウズ清里スキー場(旧キッツメドウズ大泉・清里スキー場)",
+"prefJa": "山梨県",
+"region": "chubu",
+"lat": 35.9494669,
+"lng": 138.4089695,
+"wikiStatus": "営業中"
+},
+{
+"key": "w402",
+"nameJa": "ふじてんスノーリゾート",
+"prefJa": "山梨県",
+"region": "chubu",
+"lat": 35.4367718,
+"lng": 138.6879018,
+"wikiStatus": "営業中"
+},
+{
+"key": "w403",
+"nameJa": "スノーパークイエティ",
+"prefJa": "静岡県",
+"region": "chubu",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w404",
+"nameJa": "リバウェル井川スキー場",
+"prefJa": "静岡県",
+"region": "chubu",
+"lat": 35.2182378,
+"lng": 138.2784322,
+"wikiStatus": "営業中"
+},
+{
+"key": "w405",
+"nameJa": "アウトドアイン母袋スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w406",
+"nameJa": "めいほうスキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 35.9510939,
+"lng": 137.029047,
+"wikiStatus": "営業中"
+},
+{
+"key": "w407",
+"nameJa": "ホワイトピアたかす",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 35.9515073,
+"lng": 136.9404909,
+"wikiStatus": "営業中"
+},
+{
+"key": "w408",
+"nameJa": "郡上ヴァカンス村スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w409",
+"nameJa": "ひるがの高原スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 36.0057828,
+"lng": 136.9137514,
+"wikiStatus": "営業中"
+},
+{
+"key": "w413",
+"nameJa": "ウイングヒルズ白鳥リゾート",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 35.973199,
+"lng": 136.8091972,
+"wikiStatus": "営業中"
+},
+{
+"key": "w414",
+"nameJa": "スノーウェーブパーク白鳥高原",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 35.9538852,
+"lng": 136.8001041,
+"wikiStatus": "営業中"
+},
+{
+"key": "w415",
+"nameJa": "平湯温泉スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 36.1847976,
+"lng": 137.5591537,
+"wikiStatus": "営業中"
+},
+{
+"key": "w416",
+"nameJa": "荘川高原スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": 36.0342321,
+"lng": 136.9534603,
+"wikiStatus": "営業中"
+},
+{
+"key": "w417",
+"nameJa": "飛騨ほおのき平スキー場",
+"prefJa": "岐阜県",
+"region": "chubu",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w418",
+"nameJa": "宇奈月温泉スキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.8161519,
+"lng": 137.5825028,
+"wikiStatus": "営業中"
+},
+{
+"key": "w419",
+"nameJa": "立山山岳スキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.6962628,
+"lng": 137.294462,
+"wikiStatus": "営業中"
+},
+{
+"key": "w421",
+"nameJa": "牛岳温泉スキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.5666825,
+"lng": 137.0554979,
+"wikiStatus": "営業中"
+},
+{
+"key": "w422",
+"nameJa": "となみ夢の平スキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.5840461,
+"lng": 137.0190695,
+"wikiStatus": "営業中"
+},
+{
+"key": "w423",
+"nameJa": "イオックス・アローザ",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.5146707,
+"lng": 136.8068743,
+"wikiStatus": "営業中"
+},
+{
+"key": "w424",
+"nameJa": "タカンボースキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.3777212,
+"lng": 136.8642405,
+"wikiStatus": "営業中"
+},
+{
+"key": "w425",
+"nameJa": "たいらスキー場",
+"prefJa": "富山県",
+"region": "hokuriku",
+"lat": 36.4384922,
+"lng": 136.9238251,
+"wikiStatus": "営業中"
+},
+{
+"key": "w426",
+"nameJa": "大倉岳高原スキー場",
+"prefJa": "石川県",
+"region": "hokuriku",
+"lat": 36.2794449,
+"lng": 136.5381748,
+"wikiStatus": "営業中"
+},
+{
+"key": "w427",
+"nameJa": "金沢市営医王山スキー場",
+"prefJa": "石川県",
+"region": "hokuriku",
+"lat": 36.5256937,
+"lng": 136.7510805,
+"wikiStatus": "営業中"
+},
+{
+"key": "w428",
+"nameJa": "七尾コロサスキー場",
+"prefJa": "石川県",
+"region": "hokuriku",
+"lat": 36.9745776,
+"lng": 136.9594611,
+"wikiStatus": "営業中"
+},
+{
+"key": "w429",
+"nameJa": "白山一里野温泉スキー場",
+"prefJa": "石川県",
+"region": "hokuriku",
+"lat": 36.2624443,
+"lng": 136.7130804,
+"wikiStatus": "営業中"
+},
+{
+"key": "w430",
+"nameJa": "白山セイモアスキー場",
+"prefJa": "石川県",
+"region": "hokuriku",
+"lat": 36.3414508,
+"lng": 136.6888898,
+"wikiStatus": "営業中"
+},
+{
+"key": "w431",
+"nameJa": "莇生田スキー場",
+"prefJa": "福井県",
+"region": "hokuriku",
+"lat": 36.0216508,
+"lng": 136.2331224,
+"wikiStatus": "営業中"
+},
+{
+"key": "w432",
+"nameJa": "今庄365スキー場",
+"prefJa": "福井県",
+"region": "hokuriku",
+"lat": 35.7216305,
+"lng": 136.1421534,
+"wikiStatus": "営業中"
+},
+{
+"key": "w433",
+"nameJa": "九頭竜スキー場",
+"prefJa": "福井県",
+"region": "hokuriku",
+"lat": 35.8951452,
+"lng": 136.6582708,
+"wikiStatus": "営業中"
+},
+{
+"key": "w434",
+"nameJa": "新保ファミリースキー場",
+"prefJa": "福井県",
+"region": "hokuriku",
+"lat": 35.8547822,
+"lng": 136.3072632,
+"wikiStatus": "営業中"
+},
+{
+"key": "w436",
+"nameJa": "福井和泉スキー場",
+"prefJa": "福井県",
+"region": "hokuriku",
+"lat": 35.9371016,
+"lng": 136.6889741,
+"wikiStatus": "営業中"
+}
+]

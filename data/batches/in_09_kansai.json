@@ -1,0 +1,290 @@
+[
+{
+"key": "w438",
+"nameJa": "びわ湖バレイ",
+"prefJa": "滋賀県",
+"region": "kansai",
+"lat": 35.2135573,
+"lng": 135.8916337,
+"wikiStatus": "営業中"
+},
+{
+"key": "w439",
+"nameJa": "Ohana Resort(旧国境高原スノーパーク)",
+"prefJa": "滋賀県",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w440",
+"nameJa": "箱館山スキー場",
+"prefJa": "滋賀県",
+"region": "kansai",
+"lat": 35.4385374,
+"lng": 135.9865081,
+"wikiStatus": "営業中"
+},
+{
+"key": "w441",
+"nameJa": "朽木スキー場",
+"prefJa": "滋賀県",
+"region": "kansai",
+"lat": 35.327296,
+"lng": 135.9400682,
+"wikiStatus": "営業中"
+},
+{
+"key": "w442",
+"nameJa": "マキノスキー場",
+"prefJa": "滋賀県",
+"region": "kansai",
+"lat": 35.4613571,
+"lng": 136.0598146,
+"wikiStatus": "営業中"
+},
+{
+"key": "w443",
+"nameJa": "京都広河原スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": 35.2344427,
+"lng": 135.7723751,
+"wikiStatus": "不明"
+},
+{
+"key": "w444",
+"nameJa": "森林公園スイス村スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w445",
+"nameJa": "愛宕山スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": 35.0600453,
+"lng": 135.6342851,
+"wikiStatus": "不明"
+},
+{
+"key": "w446",
+"nameJa": "花脊スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w447",
+"nameJa": "ゲンゼスキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w448",
+"nameJa": "比叡山人工スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": 35.0712843,
+"lng": 135.8727342,
+"wikiStatus": "不明"
+},
+{
+"key": "w449",
+"nameJa": "大江山スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w450",
+"nameJa": "夜久野ヶ原スキー場",
+"prefJa": "京都府",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+},
+{
+"key": "w451",
+"nameJa": "神鍋高原スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.499181,
+"lng": 134.6749413,
+"wikiStatus": "営業中"
+},
+{
+"key": "w452",
+"nameJa": "アップかんなべスキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.5039392,
+"lng": 134.6782415,
+"wikiStatus": "営業中"
+},
+{
+"key": "w453",
+"nameJa": "奥神鍋スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.4977344,
+"lng": 134.6419837,
+"wikiStatus": "営業中"
+},
+{
+"key": "w454",
+"nameJa": "万場スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.4923269,
+"lng": 134.6503444,
+"wikiStatus": "営業中"
+},
+{
+"key": "w455",
+"nameJa": "大岡山キッズパーク",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w456",
+"nameJa": "但馬牧場公園スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.5155196,
+"lng": 134.4907496,
+"wikiStatus": "営業中"
+},
+{
+"key": "w457",
+"nameJa": "おじろスキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.45761,
+"lng": 134.5244949,
+"wikiStatus": "営業中"
+},
+{
+"key": "w458",
+"nameJa": "スカイバレイスキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.3952782,
+"lng": 134.566156,
+"wikiStatus": "営業中"
+},
+{
+"key": "w459",
+"nameJa": "ハチ北スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.4047961,
+"lng": 134.5642839,
+"wikiStatus": "営業中"
+},
+{
+"key": "w460",
+"nameJa": "ハチ高原スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.3843232,
+"lng": 134.5344291,
+"wikiStatus": "営業中"
+},
+{
+"key": "w461",
+"nameJa": "ハイパーボウル東鉢",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.3891343,
+"lng": 134.5627886,
+"wikiStatus": "営業中"
+},
+{
+"key": "w462",
+"nameJa": "氷ノ山国際スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.3641177,
+"lng": 134.5331779,
+"wikiStatus": "営業中"
+},
+{
+"key": "w463",
+"nameJa": "若杉高原おおやスキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.2820373,
+"lng": 134.5897895,
+"wikiStatus": "営業中"
+},
+{
+"key": "w464",
+"nameJa": "ばんしゅう戸倉スノーパーク",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w465",
+"nameJa": "ちくさ高原スキー場",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 35.2184556,
+"lng": 134.3865942,
+"wikiStatus": "営業中"
+},
+{
+"key": "w466",
+"nameJa": "峰山高原リゾートホワイトピーク",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w467",
+"nameJa": "氷甲山スノーパーク",
+"prefJa": "兵庫県",
+"region": "kansai",
+"lat": 34.7828538,
+"lng": 135.3014946,
+"wikiStatus": "営業中"
+},
+{
+"key": "w468",
+"nameJa": "スノーパーク洞川",
+"prefJa": "奈良県",
+"region": "kansai",
+"lat": 34.286907,
+"lng": 135.9010377,
+"wikiStatus": "営業中"
+},
+{
+"key": "w469",
+"nameJa": "高野山スキー場",
+"prefJa": "和歌山県",
+"region": "kansai",
+"lat": null,
+"lng": null,
+"wikiStatus": "不明"
+}
+]

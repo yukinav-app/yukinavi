@@ -1,0 +1,425 @@
+[
+{
+"key": "w346",
+"nameJa": "一本杉スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9354815,
+"lng": 138.8058947,
+"wikiStatus": "営業中"
+},
+{
+"key": "w348",
+"nameJa": "奥只見丸山スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.1592955,
+"lng": 139.2314205,
+"wikiStatus": "営業中"
+},
+{
+"key": "w350",
+"nameJa": "神立スノーリゾート",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9205932,
+"lng": 138.8144929,
+"wikiStatus": "営業中"
+},
+{
+"key": "w351",
+"nameJa": "小出スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.2269778,
+"lng": 138.9499241,
+"wikiStatus": "営業中"
+},
+{
+"key": "w352",
+"nameJa": "国営越後丘陵公園",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.4182385,
+"lng": 138.7431543,
+"wikiStatus": "営業中"
+},
+{
+"key": "w353",
+"nameJa": "古志高原スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.3160848,
+"lng": 138.8837851,
+"wikiStatus": "営業中"
+},
+{
+"key": "w354",
+"nameJa": "八海山麓スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.1597395,
+"lng": 138.9762824,
+"wikiStatus": "営業中"
+},
+{
+"key": "w355",
+"nameJa": "シャトー塩沢スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0531667,
+"lng": 138.8296973,
+"wikiStatus": "営業中"
+},
+{
+"key": "w356",
+"nameJa": "上越国際スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0322113,
+"lng": 138.8218689,
+"wikiStatus": "営業中"
+},
+{
+"key": "w357",
+"nameJa": "上越国際当間スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w358",
+"nameJa": "須原スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.3297886,
+"lng": 139.0072117,
+"wikiStatus": "営業中"
+},
+{
+"key": "w359",
+"nameJa": "舞子スノーリゾート",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9742701,
+"lng": 138.8355539,
+"wikiStatus": "営業中"
+},
+{
+"key": "w360",
+"nameJa": "高柳ガルルのスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.2208747,
+"lng": 138.6365969,
+"wikiStatus": "営業中"
+},
+{
+"key": "w361",
+"nameJa": "十日町市松代ファミリースキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.1316493,
+"lng": 138.6048304,
+"wikiStatus": "営業中"
+},
+{
+"key": "w362",
+"nameJa": "とちおファミリースキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.4369003,
+"lng": 139.0390583,
+"wikiStatus": "営業中"
+},
+{
+"key": "w363",
+"nameJa": "長岡市営スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.4130408,
+"lng": 138.8958088,
+"wikiStatus": "営業中"
+},
+{
+"key": "w364",
+"nameJa": "中里スノーウッドスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9039364,
+"lng": 138.8522263,
+"wikiStatus": "営業中"
+},
+{
+"key": "w365",
+"nameJa": "NASPAスキーガーデン",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9242346,
+"lng": 138.8049379,
+"wikiStatus": "営業中"
+},
+{
+"key": "w366",
+"nameJa": "ニュー・グリーンピア津南スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9526358,
+"lng": 138.6881936,
+"wikiStatus": "営業中"
+},
+{
+"key": "w370",
+"nameJa": "マウンテンパーク津南スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w371",
+"nameJa": "松之山温泉スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0478535,
+"lng": 138.6027866,
+"wikiStatus": "営業中"
+},
+{
+"key": "w372",
+"nameJa": "六日町八海山スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w373",
+"nameJa": "ムイカスノーリゾート",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0740331,
+"lng": 138.836474,
+"wikiStatus": "営業中"
+},
+{
+"key": "w374",
+"nameJa": "薬師スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.2331989,
+"lng": 138.9935203,
+"wikiStatus": "営業中"
+},
+{
+"key": "w376",
+"nameJa": "布場スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.3725634,
+"lng": 138.5567288,
+"wikiStatus": "営業中"
+},
+{
+"key": "w377",
+"nameJa": "布場ファミリースキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.3725634,
+"lng": 138.5567288,
+"wikiStatus": "営業中"
+},
+{
+"key": "w378",
+"nameJa": "湯沢中里スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9225036,
+"lng": 138.8228116,
+"wikiStatus": "営業中"
+},
+{
+"key": "w379",
+"nameJa": "湯沢パークスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9241159,
+"lng": 138.8585052,
+"wikiStatus": "営業中"
+},
+{
+"key": "w380",
+"nameJa": "赤倉温泉スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.8963586,
+"lng": 138.1674032,
+"wikiStatus": "営業中"
+},
+{
+"key": "w381",
+"nameJa": "赤倉くまどースキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w382",
+"nameJa": "赤倉中央スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0452409,
+"lng": 137.8725477,
+"wikiStatus": "営業中"
+},
+{
+"key": "w383",
+"nameJa": "赤倉観光リゾートスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.8903353,
+"lng": 138.1604114,
+"wikiStatus": "営業中"
+},
+{
+"key": "w384",
+"nameJa": "京王赤倉チャンピオンスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w385",
+"nameJa": "池の平温泉アルペンブリックスキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.8733292,
+"lng": 138.1584349,
+"wikiStatus": "営業中"
+},
+{
+"key": "w387",
+"nameJa": "妙高国際スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w388",
+"nameJa": "休暇村妙高スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9094355,
+"lng": 138.1681155,
+"wikiStatus": "営業中"
+},
+{
+"key": "w389",
+"nameJa": "関温泉スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9049859,
+"lng": 138.1569427,
+"wikiStatus": "営業中"
+},
+{
+"key": "w390",
+"nameJa": "キューピットバレイ",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.0446436,
+"lng": 138.4916633,
+"wikiStatus": "営業中"
+},
+{
+"key": "w391",
+"nameJa": "金谷山スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.1034998,
+"lng": 138.2237356,
+"wikiStatus": "営業中"
+},
+{
+"key": "w392",
+"nameJa": "シャルマン火打スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9983842,
+"lng": 138.0701906,
+"wikiStatus": "営業中"
+},
+{
+"key": "w393",
+"nameJa": "糸魚川シーサイドバレースキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 36.9318675,
+"lng": 137.8872161,
+"wikiStatus": "営業中"
+},
+{
+"key": "w394",
+"nameJa": "ロッテアライリゾート",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w395",
+"nameJa": "国設胎内スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w396",
+"nameJa": "NINOX SNOW PARK",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.9232346,
+"lng": 139.473788,
+"wikiStatus": "営業中"
+},
+{
+"key": "w397",
+"nameJa": "冬鳥越スキーガーデン",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.6415837,
+"lng": 139.1188013,
+"wikiStatus": "営業中"
+},
+{
+"key": "w398",
+"nameJa": "三川温泉スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": 37.7178438,
+"lng": 139.3966778,
+"wikiStatus": "営業中"
+},
+{
+"key": "w399",
+"nameJa": "佐渡市営平スキー場",
+"prefJa": "新潟県",
+"region": "niigata",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+}
+]

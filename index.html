@@ -608,7 +608,8 @@ const STRINGS = {
     heroStat:"全国{n}のゲレンデを掲載",
     qFromBlock:"どの地方から出発しますか？",
     qFromPref:"都道府県を選んでください",
-    approxNote:"※この地域の近くに登録済みのゲレンデがまだ少なく、参考値として一番近い拠点のおすすめを表示しています。",
+    approxNote:"※お住まいの地域の近くにはスキー場が少ないため、いちばん行きやすい候補を表示しています。遠方なので宿泊での計画がおすすめです。",
+    fromPrefKm:(p,km)=>`${p}から約${km}km（道のりの目安）`,
     qTrip:"日帰り？泊まりでもOK？",
     qLevel:"滑るレベルは？",
     tripDay:"日帰りがいい",
@@ -755,7 +756,8 @@ const STRINGS = {
     heroStat:"{n} ski resorts across Japan",
     qFromBlock:"Which region are you starting from?",
     qFromPref:"Pick your prefecture",
-    approxNote:"We don't have many registered resorts near this area yet — showing the closest recommended hub as a rough reference.",
+    approxNote:"There are few ski resorts near your area, so we're showing the easiest one to reach. It's far, so plan an overnight stay.",
+    fromPrefKm:(p,km)=>`About ${km}km from ${p} (approx. road distance)`,
     qTrip:"Day trip, or okay to stay overnight?",
     qLevel:"What's your level?",
     tripDay:"Day trip only",
@@ -816,9 +818,7 @@ const REGION_BLOCKS = [
   {id:"kyushu", ja:"九州・沖縄", en:"Kyushu / Okinawa"},
 ];
 
-/* anchorJa must match a cityJa value used in RESORTS for the +100 exact-match score bonus.
-   approx:true = we don't have a resort hub genuinely close to this prefecture yet;
-   the recommendation shown is the nearest registered hub, not a true local option. */
+/* 出発地の選択肢。おすすめ計算は ORIGINS の座標から各スキー場までの距離で行う（anchorJa/approx は旧仕様の名残で未使用）。 */
 const PREFECTURES = [
   {block:"hokkaido", ja:"北海道", en:"Hokkaido", anchorJa:"札幌", anchorEn:"Sapporo", approx:false},
   {block:"tohoku", ja:"青森県", en:"Aomori", anchorJa:"仙台", anchorEn:"Sendai", approx:true},
@@ -933,8 +933,9 @@ function updateSubmitState(){
 
 function renderHeroStat(){
   const el = document.getElementById("heroStat");
-  if(!ALL_RESORTS.length){ el.hidden = true; return; }
-  el.textContent = t("heroStat").replace("{n}", ALL_RESORTS.length);
+  const n = RESORTS.length + ALL_RESORTS.length;
+  if(!RESORTS.length || !ALL_RESORTS.length){ el.hidden = true; return; }
+  el.textContent = t("heroStat").replace("{n}", n);
   el.hidden = false;
 }
 
@@ -1488,17 +1489,50 @@ function packingList(r){
   return items;
 }
 
-function scoreResort(r, fromCityJa, levelIdx){
+// 出発地（都道府県庁所在地など）の座標。おすすめは実際の距離で計算する
+const ORIGINS = {
+  "北海道":[43.0618,141.3545],"青森県":[40.8244,140.7400],"岩手県":[39.7036,141.1527],"宮城県":[38.2682,140.8694],"秋田県":[39.7186,140.1024],"山形県":[38.2404,140.3633],"福島県":[37.7608,140.4747],
+  "茨城県":[36.3418,140.4468],"栃木県":[36.5551,139.8828],"群馬県":[36.3895,139.0634],"埼玉県":[35.8617,139.6455],"千葉県":[35.6074,140.1065],"東京都":[35.6812,139.7671],"神奈川県":[35.4437,139.6380],
+  "新潟県（上越エリア）":[37.1000,138.2500],"新潟県（中越・魚沼エリア）":[37.4467,138.8513],"新潟県（新潟市周辺）":[37.9161,139.0364],
+  "富山県":[36.6953,137.2113],"石川県":[36.5780,136.6480],"福井県":[36.0641,136.2196],"山梨県":[35.6620,138.5683],
+  "長野県（東信・軽井沢方面）":[36.4020,138.2490],"長野県（北信・中信・長野市方面）":[36.6433,138.1886],
+  "岐阜県":[35.4233,136.7606],"静岡県":[34.9756,138.3828],"愛知県":[35.1709,136.8815],
+  "三重県":[34.7186,136.5059],"滋賀県":[35.0045,135.8686],"京都府":[35.0116,135.7681],"大阪府":[34.7025,135.4959],"兵庫県":[34.6901,135.1955],"奈良県":[34.6851,135.8048],"和歌山県":[34.2260,135.1675],
+  "鳥取県":[35.5011,134.2351],"島根県":[35.4723,133.0505],"岡山県":[34.6618,133.9344],"広島県":[34.3853,132.4553],"山口県":[34.1859,131.4714],
+  "徳島県":[34.0703,134.5548],"香川県":[34.3401,134.0434],"愛媛県":[33.8392,132.7650],"高知県":[33.5597,133.5311],
+  "福岡県":[33.5902,130.4207],"佐賀県":[33.2494,130.2988],"長崎県":[32.7503,129.8779],"熊本県":[32.7898,130.6886],"大分県":[33.2382,131.6126],"宮崎県":[31.9156,131.4320],"鹿児島県":[31.5966,130.5571],"沖縄県":[26.2124,127.6809],
+};
+const ROAD_FACTOR = 1.25;
+function roadKmFrom(pref, r){
+  const o = ORIGINS[pref.ja];
+  if(!o || r.lat==null) return r.distKm;
+  return Math.round(distKmBetween({lat:o[0],lng:o[1]}, r) * ROAD_FACTOR);
+}
+
+function scoreResort(r, pref, levelIdx, isDayTrip){
+  const km = roadKmFrom(pref, r);
+  const route = (r.timeJa||"") + (r.accessJa||"");
+  const indoor = /屋内|人工芝/.test(r.descJa||"");
   let score = 0;
-  if(r.cityJa === fromCityJa) score += 100;
-  score -= r.distKm * 0.2;
+  if(isDayTrip){
+    // 新幹線で行けるスキー場は、道のりが長くても日帰りしやすい
+    const eff = (/新幹線/.test(route) && km <= 300) ? km * 0.5 : km;
+    score -= eff * 0.45;
+    if(eff > 200) score -= 80;
+    if(indoor) score -= 40;
+  }else{
+    score -= Math.max(0, km - 150) * 0.2 + km * 0.03;
+    if(r.courses!=null) score += Math.min(r.courses, 30);
+    if(indoor) score -= 100;
+  }
   score += (r.terrain ? r.terrain[levelIdx] : 30) * 0.6;
   return score;
 }
 
 function computeRanking(){
   const pref = PREFECTURES[wiz.prefIdx];
-  return RESORTS.map(r=>({r, s:scoreResort(r, pref.anchorJa, wiz.level)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
+  const isDayTrip = wiz.trip===0;
+  return RESORTS.filter(r=>r.lat!=null).map(r=>({r, s:scoreResort(r, pref, wiz.level, isDayTrip)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
 }
 
 function renderRecommendation(){
@@ -1513,18 +1547,16 @@ function renderRecommendation(){
   const name = state.lang==="ja" ? r.nameJa : r.nameEn;
   const city = state.lang==="ja" ? r.cityJa : r.cityEn;
   const prefName = state.lang==="ja" ? pref.ja : pref.en;
-  const anchorName = state.lang==="ja" ? pref.anchorJa : pref.anchorEn;
+  const fromKm = roadKmFrom(pref, r);
   const time = (state.lang==="ja" ? (r.timeJa||r.accessJa) : (r.timeEn||r.accessEn)) || "";
   const cond = (state.lang==="ja" ? wx(r).condJa : wx(r).condEn) || t("weatherLoading");
   const tripLabel = t(TRIP_OPTS[wiz.trip]);
   const levelLabel = t(LEVEL_OPTS[wiz.level]);
   const isDayTrip = wiz.trip===0;
-  const longTrip = r.distKm >= 100;
+  const longTrip = fromKm >= 120;
   const stayVerdict = (isDayTrip && !longTrip) ? t("stayDayOk") : (longTrip ? t("stayRecommend") : t("stayDayOk"));
   const packing = packingList(r);
-  const accessLine = anchorName===city
-    ? `${prefName} → ${name}・${time}`
-    : `${prefName}（${state.lang==="ja"?"最寄りの拠点":"nearest hub"}: ${anchorName}）→ ${name}・${time}`;
+  const accessLine = `${t("fromPrefKm")(prefName, fromKm)}${time ? `<br><span style="font-size:12px;color:var(--text-muted)">${time}</span>` : ""}`;
 
   const box = document.getElementById("wizardResult");
   box.hidden = false;
@@ -1533,7 +1565,7 @@ function renderRecommendation(){
       <div class="reco-eyebrow">${t("recoEyebrow")}</div>
       <h2>${name}</h2>
       <div class="reco-sub">${t("recoWhy")(tripLabel, levelLabel)}</div>
-      ${pref.approx ? `<div class="reco-approx-note">${t("approxNote")}</div>` : ""}
+      ${fromKm > 250 ? `<div class="reco-approx-note">${t("approxNote")}</div>` : ""}
       <div class="reco-rows">
         <div class="reco-row"><div class="ic">${icon("car",20)}</div><div><div class="rt">${t("rowAccess")}</div><div class="rv">${accessLine}${r.flight?`<br><span style="font-size:11.5px;color:var(--text-muted)">${t("flightNote")}</span>`:""}</div></div></div>
         <div class="reco-row"><div class="ic">${weatherIcon(wx(r).condJa)}</div><div><div class="rt">${t("rowWeather")}</div><div class="rv"><span class="num">${nv(wx(r).tempC,"°C")}</span>・${cond}・${t("depthLabel")} <span class="num">${nv(wx(r).depth,"cm")}</span></div></div></div>

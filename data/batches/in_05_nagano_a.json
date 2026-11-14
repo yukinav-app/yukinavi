@@ -1,0 +1,380 @@
+[
+{
+"key": "w251",
+"nameJa": "高峰マウンテンパーク(旧アサマ2000パーク)",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w252",
+"nameJa": "いいづなリゾートスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7416877,
+"lng": 138.1580839,
+"wikiStatus": "営業中"
+},
+{
+"key": "w254",
+"nameJa": "北志賀高原小丸山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w255",
+"nameJa": "北志賀高井富士スキー場(X-JAM高井富士)",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w256",
+"nameJa": "スノーリゾートロマンスの神様",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w257",
+"nameJa": "牧の入スノーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.8134866,
+"lng": 138.3966209,
+"wikiStatus": "営業中"
+},
+{
+"key": "w258",
+"nameJa": "黒姫高原スノーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.8249808,
+"lng": 138.154537,
+"wikiStatus": "営業中"
+},
+{
+"key": "w259",
+"nameJa": "さかえ倶楽部スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.9999729,
+"lng": 138.5605387,
+"wikiStatus": "営業中"
+},
+{
+"key": "w260",
+"nameJa": "佐久スキーガーデンパラダ",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.2796429,
+"lng": 138.5137369,
+"wikiStatus": "営業中"
+},
+{
+"key": "w262",
+"nameJa": "サンバレースキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7151153,
+"lng": 138.485707,
+"wikiStatus": "営業中"
+},
+{
+"key": "w263",
+"nameJa": "ジャイアントスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.716471,
+"lng": 138.4969652,
+"wikiStatus": "営業中"
+},
+{
+"key": "w264",
+"nameJa": "蓮池スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7141287,
+"lng": 138.4925508,
+"wikiStatus": "営業中"
+},
+{
+"key": "w265",
+"nameJa": "発哺ブナ平スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7223005,
+"lng": 138.5049161,
+"wikiStatus": "営業中"
+},
+{
+"key": "w266",
+"nameJa": "丸池スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7148403,
+"lng": 138.4898692,
+"wikiStatus": "営業中"
+},
+{
+"key": "w267",
+"nameJa": "旭山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w268",
+"nameJa": "一の瀬ダイヤモンドスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7397801,
+"lng": 138.5100957,
+"wikiStatus": "営業中"
+},
+{
+"key": "w269",
+"nameJa": "一の瀬ファミリースキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7364477,
+"lng": 138.5204527,
+"wikiStatus": "営業中"
+},
+{
+"key": "w270",
+"nameJa": "一の瀬山の神スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7433171,
+"lng": 138.5074034,
+"wikiStatus": "営業中"
+},
+{
+"key": "w271",
+"nameJa": "高天ヶ原マンモススキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7304636,
+"lng": 138.5120415,
+"wikiStatus": "営業中"
+},
+{
+"key": "w272",
+"nameJa": "タンネの森オコジョスキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w273",
+"nameJa": "寺小屋スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7297832,
+"lng": 138.5260061,
+"wikiStatus": "営業中"
+},
+{
+"key": "w274",
+"nameJa": "西館山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7278788,
+"lng": 138.5007338,
+"wikiStatus": "営業中"
+},
+{
+"key": "w275",
+"nameJa": "東館山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7270679,
+"lng": 138.5190092,
+"wikiStatus": "営業中"
+},
+{
+"key": "w276",
+"nameJa": "奥志賀高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.770801,
+"lng": 138.5138411,
+"wikiStatus": "営業中"
+},
+{
+"key": "w277",
+"nameJa": "焼額山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7507155,
+"lng": 138.5184042,
+"wikiStatus": "営業中"
+},
+{
+"key": "w278",
+"nameJa": "熊の湯スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.6788621,
+"lng": 138.4956864,
+"wikiStatus": "営業中"
+},
+{
+"key": "w279",
+"nameJa": "横手山・渋峰スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w280",
+"nameJa": "石の湯スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7336355,
+"lng": 138.4335628,
+"wikiStatus": "営業中"
+},
+{
+"key": "w281",
+"nameJa": "斗峰スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.6394262,
+"lng": 138.2438067,
+"wikiStatus": "営業中"
+},
+{
+"key": "w282",
+"nameJa": "前山スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7163482,
+"lng": 137.8636054,
+"wikiStatus": "営業中"
+},
+{
+"key": "w283",
+"nameJa": "木戸池スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.6987625,
+"lng": 138.4922769,
+"wikiStatus": "営業中"
+},
+{
+"key": "w284",
+"nameJa": "菅平高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.523527,
+"lng": 138.33082,
+"wikiStatus": "営業中"
+},
+{
+"key": "w285",
+"nameJa": "タングラムスキーサーカス",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.8504409,
+"lng": 138.2641664,
+"wikiStatus": "営業中"
+},
+{
+"key": "w286",
+"nameJa": "戸隠スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.7478107,
+"lng": 138.1051615,
+"wikiStatus": "営業中"
+},
+{
+"key": "w287",
+"nameJa": "戸狩温泉スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.939999,
+"lng": 138.374755,
+"wikiStatus": "営業中"
+},
+{
+"key": "w289",
+"nameJa": "番所ヶ原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.2560937,
+"lng": 138.1087018,
+"wikiStatus": "営業中"
+},
+{
+"key": "w290",
+"nameJa": "聖高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.4872514,
+"lng": 138.073123,
+"wikiStatus": "営業中"
+},
+{
+"key": "w291",
+"nameJa": "斑尾高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.8483253,
+"lng": 138.2799193,
+"wikiStatus": "営業中"
+},
+{
+"key": "w292",
+"nameJa": "峰の原高原スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.5587298,
+"lng": 138.3546475,
+"wikiStatus": "営業中"
+},
+{
+"key": "w293",
+"nameJa": "山田温泉キッズスノーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": null,
+"lng": null,
+"wikiStatus": "営業中"
+},
+{
+"key": "w294",
+"nameJa": "YAMABOKUワイルドスノーパーク",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.6727336,
+"lng": 138.461737,
+"wikiStatus": "営業中"
+},
+{
+"key": "w295",
+"nameJa": "湯の丸スキー場",
+"prefJa": "長野県",
+"region": "nagano",
+"lat": 36.4234666,
+"lng": 138.4251642,
+"wikiStatus": "営業中"
+}
+]
