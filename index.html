@@ -602,6 +602,7 @@ const STRINGS = {
     coursesLiftsLabel:"コース数 / リフト数",
     mpCourses:"コース数",
     studentYouth:"学生・ユース",
+    freeLabel:"無料",
     priceUnknown:"料金は公式サイトで確認",
     weatherLoading:"天気を取得中",
     terrainUnknown:"公式のコース比率は公表されていません",
@@ -750,6 +751,7 @@ const STRINGS = {
     coursesLiftsLabel:"Runs / lifts",
     mpCourses:"Runs",
     studentYouth:"Student / youth",
+    freeLabel:"Free",
     priceUnknown:"See official site for prices",
     weatherLoading:"Loading weather",
     terrainUnknown:"Official course breakdown not published",
@@ -972,7 +974,7 @@ function matches(r){
   const name = (state.lang==="ja" ? r.nameJa+r.prefJa : r.nameEn+" "+r.prefEn).toLowerCase();
   if(q && !name.includes(q)) return false;
   if(state.region!=="all" && r.region!==state.region) return false;
-  if(state.studentOnly && !r.liftStudent) return false;
+  if(state.studentOnly && r.liftStudent==null) return false;
   if(state.englishOnly && r.english==="low") return false;
   if(state.favOnly && !isFav(r.id)) return false;
   return true;
@@ -1100,7 +1102,7 @@ function renderGrid(){
       </div>
       <div class="price-row">
         <div class="price">${r.liftAdult!=null ? `¥<span class="num">${r.liftAdult.toLocaleString()}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="unit">${t("priceUnknown")}</span>`}</div>
-        <div class="card-badges">${snowBadge(r)}${r.liftStudent ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
+        <div class="card-badges">${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
       </div>
     </div>`;
   }).join("");
@@ -1136,7 +1138,7 @@ const MAP_FILTERS = [
   {id:"detail", key:"mfDetail", test:p=>p.kind==="main"},
   {id:"beginner", key:"mfBeginner", test:p=>p.kind==="main" && !!p.r.terrain && p.r.terrain[0]>=40},
   {id:"snow", key:"mfSnow", test:p=>p.kind==="main" && !!p.r.weather && p.r.weather.snow7d>=5},
-  {id:"student", key:"mfStudent", test:p=>p.kind==="main" && !!p.r.liftStudent},
+  {id:"student", key:"mfStudent", test:p=>p.kind==="main" && p.r.liftStudent!=null},
   {id:"english", key:"mfEnglish", test:p=>p.kind==="main" && !!p.r.english && p.r.english!=="low"},
   {id:"fav", key:"mfFav", test:p=>p.kind==="main" && isFav(p.id)},
 ];
@@ -1368,7 +1370,7 @@ function renderDeals(){
     .sort((a,b)=>(a.validUntil||"9999").localeCompare(b.validUntil||"9999"));
   const national = active.filter(d=>dealResorts(d).length!==1);
   const perResort = active.filter(d=>dealResorts(d).length===1);
-  const stu = RESORTS.filter(r=>r.liftStudent && r.liftAdult).sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent));
+  const stu = RESORTS.filter(r=>r.liftStudent!=null && r.liftAdult).sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent));
   let html = "";
   if(national.length) html += `<div class="deal-section"><h3>${t("dealSecNational")}</h3><div class="deal-list">${national.map(dealCard).join("")}</div></div>`;
   if(perResort.length) html += `<div class="deal-section"><h3>${t("dealSecResort")}</h3><div class="deal-list">${perResort.map(dealCard).join("")}</div></div>`;
@@ -1376,7 +1378,7 @@ function renderDeals(){
   html += `<div class="deal-section"><h3>${t("dealSecStudent")}</h3><div class="deal-list">${stu.map(r=>`
     <button class="stu-row" data-id="${r.id}">
       <div><div class="sr-name">${state.lang==="ja"?r.nameJa:r.nameEn}</div><div class="sr-pref">${prefLabel(r.prefJa)}</div></div>
-      <div class="sr-price">¥${r.liftAdult.toLocaleString()} → <b>¥${r.liftStudent.toLocaleString()}</b><br>${t("stuSave")(r.liftAdult-r.liftStudent)}</div>
+      <div class="sr-price">¥${r.liftAdult.toLocaleString()} → <b>${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</b><br>${t("stuSave")(r.liftAdult-r.liftStudent)}</div>
     </button>`).join("")}</div></div>`;
   html += `<div class="disclaimer">${t("dealsNote")}</div>`;
   el.innerHTML = html;
@@ -1451,7 +1453,7 @@ function openDetail(id){
       <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
-      <div class="info-card"><div class="big num">${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent ? `${t("studentYouth")} <span class="num">¥${r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
+      <div class="info-card"><div class="big num">${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent!=null ? `${t("studentYouth")} <span class="num">${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
     </div>
     <div class="section-label">${t("terrainLabel")}</div>
     ${r.terrain ? `
