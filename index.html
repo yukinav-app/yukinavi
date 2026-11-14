@@ -1050,6 +1050,7 @@ function weatherIcon(condJa){
   return icon("sun",18);
 }
 
+function yen(v){ return v===0 ? t("freeLabel") : "¥"+v.toLocaleString(); }
 function escapeHtml(str){
   return String(str==null?"":str).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 }
@@ -1101,7 +1102,7 @@ function renderGrid(){
         <span class="dot">・</span><span>${time}</span>
       </div>
       <div class="price-row">
-        <div class="price">${r.liftAdult!=null ? `¥<span class="num">${r.liftAdult.toLocaleString()}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="unit">${t("priceUnknown")}</span>`}</div>
+        <div class="price">${r.liftAdult!=null ? `<span class="num">${yen(r.liftAdult)}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="unit">${t("priceUnknown")}</span>`}</div>
         <div class="card-badges">${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
       </div>
     </div>`;
@@ -1232,7 +1233,7 @@ function selectMapPoint(p){
         <div style="display:flex;gap:2px;flex:0 0 auto"><button class="fav-btn ${fav?"on":""}" id="mpFav" aria-label="${t("favToggle")}" aria-pressed="${fav}">${fav?"★":"☆"}</button><button class="close-btn" id="mpClose" aria-label="${t("close")}">✕</button></div>
       </div>
       <div class="mp-stats">
-        <div class="mp-stat"><b>${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</b>${t("mpAdult")}</div>
+        <div class="mp-stat"><b>${r.liftAdult!=null ? yen(r.liftAdult) : "—"}</b>${t("mpAdult")}</div>
         <div class="mp-stat"><b>${r.base!=null&&r.top!=null ? (r.top-r.base)+"m" : "—"}</b>${t("mpVertical")}</div>
         ${r.courses!=null ? `<div class="mp-stat"><b>${r.courses}</b>${t("mpCourses")}</div>` : ""}
         <div class="mp-stat"><b>${nv(w.tempC,"°C")}</b>${t("mpTemp")}</div>
@@ -1453,7 +1454,7 @@ function openDetail(id){
       <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
-      <div class="info-card"><div class="big num">${r.liftAdult!=null ? "¥"+r.liftAdult.toLocaleString() : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent!=null ? `${t("studentYouth")} <span class="num">${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
+      <div class="info-card"><div class="big num">${r.liftAdult!=null ? yen(r.liftAdult) : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent!=null ? `${t("studentYouth")} <span class="num">${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
     </div>
     <div class="section-label">${t("terrainLabel")}</div>
     ${r.terrain ? `
