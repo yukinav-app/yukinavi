@@ -62,7 +62,6 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:va
 .brand{display:flex;align-items:baseline;gap:10px;flex:1 1 auto;min-width:0;}
 .brand h1{font-size:22px;font-weight:700;letter-spacing:0.5px;color:var(--text);}
 .brand .tagline{font-size:12.5px;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.beta-pill{font-size:10.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:3px 9px;flex:0 0 auto;}
 .lang-toggle{display:flex;border:1px solid var(--border);border-radius:999px;overflow:hidden;flex:0 0 auto;}
 .lang-toggle button{border:none;background:var(--surface);color:var(--text-muted);font-size:12.5px;font-weight:600;padding:7px 14px;cursor:pointer;}
 .lang-toggle button.active{background:var(--accent);color:#fff;}
@@ -116,9 +115,37 @@ main{padding-block:18px 24px;}
 .badge{font-size:11px;font-weight:600;border-radius:7px;padding:3px 7px;}
 .badge.student{background:var(--good-soft);color:var(--good);}
 
+/* hero */
+.hero{
+  position:relative;overflow:hidden;isolation:isolate;border-radius:20px;margin-bottom:16px;min-height:250px;color:#fff;
+  background:linear-gradient(180deg,#1B3556 0%,#33618C 42%,#8FB3D3 72%,#F1D6C4 100%);
+}
+.hero-svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:48%;z-index:0;}
+.hero::before,.hero::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background-image:
+    radial-gradient(1.6px 1.6px at 18px 22px,#fff 60%,transparent 62%),
+    radial-gradient(1.2px 1.2px at 92px 64px,#fff 60%,transparent 62%),
+    radial-gradient(2px 2px at 150px 18px,#fff 60%,transparent 62%),
+    radial-gradient(1.4px 1.4px at 60px 140px,#fff 60%,transparent 62%),
+    radial-gradient(1.8px 1.8px at 176px 120px,#fff 60%,transparent 62%),
+    radial-gradient(1.2px 1.2px at 120px 176px,#fff 60%,transparent 62%);
+  background-size:200px 200px;opacity:0.75;animation:hero-snow 14s linear infinite;
+}
+.hero::after{background-size:140px 140px;opacity:0.45;animation-duration:22s;}
+@keyframes hero-snow{from{background-position:0 0;}to{background-position:-40px 200px;}}
+@media (prefers-reduced-motion: reduce){.hero::before,.hero::after{animation:none;}}
+.hero-content{position:relative;z-index:2;padding:22px 22px 20px;}
+.hero h2{font-size:30px;line-height:1.1;font-weight:700;letter-spacing:0.3px;text-shadow:0 2px 14px rgba(8,22,40,0.35);}
+.hero p{margin:8px 0 0;font-size:13.5px;line-height:1.55;opacity:0.92;max-width:30ch;}
+.hero-stat{
+  display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12px;font-weight:600;
+  background:rgba(255,255,255,0.16);border:1px solid rgba(255,255,255,0.32);border-radius:999px;padding:5px 11px;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+
 /* wizard */
 .wizard-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px;margin-bottom:18px;}
-.wizard-intro{color:var(--text-muted);font-size:13.5px;margin-bottom:18px;}
 .q-block{margin-bottom:20px;}
 .q-label{font-size:14.5px;font-weight:600;margin-bottom:10px;}
 .pill-row{display:flex;flex-wrap:wrap;gap:8px;}
@@ -228,7 +255,6 @@ main{padding-block:18px 24px;}
       <h1>YukiNav</h1>
       <span class="tagline" data-t="tagline"></span>
     </div>
-    <span class="beta-pill" data-t="betaPill"></span>
     <div class="lang-toggle" role="group" aria-label="language">
       <button id="btnJa" class="active">日本語</button>
       <button id="btnEn">EN</button>
@@ -248,8 +274,29 @@ main{padding-block:18px 24px;}
   <div class="wrap">
 
     <div id="wizardView">
+      <section class="hero" aria-labelledby="heroTitle">
+        <svg class="hero-svg" viewBox="0 0 400 200" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FFE9C9" stop-opacity="0.95"/>
+              <stop offset="100%" stop-color="#FFE9C9" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="322" cy="78" r="46" fill="url(#heroGlow)"/>
+          <path d="M0 122 L40 86 L70 101 L110 60 L150 96 L190 70 L230 101 L270 54 L310 91 L350 72 L400 96 L400 200 L0 200Z" fill="#C3D5E6" opacity="0.92"/>
+          <path d="M110 60 L126 75 L118 74 L110 80 L102 72Z M270 54 L287 70 L278 69 L270 76 L262 67Z" fill="#F4F8FB"/>
+          <path d="M0 152 L60 106 L95 126 L150 81 L205 131 L260 96 L320 136 L370 111 L400 126 L400 200 L0 200Z" fill="#E9F0F6"/>
+          <path d="M150 81 L205 131 L178 136 L161 110Z M260 96 L320 136 L292 141 L272 118Z M60 106 L95 126 L80 133 L70 119Z" fill="#CFDDEA"/>
+          <path d="M0 176 Q120 140 230 166 T400 160 L400 200 L0 200Z" fill="#FFFFFF"/>
+          <path d="M310 169 l6 -16 l6 16z M322 171 l5 -13 l5 13z M333 168 l6 -15 l6 15z M58 182 l5 -13 l5 13z M69 184 l4 -10 l4 10z" fill="#2A4862" opacity="0.85"/>
+        </svg>
+        <div class="hero-content">
+          <h2 id="heroTitle" data-t="heroTitle"></h2>
+          <p data-t="wizardIntro"></p>
+          <div class="hero-stat" id="heroStat" hidden></div>
+        </div>
+      </section>
       <div class="wizard-card" id="wizardQuiz">
-        <div class="wizard-intro" data-t="wizardIntro"></div>
         <div class="q-block">
           <div class="q-label" data-t="qFromBlock"></div>
           <div class="pill-row" id="pillBlock"></div>
@@ -416,8 +463,7 @@ const GEAR_CATEGORIES = [
 
 const STRINGS = {
   ja:{
-    tagline:"ゲレンデ検索・比較アプリ（プロトタイプ）",
-    betaPill:"検証版 β",
+    tagline:"3問であなたにぴったりのゲレンデを",
     tabWizard:"おまかせ診断",
     tabNearby:"近くのスキー場",
     tabWeather:"今日の天気",
@@ -466,10 +512,12 @@ const STRINGS = {
     gearTitle:"スキー・スノボグッズ",
     gearDesc:"レンタル・購入どちらもこのゲレンデ名でECサイト検索できます。",
     gearBtn:"グッズを探す（楽天市場へ）",
-    disclaimer:"※天気・積雪はOpen-Meteo APIによる実データです（リアルタイム取得・読み込み中は一時的にサンプル値が出ます）。距離・時間・価格・英語対応レベルはまだ検証用のサンプル値です。実運用では公式サイト・楽天トラベル等のAPIから自動取得します。宿泊・飲食・グッズのリンクは提携完了後、正式なアフィリエイトIDに差し替えます。",
+    disclaimer:"※天気・積雪はOpen-Meteoの気象データをリアルタイムで表示しています。価格・アクセス情報・英語対応レベルは順次、実際のデータへ更新中です。",
     liveWeatherBadge:"ライブ",
     close:"閉じる",
     wizardIntro:"3つだけ答えてください。あとは私がぜんぶ決めます。",
+    heroTitle:"次の休み、どこ滑る？",
+    heroStat:"全国{n}のゲレンデを掲載",
     qFromBlock:"どの地方から出発しますか？",
     qFromPref:"都道府県を選んでください",
     approxNote:"※この地域の近くに登録済みのゲレンデがまだ少なく、参考値として一番近い拠点のおすすめを表示しています。",
@@ -511,8 +559,7 @@ const STRINGS = {
     gearSub:"カテゴリを選ぶと、楽天市場の検索結果に移動します",
   },
   en:{
-    tagline:"Ski resort finder (prototype)",
-    betaPill:"Beta",
+    tagline:"Find your perfect ski resort in 3 questions",
     tabWizard:"Recommend",
     tabNearby:"Nearby resorts",
     tabWeather:"Today's weather",
@@ -561,10 +608,12 @@ const STRINGS = {
     gearTitle:"Gear & equipment",
     gearDesc:"Search rental or purchase options tagged to this resort.",
     gearBtn:"Find gear (Rakuten Ichiba)",
-    disclaimer:"Weather and snow depth are live data from the Open-Meteo API (fetched in real time; sample values show briefly while loading). Distance, time, price and English-support level are still illustrative sample data. A production build would pull these from official resort sites and the Rakuten Travel API. Lodging/food/gear links will be swapped for real affiliate IDs once partnerships are set up.",
+    disclaimer:"Weather and snow depth are shown in real time from Open-Meteo. Price, access details, and English-support info are being updated with verified data on an ongoing basis.",
     liveWeatherBadge:"LIVE",
     close:"Close",
     wizardIntro:"Just answer 3 quick questions. We'll handle the rest.",
+    heroTitle:"Where will you ski next?",
+    heroStat:"{n} ski resorts across Japan",
     qFromBlock:"Which region are you starting from?",
     qFromPref:"Pick your prefecture",
     approxNote:"We don't have many registered resorts near this area yet — showing the closest recommended hub as a rough reference.",
@@ -739,8 +788,16 @@ function updateSubmitState(){
   document.getElementById("wizardSubmit").disabled = !(wiz.prefIdx!==null && wiz.trip!==null && wiz.level!==null);
 }
 
+function renderHeroStat(){
+  const el = document.getElementById("heroStat");
+  if(!ALL_RESORTS.length){ el.hidden = true; return; }
+  el.textContent = t("heroStat").replace("{n}", ALL_RESORTS.length);
+  el.hidden = false;
+}
+
 function applyStaticText(){
   document.documentElement.lang = state.lang;
+  renderHeroStat();
   document.querySelectorAll("[data-t]").forEach(el=>{
     const k = el.getAttribute("data-t");
     if(typeof STRINGS[state.lang][k] === "string") el.textContent = t(k);
@@ -911,7 +968,7 @@ function renderGearTab(){
     content.innerHTML = `
       <div class="gear-product-card">
         <div class="gear-product-ic">${icon(g.ic,40)}</div>
-        <div class="gear-product-tag">${state.lang==="ja"?"実在のアフィリエイト商品":"Live affiliate product"}</div>
+        <div class="gear-product-tag">${state.lang==="ja"?"おすすめギア":"Recommended gear"}</div>
         <div class="gear-product-name">${name}</div>
         <a class="gear-product-btn" href="${g.url}" target="_blank" rel="noopener">${state.lang==="ja"?"楽天市場で見る":"View on Rakuten"}</a>
       </div>`;
@@ -1125,7 +1182,7 @@ document.getElementById("icGear").innerHTML = icon("backpack", 20);
 applyStaticText();
 setView("wizard");
 loadAllLiveWeather();
-Promise.all([loadAllResorts(), loadMapSvg()]).then(()=>{ if(state.view==="map") renderMapTab(); });
+Promise.all([loadAllResorts(), loadMapSvg()]).then(()=>{ renderHeroStat(); if(state.view==="map") renderMapTab(); });
 
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{

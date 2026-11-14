@@ -1,4 +1,4 @@
-const CACHE_NAME = "yukinav-v2";
+const CACHE_NAME = "yukinav-v3";
 const CORE_ASSETS = ["./", "./index.html", "./manifest.json", "./icons/icon-192.png", "./icons/icon-512.png", "./assets/japan-map.svg", "./data/resorts_all.json"];
 
 self.addEventListener("install", (event) => {
@@ -21,6 +21,19 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   // 天気APIなど外部データは常にネットワークから取得し、キャッシュしない
   if (url.origin !== self.location.origin) return;
+
+  // HTMLとデータは更新を即反映させたいのでネットワーク優先、オフライン時のみキャッシュ
+  const networkFirst = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.endsWith(".json");
+  if (networkFirst) {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        return response;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then((cached) => {
