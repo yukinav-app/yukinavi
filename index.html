@@ -620,7 +620,7 @@ const STRINGS = {
     tempAtLabel:(e)=>`気温（標高${e}m地点）`,
     dealsTitle:"お得情報",
     dealsSub:"今シーズンのリフト券を安くする方法をまとめました。",
-    dealSecNational:"全国キャンペーン",
+    dealSecNational:"全国・複数スキー場のキャンペーン",
     dealSecResort:"スキー場のお得（期限が近い順）",
     dealSecStudent:"学生・ユース料金があるスキー場",
     dealCat_student:"学割・若者向け",
@@ -628,6 +628,8 @@ const STRINGS = {
     dealCat_online:"ネット購入割",
     dealCat_campaign:"期間限定",
     dealUntil:(d)=>`${d}まで`,
+    dealFrom:(d)=>`${d}から`,
+    dealUntilSeasonEnd:"シーズン終了まで",
     dealNational:"全国",
     dealLink:"公式ページで確認",
     dealsEmpty:"お得情報を集めています。もうしばらくお待ちください。",
@@ -760,7 +762,7 @@ const STRINGS = {
     tempAtLabel:(e)=>`Temp at ${e}m`,
     dealsTitle:"Deals",
     dealsSub:"Ways to save on lift passes this season.",
-    dealSecNational:"Nationwide campaigns",
+    dealSecNational:"Nationwide & multi-resort campaigns",
     dealSecResort:"Resort deals (ending soonest)",
     dealSecStudent:"Resorts with student / youth rates",
     dealCat_student:"Student / youth",
@@ -768,6 +770,8 @@ const STRINGS = {
     dealCat_online:"Online discount",
     dealCat_campaign:"Limited time",
     dealUntil:(d)=>`Until ${d}`,
+    dealFrom:(d)=>`From ${d}`,
+    dealUntilSeasonEnd:"Until season end",
     dealNational:"Nationwide",
     dealLink:"Check official page",
     dealsEmpty:"We're collecting deals. Check back soon.",
@@ -1360,15 +1364,25 @@ function daysUntil(iso){
   const now = new Date(); now.setHours(0,0,0,0);
   return Math.round((new Date(y,m-1,d) - now) / 86400000);
 }
+function dealResorts(d){
+  const ids = d.resortIds && d.resortIds.length ? d.resortIds : (d.resortId ? [d.resortId] : []);
+  return ids.map(id=>RESORTS.find(x=>x.id===id)).filter(Boolean);
+}
 function dealCard(d){
-  const r = d.resortId ? RESORTS.find(x=>x.id===d.resortId) : null;
+  const rs = dealResorts(d);
+  const r = rs.length===1 ? rs[0] : null;
   const title = state.lang==="ja" ? d.titleJa : (d.titleEn || d.titleJa);
   const desc = state.lang==="ja" ? d.descJa : (d.descEn || d.descJa);
-  const soon = daysUntil(d.validUntil) <= 14;
-  const where = r ? `${state.lang==="ja"?r.nameJa:r.nameEn} ・ ${prefLabel(r.prefJa)}` : t("dealNational");
+  const soon = !!d.validUntil && daysUntil(d.validUntil) <= 14;
+  const where = r ? `${state.lang==="ja"?r.nameJa:r.nameEn} ・ ${prefLabel(r.prefJa)}`
+    : rs.length > 1 ? rs.map(x=>state.lang==="ja"?x.nameJa:x.nameEn).join("・")
+    : t("dealNational");
+  const startsLater = d.validFrom && d.validFrom > localToday();
+  const until = d.validUntil ? t("dealUntil")(fmtDate(d.validUntil)) : t("dealUntilSeasonEnd");
+  const period = startsLater ? `${t("dealFrom")(fmtDate(d.validFrom))} ・ ${until}` : until;
   return `
     <div class="deal-card">
-      <div class="deal-top"><span class="deal-cat ${escapeHtml(d.category)}">${t("dealCat_"+d.category) || escapeHtml(d.category)}</span><span class="deal-until ${soon?"soon":""}">${t("dealUntil")(fmtDate(d.validUntil))}</span></div>
+      <div class="deal-top"><span class="deal-cat ${escapeHtml(d.category)}">${t("dealCat_"+d.category) || escapeHtml(d.category)}</span><span class="deal-until ${soon?"soon":""}">${period}</span></div>
       <h4>${escapeHtml(title)}</h4>
       <div class="deal-resort">${escapeHtml(where)}</div>
       <p class="deal-desc">${escapeHtml(desc)}</p>
@@ -1378,9 +1392,10 @@ function dealCard(d){
 function renderDeals(){
   const el = document.getElementById("dealsContent");
   const today = localToday();
-  const active = DEALS.filter(d=>d && d.validUntil && d.validUntil>=today).sort((a,b)=>a.validUntil.localeCompare(b.validUntil));
-  const national = active.filter(d=>!d.resortId);
-  const perResort = active.filter(d=>d.resortId && RESORTS.some(r=>r.id===d.resortId));
+  const active = DEALS.filter(d=>d && (d.validUntil ? d.validUntil>=today : !!d.validUntilNote))
+    .sort((a,b)=>(a.validUntil||"9999").localeCompare(b.validUntil||"9999"));
+  const national = active.filter(d=>dealResorts(d).length!==1);
+  const perResort = active.filter(d=>dealResorts(d).length===1);
   const stu = RESORTS.filter(r=>r.liftStudent && r.liftAdult).sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent));
   let html = "";
   if(national.length) html += `<div class="deal-section"><h3>${t("dealSecNational")}</h3><div class="deal-list">${national.map(dealCard).join("")}</div></div>`;
