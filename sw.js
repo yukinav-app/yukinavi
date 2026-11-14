@@ -1,5 +1,5 @@
-const CACHE_NAME = "yukinav-v4";
-const CORE_ASSETS = ["./", "./index.html", "./manifest.json", "./icons/icon-192.png", "./icons/icon-512.png", "./data/resorts_all.json"];
+const CACHE_NAME = "yukinav-v5";
+const CORE_ASSETS = ["./", "./index.html", "./manifest.json", "./icons/icon-192.png", "./icons/icon-512.png", "./data/resorts_all.json", "./data/resorts.json"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
