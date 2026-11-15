@@ -368,6 +368,34 @@
   ]
  },
  {
+  "id": "orofure",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://surfsnow.jp/guide/htm/r0665s.htm",
+   "https://weathernews.jp/ski/spot/32105/"
+  ]
+ },
+ {
   "id": "kamui_ski_links",
   "rental": {
    "available": true,
@@ -1201,6 +1229,34 @@
   ]
  },
  {
+  "id": "asahikawa_inosawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー一式のみ（スノーボード・ウェアのレンタルなし）。現金のみ"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "ロープリフト券は現金のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "市内「1条7丁目」から道北バス50番で「伊ノ沢」下車（約20分）",
+   "howEn": "Dohoku Bus No.50 from '1-jo 7-chome' to 'Inosawa' (about 20 min)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.asahikawa-dpc.co.jp/4ski/skischedule.html",
+   "https://www.asahikawa-dpc.co.jp/4ski/skiaccess.html"
+  ]
+ },
+ {
   "id": "saroma_chouei",
   "rental": {
    "available": null,
@@ -1252,6 +1308,146 @@
   },
   "sourceUrls": [
    "https://www.town.kutchan.hokkaido.jp/culture-sports/sports-shisetsu/asahigaoka-ski/"
+  ]
+ },
+ {
+  "id": "yakumo_choei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.yakumo.lg.jp/soshiki/taiiku/yakumo-ski.html"
+  ]
+ },
+ {
+  "id": "hakodate_nanae_snowpark",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://hakodate-nanae.jp/",
+   "note": "早割リフト券（11/30まで）・シーズンパスを公式サイトからオンライン購入可（電子チケット）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR大沼公園駅",
+   "howJa": "JR新函館北斗駅・大沼公園駅・大沼駅などから無料シャトルバス",
+   "howEn": "Free shuttle bus from JR Shin-Hakodate-Hokuto, Onuma-Koen and Onuma stations",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://hakodate-nanae.jp/",
+   "https://www.hakobura.jp/spots/321",
+   "https://www.gutabi.jp/event/detail/3689",
+   "https://jp.wamazing.com/snow/articles/421"
+  ]
+ },
+ {
+  "id": "hakodate_usujiri",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "使用料金は無料（ロープ塔）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR函館駅",
+   "howJa": "函館駅から函館バスで「臼尻小学校下」下車、徒歩約20分（合計約2時間）",
+   "howEn": "Hakodate Bus from Hakodate Sta. to 'Usujiri Shogakko-shita', then about 20 min walk (about 2 hours total)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.hakodate.hokkaido.jp/docs/2014032700560/"
+  ]
+ },
+ {
+  "id": "rishiri_tenbozan",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "小中高校生は無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://rishiri-town.jp/%E3%81%8F%E3%82%89%E3%81%97%E3%83%BB%E5%90%84%E7%A8%AE%E6%89%8B%E7%B6%9A%E3%81%8D/%E5%88%A9%E5%B0%BB%E7%94%BA%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD/%E5%B1%95%E6%9C%9B%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/"
+  ]
+ },
+ {
+  "id": "greenland_white_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。当日受付のみ（事前予約不可）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://h-greenland.com/ski/?kentei=juniorschool"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "前売券はセブン-イレブンで購入可（セブンコード103-636）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://h-greenland.com/ski/?page_id=66",
+   "https://h-greenland.com/ski/?kentei=juniorschool",
+   "https://h-greenland.com/ski/?page_id=6701"
   ]
  }
 ]
