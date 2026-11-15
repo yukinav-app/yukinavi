@@ -328,6 +328,74 @@ ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);fon
 :root[data-theme="dark"] .hero-svg .s-shade{fill:#203242;}
 :root[data-theme="dark"] .hero-svg .s-field{fill:#2F4559;}
 :root[data-theme="dark"] .hero-svg .s-ink{fill:#EEF2F5;stroke:#EEF2F5;}
+
+/* ===== v2 polish (2026-11) ===== */
+/* detail: no empty "—" tiles */
+.info-card .big.soft{font-family:var(--font-body);font-size:15px;font-weight:700;color:var(--text-muted);padding-top:6px;}
+.info-card.wx-pending{grid-column:span 2;display:flex;align-items:center;gap:10px;color:var(--text-muted);}
+.info-card.wx-pending .label{margin:0;}
+/* search cards */
+.card::before{display:none;}
+.card{padding-left:16px;}
+.card .price-row{margin-top:auto;align-items:center;}
+.price-unknown{display:inline-block;font-family:var(--font-body);font-size:12px;font-weight:700;color:var(--text-muted);background:var(--surface-2);border-radius:6px;padding:4px 8px;}
+.card-badges{align-items:center;}
+.card-terrain{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;color:var(--text-muted);white-space:nowrap;}
+.card-terrain .mt-bar{display:inline-flex;width:44px;height:6px;border-radius:3px;overflow:hidden;background:var(--border);}
+.card-terrain .mt-bar i{display:block;height:100%;}
+.card-terrain .mt-lab{font-family:var(--font-body);font-weight:700;font-size:11.5px;}
+/* map: merged prefecture labels */
+.pref-box .pm{font-weight:500;opacity:0.75;margin-left:2px;font-size:9.5px;}
+.pref-box.multi{box-shadow:0 3px 10px rgba(20,38,58,0.3),3px 3px 0 -1px var(--navy),3px 3px 0 0 rgba(255,255,255,0.85);}
+/* wizard submit hint */
+.submit-hint{margin:8px 0 0;text-align:center;font-size:12.5px;color:var(--text-muted);min-height:1em;}
+.submit-hint:empty{display:none;}
+.wizard-submit:disabled{opacity:1;background:var(--surface-2);color:var(--text-muted);}
+@media (min-width:760px){.grid .card:nth-child(odd){border-right:1px solid var(--border);}}
+/* reco card v2 */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.reco-card{padding:22px 20px 18px;box-shadow:0 10px 30px -18px rgba(20,38,58,0.35);}
+.reco-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:12px;letter-spacing:0.04em;}
+.reco-card h2{font-size:clamp(24px,6vw,30px);line-height:1.25;margin-bottom:6px;}
+.reco-place{display:flex;align-items:center;gap:4px;font-size:13px;color:var(--text-muted);margin-bottom:16px;}
+.reco-stats{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:8px;margin-bottom:14px;}
+.reco-stat{background:var(--surface-2);border-radius:10px;padding:10px 12px 11px;min-width:0;}
+.reco-stat .sl{font-size:11.5px;font-weight:700;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.reco-stat .sv{font-size:28px;line-height:1.1;color:var(--text);margin-top:2px;white-space:nowrap;}
+.reco-stat .sv .u,.reco-stat .sv .cur{font-family:var(--font-body);font-size:13px;font-weight:700;color:var(--text-muted);margin-left:2px;}
+.reco-stat .sv .cur{margin:0 1px 0 0;font-family:var(--font-display);font-size:18px;color:var(--text);}
+.reco-stat .sv .soft{font-family:var(--font-body);font-size:13px;font-weight:700;color:var(--text-muted);}
+.reco-match{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
+.reco-match .mt{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;border-radius:999px;padding:4px 10px 4px 8px;}
+.reco-match .mt .ic-svg{vertical-align:0;stroke-width:2.4;}
+.reco-match .mt.ok{background:var(--good-soft);color:var(--good);}
+.reco-match .mt.check{background:var(--surface-2);color:var(--text-muted);}
+.reco-match .mt.no{background:var(--accent-soft);color:var(--accent-ink);}
+.reco-row .rv-sub{font-size:12px;color:var(--text-muted);}
+.reco-detail-btn{flex:2 1 auto;font-size:14.5px;padding:13px;}
+@media (max-width:520px){.reco-stat{padding:9px 10px 10px;}.reco-stat .sv{font-size:24px;}.reco-stat .sv .cur{font-size:15px;}}
+#wizardResult{scroll-margin-top:calc(var(--hdr-h,64px) + 12px);}
+
+/* header: keep logo and language toggle on one line on phones */
+.header-inner{flex-wrap:nowrap;}
+@media (max-width:520px){
+  .brand{flex-direction:column;align-items:flex-start;gap:0;}
+  .brand h1{font-size:19px;line-height:1.2;}
+  .brand .tagline{font-size:11.5px;max-width:100%;}
+}
+/* hero: text and illustration no longer overlap; illustration keeps its proportions */
+.hero{display:grid;min-height:0;}
+.hero-content{padding:24px 22px 0;}
+.hero-content{order:0;}
+.hero-svg{order:1;position:relative;inset:auto;width:100%;height:auto;aspect-ratio:400/190;margin-top:-2%;z-index:1;pointer-events:none;}
+.hero h2{font-size:clamp(28px,7.4vw,40px);}
+.hero p{max-width:26em;text-wrap:pretty;}
+.hero-stat{display:inline-flex;align-items:baseline;gap:3px;flex-wrap:wrap;font-size:12px;margin-top:14px;border-top:none;padding:5px 10px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text-muted);}
+@media (min-width:720px){
+  .hero{grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);align-items:end;}
+  .hero-content{grid-column:1;grid-row:1;padding:40px 8px 40px 40px;align-self:center;}
+  .hero-svg{grid-column:2;grid-row:1;aspect-ratio:400/230;margin:0 0 -1px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%);}
+}
 </style>
 </head>
 <body>
@@ -421,7 +489,8 @@ ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);fon
           <div class="q-label"><span data-t="qMust"></span> <span class="q-opt" data-t="qOptional"></span></div>
           <div class="pill-row" id="pillMust"></div>
         </div>
-        <button class="wizard-submit" id="wizardSubmit" disabled data-t="wizardSubmit"></button>
+        <button class="wizard-submit" id="wizardSubmit" disabled data-t="wizardSubmit" aria-describedby="submitHint"></button>
+        <p class="submit-hint" id="submitHint" aria-live="polite"></p>
       </div>
       <div id="wizardResult" hidden></div>
       <div class="foot-links"><a href="guide/" id="guideLink" data-t="guideLink"></a>　<a href="about/" data-t="aboutLink"></a></div>
@@ -519,6 +588,8 @@ const ICONS = {
   boots:'<path d="M9 3v9l-5 3a2 2 0 0 0-1 1.7V19a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1c0-2-1-3-3-3h-5V3z"/>',
   poles:'<path d="M6.3 2.3l3.7 19M17.7 2.3l-3.7 19M4.3 4.3l4-2M19.7 4.3l-4-2M8 13.3l-3 2M16 13.3l3 2"/>',
   case:'<rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5.3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2V7M4 12h16"/>',
+  check:'<path d="M5 12.5l4.2 4.2L19 7"/>',
+  alert:'<path d="M12 7.5v6M12 17h.01"/><circle cx="12" cy="12" r="9"/>',
   refresh:'<path d="M20.5 12a8.5 8.5 0 1 1-2.8-6.3M20.5 4v5h-5"/>',
   gradCap:'<path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v4c0 1.5 2.7 3 6 3s6-1.5 6-3v-4"/>',
   globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
@@ -669,7 +740,7 @@ const STRINGS = {
     mfStudent:"学生・ユース割",
     mfEnglish:"英語OK",
     mfFav:"★ お気に入り",
-    mapCountPref:(n,p)=>`${n.toLocaleString()}件 ${p}エリア`,
+    mapCountPref:(n,p)=>`${n.toLocaleString()}件・${p}都道府県`,
     mapCountView:(v,n)=>`${v} / ${n.toLocaleString()} 件`,
     mpAdult:"大人1日券",
     mpVertical:"標高差",
@@ -754,8 +825,9 @@ const STRINGS = {
     freeLabel:"無料",
     priceUnknown:"料金は公式サイトで確認",
     weatherLoading:"天気を取得中",
+    wxFailed:"天気を取得できませんでした。時間をおいて開き直してください",
     terrainUnknown:"公式のコース比率は公表されていません",
-    heroStat:"全国{n}のゲレンデを掲載",
+    heroStat:"全国 {n} ゲレンデ・詳細データ {d}",
     qFromBlock:"どの地方から出発しますか？",
     qFromPref:"都道府県を選んでください",
     approxNote:"※お住まいの地域の近くにはスキー場が少ないため、いちばん行きやすい候補を表示しています。遠方なので宿泊での計画がおすすめです。",
@@ -779,6 +851,7 @@ const STRINGS = {
     levelMid:"中級",
     levelAdv:"上級",
     wizardSubmit:"おすすめを見る",
+    submitHint:(n)=>`あと${n}問答えると、おすすめが見られます`,
     recoEyebrow:"あなたへのおすすめ",
     recoWhy:(labels)=>`選んだ条件：${labels.join("／")}`,
     rowAccess:"行き方",
@@ -786,6 +859,13 @@ const STRINGS = {
     rowPacking:"持ち物リスト",
     rowStay:"日帰り or 泊まり",
     stayDayOk:"十分日帰りできます",
+    stayDayLong:"日帰りもできますが、移動が長めなので朝早めの出発がおすすめです",
+    stayEitherOk:"日帰りでも十分行けます。泊まるなら夜や翌朝もゆっくり滑れます",
+    statLift:"大人1日券", statDistance:"道のり", statBeginner:"初級コース", statMid:"中級コース", statAdv:"上級コース", statCourses:"コース数", statTop:"山頂の標高",
+    statSeeOfficial:"公式で確認", unitCourses:"本",
+    matchTitle:"選んだ条件との相性",
+    matchOk:"合う", matchCheck:"要確認", matchNo:"合わない",
+    matchDayLong:"日帰り（早朝発）",
     stayRecommend:"宿泊した方が余裕を持てます",
     another:"別の提案を見る",
     seeDetail:"詳しく見る",
@@ -873,7 +953,7 @@ const STRINGS = {
     mfStudent:"Student / youth rate",
     mfEnglish:"English OK",
     mfFav:"★ Favorites",
-    mapCountPref:(n,p)=>`${n.toLocaleString()} resorts, ${p} areas`,
+    mapCountPref:(n,p)=>`${n.toLocaleString()} resorts in ${p} prefectures`,
     mapCountView:(v,n)=>`${v} / ${n.toLocaleString()} resorts`,
     mpAdult:"Adult day pass",
     mpVertical:"Vertical",
@@ -958,8 +1038,9 @@ const STRINGS = {
     freeLabel:"Free",
     priceUnknown:"See official site for prices",
     weatherLoading:"Loading weather",
+    wxFailed:"Could not load the weather. Please try again later",
     terrainUnknown:"Official course breakdown not published",
-    heroStat:"{n} ski resorts across Japan",
+    heroStat:"{n} resorts · {d} with full details",
     qFromBlock:"Which region are you starting from?",
     qFromPref:"Pick your prefecture",
     approxNote:"There are few ski resorts near your area, so we're showing the easiest one to reach. It's far, so plan an overnight stay.",
@@ -983,6 +1064,7 @@ const STRINGS = {
     levelMid:"Intermediate",
     levelAdv:"Advanced",
     wizardSubmit:"Show my recommendation",
+    submitHint:(n)=>`Answer ${n} more question${n>1?"s":""} to see your match`,
     recoEyebrow:"Recommended for you",
     recoWhy:(labels)=>`Your picks: ${labels.join(", ")}`,
     rowAccess:"How to get there",
@@ -990,6 +1072,13 @@ const STRINGS = {
     rowPacking:"What to bring",
     rowStay:"Day trip or stay",
     stayDayOk:"Easily doable as a day trip",
+    stayDayLong:"A day trip works, but it is a long drive, so leave early in the morning",
+    stayEitherOk:"Easy as a day trip. Staying over gives you a relaxed evening and morning",
+    statLift:"Adult day pass", statDistance:"Distance", statBeginner:"Beginner", statMid:"Intermediate", statAdv:"Advanced", statCourses:"Runs", statTop:"Summit",
+    statSeeOfficial:"See official site", unitCourses:"",
+    matchTitle:"How it fits your answers",
+    matchOk:"Fits", matchCheck:"Check", matchNo:"No",
+    matchDayLong:"Day trip (early start)",
     stayRecommend:"Staying overnight gives you more breathing room",
     another:"Show another option",
     seeDetail:"See full details",
@@ -1027,6 +1116,13 @@ function toggleFav(id){
 }
 const wiz = {block:null, prefIdx:null, trip:null, level:null, budget:null, transport:null, must:new Set(), lastId:null, shown:[]};
 const terrainColors = ["var(--pg)","var(--pr)","var(--pk)"];
+// 検索カード用：コース比率のミニバー＋初心者コースの割合（初心者が一番気にする数字）
+function miniTerrain(r){
+  if(!r.terrain) return "";
+  const lab = state.lang==="ja" ? `初心者 ${r.terrain[0]}%` : `Beginner ${r.terrain[0]}%`;
+  const full = state.lang==="ja" ? `コース比率 初級${r.terrain[0]}%・中級${r.terrain[1]}%・上級${r.terrain[2]}%` : `Runs: ${r.terrain[0]}% beginner, ${r.terrain[1]}% intermediate, ${r.terrain[2]}% advanced`;
+  return `<span class="card-terrain" title="${full}" aria-label="${full}"><span class="mt-bar" aria-hidden="true">${r.terrain.map((p,i)=>`<i style="width:${p}%;background:${terrainColors[i]}"></i>`).join("")}</span><span class="mt-lab">${lab}</span></span>`;
+}
 function pisteVar(r){ if(!r.terrain) return ""; const i = r.terrain.indexOf(Math.max(...r.terrain)); return terrainColors[i]; }
 function SEP(){ return state.lang==="ja" ? "／" : ", "; }
 function fromCityText(city, km){ return state.lang==="ja" ? `${city}から <span class="num">${km}km</span>` : `<span class="num">${km}km</span> from ${city}`; }
@@ -1174,20 +1270,36 @@ function buildPrefPills(){
 }
 
 function updateSubmitState(){
-  document.getElementById("wizardSubmit").disabled = !(wiz.prefIdx!==null && wiz.trip!==null && wiz.level!==null && wiz.budget!==null && wiz.transport!==null);
+  const left = [wiz.prefIdx, wiz.trip, wiz.level, wiz.budget, wiz.transport].filter(v=>v===null).length;
+  document.getElementById("wizardSubmit").disabled = left > 0;
+  const hint = document.getElementById("submitHint");
+  if(hint) hint.textContent = left > 0 ? t("submitHint")(left) : "";
 }
 
+// 詳細データ（RESORTS）と簡易リスト（ALL_RESORTS）の重複を除いた件数。
+// 地図と同じ基準（1.5km以内は同一）＋座標のない簡易データは名前で照合する
+function distinctResortCount(){
+  const norm = x=>String(x||"").replace(/[\s・(（].*$/,"").slice(0,6);
+  const mainNames = RESORTS.map(r=>norm(r.nameJa));
+  const extra = ALL_RESORTS.filter(x=>{
+    if(x.lat!=null && x.lng!=null) return !RESORTS.some(r=>r.lat!=null && distKmBetween(r,x)<1.5);
+    const k = norm(x.name);
+    return !mainNames.some(m=>m && (m.startsWith(k) || k.startsWith(m)));
+  });
+  return RESORTS.length + extra.length;
+}
 function renderHeroStat(){
   const el = document.getElementById("heroStat");
-  const n = RESORTS.length + ALL_RESORTS.length;
   if(!RESORTS.length || !ALL_RESORTS.length){ el.hidden = true; return; }
-  el.innerHTML = t("heroStat").replace("{n}", `<span class="num">${n}</span>`);
+  const n = distinctResortCount();
+  el.innerHTML = t("heroStat").replace("{n}", `<span class="num">${n}</span>`).replace("{d}", `<span class="num">${RESORTS.length}</span>`);
   el.hidden = false;
 }
 
 function applyStaticText(){
   document.documentElement.lang = state.lang;
   renderHeroStat();
+  updateSubmitState();
   document.querySelectorAll("[data-t]").forEach(el=>{
     const k = el.getAttribute("data-t");
     if(typeof STRINGS[state.lang][k] === "string") el.textContent = t(k);
@@ -1299,11 +1411,13 @@ async function fetchWeatherBatch(list, useElev){
   }
 }
 
+let WX_DONE = false;
 async function loadAllLiveWeather(){
   const list = RESORTS.filter(r=>r.lat!=null && r.lng!=null);
   const withElev = list.filter(r=>r.base!=null && r.top!=null);
   const noElev = list.filter(r=>!(r.base!=null && r.top!=null));
   await Promise.all([fetchWeatherBatch(withElev,true), fetchWeatherBatch(noElev,false)]);
+  WX_DONE = true;
   saveWeatherCache();
   render();
 }
@@ -1358,11 +1472,11 @@ function renderGrid(){
     const time = (state.lang==="ja" ? (r.timeJa||r.accessJa) : (r.timeEn||r.accessEn)) || "";
     const fav = isFav(r.id);
     return `
-    <div class="card" role="button" tabindex="0" data-id="${r.id}" style="${pisteVar(r)?`--piste:${pisteVar(r)}`:""}">
+    <div class="card" role="button" tabindex="0" data-id="${r.id}">
       <div class="card-top">
         <div><h3>${name}</h3><div class="region-tag">${pref}</div></div>
         <div style="display:flex;align-items:center;gap:2px;flex:0 0 auto">
-          <div class="weather-chip">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div>
+          ${wx(r).tempC!=null ? `<div class="weather-chip">${weatherIcon(wx(r).condJa)} <span class="num">${wx(r).tempC}°C</span></div>` : ""}
           <button class="fav-btn ${fav?"on":""}" data-fav="${r.id}" aria-label="${t("favToggle")}" aria-pressed="${fav}">${fav?"★":"☆"}</button>
         </div>
       </div>
@@ -1371,8 +1485,8 @@ function renderGrid(){
         <span class="meta-access">${time}</span>
       </div>
       <div class="price-row">
-        <div class="price">${r.liftAdult!=null ? `<span class="num">${yen(r.liftAdult)}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="unit">${t("priceUnknown")}</span>`}</div>
-        <div class="card-badges">${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
+        <div class="price">${r.liftAdult!=null ? `<span class="num">${yen(r.liftAdult)}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="price-unknown">${t("priceUnknown")}</span>`}</div>
+        <div class="card-badges">${miniTerrain(r)}${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
       </div>
     </div>`;
   }).join("");
@@ -1459,10 +1573,30 @@ function renderMapLayer(){
       const g = groups[p.prefJa] || (groups[p.prefJa]={n:0,lat:0,lng:0});
       g.n++; g.lat+=p.lat; g.lng+=p.lng;
     });
-    Object.entries(groups).forEach(([pref,g])=>{
-      const c = [g.lat/g.n, g.lng/g.n];
-      const ic = L.divIcon({className:"yn-icon", html:`<div class="pref-box">${escapeHtml(prefLabel(pref))}<br><span class="pc">${g.n}</span></div>`, iconSize:null});
-      L.marker(c,{icon:ic, title:prefLabel(pref)}).on("click",(e)=>{ L.DomEvent.stopPropagation(e); m.flyTo(c, 9.5); }).addTo(mapState.layer);
+    // 画面上で重なる県ラベルはまとめる（件数の多い県を代表名に）。ズームすると自然に分かれる
+    const BOX_W = 64, BOX_H = 36;
+    const clusters = [];
+    Object.entries(groups).sort((a,b)=>b[1].n-a[1].n).forEach(([pref,g])=>{
+      const pt = m.latLngToContainerPoint([g.lat/g.n, g.lng/g.n]);
+      const hit = clusters.find(c=>Math.abs(c.x-pt.x)<BOX_W && Math.abs(c.y-pt.y)<BOX_H);
+      if(hit){
+        hit.prefs.push(pref); hit.lat+=g.lat; hit.lng+=g.lng;
+        hit.x = (hit.x*hit.n + pt.x*g.n)/(hit.n+g.n); hit.y = (hit.y*hit.n + pt.y*g.n)/(hit.n+g.n); hit.n+=g.n;
+      }else clusters.push({prefs:[pref], n:g.n, lat:g.lat, lng:g.lng, x:pt.x, y:pt.y});
+    });
+    clusters.forEach(cl=>{
+      const c = [cl.lat/cl.n, cl.lng/cl.n];
+      const more = cl.prefs.length - 1;
+      const label = escapeHtml(prefLabel(cl.prefs[0])) + (more ? `<span class="pm">${state.lang==="ja" ? `ほか${more}` : ` +${more}`}</span>` : "");
+      const title = cl.prefs.map(prefLabel).join(state.lang==="ja" ? "・" : ", ");
+      const ic = L.divIcon({className:"yn-icon", html:`<div class="pref-box${more?" multi":""}">${label}<br><span class="pc">${cl.n}</span></div>`, iconSize:null});
+      L.marker(c,{icon:ic, title}).on("click",(e)=>{
+        L.DomEvent.stopPropagation(e);
+        if(more){
+          const ll = pts.filter(p=>cl.prefs.includes(p.prefJa)).map(p=>[p.lat,p.lng]);
+          m.flyToBounds(ll, {padding:[60,60], maxZoom:9.5});
+        }else m.flyTo(c, 9.5);
+      }).addTo(mapState.layer);
     });
     setMapCount(t("mapCountPref")(pts.length, Object.keys(groups).length));
     return;
@@ -1729,6 +1863,7 @@ function openDetail(id){
   const onsenQuery = encodeURIComponent((state.lang==="ja"?r.nameJa:r.nameEn) + " " + (state.lang==="ja"?"周辺 日帰り温泉":"area day-trip onsen"));
   const placeQuery = encodeURIComponent(state.lang==="ja"?r.nameJa:r.nameEn);
 
+  const hasWx = wx(r).tempC!=null || wx(r).snow7d!=null;
   const sheet = document.getElementById("sheet");
   sheet.innerHTML = `
     <div class="sheet-head">
@@ -1744,13 +1879,15 @@ function openDetail(id){
     ${r.winterClosed ? `<div class="reco-approx-note">${t("winterClosedNote")}</div>` : ""}
     <p>${desc}</p>
     <div class="info-cards">
-      <div class="info-card"><div class="big num">${r.base!=null&&r.top!=null ? `${r.base}–${r.top}m` : "—"}</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>
+      ${r.base!=null&&r.top!=null ? `<div class="info-card"><div class="big num">${r.base}–${r.top}m</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>` : ""}
       ${r.courses!=null||r.lifts!=null ? `<div class="info-card"><div class="big">${r.courses!=null?`<span class="num">${r.courses}</span><span class="unit">${t("unitCourses")}</span>`:""}${r.courses!=null&&r.lifts!=null?" ":""}${r.lifts!=null?`<span class="num">${r.lifts}</span><span class="unit">${t("unitLifts")}</span>`:""}</div><div class="label">${t("coursesLiftsLabel")}</div></div>` : ""}
+      ${hasWx ? `
       <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${r.weatherCachedAt ? `<span style="color:#C2410C">${t("cachedWeather")(new Date(r.weatherCachedAt))}</span><br>` : ""}${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+SEP() : ""}${cond}${SEP()}${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
-      <div class="info-card"><div class="big num">${r.liftAdult!=null ? yen(r.liftAdult) : "—"}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent!=null ? `${t("studentYouth")} <span class="num">${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
+      ` : `<div class="info-card wx-pending"><div class="big">${icon("cloud",20)}</div><div class="label">${WX_DONE ? t("wxFailed") : t("weatherLoading")+"…"}</div></div>`}
+      <div class="info-card"><div class="big ${r.liftAdult!=null?"num":"soft"}">${r.liftAdult!=null ? yen(r.liftAdult) : t("statSeeOfficial")}</div><div class="label">${t("adultDayLabel")}${r.priceSeason ? ` <span class="num">(${r.priceSeason})</span>` : ""}<br>${r.liftStudent!=null ? `${t("studentYouth")} <span class="num">${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</span>` : t("noStudentDiscount")}</div></div>
     </div>
     <div class="section-label">${t("terrainLabel")}</div>
     ${r.terrain ? `
@@ -1923,6 +2060,38 @@ function computeRanking(){
   return RESORTS.filter(r=>r.lat!=null && !r.winterClosed).map(r=>({r, s:scoreResort(r, pref, wiz.level, isDayTrip)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
 }
 
+// 診断結果：大きく見せる3つの数字
+function recoStats(r, fromKm){
+  const tiles = [];
+  tiles.push(r.liftAdult!=null
+    ? {label:t("statLift"), value:`<span class="cur">¥</span>${r.liftAdult.toLocaleString()}`}
+    : {label:t("statLift"), value:`<span class="soft">${t("statSeeOfficial")}</span>`});
+  tiles.push({label:t("statDistance"), value:`${fromKm}<span class="u">km</span>`});
+  const lvKey = ["statBeginner","statMid","statAdv"][wiz.level];
+  if(r.terrain && r.terrain[wiz.level]!=null) tiles.push({label:t(lvKey), value:`${r.terrain[wiz.level]}<span class="u">%</span>`});
+  else if(r.courses!=null) tiles.push({label:t("statCourses"), value:`${r.courses}<span class="u">${t("unitCourses")}</span>`});
+  else if(r.top!=null) tiles.push({label:t("statTop"), value:`${r.top.toLocaleString()}<span class="u">m</span>`});
+  return `<div class="reco-stats">${tiles.map(x=>`<div class="reco-stat"><div class="sl">${x.label}</div><div class="sv num">${x.value}</div></div>`).join("")}</div>`;
+}
+// 診断結果：選んだ条件ごとに「合う／要確認／合わない」
+function recoMatches(r, fromKm){
+  const out = [];
+  const isDayTrip = wiz.trip===0;
+  out.push(isDayTrip
+    ? (fromKm >= 120 ? ["check", t("matchDayLong")] : ["ok", t(TRIP_OPTS[0])])
+    : ["ok", t(TRIP_OPTS[1])]);
+  const terr = r.terrain ? r.terrain[wiz.level] : null;
+  out.push([terr==null ? "check" : terr>=20 ? "ok" : "check", t(LEVEL_OPTS[wiz.level])]);
+  const limit = BUDGET_LIMITS[wiz.budget];
+  out.push([limit==null ? "ok" : r.liftAdult==null ? "check" : r.liftAdult<=limit ? "ok" : "no", t(BUDGET_OPTS[wiz.budget])]);
+  if(wiz.transport===1){ const ok = transitOk(r); out.push([ok===true ? "ok" : ok===false ? "no" : "check", t(TRANSPORT_OPTS[1])]); }
+  else out.push(["ok", t(TRANSPORT_OPTS[0])]);
+  [...wiz.must].forEach(k=>{ const v = mustValue(r,k); out.push([v===true ? "ok" : v===false ? "no" : "check", t(k)]); });
+  const ic = {ok:icon("check",14), check:icon("alert",14), no:icon("alert",14)};
+  const sr = {ok:t("matchOk"), check:t("matchCheck"), no:t("matchNo")};
+  return `<div class="reco-match" aria-label="${t("matchTitle")}">${out.map(([st,label])=>`<span class="mt ${st}">${ic[st]}<span>${label}</span><span class="sr-only">（${sr[st]}）</span></span>`).join("")}</div>`;
+}
+
 function renderRecommendation(){
   const pref = PREFECTURES[wiz.prefIdx];
   const ranked = computeRanking();
@@ -1942,9 +2111,9 @@ function renderRecommendation(){
   const levelLabel = t(LEVEL_OPTS[wiz.level]);
   const isDayTrip = wiz.trip===0;
   const longTrip = fromKm >= 120;
-  const stayVerdict = (isDayTrip && !longTrip) ? t("stayDayOk") : (longTrip ? t("stayRecommend") : t("stayDayOk"));
+  const stayVerdict = isDayTrip ? (longTrip ? t("stayDayLong") : t("stayDayOk")) : (longTrip ? t("stayRecommend") : t("stayEitherOk"));
   const packing = packingList(r);
-  const accessLine = `${t("fromPrefKm")(prefName, fromKm)}${time ? `<br><span style="font-size:12px;color:var(--text-muted)">${time}</span>` : ""}`;
+  const accessLine = time ? `${time}<br><span class="rv-sub">${t("fromPrefKm")(prefName, fromKm)}</span>` : t("fromPrefKm")(prefName, fromKm);
 
   const box = document.getElementById("wizardResult");
   box.hidden = false;
@@ -1952,7 +2121,9 @@ function renderRecommendation(){
     <div class="reco-card">
       <div class="reco-eyebrow">${t("recoEyebrow")}</div>
       <h2>${name}</h2>
-      <div class="reco-sub">${t("recoWhy")([tripLabel, levelLabel, t(BUDGET_OPTS[wiz.budget]), t(TRANSPORT_OPTS[wiz.transport]), ...[...wiz.must].map(k=>t(k))])}</div>
+      <div class="reco-place">${icon("pin",14)} ${state.lang==="ja" ? r.prefJa : r.prefEn}</div>
+      ${recoStats(r, fromKm)}
+      ${recoMatches(r, fromKm)}
       ${BUDGET_LIMITS[wiz.budget]!=null && r.liftAdult!=null && r.liftAdult > BUDGET_LIMITS[wiz.budget] ? `<div class="reco-approx-note">${t("overBudgetNote")(r.liftAdult)}</div>` : ""}
       ${wiz.transport===1 && transitOk(r)==="taxi" ? `<div class="reco-approx-note">${t("transitTaxiNote")}</div>` : ""}
       ${wiz.transport===1 && transitOk(r)!==true && transitOk(r)!=="taxi" ? `<div class="reco-approx-note">${t("transitUnknownNote")}</div>` : ""}
@@ -1960,7 +2131,7 @@ function renderRecommendation(){
       ${fromKm > 250 ? `<div class="reco-approx-note">${t("approxNote")}</div>` : ""}
       <div class="reco-rows">
         <div class="reco-row"><div class="ic">${icon("car",20)}</div><div><div class="rt">${t("rowAccess")}</div><div class="rv">${accessLine}${r.flight?`<br><span style="font-size:11.5px;color:var(--text-muted)">${t("flightNote")}</span>`:""}</div></div></div>
-        <div class="reco-row"><div class="ic">${weatherIcon(wx(r).condJa)}</div><div><div class="rt">${t("rowWeather")}</div><div class="rv"><span class="num">${nv(wx(r).tempC,"°C")}</span>${SEP()}${cond}${SEP()}${t("depthLabel")} <span class="num">${nv(wx(r).depth,"cm")}</span></div></div></div>
+        ${(wx(r).tempC==null && !wx(r).condJa) ? "" : `<div class="reco-row"><div class="ic">${weatherIcon(wx(r).condJa)}</div><div><div class="rt">${t("rowWeather")}</div><div class="rv"><span class="num">${nv(wx(r).tempC,"°C")}</span>${SEP()}${cond}${SEP()}${t("depthLabel")} <span class="num">${nv(wx(r).depth,"cm")}</span></div></div></div>`}
         <div class="reco-row"><div class="ic">${icon("bed",20)}</div><div><div class="rt">${t("rowStay")}</div><div class="rv">${stayVerdict}</div></div></div>
         <div class="reco-row"><div class="ic">${icon("backpack",20)}</div><div style="flex:1"><div class="rt">${t("rowPacking")}</div><div class="packing-list">${packing.map(p=>`<span class="packing-item">${p}</span>`).join("")}</div></div></div>
       </div>
