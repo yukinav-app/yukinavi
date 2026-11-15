@@ -1,0 +1,146 @@
+[
+ {
+  "key": "w18",
+  "nameJa": "今金町種川スキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 42.448,
+  "lng": 140.0847,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w56",
+  "nameJa": "国設占冠中央スキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 42.9555,
+  "lng": 142.3755,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w65",
+  "nameJa": "中富良野北星スキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 43.4115427,
+  "lng": 142.4204772,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w88",
+  "nameJa": "ウトロスキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 44.0712561,
+  "lng": 144.993586,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w99",
+  "nameJa": "宮の森スキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 44.3286,
+  "lng": 142.9493,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w107",
+  "nameJa": "穂別スキー場",
+  "prefJa": "北海道",
+  "region": "hokkaido",
+  "lat": 42.7646097,
+  "lng": 142.1331325,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w119",
+  "nameJa": "アップルヒルスキー場",
+  "prefJa": "青森県",
+  "region": "tohoku",
+  "lat": 40.7146,
+  "lng": 140.5718,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w124",
+  "nameJa": "金ヶ沢スキー場",
+  "prefJa": "青森県",
+  "region": "tohoku",
+  "lat": 40.4533,
+  "lng": 141.1129,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w129",
+  "nameJa": "創遊村229スキーランド",
+  "prefJa": "青森県",
+  "region": "tohoku",
+  "lat": 40.3492,
+  "lng": 141.1119,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w202",
+  "nameJa": "山形市少年自然の家スキー場",
+  "prefJa": "山形県",
+  "region": "tohoku",
+  "lat": 38.2898,
+  "lng": 140.2083,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w243",
+  "nameJa": "軽井沢スノーパーク",
+  "prefJa": "群馬県",
+  "region": "kanto",
+  "lat": 36.4208573,
+  "lng": 138.6270182,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w293",
+  "nameJa": "山田温泉キッズスノーパーク",
+  "prefJa": "長野県",
+  "region": "nagano",
+  "lat": 36.678,
+  "lng": 138.4358,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w340",
+  "nameJa": "白馬乗鞍温泉スキー場",
+  "prefJa": "長野県",
+  "region": "nagano",
+  "lat": 36.7634,
+  "lng": 137.8765,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w375",
+  "nameJa": "湯沢高原スキー場",
+  "prefJa": "新潟県",
+  "region": "niigata",
+  "lat": 36.9330387,
+  "lng": 138.7886245,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w408",
+  "nameJa": "郡上ヴァカンス村スキー場",
+  "prefJa": "岐阜県",
+  "region": "chubu",
+  "lat": 35.9763,
+  "lng": 136.9396,
+  "wikiStatus": "営業中"
+ },
+ {
+  "key": "w486",
+  "nameJa": "県立もみのき森林公園スキー場",
+  "prefJa": "広島県",
+  "region": "chugoku",
+  "lat": 34.4829,
+  "lng": 132.1752,
+  "wikiStatus": "営業中"
+ }
+]

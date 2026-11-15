@@ -1,0 +1,283 @@
+[
+ {
+  "id": "nakafurano_hokusei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://nakafukanko.com/spot/spot-2676"
+  ]
+ },
+ {
+  "id": "hobetsu",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.mukawa.lg.jp/item/10531.htm"
+  ]
+ },
+ {
+  "id": "namioka_nishiyama_park",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR浪岡駅",
+   "howJa": "市バス「道の駅なみおか」行きで終点下車、徒歩5分",
+   "howEn": "City bus bound for Michi-no-Eki Namioka to the last stop, then 5 min on foot",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.aomori.aomori.jp/bunka_sports_kankou/kankou/1005212/1005359/1005365.html"
+  ]
+ },
+ {
+  "id": "soyumura_229_skiland",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボード・ウェアのレンタルあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://takko-kanko.com/t_spots/399",
+   "https://www.town.takko.lg.jp/index.cfm/11,0,37,164,html"
+  ]
+ },
+ {
+  "id": "yamagata_shonen_shizennoie",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ラングラウフ（クロスカントリー）スキーのみ貸出。ゲレンデ用スキーは持参"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.ymgt.ed.jp/shizennoie/user_s.html"
+  ]
+ },
+ {
+  "id": "karuizawa_snow_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "当日貸出のみ（予約不可）。ウェア・小物付きフルセットあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://karuizawa-snowpark.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/ticket/J0Ac2JmF5A/ticket0000023104/",
+   "note": "公式サイトからアソビューで前売リフト券を購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR軽井沢駅",
+   "howJa": "無料送迎バスで約45分（完全予約制・前日正午まで）",
+   "howEn": "Free shuttle bus, about 45 min (reservation required by noon the day before)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://karuizawa-snowpark.com/ticket-rental/",
+   "https://karuizawa-snowpark.com/school/",
+   "https://karuizawa-snowpark.com/access/",
+   "https://karuizawa-snowpark.com/"
+  ]
+ },
+ {
+  "id": "yamada_onsen_kids_snow_park",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト（トロイカ）券は現金のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://shinshu-takayama-onsenkyo.com/facility/kids-ski-park/"
+  ]
+ },
+ {
+  "id": "hakuba_norikura_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "白馬アルプスホテル内のレンタルコーナー"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.hakunori.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/BMAbHayg27/",
+   "note": "白馬コルチナとの共通券。公式からアソビュー等でWeb購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR長野駅",
+   "howJa": "特急バスで約1時間30分",
+   "howEn": "Express bus, about 1h30",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hakunori.com/facility/?id=rental",
+   "https://www.hakunori.com/school/",
+   "https://www.hakunori.com/ticket/",
+   "https://www.hakunori.com/access/"
+  ]
+ },
+ {
+  "id": "yuzawa_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア付きセットあり。帽子・手袋・ゴーグルのレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.yuzawakogen.com/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.kkday.com/ja/affiliate/whlb/yuzawakogenwinter",
+   "note": "事前WEB券（KKday）は大人5,000〜6,800円で当日窓口7,500円より安い。前日まで購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "西口から無料シャトルバスで約3分（徒歩約10分）",
+   "howEn": "Free shuttle bus from the west exit, about 3 min (about 10 min on foot)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.yuzawakogen.com/winter/rental/",
+   "https://www.yuzawakogen.com/winter/school/",
+   "https://www.yuzawakogen.com/winter/tickets/",
+   "https://www.yuzawakogen.com/winter/first_ski_resort/"
+  ]
+ },
+ {
+  "id": "gujo_vacance_mura",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "長良川鉄道 美濃白鳥駅",
+   "howJa": "タクシーで約30分",
+   "howEn": "About 30 min by taxi",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://www.gujyokogen-hotel.com/",
+   "http://www.gujyokogen-hotel.com/access"
+  ]
+ }
+]
