@@ -261,6 +261,35 @@
   ]
  },
  {
+  "id": "sannokura",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボードセット、ウェアもレンタル可（スワローレンタサービス東北が運営）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://sites.google.com/view/sannokura-area/%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC%E5%A1%BE"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "2026-27シーズンは第2リフトのみ運行"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://sites.google.com/view/sannokura-area/%E3%83%9B%E3%83%BC%E3%83%A0",
+   "https://sites.google.com/view/sannokura-area/%E3%83%AC%E3%83%B3%E3%82%BF%E3%83%AB",
+   "https://sites.google.com/view/sannokura-area/%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%AD%E3%83%BC%E5%A1%BE"
+  ]
+ },
+ {
   "id": "nihonmatsu_shiozawa",
   "rental": {
    "available": true,
@@ -980,6 +1009,469 @@
   "sourceUrls": [
    "https://ski.city.yurihonjo.lg.jp/usage/",
    "https://ski.city.yurihonjo.lg.jp/facilities/"
+  ]
+ },
+ {
+  "id": "soma_romantopia",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.hyakuzawa-ski.com/soma/soma-experience.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR弘前駅",
+   "howJa": "弘南バス相馬線「相馬庁舎」下車、無料送迎バスに乗り換え（計約50分）",
+   "howEn": "Konan Bus Soma line to 'Soma Chosha', then free shuttle (about 50 min total)",
+   "fromCityBus": "弘前駅から期間限定の無料シャトルバスあり（運行日限定）"
+  },
+  "sourceUrls": [
+   "https://www.hyakuzawa-ski.com/soma.html",
+   "https://www.hyakuzawa-ski.com/soma/soma-rental.html",
+   "https://www.hyakuzawa-ski.com/soma/soma-experience.html",
+   "https://www.hyakuzawa-ski.com/soma/soma-access.html",
+   "https://www.hyakuzawa-ski.com/soma/soma-survice.html"
+  ]
+ },
+ {
+  "id": "midorinodaichi_romannomori",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "青い森鉄道 乙供駅",
+   "howJa": "徒歩約10分",
+   "howEn": "About 10 min on foot",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.tohoku.lg.jp/kankou/highlights_03.html"
+  ]
+ },
+ {
+  "id": "mutsu_kamafuseyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "隣接の「レストハウス トムの家」でスキー・スノーボード・ウェアをレンタル。事前予約を推奨（ナイターは要予約）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR大湊線 大湊駅",
+   "howJa": "タクシーで約8分（約4km）。公式はタクシーか自家用車での来場を案内",
+   "howEn": "About 8 min by taxi (4 km). Official site advises taxi or car",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://kamafuse-ski.mutsu-taikyo.jp/"
+  ]
+ },
+ {
+  "id": "moya_hills",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://moyahills.jp/winter/winter.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は現金・PayPayで購入"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR青森駅",
+   "howJa": "路線バスで約50分",
+   "howEn": "Local bus, about 50 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://moyahills.jp/winter/lift.html",
+   "http://moyahills.jp/winter/winter.html",
+   "http://moyahills.jp/acces/pg155.html"
+  ]
+ },
+ {
+  "id": "shichinohe_choei",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "リフト向かいの「ソガモリレンタル」等でレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.shichinohe-kankou.jp/ski/class.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.shichinohe-kankou.jp/ski/",
+   "https://www.shichinohe-kankou.jp/ski/rental.html",
+   "https://www.shichinohe-kankou.jp/ski/class.html"
+  ]
+ },
+ {
+  "id": "nakadomari_miyanosawa",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.nakadomari.lg.jp/soshikikarasagasu/kyoikuiinkai/supo-tu/1/4921.html"
+  ]
+ },
+ {
+  "id": "goshogawara_kase",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "施設使用料無料（個人利用は申請不要）。営業は1月5日〜2月末"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "津軽鉄道 嘉瀬駅",
+   "howJa": "徒歩約10〜15分",
+   "howEn": "About 10–15 min on foot",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://gosho-taikyo.org/shisetsu/kaseski/",
+   "https://map.yahoo.co.jp/v3/place/sehAsMyZ8as",
+   "https://www.spo-revo.com/facilities/22528"
+  ]
+ },
+ {
+  "id": "hakkoda",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ロープウェー側ではレンタルなし。山麓の八甲田国際スキー場でレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://www.hakkouda-p.com/skischool/schoolguide.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR青森駅",
+   "howJa": "JRバス（冬季は酸ケ湯温泉行き）「八甲田ロープウェー駅前」下車、約80分",
+   "howEn": "JR Bus (winter: for Sukayu Onsen) to 'Hakkoda Ropeway-eki mae', about 80 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://hakkoda-ropeway.jp/ski/",
+   "https://hakkoda-ropeway.jp/access/",
+   "http://www.hakkouda-p.com/cn21/pg110.html",
+   "http://www.hakkouda-p.com/skischool/schoolguide.html"
+  ]
+ },
+ {
+  "id": "yogoshiyama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.hiranai.aomori.jp/soshiki/suisan/gyoumu_annai/kanko_jouhou/yogoshiyama_forest_park/yogoshiyama_ski.html"
+  ]
+ },
+ {
+  "id": "owani_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://swallow-r.co.jp/rental/modules/shop/",
+   "note": "ウェアもレンタル可。オンライン事前申込可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR奥羽本線 大鰐温泉駅",
+   "howJa": "タクシーで約5分",
+   "howEn": "About 5 min by taxi",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.owani-ski.com/price/",
+   "https://www.owani-ski.com/facility/",
+   "https://www.owani-ski.com/access/"
+  ]
+ },
+ {
+  "id": "oirase_keiryu_onsen",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://www.oirase.or.jp/ski/school.htm"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://oirase.or.jp/ski/ski.htm",
+   "http://www.oirase.or.jp/ski/fee.htm",
+   "http://www.oirase.or.jp/ski/school.htm"
+  ]
+ },
+ {
+  "id": "iwakisan_hyakuzawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。平日は65歳以上レンタル無料"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://iwakiskiscool.wixsite.com/iwakisan"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR弘前駅",
+   "howJa": "弘南バス（枯木平行）「百沢温泉前」下車、約50分",
+   "howEn": "Konan Bus (for Karekidaira) to 'Hyakuzawa Onsen-mae', about 50 min",
+   "fromCityBus": "弘前駅から期間限定の無料シャトルバスあり（運行日限定）"
+  },
+  "sourceUrls": [
+   "https://www.hyakuzawa-ski.com/",
+   "https://www.hyakuzawa-ski.com/rental.html",
+   "https://www.hyakuzawa-ski.com/experience.html",
+   "https://www.hyakuzawa-ski.com/access.html",
+   "https://www.hyakuzawa-ski.com/survice.html"
+  ]
+ },
+ {
+  "id": "aomori_spring",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可（ゴーグル・帽子・手袋はなし）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://aomorispring.com/ja/ski/ski-snowboard-school"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=00431&ac=0010&lang=1",
+   "note": "Webketでオンライン購入（クレジットカードのみ）、当日は発券機で受取"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新青森駅",
+   "howJa": "スキーツアーシャトルバス「青森スプリングライナー」（完全事前予約制、青森空港発もあり）",
+   "howEn": "Ski tour shuttle 'Aomori Spring Liner' (advance reservation required; also from Aomori Airport)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://aomorispring.com/ski/lift-passes",
+   "https://aomorispring.com/ja/ski/ski-snowboard-rental",
+   "https://aomorispring.com/ski/ski-snowboard-school",
+   "https://aomorispring.com/ja/access"
+  ]
+ },
+ {
+  "id": "sayama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア付きセットあり。予約不可・当日受付"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.seibu-leisure.co.jp/sayama/school/index.html"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/WNl9RKbwmE/",
+   "note": "アソビューでチケット事前購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "西武線 西武球場前駅",
+   "howJa": "改札を出て正面の階段を上がるとすぐ",
+   "howEn": "Right in front of the station (up the stairs from the ticket gate)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://sayamaski.jp/",
+   "https://sayamaski.jp/price/",
+   "https://sayamaski.jp/access/"
+  ]
+ },
+ {
+  "id": "edelweiss",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://edelsnow.com/information/skischool.php"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "土日祝のみ無料シャトルバスあり（要予約、定員制）",
+   "howEn": "Free shuttle bus on weekends/holidays only (reservation required)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://edelsnow.com/information/fee.php",
+   "https://edelsnow.com/information/skischool.php",
+   "https://edelsnow.com/access/"
+  ]
+ },
+ {
+  "id": "hunter",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.reserve.tokyu-snow-resort.com/ja/hunter",
+   "note": "ウェアもレンタル可。Web事前申込はWEB価格"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.hunter.co.jp/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.hunter.co.jp/winter/ticket/buy/",
+   "note": "WEB限定のお得な割引リフト券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR那須塩原駅",
+   "howJa": "無料シャトルバス（完全予約制）。宇都宮駅・鬼怒川温泉駅発もあり（1/10〜3/22は土日祝のみ）",
+   "howEn": "Free shuttle bus (reservation required). Also from Utsunomiya / Kinugawa-Onsen Sta. (weekends/holidays only Jan 10–Mar 22)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hunter.co.jp/winter/ticket/buy/",
+   "https://www.hunter.co.jp/winter/rental/",
+   "https://www.hunter.co.jp/winter/school/",
+   "https://www.hunter.co.jp/winter/access/"
   ]
  }
 ]
