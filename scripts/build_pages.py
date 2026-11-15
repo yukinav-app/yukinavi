@@ -33,6 +33,7 @@ T = {
         "list_desc": "日本全国{n}か所のスキー場の2026-27シーズンのリフト券料金・コース数・アクセスを都道府県別にまとめました。",
         "list_h1": "全国のスキー場一覧", "home": "YukiNavi トップ", "all": "全国のスキー場一覧",
         "runs_n": "{n}コース", "lifts_n": "{n}基", "season": "（{s}シーズン）",
+        "ad": "このページには広告（アフィリエイトリンク）が含まれます。", "about": "運営者情報・プライバシーポリシー",
     },
     "en": {
         "lang": "en", "title": "{name} ({pref}) lift pass price, runs & access | YukiNavi",
@@ -47,16 +48,18 @@ T = {
         "list_desc": "Lift pass prices, runs and access for {n} ski resorts across Japan for the 2026-27 season, by prefecture.",
         "list_h1": "Ski resorts in Japan", "home": "YukiNavi home", "all": "All ski resorts in Japan",
         "runs_n": "{n} runs", "lifts_n": "{n} lifts", "season": "{s} ",
+        "ad": "This page contains affiliate links.", "about": "About & privacy policy",
     },
 }
 
-CSS = """*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;background:#EEF1F4;color:#1C2430;line-height:1.6}
-a{color:#1F3550}.wrap{max-width:760px;margin:0 auto;padding:16px}header{background:#1F3550;color:#fff}header a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.3px}
-.crumb{font-size:12px;color:#5B6672;margin:6px 0 2px}.crumb a{color:#5B6672}h1{font-size:26px;line-height:1.25;margin:4px 0 6px}.sub{color:#5B6672;font-size:13px;margin-bottom:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.box{background:#fff;border:1px solid #D7DEE5;border-radius:12px;padding:12px}
-.box b{display:block;font-size:20px}.box span{font-size:12px;color:#5B6672}.bar{display:flex;height:10px;border-radius:99px;overflow:hidden;margin:6px 0}
-.legend{font-size:12px;color:#5B6672}.cta{display:block;text-align:center;background:#E2792B;color:#fff;font-weight:700;text-decoration:none;border-radius:12px;padding:14px;margin:18px 0}
-.links a{display:inline-block;margin:0 14px 8px 0}.note{font-size:12px;color:#5B6672;border-top:1px solid #D7DEE5;padding-top:12px;margin-top:20px}
+CSS = """*{box-sizing:border-box}body{margin:0;font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;background:#F7F8F6;color:#14263A;line-height:1.65}
+.num,.box b{font-family:'Barlow Condensed','Zen Kaku Gothic New',sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
+a{color:#14263A}.wrap{max-width:760px;margin:0 auto;padding:16px}header{background:#14263A;color:#fff}header a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.02em}
+.crumb{font-size:12px;color:#5E6D7C;margin:6px 0 2px}.crumb a{color:#5E6D7C}h1{font-size:26px;line-height:1.3;margin:4px 0 6px}.sub{color:#5E6D7C;font-size:13px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px 18px;margin:14px 0}.box{border-left:2px solid #D3DDE5;padding:2px 0 2px 12px}
+.box b{display:block;font-size:24px;line-height:1.1}.box span{font-size:12px;color:#5E6D7C}.bar{display:flex;height:10px;border-radius:3px;overflow:hidden;margin:6px 0}
+.legend{font-size:12px;color:#5E6D7C}.cta{display:block;text-align:center;background:#EF5A1F;color:#fff;font-weight:700;text-decoration:none;border-radius:10px;padding:14px;margin:18px 0}
+.links a{display:inline-block;margin:0 14px 8px 0}.note{font-size:12px;color:#5E6D7C;border-top:1px solid #D3DDE5;padding-top:12px;margin-top:20px}
 ul.list{list-style:none;padding:0;columns:2;font-size:14px}ul.list li{margin:3px 0;break-inside:avoid}h2{font-size:18px;margin:22px 0 8px}
 .lang{float:right;font-size:12px}"""
 
@@ -81,7 +84,7 @@ def head(L, title, desc, canonical, alt_ja, alt_en, jsonld=None):
 <link rel="canonical" href="{canonical}"><link rel="alternate" hreflang="ja" href="{alt_ja}"><link rel="alternate" hreflang="en" href="{alt_en}">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}"><meta property="og:site_name" content="YukiNavi"><meta name="twitter:card" content="summary">
-<link rel="icon" href="{BASE}/icons/icon-192.png"><style>{CSS}</style>{ld}</head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Barlow+Condensed:wght@600&display=swap"><link rel="icon" href="{BASE}/icons/icon-192.png"><style>{CSS}</style>{ld}</head><body>
 <header><div class="wrap"><a href="{BASE}/">YukiNavi</a></div></header><main class="wrap">"""
 
 
@@ -122,8 +125,8 @@ def resort_page(r, L, same_pref):
     terrain = ""
     if r.get("terrain"):
         b, i, a = r["terrain"]
-        terrain = (f'<h2>{t["terrain"]}</h2><div class="bar"><div style="width:{b}%;background:#2F8F5B"></div>'
-                   f'<div style="width:{i}%;background:#2E6B8A"></div><div style="width:{a}%;background:#E2792B"></div></div>'
+        terrain = (f'<h2>{t["terrain"]}</h2><div class="bar"><div style="width:{b}%;background:#2E9E5B"></div>'
+                   f'<div style="width:{i}%;background:#D7263D"></div><div style="width:{a}%;background:#1C1C1C"></div></div>'
                    f'<div class="legend">{t["beg"]} {b}% ・ {t["int"]} {i}% ・ {t["adv"]} {a}%</div>')
 
     links = []
@@ -147,7 +150,7 @@ def resort_page(r, L, same_pref):
             + (f'<h2>{t["access"]}</h2><p>{esc(access)}</p>' if access else "")
             + f'<div class="links">{"".join(links)}</div>'
             + (f'<h2>{esc(t["same"].format(pref=pref))}</h2><ul class="list">{others}</ul>' if others else "")
-            + f'<div class="note">{esc(t["checked"].format(d=r.get("checkedAt", "")))}</div>'
+            + f'<div class="note">{esc(t["checked"].format(d=r.get("checkedAt", "")))}<br>{esc(t["ad"])}<br><a href="{BASE}/about/">{t["about"]}</a></div>'
             + "</main></body></html>")
 
 

@@ -132,6 +132,8 @@ def main():
             for r in resorts:
                 if r["id"] == rid:
                     r["lat"], r["lng"] = lat, lng
+                    if r.get("cityJa") in HUBS:
+                        r["distKm"] = round(km(HUBS[r["cityJa"]], (lat, lng)) * ROAD_FACTOR)
 
     # 閉鎖・スキー不可は地図から外し、詳細データ化したものは簡易ピンを二重に出さない
     detailed_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
