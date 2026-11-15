@@ -1,0 +1,359 @@
+[
+{
+"id": "kandatsu_snow_resort",
+"nameJa": "神立スノーリゾート",
+"prefJa": "新潟県",
+"officialUrl": "https://www.kandatsu.com/",
+"accessJa": "関越道 湯沢ICから約1km・約3分。JR越後湯沢駅から無料シャトルバスで約7分"
+},
+{
+"id": "itoigawa_seaside_valley",
+"nameJa": "糸魚川シーサイドバレースキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://seasidevalley.com/",
+"accessJa": "北陸道 糸魚川ICから車で約15〜20分。北陸新幹線 糸魚川駅からバスで約35分"
+},
+{
+"id": "tainai",
+"nameJa": "胎内スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.tainairesort.jp/",
+"accessJa": "日本海東北道 中条ICから車で約25分。JR羽越本線 中条駅からタクシーで約20分"
+},
+{
+"id": "maiko_snow_resort",
+"nameJa": "舞子スノーリゾート",
+"prefJa": "新潟県",
+"officialUrl": "https://www.maiko-resort.com/winter/lift.html",
+"accessJa": "関越道 塩沢石打ICから約1分。JR越後湯沢駅から無料シャトルバスあり"
+},
+{
+"id": "naeba",
+"nameJa": "苗場スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.princehotels.co.jp/ski/naeba/winter/",
+"accessJa": "JR越後湯沢駅からタクシー（宿泊者は無料シャトルバス）"
+},
+{
+"id": "yakushi",
+"nameJa": "薬師スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://yakushi-ski.com/",
+"accessJa": "関越道 魚沼ICから車で約5分。JR上越線 小出駅からバスで約8分、下車後徒歩約15分"
+},
+{
+"id": "akakura_onsen",
+"nameJa": "赤倉温泉スキー場",
+"prefJa": "新潟県",
+"officialUrl": "http://www.akakura-ski.com/",
+"accessJa": "上信越道 妙高高原ICから車で約10分。えちごトキめき鉄道 妙高高原駅からバスで約10分"
+},
+{
+"id": "akakura_kanko",
+"nameJa": "赤倉観光リゾートスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://akr-ski.com/",
+"accessJa": "上信越道 妙高高原ICから車で約8〜10分。JR/えちごトキめき鉄道 妙高高原駅からバスで約10分"
+},
+{
+"id": "kanayasan",
+"nameJa": "金谷山スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://j-times.jp/archives/126253",
+"accessJa": "上信越道 上越高田ICから車で約5分。えちごトキめき鉄道 高田駅からバスで約10分「金谷山入口」下車、徒歩約15分"
+},
+{
+"id": "nagaoka_shiei",
+"nameJa": "長岡市営スキー場",
+"prefJa": "新潟県",
+"officialUrl": "http://www.shiei-ski.com/ski/",
+"accessJa": "関越道 長岡ICから約30分。JR長岡駅東口からタクシーで約20分"
+},
+{
+"id": "seki_onsen",
+"nameJa": "関温泉スキー場",
+"prefJa": "新潟県",
+"officialUrl": "http://sekionsen.jp/",
+"accessJa": "上信越道 妙高高原IC・中郷ICから車で約20分。えちごトキめき鉄道 関山駅からバスで約15分"
+},
+{
+"id": "suhara",
+"nameJa": "須原スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.suhara-ski.com/",
+"accessJa": "関越道 魚沼IC・堀之内ICから約30分。JR只見線 越後須原駅から徒歩約5分"
+},
+{
+"id": "takayanagi_garuru",
+"nameJa": "高柳ガルルのスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.garuru-kururu.jp/ski/",
+"accessJa": "北陸道 柏崎ICから車で約30分。北越急行ほくほく線 まつだい駅から車で約30分"
+},
+{
+"id": "hakuba_valley_kashimayari",
+"nameJa": "HAKUBA VALLEY 鹿島槍スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.kashimayari.net/snow/tickets/",
+"accessJa": null
+},
+{
+"id": "hakuba47",
+"nameJa": "Hakuba47ウィンタースポーツパーク",
+"prefJa": "長野県",
+"officialUrl": "https://hakuba47.co.jp/",
+"accessJa": "長野道 安曇野IC・上信越道 長野IC・北陸道 糸魚川ICから各約1時間（白馬へ）／JR長野駅から長野-白馬線バスで約1時間"
+},
+{
+"id": "mt_norikura",
+"nameJa": "Mt.乗鞍スノーリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://www.brnorikura.jp/news/90/",
+"accessJa": "長野道 松本ICから約60分"
+},
+{
+"id": "kijima_snow_park",
+"nameJa": "The きじまスノーパーク",
+"prefJa": "長野県",
+"officialUrl": "https://iiyama-makinoiri.snowpark.jp/snow/information/",
+"accessJa": "上信越道 豊田飯山ICから約20分。北陸新幹線 飯山駅からシャトルバスあり"
+},
+{
+"id": "hakuba_sanosaka",
+"nameJa": "White Resort 白馬さのさか",
+"prefJa": "長野県",
+"officialUrl": "https://sanosaka.jp/lift/",
+"accessJa": "長野道 安曇野ICから約60分／上信越道 長野ICから約60分"
+},
+{
+"id": "xjam_takaifuji",
+"nameJa": "X-JAM高井富士",
+"prefJa": "長野県",
+"officialUrl": "https://x-jam.jp/",
+"accessJa": "上信越道 信州中野ICから志賀中野有料道路・R292・R403経由。長野電鉄 湯田中駅からタクシーで約20分"
+},
+{
+"id": "yamaboku_wild_snow_park",
+"nameJa": "YAMABOKUワイルドスノーパーク",
+"prefJa": "長野県",
+"officialUrl": "https://yamaboku.co.jp/",
+"accessJa": null
+},
+{
+"id": "asahi_prime",
+"nameJa": "あさひプライムスキー場",
+"prefJa": "長野県",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "iizuna_resort",
+"nameJa": "いいづなリゾートスキー場",
+"prefJa": "長野県",
+"officialUrl": "https://iizunaresort.com/",
+"accessJa": "長野市街地から車で約30分"
+},
+{
+"id": "sakae_club",
+"nameJa": "さかえ倶楽部スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://sakaeclub.jp/",
+"accessJa": null
+},
+{
+"id": "shirakaba_2in1",
+"nameJa": "しらかば2in1スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://whitebirch.co.jp/shirakaba2in1/",
+"accessJa": null
+},
+{
+"id": "hiraya_kogen",
+"nameJa": "ひらや高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://hiraya-kougen.com/winter/",
+"accessJa": null
+},
+{
+"id": "yabuhara_kogen",
+"nameJa": "やぶはら高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.yabuhara-kogen.jp/charge/",
+"accessJa": "国道19号から約10分／JR薮原駅から100円バス"
+},
+{
+"id": "yomase_onsen",
+"nameJa": "よませ温泉スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://x-jam.jp/",
+"accessJa": "上信越道 信州中野ICから志賀中野有料道路・R403経由（約20分）"
+},
+{
+"id": "chateraise_koumi",
+"nameJa": "シャトレーゼスキーバレー小海",
+"prefJa": "長野県",
+"officialUrl": "https://koumi.chateraiseski.jp/fee/lift/",
+"accessJa": "中部横断道 八千穂高原ICからR141経由で約25分（松原湖入口経由）"
+},
+{
+"id": "chateraise_nobeyama",
+"nameJa": "シャトレーゼスキーバレー野辺山",
+"prefJa": "長野県",
+"officialUrl": "https://nobeyama.chateraiseski.jp/fee/lift/",
+"accessJa": "中央道 須玉ICからR141経由で約30分（JR小海線 野辺山駅から約4km）"
+},
+{
+"id": "romance_no_kamisama",
+"nameJa": "スノーリゾート ロマンスの神様",
+"prefJa": "長野県",
+"officialUrl": "https://kijimadaira-ski.com/",
+"accessJa": "北陸新幹線 飯山駅から無料シャトルバスで約20分"
+},
+{
+"id": "tangram_ski_circus",
+"nameJa": "タングラムスキーサーカス",
+"prefJa": "長野県",
+"officialUrl": "https://www.tangram.jp/ski/",
+"accessJa": "上信越道 信濃町ICから約20分。しなの鉄道 黒姫駅・JR飯山駅からタングラム斑尾線バス、長野駅から予約制バスあり"
+},
+{
+"id": "pilatus_tateshina",
+"nameJa": "ピラタス蓼科スノーリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://www.pilatus.jp/price/",
+"accessJa": "中央道 諏訪ICから車で約40分／JR茅野駅から路線バス（北八ヶ岳ロープウェイ行）で約50分"
+},
+{
+"id": "kirigamine_family",
+"nameJa": "ファミリーゲレンデ霧ヶ峰スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://kirigamine.jp/",
+"accessJa": "JR上諏訪駅からタクシーで約40分（冬季）"
+},
+{
+"id": "blanche_takayama",
+"nameJa": "ブランシュたかやまスキーリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://blanche-ski.com/winter/fee/",
+"accessJa": null
+},
+{
+"id": "heavens_sonohara",
+"nameJa": "ヘブンスそのはらSNOW WORLD",
+"prefJa": "長野県",
+"officialUrl": "https://mt-heavens.com/",
+"accessJa": "中央道 園原ICから約5分"
+},
+{
+"id": "ina_ski_resort",
+"nameJa": "中央道伊那スキーリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://inaski.com/price",
+"accessJa": "中央道 小黒川スマートICから約8分"
+},
+{
+"id": "saku_parada",
+"nameJa": "佐久スキーガーデン パラダ",
+"prefJa": "長野県",
+"officialUrl": "https://www.saku-parada.jp/ski/",
+"accessJa": "上信越道 佐久平スマートICから約5分、佐久ICから約10分。JR佐久平駅から無料シャトルバスあり"
+},
+{
+"id": "yachiho_kogen",
+"nameJa": "八千穂高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://yachiho-kogen.com/ski/charge.html",
+"accessJa": "中部横断道 八千穂高原ICから約17分"
+},
+{
+"id": "kitashiga_komaruyama",
+"nameJa": "北志賀小丸山スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.komaruyama.jp/komaruyama/",
+"accessJa": null
+},
+{
+"id": "fujimi_panorama",
+"nameJa": "富士見パノラマリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://www.fujimipanorama.com/snow/2026-2027%E3%82%B7%E3%83%BC%E3%82%BA%E3%83%B3%E3%80%81%E3%83%AA%E3%83%95%E3%83%88%E5%88%B8%E4%BE%A1%E6%A0%BC%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B/",
+"accessJa": null
+},
+{
+"id": "fujimi_kogen",
+"nameJa": "富士見高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://fujimikogen-ski.jp/guide/charge.html",
+"accessJa": "中央道 小淵沢ICから約8分／諏訪南ICから約15分"
+},
+{
+"id": "minenohara_kogen",
+"nameJa": "峰の原高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://minenoharakogen.com/",
+"accessJa": "上信越道 上田菅平ICから約30分。JR上田駅からタクシーで約35分"
+},
+{
+"id": "ontake_ski",
+"nameJa": "御嶽スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://ontakeskijo.com/season-pricing/",
+"accessJa": "中央道 中津川ICから国道19号を北上し、木曽福島から王滝村方面へ（道路標識は「おんたけ2240」）"
+},
+{
+"id": "shiga",
+"nameJa": "志賀高原マウンテンリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://www.shigakogen-ski.or.jp/",
+"accessJa": "上信越道 信州中野ICから国道292号（オリンピック道路）経由／JR長野駅東口から直通バス（長電バス）"
+},
+{
+"id": "togari_onsen",
+"nameJa": "戸狩温泉スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://togari.jp/winter/",
+"accessJa": "上信越道 豊田飯山ICから約25分。北陸新幹線 飯山駅からシャトルバスで約25分、JR飯山線 戸狩野沢温泉駅からタクシーで約5分"
+},
+{
+"id": "togakushi",
+"nameJa": "戸隠スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.togakusi.com/ski/",
+"accessJa": "上信越道 信濃町ICが最寄り。長野市内から約40分（浅川ループライン経由推奨）。長野駅から直行バスあり"
+},
+{
+"id": "madarao_kogen",
+"nameJa": "斑尾高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.madarao.jp/ski/",
+"accessJa": "北陸新幹線 飯山駅からバス"
+},
+{
+"id": "kiso_fukushima",
+"nameJa": "木曽福島スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://kisofukushima-ski.com/service/",
+"accessJa": "JR木曽福島駅から無料シャトルバス（シーズン中毎日運行）"
+},
+{
+"id": "tsugaike",
+"nameJa": "栂池高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.tsugaike.gr.jp/",
+"accessJa": "JR白馬駅から路線バス（白馬駅-白馬八方-栂池高原）／JR長野駅から特急バス（長野-白馬・栂池高原）"
+},
+{
+"id": "takeshi_banshogahara",
+"nameJa": "武石番所ヶ原スキー場",
+"prefJa": "長野県",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "jibuzaka_kogen",
+"nameJa": "治部坂高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "http://jibuzaka.co.jp/?page_id=818",
+"accessJa": "中央道 飯田山本ICからR153経由で約25分"
+}
+]

@@ -1,0 +1,359 @@
+[
+{
+"id": "nikko_yumoto_onsen",
+"nameJa": "日光湯元温泉スキー場",
+"prefJa": "栃木県",
+"officialUrl": "https://nikkoyumoto-ski.com/",
+"accessJa": null
+},
+{
+"id": "snova_shinyokohama",
+"nameJa": "スノーヴァ新横浜",
+"prefJa": "神奈川県",
+"officialUrl": "https://snovashinyoko.co.jp/",
+"accessJa": null
+},
+{
+"id": "mt_t_hoshino",
+"nameJa": "Mt.T by 星野リゾート（旧 谷川岳天神平スキー場）",
+"prefJa": "群馬県",
+"officialUrl": "https://tanigawadake-joch.com/mt-t/",
+"accessJa": null
+},
+{
+"id": "katashina_kogen",
+"nameJa": "かたしな高原スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://katashinakogen.co.jp/",
+"accessJa": "関越道 沼田ICから尾瀬方面へ約35分"
+},
+{
+"id": "tambara",
+"nameJa": "たんばらスキーパーク",
+"prefJa": "群馬県",
+"officialUrl": "https://www.tambara.co.jp/winter/",
+"accessJa": "関越道 沼田ICから約30分／JR沼田駅から無料シャトルバス（要予約・期間限定）"
+},
+{
+"id": "ogna_hotaka",
+"nameJa": "オグナほたかスキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://k-hotaka.jp/ogna/",
+"accessJa": "関越道 沼田ICから約28km（約45分）"
+},
+{
+"id": "snowpark_oze_tokura",
+"nameJa": "スノーパーク尾瀬戸倉",
+"prefJa": "群馬県",
+"officialUrl": "https://ozetokura.co.jp/",
+"accessJa": "上越新幹線 上毛高原駅から関越交通路線バスで約2時間"
+},
+{
+"id": "norn_minakami",
+"nameJa": "ノルンみなかみスキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://norn.co.jp/winter/",
+"accessJa": "JR上越線 水上駅からシャトルバスで約20分（予約不要）"
+},
+{
+"id": "palcall_tsumagoi",
+"nameJa": "パルコール嬬恋リゾート",
+"prefJa": "群馬県",
+"officialUrl": "https://tsumagoiskiresort.life/",
+"accessJa": null
+},
+{
+"id": "white_world_oze_iwakura",
+"nameJa": "ホワイトワールド尾瀬岩鞍",
+"prefJa": "群馬県",
+"officialUrl": "https://www.oze-iwakura.co.jp/ski/",
+"accessJa": null
+},
+{
+"id": "manza",
+"nameJa": "万座温泉スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://www.princehotels.co.jp/ski/manza/winter/",
+"accessJa": "上信越道 碓氷軽井沢ICから鬼押ハイウェー・万座ハイウェー経由で約98分／JR万座・鹿沢口駅から西武観光バス約43分"
+},
+{
+"id": "marunuma",
+"nameJa": "丸沼高原スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://www.marunuma.jp/winter/",
+"accessJa": "関越道 沼田ICから約50分／バスタ新宿から直行バス「かたしなスノーエクスプレス号」（鎌田まで、期間運行）"
+},
+{
+"id": "okutone_snow_park",
+"nameJa": "奥利根スノーパーク",
+"prefJa": "群馬県",
+"officialUrl": "https://okutone.jp/",
+"accessJa": null
+},
+{
+"id": "kawaba",
+"nameJa": "川場スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://www.kawaba.co.jp/",
+"accessJa": "関越道 練馬ICから車で約2時間（沼田ICから最も近いスキー場）／上毛高原駅からシャトルバス付きプランあり"
+},
+{
+"id": "minakami_kogen",
+"nameJa": "水上高原スキーリゾート",
+"prefJa": "群馬県",
+"officialUrl": "https://www.minakami-ski.jp/",
+"accessJa": null
+},
+{
+"id": "minakami_kogen_fujiwara",
+"nameJa": "水上高原・奥利根温泉 藤原スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://fujiwaraski.com/",
+"accessJa": "関越道 水上ICから約20km（約30分）"
+},
+{
+"id": "gunma_minakami_hodaigi",
+"nameJa": "群馬みなかみほうだいぎスキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://hodaigi.jp/",
+"accessJa": "関越道 水上ICから約19km（約30分）"
+},
+{
+"id": "kusatsu",
+"nameJa": "草津温泉スキー場",
+"prefJa": "群馬県",
+"officialUrl": "https://www.932-onsen.com/winter",
+"accessJa": "JR長野原草津口駅から路線バス／草津温泉街から無料シャトルバス（温泉街まで車で約5分）"
+},
+{
+"id": "akagiyama_daiichi",
+"nameJa": "赤城山第1スキー場（赤城山ファミリーゲレンデ）",
+"prefJa": "群馬県",
+"officialUrl": "https://www.maebashi-cvb.com/spot/8261",
+"accessJa": null
+},
+{
+"id": "kazawa_snow_area",
+"nameJa": "鹿沢スノーエリア",
+"prefJa": "群馬県",
+"officialUrl": "http://www.kazawa.com/",
+"accessJa": null
+},
+{
+"id": "gala_yuzawa",
+"nameJa": "GALA湯沢スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://gala.co.jp/",
+"accessJa": "関越道 湯沢ICから約3km・約5分／JR越後湯沢駅から無料シャトルバス約10分"
+},
+{
+"id": "naspa_ski_garden",
+"nameJa": "NASPAスキーガーデン",
+"prefJa": "新潟県",
+"officialUrl": "https://www.naspa.co.jp/ski/",
+"accessJa": "関越道 湯沢ICから車で約5分。JR越後湯沢駅からシャトルバスで約3分"
+},
+{
+"id": "kagura",
+"nameJa": "かぐらスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.princehotels.co.jp/ski/kagura/winter/",
+"accessJa": "関越道 湯沢ICから国道17号で約10分（みつまたステーション）／JR越後湯沢駅から路線バス約18分"
+},
+{
+"id": "tochio_family",
+"nameJa": "とちおファミリースキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.tochio.jp/ski/winter.html",
+"accessJa": "北陸道 中之島見附ICから国道8号・351号・290号経由で約35分。栃尾市街地から車で約15分"
+},
+{
+"id": "arai_mountain_resort",
+"nameJa": "アライマウンテンリゾート",
+"prefJa": "新潟県",
+"officialUrl": "https://www.lottehotel.com/arai-resort/en/snow/ski-lift/economy-class",
+"accessJa": "上信越道 新井ICから車で約8分。北陸新幹線 上越妙高駅からシャトルバスで約30分"
+},
+{
+"id": "cupid_valley",
+"nameJa": "キューピットバレイ",
+"prefJa": "新潟県",
+"officialUrl": "https://www.yukidaruma-kogen.com/winter.html",
+"accessJa": "北陸道 上越IC・柿崎ICから約50分。関越道 六日町ICから約90分"
+},
+{
+"id": "chateau_shiozawa",
+"nameJa": "シャトー塩沢スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://chateau-shiozawa.jp/winter/",
+"accessJa": "関越道 塩沢石打ICから車で約15分"
+},
+{
+"id": "charmant_hiuchi",
+"nameJa": "シャルマン火打スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://charmant-hiuchi.jp/",
+"accessJa": "北陸道 能生ICから車で約30分。えちごトキめき鉄道 能生駅からバスで約35分（土日・冬休み・春休みのみ1日1往復）"
+},
+{
+"id": "ninox_snow_park",
+"nameJa": "ニノックススノーパーク",
+"prefJa": "新潟県",
+"officialUrl": "https://www.ninox.co.jp/",
+"accessJa": "JR羽越本線 新発田駅から車で約20分。日本海東北道 聖籠新発田ICから車で約40分"
+},
+{
+"id": "new_greenpia_tsunan",
+"nameJa": "ニュー・グリーンピア津南スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://new-greenpia.com/category/ski/",
+"accessJa": "関越道 塩沢石打ICから国道353号経由で約40分。JR越後湯沢駅から宿泊者専用送迎バスで約50分"
+},
+{
+"id": "muika_snow_resort",
+"nameJa": "ムイカスノーリゾート",
+"prefJa": "新潟県",
+"officialUrl": "https://www.muikamachi.com/ski/",
+"accessJa": "関越道 六日町ICから国道253号経由で約5分。JR上越線 六日町駅から無料送迎バスで約10分"
+},
+{
+"id": "ipponsugi_snow_park",
+"nameJa": "一本杉スノーパーク",
+"prefJa": "新潟県",
+"officialUrl": "https://www.ipponsugi.net/",
+"accessJa": "JR越後湯沢駅から徒歩約3分"
+},
+{
+"id": "mikawa_onsen",
+"nameJa": "三川温泉スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/index.html",
+"accessJa": "磐越道 三川ICから約10〜15分。JR磐越西線 三川駅から車で約5分"
+},
+{
+"id": "joetsu_kokusai",
+"nameJa": "上越国際スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://jkokusai.co.jp/ski/",
+"accessJa": "関越道 塩沢石打ICから国道17号経由で約7分。JR上越線 上越国際スキー場前駅下車すぐ"
+},
+{
+"id": "nakazato_snow_wood",
+"nameJa": "中里スノーウッドスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.e-yuzawa.gr.jp/sys/ski_p/snow-wood/",
+"accessJa": "関越道 湯沢ICから国道17号経由で約10分。JR上越線 越後中里駅から徒歩約5分"
+},
+{
+"id": "kyukamura_myoko_runrun",
+"nameJa": "休暇村妙高ルンルンスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.qkamura.or.jp/myoukou/ski/",
+"accessJa": "上信越道 妙高高原IC・中郷ICから車で約20分。えちごトキめき鉄道 関山駅からバスで約15分"
+},
+{
+"id": "sado_daira",
+"nameJa": "佐渡市平スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.sadoski.net/",
+"accessJa": "土日祝は佐渡市役所第2庁舎前から無料シャトルバス（要予約）"
+},
+{
+"id": "hakkaisanroku",
+"nameJa": "八海山麓スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://hakkai36.com/",
+"accessJa": "関越道 大和スマートICから約5分、魚沼ICから約15分。JR浦佐駅から車で約10分"
+},
+{
+"id": "muikamachi_hakkaisan",
+"nameJa": "六日町八海山スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.princehotels.co.jp/ski/hakkaisan/winter/",
+"accessJa": "関越道 六日町ICから車で約20分。JR上越線 六日町駅からバスで約30分"
+},
+{
+"id": "fuyu_torigoe",
+"nameJa": "冬鳥越スキーガーデン",
+"prefJa": "新潟県",
+"officialUrl": "https://www.city.kamo.niigata.jp/kankoubunka/shisetsu/ski-garden/",
+"accessJa": "北陸道 三条燕ICから車で約50分。JR信越本線 加茂駅から乗合タクシー（要予約）"
+},
+{
+"id": "koshi_kogen",
+"nameJa": "古志高原スキー場",
+"prefJa": "新潟県",
+"officialUrl": "http://koshikogen.com/",
+"accessJa": "関越道 小千谷IC・長岡南越路スマートICから車で約30分。JR小千谷駅から車で約20分"
+},
+{
+"id": "okutadami_maruyama",
+"nameJa": "奥只見丸山スキー場",
+"prefJa": "新潟県",
+"officialUrl": "http://www.okutadami.co.jp/ski/index.html",
+"accessJa": "関越道 魚沼ICから国道352号・奥只見シルバーライン経由で約35km"
+},
+{
+"id": "myoko",
+"nameJa": "妙高杉ノ原スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.princehotels.co.jp/ski/myoko/winter/",
+"accessJa": "上信越道 妙高高原ICから約9分／えちごトキめき鉄道・しなの鉄道 妙高高原駅から車で約10分（路線バス約30分）"
+},
+{
+"id": "koide",
+"nameJa": "小出スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.sp-koide.org/ski",
+"accessJa": "関越道 魚沼ICから車で約5分。JR上越線 小出駅から徒歩約7分"
+},
+{
+"id": "iwappara",
+"nameJa": "岩原スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.iwa-ppara.com/",
+"accessJa": "関越道 湯沢IC（最寄りIC）から／JR越後湯沢駅東口から無料送迎バス"
+},
+{
+"id": "matsunoyama_onsen",
+"nameJa": "松之山温泉スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.matsunoyama-ski.com/index.htm",
+"accessJa": "関越道 塩沢石打ICから国道353号経由で約60分。北越急行ほくほく線 まつだい駅から車で約15分"
+},
+{
+"id": "matsudai_family",
+"nameJa": "松代ファミリースキー場",
+"prefJa": "新潟県",
+"officialUrl": null,
+"accessJa": "北越急行ほくほく線 まつだい駅から約1.5km、車で約2分"
+},
+{
+"id": "ikenotaira_alpenblick",
+"nameJa": "池の平温泉アルペンブリックスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://alpenblick-resort.com/ski",
+"accessJa": "上信越道 妙高高原ICから車で約5分。えちごトキめき鉄道 妙高高原駅からバスで約15分"
+},
+{
+"id": "yuzawa_park",
+"nameJa": "湯沢パークスキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://www.park-resort.com/ski/",
+"accessJa": "関越道 湯沢ICから約3km・車で約6分。JR越後湯沢駅から冬季無料送迎バスで約10分"
+},
+{
+"id": "yuzawa_nakazato",
+"nameJa": "湯沢中里スノーリゾート",
+"prefJa": "新潟県",
+"officialUrl": "https://www.yuzawa-nakazato.com/winter/",
+"accessJa": "JR上越線 越後中里駅前（徒歩すぐ）。関越道 湯沢ICから車で約10分"
+},
+{
+"id": "ishiuchi_maruyama",
+"nameJa": "石打丸山スキー場",
+"prefJa": "新潟県",
+"officialUrl": "https://ishiuchi.or.jp/winter/",
+"accessJa": "関越道 塩沢石打ICから国道17号で約5分／JR越後湯沢駅から無料シャトルバス・タクシーで約10分"
+}
+]

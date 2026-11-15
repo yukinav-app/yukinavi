@@ -1,0 +1,359 @@
+[
+{
+"id": "bifuka",
+"nameJa": "美深スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.bifuka.hokkaido.jp/cms/section/kyouiku/qlmcaj0000005my2.html",
+"accessJa": null
+},
+{
+"id": "biei_chomin",
+"nameJa": "美瑛町民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://town.biei.hokkaido.jp/culture/sports/",
+"accessJa": null
+},
+{
+"id": "okoppe_chouei",
+"nameJa": "興部町営スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.okoppe.lg.jp/cms/section/education/shakai/nbm3tm0000001f0q.html",
+"accessJa": null
+},
+{
+"id": "toyotomi_onsen",
+"nameJa": "豊富温泉スキー場",
+"prefJa": "北海道",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "akan_royal_valley",
+"nameJa": "阿寒ロイヤルバレイ",
+"prefJa": "北海道",
+"officialUrl": "https://www.akanroyalvalley.jp/",
+"accessJa": null
+},
+{
+"id": "otoifuji",
+"nameJa": "音威富士スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.vill.otoineppu.hokkaido.jp/kakuka/sangyoushinkou/syoukougyou/skizyou.html",
+"accessJa": null
+},
+{
+"id": "miyagi_zao_eboshi",
+"nameJa": "みやぎ蔵王えぼしリゾート",
+"prefJa": "宮城県",
+"officialUrl": "https://eboshi.co.jp/winter/",
+"accessJa": "村田ICから約30分、仙台駅から約60分"
+},
+{
+"id": "miyagi_zao_shichikashuku",
+"nameJa": "みやぎ蔵王七ヶ宿スキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://zao-7kashuku.jp/ski/",
+"accessJa": "仙台市から東北道利用で約70km（福島市から約46km、米沢市から約28km）"
+},
+{
+"id": "miyagi_zao_shiroishi",
+"nameJa": "みやぎ蔵王白石スキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://nposki.com/",
+"accessJa": "JR白石駅などから無料送迎バス（朝夕）あり"
+},
+{
+"id": "onikobe",
+"nameJa": "オニコウベスキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://www.onikoube.com/snow/",
+"accessJa": null
+},
+{
+"id": "springvalley_sendai_izumi",
+"nameJa": "スプリングバレー仙台泉スキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://www.springvalley.co.jp/",
+"accessJa": "仙台市街から車で約40分。泉中央駅から仙台市営バスあり、仙台駅直行バス（予約制）も運行"
+},
+{
+"id": "miyagi_zao_sumikawa",
+"nameJa": "マウンテンフィールド宮城蔵王すみかわスノーパーク",
+"prefJa": "宮城県",
+"officialUrl": "https://www.zao-sumikawa.jp/",
+"accessJa": "東北道 白石ICから約30分（有料道路ルート）、仙台宮城ICから約50分。仙台駅から送迎バスあり"
+},
+{
+"id": "uenono",
+"nameJa": "上野々スキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://uenono.com/",
+"accessJa": "東北道 古川ICから国道47号で約40分。JR鳴子温泉駅からタクシー約5分"
+},
+{
+"id": "izumigatake",
+"nameJa": "泉ヶ岳スキー場",
+"prefJa": "宮城県",
+"officialUrl": "https://www.izumigatake.info/",
+"accessJa": "仙台市中心部から車で約50分。地下鉄南北線 泉中央駅から市営バス10系統で約40分"
+},
+{
+"id": "asahi_shizenkan",
+"nameJa": "Asahi自然観スノーパーク",
+"prefJa": "山形県",
+"officialUrl": "https://www.shizenkan.jp/winter-price/",
+"accessJa": "山形道 西川ICから約30分。山形市内から国道287号経由で約40分"
+},
+{
+"id": "yamagata_akakura_onsen",
+"nameJa": "やまがた赤倉温泉スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://mogami-portal.net/special/%E5%B1%B1%E5%BD%A2%E7%9C%8C%E6%9C%80%E4%B8%8A%E7%94%BA-%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+"accessJa": null
+},
+{
+"id": "green_valley_kamuro",
+"nameJa": "グリーンバレー神室スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://greenvalleykamuro.com/",
+"accessJa": null
+},
+{
+"id": "shonai_haguro",
+"nameJa": "休暇村庄内羽黒スキー場（羽黒山スキー場）",
+"prefJa": "山形県",
+"officialUrl": "https://www.qkamura.or.jp/haguro/ski/index.asp",
+"accessJa": null
+},
+{
+"id": "hachimoriyama",
+"nameJa": "八森山スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://hatimoriyama.sanze.jp/ski/",
+"accessJa": "日本海東北道 三瀬ICから約5分"
+},
+{
+"id": "tengendai_kogen",
+"nameJa": "天元台高原",
+"prefJa": "山形県",
+"officialUrl": "https://www.winter.tengendai.jp/",
+"accessJa": "JR米沢駅から山交バスで約50分（湯元駅下車、ロープウェイでゲレンデへ）"
+},
+{
+"id": "tendo_kogen",
+"nameJa": "天童高原スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://tendokogen.or.jp/winter/price/",
+"accessJa": null
+},
+{
+"id": "yokone_oguni",
+"nameJa": "小国町横根スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.siroimori.co.jp/yokone-ski/ryokin.html",
+"accessJa": null
+},
+{
+"id": "onogawa_onsen",
+"nameJa": "小野川温泉スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.city.yonezawa.yamagata.jp/promotion/travel/winter/9389.html",
+"accessJa": "小野川温泉から徒歩約5分"
+},
+{
+"id": "shinjo_shimin",
+"nameJa": "新庄市民スキー場",
+"prefJa": "山形県",
+"officialUrl": null,
+"accessJa": "JR新庄駅から車で約15分。東北中央道 東根ICから国道13号を新庄方面へ約50km"
+},
+{
+"id": "gassan",
+"nameJa": "月山スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://mt-gassan.com/snow/info/",
+"accessJa": "山形道 月山ICから約20分（姥沢駐車場、リフトまで徒歩約15分）"
+},
+{
+"id": "matsuyama_sakata",
+"nameJa": "松山スキー場",
+"prefJa": "山形県",
+"officialUrl": "http://matuyama-net.com/ski/",
+"accessJa": null
+},
+{
+"id": "kushibiki_taranokidai",
+"nameJa": "櫛引たらのきだいスキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/infomation/kushibiki/kanko/taranokidaiskilift6.html",
+"accessJa": null
+},
+{
+"id": "yunodai",
+"nameJa": "湯ノ台スキー場",
+"prefJa": "山形県",
+"officialUrl": null,
+"accessJa": "東北中央道 舟形ICから車で約30分。新庄駅から大蔵村営バス（肘折温泉行）で約50分、牧場前下車"
+},
+{
+"id": "yudonosan",
+"nameJa": "湯殿山スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://yudonosan.com/price/",
+"accessJa": null
+},
+{
+"id": "tenoko",
+"nameJa": "町営手ノ子スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.town.iide.yamagata.jp/007/tenoko_ski_eigyou.html",
+"accessJa": "東北中央道 南陽高畠ICから国道113号を新潟方面へ約30分"
+},
+{
+"id": "kotoriyama",
+"nameJa": "町民小鳥山スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.town.oe.yamagata.jp/government/ooe-overview/shisetsu/274",
+"accessJa": null
+},
+{
+"id": "shirataka",
+"nameJa": "白鷹町営スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.town.shirataka.lg.jp/1664.htm",
+"accessJa": null
+},
+{
+"id": "akiyama_mamurogawa",
+"nameJa": "秋山スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.town.mamurogawa.yamagata.jp/soshiki/kyoiku/2/7/478.html",
+"accessJa": "JR真室川駅から約1.5km"
+},
+{
+"id": "yonezawa",
+"nameJa": "米沢スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.yonezawa-ski.co.jp/price.html",
+"accessJa": "東北中央道 米沢八幡原ICから国道13号経由。JR米沢駅から米沢市民バス（万世線）"
+},
+{
+"id": "hanagasa_kogen",
+"nameJa": "花笠高原スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://obanazawa-ski.jp/price/price.html",
+"accessJa": "東北中央道 尾花沢ICから車で約25分。JR山形新幹線 大石田駅からバスで約45分"
+},
+{
+"id": "zao_raiza",
+"nameJa": "蔵王ライザスキーワールド",
+"prefJa": "山形県",
+"officialUrl": "https://www.zaoliza.co.jp/wntr/",
+"accessJa": "山形新幹線 かみのやま温泉駅から無料シャトルバス「ホワイトエコー号」で約30分（1日2往復）"
+},
+{
+"id": "zao",
+"nameJa": "蔵王温泉スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://zaomountainresort.com/ski/",
+"accessJa": "東北中央道 山形上山ICから県道21号経由／JR山形駅からバスで約40分"
+},
+{
+"id": "zao_sarukura",
+"nameJa": "蔵王猿倉スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.zao-sarukura.co.jp/",
+"accessJa": "山形道 山形蔵王ICから国道13号・蔵王エコーライン経由（仙台から約1時間40分）／山形新幹線 かみのやま温泉駅から無料シャトルバス"
+},
+{
+"id": "nishikawa_chomin",
+"nameJa": "西川町民スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://www.town.nishikawa.yamagata.jp/soshiki/manabu/5280.html",
+"accessJa": null
+},
+{
+"id": "doshojidaira",
+"nameJa": "道照寺平スキー場",
+"prefJa": "山形県",
+"officialUrl": "https://ukitam.jp/spot/doshojidaira-ski/",
+"accessJa": "長井駅から車で約15分"
+},
+{
+"id": "kurofushi_jungle_jungle",
+"nameJa": "黒伏高原スノーパーク ジャングル・ジャングル",
+"prefJa": "山形県",
+"officialUrl": "https://jxj.co.jp/",
+"accessJa": null
+},
+{
+"id": "hachimantai_panorama",
+"nameJa": "八幡平リゾートパノラマスキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://www.hachimantai.co.jp/winter/panorama/",
+"accessJa": "東北道 松尾八幡平ICから約15分。JR盛岡駅から路線バスで約90分"
+},
+{
+"id": "hachimantai_shimokura",
+"nameJa": "八幡平リゾート下倉スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://www.hachimantai.co.jp/winter/shimokura/",
+"accessJa": "東北道 松尾八幡平ICから約15分。JR盛岡駅から路線バスで約90分"
+},
+{
+"id": "hachimantai_tayama",
+"nameJa": "八幡平市田山スキー場",
+"prefJa": "岩手県",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "kunimidaira",
+"nameJa": "国見平スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://www.kunimidaira.com/",
+"accessJa": "東北道 奥州スマートICから約40分、平泉前沢ICから約40分"
+},
+{
+"id": "geto_kogen",
+"nameJa": "夏油高原スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://getokogen.com/winter/",
+"accessJa": "秋田道 北上西ICから約25分、東北道 北上金ヶ崎ICから約30分。JR北上駅からシャトルバスあり"
+},
+{
+"id": "okunakayama_kogen",
+"nameJa": "奥中山高原スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://www.okunakayamakogen.jp/winter-season/",
+"accessJa": "八戸道 一戸ICから国道4号を南下し約40分。IGRいわて銀河鉄道 奥中山高原駅からバス約10分"
+},
+{
+"id": "appi",
+"nameJa": "安比高原スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://www.appi.co.jp/snow-mountain-resort/",
+"accessJa": "盛岡駅から東北道経由で約1時間／JR盛岡駅から花輪線で安比高原駅まで約1時間"
+},
+{
+"id": "iwate_kogen_snowpark",
+"nameJa": "岩手高原スノーパーク",
+"prefJa": "岩手県",
+"officialUrl": "https://iwatekogen.jp/",
+"accessJa": "JR盛岡駅西口バスターミナルから無料シャトルバス（2日前までに予約）"
+},
+{
+"id": "hiraniwa_kogen",
+"nameJa": "平庭高原スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://hiraniwa.com/resort/ski/",
+"accessJa": null
+},
+{
+"id": "morioka_oide",
+"nameJa": "盛岡市立生出スキー場",
+"prefJa": "岩手県",
+"officialUrl": "https://morioka-sport.or.jp/facility/oide-ski/",
+"accessJa": null
+}
+]

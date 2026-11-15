@@ -1,0 +1,359 @@
+[
+{
+"id": "kitami_wakamatsu",
+"nameJa": "北見若松市民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=7589",
+"accessJa": null
+},
+{
+"id": "kita_naganuma",
+"nameJa": "北長沼スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://ski-kitanaganuma.com/",
+"accessJa": null
+},
+{
+"id": "sahoro",
+"nameJa": "十勝サホロリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://sahoro-resort.com/winter/ski",
+"accessJa": null
+},
+{
+"id": "nayoro_piyashiri",
+"nameJa": "名寄ピヤシリスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.nayoro.co.jp/piyashiri/",
+"accessJa": "名寄市街から車で約15分"
+},
+{
+"id": "wassamu_higashiyama",
+"nameJa": "和寒東山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.wassamu.hokkaido.jp/school-board/facility/ski-resort/",
+"accessJa": "道央道 和寒ICから約5分"
+},
+{
+"id": "minami_furano_kokusetsu",
+"nameJa": "国設南ふらのスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://minamifurano-kousya.com/ski.php",
+"accessJa": null
+},
+{
+"id": "akan_kohan_utara",
+"nameJa": "国設阿寒湖畔スキー場（ウタラ）",
+"prefJa": "北海道",
+"officialUrl": "https://akan-ski.com/",
+"accessJa": null
+},
+{
+"id": "shibetsu_hinata",
+"nameJa": "士別市日向スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.shibetsu.lg.jp/soshikikarasagasu/gasshukunosato_supotsusuishinka/shiminsupotsukakari/1351.html",
+"accessJa": null
+},
+{
+"id": "setana_taisei",
+"nameJa": "大成スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+"accessJa": null
+},
+{
+"id": "kurodake",
+"nameJa": "大雪山層雲峡・黒岳スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.rinyu.co.jp/kurodake/",
+"accessJa": null
+},
+{
+"id": "asahidake_ropeway",
+"nameJa": "大雪山旭岳ロープウェイ（旭岳スキーコース）",
+"prefJa": "北海道",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "teshio_chomin",
+"nameJa": "天塩町町民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.teshiotown.hokkaido.jp/?page_id=636",
+"accessJa": "道の駅てしおから車で約10分"
+},
+{
+"id": "assabu_taikoyama",
+"nameJa": "太鼓山スキー場（厚沢部町民スキー場）",
+"prefJa": "北海道",
+"officialUrl": "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+"accessJa": null
+},
+{
+"id": "abira_anpeizan",
+"nameJa": "安平山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.abira.lg.jp/midokoro/shisetsu/sport/149",
+"accessJa": "札幌から約1時間、苫小牧から約35分、新千歳空港から約25分"
+},
+{
+"id": "muroran_danpara",
+"nameJa": "室蘭市だんパラスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.muroran.lg.jp/content/?content=1605",
+"accessJa": "道央道 室蘭ICから約15分、JR東室蘭駅から車で約20分"
+},
+{
+"id": "rebun_fujimigaoka",
+"nameJa": "富士見ヶ丘スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00001468.html",
+"accessJa": null
+},
+{
+"id": "otobe_tomioka",
+"nameJa": "富岡スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+"accessJa": null
+},
+{
+"id": "furano",
+"nameJa": "富良野スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+"accessJa": "道央道 三笠ICから道道美唄富良野線経由（札幌から約2時間）／JR富良野駅からタクシー約12分"
+},
+{
+"id": "obira_boyodai",
+"nameJa": "小平町望洋台スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.obira.hokkaido.jp/hotnews/detail/00002973.html",
+"accessJa": null
+},
+{
+"id": "otaru_tenguyama",
+"nameJa": "小樽天狗山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://tenguyama.ckk.chuo-bus.co.jp/winter/",
+"accessJa": "小樽ICから車で約15分。JR小樽駅から路線バスで約17分"
+},
+{
+"id": "iwamizawa_haginoyama",
+"nameJa": "岩見沢萩の山市民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://haginoyama.com/",
+"accessJa": null
+},
+{
+"id": "horonobe_higashigaoka",
+"nameJa": "幌延町東ヶ丘スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.horonobe.lg.jp/www4/section/edu/le009f0000001go7.html",
+"accessJa": "JR幌延駅から徒歩約10分"
+},
+{
+"id": "tohma_yama",
+"nameJa": "当麻町営スキー場（とうま山スキー場）",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.tohma.hokkaido.jp/all-about/03/01/1763",
+"accessJa": null
+},
+{
+"id": "eniwa_shimin",
+"nameJa": "恵庭市民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/hokenhukushibu/kenkosportska/supotsu/2/7966.html",
+"accessJa": null
+},
+{
+"id": "shintokuyama",
+"nameJa": "新得山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.shintoku-town.jp/bunka-sports/sports/sports_shisetsu/shintokuyama/",
+"accessJa": "JR新得駅から徒歩約7分"
+},
+{
+"id": "kamifurano_hinode",
+"nameJa": "日の出公園スキー場（上富良野町営スキーリフト）",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=5472",
+"accessJa": null
+},
+{
+"id": "hidaka_kokusai",
+"nameJa": "日高国際スキー場",
+"prefJa": "北海道",
+"officialUrl": "http://www.town.hidaka.hokkaido.jp/ski/",
+"accessJa": null
+},
+{
+"id": "makubetsu_akenogaoka",
+"nameJa": "明野ヶ丘スキー場",
+"prefJa": "北海道",
+"officialUrl": "http://makubetsu-ski.com/akenogaoka/page-7/",
+"accessJa": null
+},
+{
+"id": "tomamu",
+"nameJa": "星野リゾート トマム スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.snowtomamu.jp/winter/",
+"accessJa": "JR石勝線 トマム駅（特急のみ停車）から無料送迎バスで約5〜10分"
+},
+{
+"id": "mashike_shokanbetsu",
+"nameJa": "暑寒別岳スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.mashike.hokkaido.jp/tourism/place/ski/index.html",
+"accessJa": "深川留萌道 留萌ICから増毛市街まで約30分、市街地から約10分"
+},
+{
+"id": "asarigawa_onsen",
+"nameJa": "朝里川温泉スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://asari-ski.com/",
+"accessJa": "小樽市内から車で約15分、札幌から約40分"
+},
+{
+"id": "sapporo_kokusai",
+"nameJa": "札幌国際スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.sapporo-kokusai.jp/",
+"accessJa": "札幌駅エリアから直行バス「国際スキー場ダイレクト便」で約80分（予約制）／札幌市内・定山渓・小樽からスキーバスあり"
+},
+{
+"id": "sapporo_moiwa",
+"nameJa": "札幌藻岩山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://sapporo-moiwa.jp/ticket/",
+"accessJa": "地下鉄南北線 真駒内駅からシャトルバスで約15分（北斜面）"
+},
+{
+"id": "esashi_mikasayama",
+"nameJa": "枝幸町三笠山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.emsc.npo-emsc.net/facility/mikasayama",
+"accessJa": "枝幸町中心部から約5分"
+},
+{
+"id": "mikasa_katsurazawa",
+"nameJa": "桂沢国設スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.mikasa.hokkaido.jp/sightseeing/detail/00013069.html",
+"accessJa": null
+},
+{
+"id": "takinoue_sakuragaoka",
+"nameJa": "桜ヶ丘スキー場（滝上町）",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.takinoue.hokkaido.jp/kyoikuiinkai/social/shisetsu/sakuragaokaski.html",
+"accessJa": null
+},
+{
+"id": "shibetsu_kanayama",
+"nameJa": "標津町営金山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.shibetsutown.jp/administration/?content=261",
+"accessJa": null
+},
+{
+"id": "kiyosato_midori",
+"nameJa": "清里町営緑スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.kiyosato.hokkaido.jp/education/?content=706",
+"accessJa": null
+},
+{
+"id": "yubetsu_gokazan",
+"nameJa": "湧別町五鹿山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.yubetsu.lg.jp/administration/culture/detail.html?content=271",
+"accessJa": null
+},
+{
+"id": "takino_snow_world",
+"nameJa": "滝野スノーワールド",
+"prefJa": "北海道",
+"officialUrl": "https://www.takinopark.com/",
+"accessJa": null
+},
+{
+"id": "sarufutsu_sonei",
+"nameJa": "猿払村営スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.vill.sarufutsu.hokkaido.jp/eventcal/detail/00000407.html",
+"accessJa": null
+},
+{
+"id": "rubeshibe_happodai",
+"nameJa": "留辺蘂町八方台スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=12858",
+"accessJa": "JR留辺蘂駅から車で約5分、北見から車で約40分"
+},
+{
+"id": "chuurui_hakugindai",
+"nameJa": "白銀台スキー場",
+"prefJa": "北海道",
+"officialUrl": "http://makubetsu-ski.com/hakugindai/page-31/",
+"accessJa": null
+},
+{
+"id": "shiriuchi_choei",
+"nameJa": "知内町営スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.shiriuchi.hokkaido.jp/about/shisetsu/sports/ski.html",
+"accessJa": null
+},
+{
+"id": "ishikari_heigen",
+"nameJa": "石狩平原スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.ishikari-heigen-ski.net/",
+"accessJa": null
+},
+{
+"id": "wakkanai_komadori",
+"nameJa": "稚内市こまどりスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://w-shinko.co.jp/komadori-ski/",
+"accessJa": null
+},
+{
+"id": "shakotan_yagai_sports",
+"nameJa": "積丹町野外スポーツ林スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.shakotan.lg.jp/topics/storyid-post_119.html",
+"accessJa": null
+},
+{
+"id": "mombetsu_oyama",
+"nameJa": "紋別市営大山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://mombetsu.jp/news/detail.html?content=2700",
+"accessJa": null
+},
+{
+"id": "abashiri_lakeview",
+"nameJa": "網走レークビュースキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.abashiri.hokkaido.jp/soshiki/28/1271.html",
+"accessJa": null
+},
+{
+"id": "oketo_minamigaoka",
+"nameJa": "置戸町南ヶ丘スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.oketo.hokkaido.jp/kyouiku_bunka/shakai/minamigaokaski/",
+"accessJa": null
+},
+{
+"id": "bibai_kokusetsu",
+"nameJa": "美唄国設スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://bibaiski.jp/",
+"accessJa": "札幌ICから約50分、旭川から約70分"
+}
+]

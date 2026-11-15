@@ -1,0 +1,359 @@
+[
+{
+"id": "numata_takaho",
+"nameJa": "ASHIMOI KANKO高穂スキー場（沼田町営高穂スキー場）",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.numata.hokkaido.jp/section/kyouiku/ujj7s30000001mvv.html",
+"accessJa": null
+},
+{
+"id": "fus_snow_area",
+"nameJa": "Fu's snow area（フッズスノーエリア）",
+"prefJa": "北海道",
+"officialUrl": "https://www.fujino-yagai-sports.jp/winter",
+"accessJa": "札幌市内中心部から定山渓方面へ車で約30分。じょうてつバス（JR札幌駅前・地下鉄真駒内駅前発）利用可"
+},
+{
+"id": "iwanai_resort",
+"nameJa": "IWANAI RESORT（旧ニセコいわない国際スキー場）",
+"prefJa": "北海道",
+"officialUrl": "https://iwanairesort.com/jp/ski",
+"accessJa": null
+},
+{
+"id": "engaru_rockvalley",
+"nameJa": "えんがるロックバレースキー場",
+"prefJa": "北海道",
+"officialUrl": "https://engaru-mori-no-okhotsk.jp/skiing/",
+"accessJa": "旭川紋別道 遠軽ICすぐ（道の駅遠軽 森のオホーツク併設）"
+},
+{
+"id": "kamoidake_kokusai",
+"nameJa": "かもい岳国際スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.kamoidake.co.jp",
+"accessJa": null
+},
+{
+"id": "sapporo_bankei",
+"nameJa": "さっぽろばんけいスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.bankei.co.jp/ski/",
+"accessJa": "札幌都心から車で約20分。地下鉄円山公園駅・発寒南駅・真駒内駅からバスが毎日運行"
+},
+{
+"id": "shintotsukawa_sotchidake",
+"nameJa": "そっち岳スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.shintotsukawa.lg.jp/kanko/detail/00005359.html",
+"accessJa": null
+},
+{
+"id": "nukabira_gensenkyo",
+"nameJa": "ぬかびら源泉郷スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://ichida54.wixsite.com/nukabiraskijyo",
+"accessJa": "帯広駅からバスで約100分。音更帯広ICから国道241・273号で約55km"
+},
+{
+"id": "pippu",
+"nameJa": "ぴっぷスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://pippu.ski/",
+"accessJa": "JR比布駅から無料送迎バス"
+},
+{
+"id": "kikonai_furusatonomori",
+"nameJa": "ふるさとの森スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://kikonai.ed.jp/facility/ski_resort/",
+"accessJa": null
+},
+{
+"id": "horotachi",
+"nameJa": "ほろたちスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.horotachi-horokanai.com/slopesandcourses",
+"accessJa": null
+},
+{
+"id": "windsor_snow_village",
+"nameJa": "ウィンザースノービレッジ",
+"prefJa": "北海道",
+"officialUrl": "https://www.windsor-hotels.co.jp/ja/post-6775/",
+"accessJa": null
+},
+{
+"id": "shari_unabetsu",
+"nameJa": "ウナベツスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.shari.hokkaido.jp/soshikikarasagasu/shokokankoka/shisetsuannai/406.html",
+"accessJa": null
+},
+{
+"id": "orofure",
+"nameJa": "オロフレスキー場",
+"prefJa": "北海道",
+"officialUrl": null,
+"accessJa": "洞爺湖温泉から約25分"
+},
+{
+"id": "kamui_ski_links",
+"nameJa": "カムイスキーリンクス",
+"prefJa": "北海道",
+"officialUrl": "https://www.kamui-skilinks.com/",
+"accessJa": null
+},
+{
+"id": "karurusu_sanlaiva",
+"nameJa": "カルルス温泉サンライバスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://sanlaiva.com/",
+"accessJa": null
+},
+{
+"id": "canmore_ski_village",
+"nameJa": "キャンモアスキービレッジ",
+"prefJa": "北海道",
+"officialUrl": "https://www.canmore-ski.jp/",
+"accessJa": "旭川空港から車で約15分。JR旭川駅から車で約30分"
+},
+{
+"id": "kiroro",
+"nameJa": "キロロスノーワールド",
+"prefJa": "北海道",
+"officialUrl": "https://www.kiroro.co.jp/ja/",
+"accessJa": "札樽道 朝里ICから道道1号・国道393号経由／JR小樽駅からタクシー約40分"
+},
+{
+"id": "consadole_niki_skipark",
+"nameJa": "コンサドーレ仁木スキーパーク（仁木町民スキー場）",
+"prefJa": "北海道",
+"officialUrl": "https://nikipark.jp/",
+"accessJa": "札幌駅から車で約1時間（仁木ICまで高速道路利用）。JR然別駅から徒歩約20分"
+},
+{
+"id": "sapporo_teine",
+"nameJa": "サッポロテイネ",
+"prefJa": "北海道",
+"officialUrl": "https://sapporo-teine.com/snow/",
+"accessJa": "札樽道 手稲ICから約7分（白樺ゲレンデ）／JR手稲駅からJR北海道バスで約16分"
+},
+{
+"id": "santa_present_park",
+"nameJa": "サンタプレゼントパーク マロースゲレンデ",
+"prefJa": "北海道",
+"officialUrl": null,
+"accessJa": "JR旭川駅から車で約15分"
+},
+{
+"id": "snow_cruise_onze",
+"nameJa": "スノークルーズ・オーンズ",
+"prefJa": "北海道",
+"officialUrl": "https://onze.jp/",
+"accessJa": "札樽自動車道 銭函ICから車で約10分。札幌・小樽市内から車で約40分"
+},
+{
+"id": "dynasty_ski_resort",
+"nameJa": "ダイナスティスキーリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://www.dynasty-resort.jp/",
+"accessJa": "道央自動車道 北広島ICから10km以内"
+},
+{
+"id": "niseko_hanazono",
+"nameJa": "ニセコHANAZONOリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://hanazononiseko.com/ja",
+"accessJa": "新千歳空港から空港シャトルバス約2.5〜3.5時間／JR倶知安駅からタクシーまたはバス＋無料HANAZONOシャトル"
+},
+{
+"id": "niseko_annupuri",
+"nameJa": "ニセコアンヌプリ国際スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://annupuri.info/lift-tickets/",
+"accessJa": "JRニセコ駅から路線バスまたはタクシーで約10分"
+},
+{
+"id": "niseko_village",
+"nameJa": "ニセコビレッジスキーリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://www.niseko-village.com/ja/white/lift-passes/",
+"accessJa": null
+},
+{
+"id": "niseko_moiwa",
+"nameJa": "ニセコモイワスキーリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://niseko-moiwa.jp/ja/lift-pass/",
+"accessJa": null
+},
+{
+"id": "niseko",
+"nameJa": "ニセコユナイテッド",
+"prefJa": "北海道",
+"officialUrl": "https://www.niseko.ne.jp/",
+"accessJa": "札幌から国道230号・中山峠経由で約92〜105km／新千歳空港から直行スキーバス（要予約）"
+},
+{
+"id": "niseko_grand_hirafu",
+"nameJa": "ニセコ東急グラン・ヒラフ",
+"prefJa": "北海道",
+"officialUrl": "https://www.grand-hirafu.jp/",
+"accessJa": "札幌から中山峠経由で約2時間／新千歳空港からJR・バスで約3時間30分（JR倶知安駅からバス・タクシー）"
+},
+{
+"id": "northern_arc_resort",
+"nameJa": "ノーザンアークリゾートスキー場",
+"prefJa": "北海道",
+"officialUrl": "http://northernarcresort.co.jp/contents/golfski/ski.html",
+"accessJa": null
+},
+{
+"id": "mount_racey",
+"nameJa": "マウントレースイスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://yubari-resort.co.jp/price/",
+"accessJa": null
+},
+{
+"id": "memuro",
+"nameJa": "メムロスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.memuro.net/administration/soshiki/miryoku/shin-arashiyama/2025-1112-1623-114.html",
+"accessJa": null
+},
+{
+"id": "greenpia_onuma",
+"nameJa": "リブマックスリゾート函館 グリーンピア大沼スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.gp-onuma.com/ski/",
+"accessJa": "道央自動車道 大沼公園ICから道道149号〜843号を約2km。函館方面から車で約50分"
+},
+{
+"id": "rusutsu",
+"nameJa": "ルスツリゾート",
+"prefJa": "北海道",
+"officialUrl": "https://rusutsu.com/",
+"accessJa": "札幌・新千歳空港から車で約90分／札幌・新千歳空港から路線・シャトルバスあり"
+},
+{
+"id": "kaminokuni_chomin",
+"nameJa": "上ノ国町民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.kaminokuni.lg.jp/hotnews/detail/00000301.html",
+"accessJa": null
+},
+{
+"id": "kamikawa_nakayama",
+"nameJa": "上川町営中山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/geo5a80000000l60.html",
+"accessJa": "上川層雲峡ICから約7分"
+},
+{
+"id": "shimokawa",
+"nameJa": "下川町スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.shimokawa-time.net/activity/skipark/",
+"accessJa": null
+},
+{
+"id": "nakayama_toge",
+"nameJa": "中山峠スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://nakayama-ski.com/price-2",
+"accessJa": null
+},
+{
+"id": "nakagawa_chomin",
+"nameJa": "中川町民スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.nakagawa.hokkaido.jp/section/kyouikuiinkai/b02d3l0000002by4.html",
+"accessJa": "JR天塩中川駅から徒歩約10分"
+},
+{
+"id": "nakatonbetsu_kotobuki",
+"nameJa": "中頓別町寿スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://r.goope.jp/kotobuki-ski/",
+"accessJa": null
+},
+{
+"id": "setana_niwa",
+"nameJa": "丹羽スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+"accessJa": null
+},
+{
+"id": "rebun_kushukohan",
+"nameJa": "久種湖畔スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.rebun.hokkaido.jp/kyoiku/detail/00000529.html",
+"accessJa": null
+},
+{
+"id": "imakane_pirika",
+"nameJa": "今金町ピリカスキー場",
+"prefJa": "北海道",
+"officialUrl": "https://kurplazapirika.net/ski/",
+"accessJa": "道央自動車道 国縫ICから国道230号で今金町方面へ車で約15分。JR長万部駅から函館バスで約30分"
+},
+{
+"id": "asahikawa_inosawa",
+"nameJa": "伊ノ沢市民スキー場",
+"prefJa": "北海道",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "saroma_chouei",
+"nameJa": "佐呂間町営スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.saroma.hokkaido.jp/shisetsu/sports_bunka/ski.html",
+"accessJa": null
+},
+{
+"id": "kutchan_asahigaoka",
+"nameJa": "倶知安町旭ヶ丘スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.kutchan.hokkaido.jp/culture-sports/sports-shisetsu/asahigaoka-ski/",
+"accessJa": null
+},
+{
+"id": "yakumo_choei",
+"nameJa": "八雲町営スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.town.yakumo.lg.jp/soshiki/taiiku/yakumo-ski.html",
+"accessJa": null
+},
+{
+"id": "hakodate_nanae_snowpark",
+"nameJa": "函館七飯スノーパーク",
+"prefJa": "北海道",
+"officialUrl": "https://hakodate-nanae.jp/",
+"accessJa": "函館市内から車で約1時間。JR大沼駅・新函館北斗駅から無料シャトルバス（大沼駅から約15分）"
+},
+{
+"id": "hakodate_usujiri",
+"nameJa": "函館市臼尻スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://www.city.hakodate.hokkaido.jp/docs/2014032700560/",
+"accessJa": null
+},
+{
+"id": "rishiri_tenbozan",
+"nameJa": "利尻町天望山スキー場",
+"prefJa": "北海道",
+"officialUrl": "https://rishiri-town.jp/%E3%81%8F%E3%82%89%E3%81%97%E3%83%BB%E5%90%84%E7%A8%AE%E6%89%8B%E7%B6%9A%E3%81%8D/%E5%88%A9%E5%B0%BB%E7%94%BA%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD/%E5%B1%95%E6%9C%9B%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/",
+"accessJa": null
+},
+{
+"id": "greenland_white_park",
+"nameJa": "北海道グリーンランドホワイトパーク",
+"prefJa": "北海道",
+"officialUrl": "https://h-greenland.com/ski/",
+"accessJa": null
+}
+]

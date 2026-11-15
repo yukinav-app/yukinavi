@@ -1,0 +1,324 @@
+[
+{
+"id": "ojiro",
+"nameJa": "おじろスキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.ojiro.or.jp/",
+"accessJa": "JR山陰本線 八鹿駅からバスで約60分"
+},
+{
+"id": "chikusa_kogen",
+"nameJa": "ちくさ高原スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.chikusakogen.com/charge/",
+"accessJa": null
+},
+{
+"id": "banshu_tokura",
+"nameJa": "ばんしゅう戸倉スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://banshu-tokura.com/",
+"accessJa": "中国道 山崎ICから国道29号を鳥取方面へ約60分"
+},
+{
+"id": "up_kannabe",
+"nameJa": "アップかんなべスキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://kannabe.co.jp/",
+"accessJa": "北近畿豊岡道 日高神鍋高原ICから約11km・約15分"
+},
+{
+"id": "sky_valley",
+"nameJa": "スカイバレイスキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://skyvalley.jp/",
+"accessJa": "北近畿豊岡道 八鹿氷ノ山ICから国道9号で約20km"
+},
+{
+"id": "hyperbowl_tohachi",
+"nameJa": "ハイパーボウル東鉢",
+"prefJa": "兵庫県",
+"officialUrl": "https://tohachi.jp/",
+"accessJa": "北近畿豊岡道 八鹿氷ノ山ICから国道9号、関神社前を左折し県道で約9km"
+},
+{
+"id": "hachikita_kogen",
+"nameJa": "ハチ北高原スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.hachi-hachikita.co.jp/",
+"accessJa": null
+},
+{
+"id": "hachi_kogen",
+"nameJa": "ハチ高原スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.hachi-hachikita.co.jp/",
+"accessJa": null
+},
+{
+"id": "tajima_bokujo_koen",
+"nameJa": "但馬牧場公園スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "http://www.bokujyo.com/winter/information.html",
+"accessJa": null
+},
+{
+"id": "rokko",
+"nameJa": "六甲山スノーパーク",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.rokkosan.com/ski/",
+"accessJa": "車で神戸から約35分・大阪市内から約60分／六甲ケーブル山上駅から六甲山上バス「スノーパーク前」下車徒歩約1分"
+},
+{
+"id": "okukannabe",
+"nameJa": "奥神鍋スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://okukan.com/",
+"accessJa": "北近畿豊岡道 日高神鍋高原ICから約13km"
+},
+{
+"id": "mineyama_kogen_white_peak",
+"nameJa": "峰山高原リゾート ホワイトピーク",
+"prefJa": "兵庫県",
+"officialUrl": "https://mineyama-kogen-resort.com/",
+"accessJa": null
+},
+{
+"id": "hyonosen_kokusai",
+"nameJa": "氷ノ山国際スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.hyounosen.jp/",
+"accessJa": "JR山陰本線 八鹿駅から全但バス「鉢伏口行き」で約50分"
+},
+{
+"id": "kannabe_manba",
+"nameJa": "神鍋高原 万場スキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://www.manba-ski.jp/",
+"accessJa": "JR山陰本線 江原駅から全但バス「神鍋高原行き」で約28分「万場口」下車。車は中国道 池田ICから約100分"
+},
+{
+"id": "wakasugi_kogen_ooya",
+"nameJa": "若杉高原おおやスキー場",
+"prefJa": "兵庫県",
+"officialUrl": "https://ooyaski.com/ski/",
+"accessJa": "中国道 山崎ICから国道29号を北へ約50分"
+},
+{
+"id": "snow_park_dorogawa",
+"nameJa": "スノーパーク洞川",
+"prefJa": "奈良県",
+"officialUrl": "https://zaisanku.weebly.com/spd.html",
+"accessJa": "京奈和道 御所南ICから国道309号・県道21号経由で約80分（約42km）"
+},
+{
+"id": "ohana_resort",
+"nameJa": "Ohana Resort",
+"prefJa": "滋賀県",
+"officialUrl": "https://ohana-shiga.com/",
+"accessJa": "北陸道 敦賀ICから国道161号経由で約17km。国道161号沿いの駐車場からすぐゲレンデ"
+},
+{
+"id": "hakodateyama",
+"nameJa": "びわこ箱館山スキー場",
+"prefJa": "滋賀県",
+"officialUrl": "https://www.hakodateyama.com/winter/price/",
+"accessJa": "JR湖西線 近江今津駅から湖国バスで約20分、ゴンドラ（約8分）で山頂ゲレンデへ。車はゴンドラ山麓駅の駐車場を利用"
+},
+{
+"id": "biwako_valley",
+"nameJa": "びわ湖バレイ",
+"prefJa": "滋賀県",
+"officialUrl": "https://www.biwako-valley.com/winter/",
+"accessJa": "名神 京都東ICから西大津バイパス・湖西道路経由、志賀ICから約5分（ロープウェイ山麓駅）。JR志賀駅から路線バスで約10分"
+},
+{
+"id": "okuibuki",
+"nameJa": "グランスノー奥伊吹",
+"prefJa": "滋賀県",
+"officialUrl": "https://www.okuibuki.co.jp/",
+"accessJa": "車で名古屋から約50分・京都から約80分・大阪から約100分／JR米原駅から直行シャトルバス（毎日運行）"
+},
+{
+"id": "makino_kogen",
+"nameJa": "マキノ高原ファミリースキー場",
+"prefJa": "滋賀県",
+"officialUrl": "https://makinokougen.co.jp/pages/275/",
+"accessJa": null
+},
+{
+"id": "kutsuki",
+"nameJa": "朽木スキー場",
+"prefJa": "滋賀県",
+"officialUrl": "https://kutsuki-snowpark.com/",
+"accessJa": "国道161号 安曇川町青柳北交差点から朽木方面へ（県道295号は冬期通行止め）。タイヤチェーン携行必須"
+},
+{
+"id": "tokusagamine",
+"nameJa": "十種ヶ峰スキー場",
+"prefJa": "山口県",
+"officialUrl": "http://www.woodpark.jp/snow/index.html",
+"accessJa": "スキー場へのバスはなし。JR徳佐駅近くの徳佐タクシーを利用"
+},
+{
+"id": "ibukinosato",
+"nameJa": "いぶきの里スキー場",
+"prefJa": "岡山県",
+"officialUrl": "https://www.ibukinosato.co.jp/ski",
+"accessJa": "JR新見駅から送迎バスあり（毎日）"
+},
+{
+"id": "hiruzen_bear_valley",
+"nameJa": "ひるぜんベアバレースキー場",
+"prefJa": "岡山県",
+"officialUrl": "https://bear-ski.amebaownd.com/",
+"accessJa": "米子道 蒜山ICから約5分"
+},
+{
+"id": "ombara_kogen",
+"nameJa": "恩原高原スキー場",
+"prefJa": "岡山県",
+"officialUrl": "https://www.ombara-kogen.com/ski/price/",
+"accessJa": "中国道 院庄ICから"
+},
+{
+"id": "miinohara",
+"nameJa": "三井野原スキー場",
+"prefJa": "島根県",
+"officialUrl": "https://okuizumo.org/jp/guide/detail/3801/",
+"accessJa": "JR木次線 三井野原駅から徒歩約5分"
+},
+{
+"id": "kotobiki_forest_park",
+"nameJa": "琴引フォレストパーク スキー場",
+"prefJa": "島根県",
+"officialUrl": "https://ski.kotobiki.co.jp/",
+"accessJa": null
+},
+{
+"id": "mizuho_highland",
+"nameJa": "瑞穂ハイランド",
+"prefJa": "島根県",
+"officialUrl": "https://www.mizuhohighland.com/",
+"accessJa": "浜田道 瑞穂ICから約5分（広島JCTから約55分）"
+},
+{
+"id": "hiroshima_kenmin_no_mori",
+"nameJa": "ひろしま県民の森スキー場",
+"prefJa": "広島県",
+"officialUrl": "https://hiroshima-kenmori.com/activity",
+"accessJa": "中国道 庄原ICまたは東城ICから車で約40分"
+},
+{
+"id": "megahira",
+"nameJa": "めがひらスキー場",
+"prefJa": "広島県",
+"officialUrl": "https://www.megahira.co.jp/",
+"accessJa": "中国道 吉和ICから約3分"
+},
+{
+"id": "yawata_highland_191",
+"nameJa": "やわたハイランド191リゾート",
+"prefJa": "広島県",
+"officialUrl": "https://yawata191.com/",
+"accessJa": "中国道 戸河内ICから国道191号経由で約38分（約29km）"
+},
+{
+"id": "ringo_kyowakoku",
+"nameJa": "りんご今日話国スキー場",
+"prefJa": "広島県",
+"officialUrl": "https://www.shobara-info.com/spot/309",
+"accessJa": "中国やまなみ街道 高野ICから車で約2分"
+},
+{
+"id": "utopia_saioto",
+"nameJa": "ユートピアサイオト",
+"prefJa": "広島県",
+"officialUrl": "https://www.saioto.co.jp/",
+"accessJa": null
+},
+{
+"id": "osorakan",
+"nameJa": "恐羅漢スノーパーク",
+"prefJa": "広島県",
+"officialUrl": "https://osorakan.co.jp/winter/",
+"accessJa": null
+},
+{
+"id": "geihoku_kogen_osa",
+"nameJa": "芸北高原大佐スキー場",
+"prefJa": "広島県",
+"officialUrl": "https://www.osaski.co.jp/",
+"accessJa": null
+},
+{
+"id": "dogoyama_kogen",
+"nameJa": "道後山高原スキー場",
+"prefJa": "広島県",
+"officialUrl": "https://www.dogoyamakogen.com/",
+"accessJa": "中国道 庄原ICまたは東城ICから約35km／JR備後落合駅からバス約15分"
+},
+{
+"id": "wakasa_hyonosen",
+"nameJa": "わかさ氷ノ山スキー場",
+"prefJa": "鳥取県",
+"officialUrl": "https://hyounosen-ski.jp/",
+"accessJa": "若桜鉄道 若桜駅から車で約25分（年始1/3以降の土日祝は臨時直行バスあり）"
+},
+{
+"id": "daisen_masumizu_kogen",
+"nameJa": "大山ますみず高原スノーパーク",
+"prefJa": "鳥取県",
+"officialUrl": "https://www.masumizu.net/",
+"accessJa": null
+},
+{
+"id": "daisen_mountain_resort",
+"nameJa": "大山マウンテンリゾート",
+"prefJa": "鳥取県",
+"officialUrl": "https://daisen-mountain.jp/",
+"accessJa": "米子道 米子ICから約15分／JR米子駅から日本交通バス「大山寺」行きで約50分"
+},
+{
+"id": "azo_koen",
+"nameJa": "安蔵公園スキー場",
+"prefJa": "鳥取県",
+"officialUrl": "https://www.torican.jp/spot/detail_2277.html",
+"accessJa": "鳥取西ICから車で約20分"
+},
+{
+"id": "kagamiganaru",
+"nameJa": "鏡ヶ成スキー場",
+"prefJa": "鳥取県",
+"officialUrl": "https://qkamura.or.jp/daisen/ski/",
+"accessJa": "米子道 江府ICから約30分"
+},
+{
+"id": "sol_fa_oda",
+"nameJa": "SOL-FAオダスキーゲレンデ",
+"prefJa": "愛媛県",
+"officialUrl": "https://www.we-love-uchiko.jp/ski/",
+"accessJa": null
+},
+{
+"id": "kuma_ski_land",
+"nameJa": "久万スキーランド",
+"prefJa": "愛媛県",
+"officialUrl": "https://kumax.co.jp/",
+"accessJa": "松山から車で1時間以内"
+},
+{
+"id": "ishizuchi",
+"nameJa": "石鎚スキー場",
+"prefJa": "愛媛県",
+"officialUrl": "https://www.ishizuchi.com/ski",
+"accessJa": "石鎚登山ロープウェイ 山麓下谷駅から乗車"
+},
+{
+"id": "kuju",
+"nameJa": "くじゅうスキー場",
+"prefJa": "大分県",
+"officialUrl": "https://www.kujyuski.co.jp/",
+"accessJa": "大分道 九重ICから四季彩ロード経由（福岡方面から約2時間）／JR豊後中村駅から無料送迎バス（完全予約制）"
+}
+]

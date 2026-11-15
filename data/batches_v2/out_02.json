@@ -1,0 +1,849 @@
+[
+ {
+  "id": "kitami_wakamatsu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可（レンタル棟は休養村センターとは別棟）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は休養村センター内で購入"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.kitami.lg.jp/administration/town/detail.php?content=7589",
+   "https://okhotsk-kikaku.jp/wakamatsuski/ws_ski/"
+  ]
+ },
+ {
+  "id": "kita_naganuma",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "電話予約不可。ウェアは若干数あり要電話相談"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "キャッシュレス決済対応"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR北広島駅",
+   "howJa": "タクシーで約25分（公式：車またはタクシーが必要）",
+   "howEn": "Taxi, about 25 min (car or taxi required per official site)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ski-kitanaganuma.com/access/",
+   "https://ski-kitanaganuma.com/ticket/"
+  ]
+ },
+ {
+  "id": "sahoro",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://sahoro-resort.com/winter/ski/rental/reserve",
+   "note": "ウェア付きセットあり。Web予約は2日前まで"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://sahoro-resort.com/winter/ski/school"
+  },
+  "ticket": {
+   "onlineUrl": "https://sahoro.axess.shop/",
+   "note": "公式Webショップで1日券・4時間券・回数券を販売。アソビュー・セブンチケットで手ぶらパック等も販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新得駅",
+   "howJa": "宿泊者は無料送迎バスで約15分（前日17時までに要予約）。日帰りは新得町観光協会の無料シャトル（昨季は火・木・土運行）またはタクシー",
+   "howEn": "Free shuttle for hotel guests, about 15 min (reserve by 5pm the day before). Day visitors: free town shuttle (Tue/Thu/Sat last season) or taxi",
+   "fromCityBus": "新千歳空港から直行バス「サホロエクスプレス」あり（宿泊者限定・約2時間55分・要予約）"
+  },
+  "sourceUrls": [
+   "https://sahoro-resort.com/winter/ski/rental",
+   "https://sahoro-resort.com/winter/ski/school",
+   "https://sahoro-resort.com/winter/ski/price",
+   "https://sahoro-resort.com/access/sougei_bus",
+   "https://sahoro-resort.com/access/bus_chitose"
+  ]
+ },
+ {
+  "id": "nayoro_piyashiri",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://nayoro-ski.net/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.nayoro.co.jp/piyashiri/online/",
+   "note": "WEB1日券は窓口より500円安い（大人3,800円）。中学生以下は無料"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR名寄駅",
+   "howJa": "名士バス「日進ピヤシリ線」で名寄駅前から約30分（1日3便）",
+   "howEn": "Meishi Bus Nisshin-Piyashiri Line from Nayoro Sta., about 30 min (3 runs/day)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.nayoro.co.jp/piyashiri/",
+   "https://www.nayoro.co.jp/piyashiri/season/",
+   "https://www.nayoro.co.jp/piyashiri/online/",
+   "https://www.nayoro.co.jp/piyashiri/wp-content/themes/piyashiri2023/pdf/piyasiriline-timetable2025.pdf"
+  ]
+ },
+ {
+  "id": "wassamu_higashiyama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "ロッジ内の券売所で購入"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.wassamu.hokkaido.jp/school-board/facility/ski-resort/"
+  ]
+ },
+ {
+  "id": "minami_furano_kokusetsu",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://minamifurano-kousya.com/ski.php"
+  ]
+ },
+ {
+  "id": "akan_kohan_utara",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・ソリもレンタル可（レストハウス1階）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://akan-ski.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=00432&ac=8001",
+   "note": "Web事前購入は1日券・4時間券のみ。当日は券売機で受け取り"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://akan-ski.com/rentals/",
+   "https://akan-ski.com/school/",
+   "https://akan-ski.com/about-ic-tickets/",
+   "https://akan-ski.com/access-info/"
+  ]
+ },
+ {
+  "id": "shibetsu_hinata",
+  "rental": {
+   "available": false,
+   "reserveUrl": null,
+   "note": "日向温泉で実施していたレンタルスキーは当面休止"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "現金・QRコード決済可（クレジットカード不可）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR士別駅",
+   "howJa": "士別軌道バス「中多寄線」で日向温泉まで約28分（1日2便、日向温泉で乗降は無料）",
+   "howEn": "Shibetsu Kido bus (Nakatayoro Line) to Hinata Onsen, about 28 min (2 runs/day; free when boarding/alighting at Hinata Onsen)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.shibetsu.lg.jp/soshikikarasagasu/gasshukunosato_supotsusuishinka/shiminsupotsukakari/1351.html"
+  ]
+ },
+ {
+  "id": "setana_taisei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html"
+  ]
+ },
+ {
+  "id": "kurodake",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "5合目黒岳駅舎の売店で貸出（ウェアも可）。数に限りあり予約推奨（電話）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "2026-27から1日券はロープウェイ往復券＋リフト1日券の2枚"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上川駅",
+   "howJa": "道北バス「層雲峡・上川線」で約30分、終点「層雲峡」下車徒歩5分",
+   "howEn": "Dohoku Bus (Sounkyo-Kamikawa Line) about 30 min to Sounkyo terminal, then 5 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.rinyu.co.jp/kurodake/tour_rental/",
+   "https://www.rinyu.co.jp/kurodake/facility/",
+   "https://www.rinyu.co.jp/kurodake/information/02/p0070.htm"
+  ]
+ },
+ {
+  "id": "asahidake_ropeway",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "ロープウェイは予約不要。滑走用具の持ち込みはコース利用許可期間のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR旭川駅",
+   "howJa": "旭川電気軌道66番「いで湯号」で約1時間50分（1日4往復、旭川空港経由）",
+   "howEn": "Asahikawa Denki Kido bus No.66 'Ideyu-go', about 1 hr 50 min (4 round trips/day, via Asahikawa Airport)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://asahidake.hokkaido.jp/ja/",
+   "http://www.asahikawa-denkikidou.jp/asahidaek_line/"
+  ]
+ },
+ {
+  "id": "teshio_chomin",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.teshiotown.hokkaido.jp/?page_id=636"
+  ]
+ },
+ {
+  "id": "assabu_taikoyama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+   "https://www.town.assabu.lg.jp/site/kyoiku/8143.html"
+  ]
+ },
+ {
+  "id": "abira_anpeizan",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "無料休憩所内のレンタルコーナー（スキー・スノーボード）。サイズ・数に限りあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.abira.lg.jp/midokoro/shisetsu/sport/149"
+  ]
+ },
+ {
+  "id": "muroran_danpara",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://www.muroran-resort.sakura.ne.jp/mysite1/news.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR東室蘭駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.muroran.lg.jp/content/?content=1605",
+   "http://www.muroran-resort.sakura.ne.jp/mysite1/menu.html",
+   "http://www.muroran-resort.sakura.ne.jp/mysite1/access.html",
+   "http://www.muroran-resort.sakura.ne.jp/mysite1/news.html"
+  ]
+ },
+ {
+  "id": "rebun_fujimigaoka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.rebun.hokkaido.jp/hotnews/detail/00001468.html"
+  ]
+ },
+ {
+  "id": "otobe_tomioka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html",
+   "https://www.town.otobe.lg.jp/section/kyoui/e0taal00000007wu.html"
+  ]
+ },
+ {
+  "id": "furano",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/advance_tickets/#rental",
+   "note": "ウェアもレンタル可。Web事前決済で当日の手続きがスムーズ。日帰りは北の峰ターミナルがおすすめ"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.princehotels.co.jp/ski/furano/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/furano/winter/lift/advance_tickets/",
+   "note": "Web購入で窓口より500円お得。当日は専用引換機で発券"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR富良野駅",
+   "howJa": "「ラベンダー号」バスで新富良野プリンスホテルまで約17分（1日7便）、またはタクシーで約12分",
+   "howEn": "'Lavender-go' bus to Shin Furano Prince Hotel, about 17 min (7 runs/day), or taxi about 12 min",
+   "fromCityBus": "旭川駅・旭川空港からラベンダー号で直行（1日7便）。札幌から高速ふらの号で富良野駅へ（1日7便）"
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/furano/winter/access/",
+   "https://www.princehotels.co.jp/ski/furano/winter/info/",
+   "https://www.princehotels.co.jp/ski/furano/winter/school/",
+   "https://www.princehotels.co.jp/ski/furano/winter/lift/advance_tickets/"
+  ]
+ },
+ {
+  "id": "obira_boyodai",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.obira.hokkaido.jp/hotnews/detail/00002973.html"
+  ]
+ },
+ {
+  "id": "otaru_tenguyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルはテングヤマスノースクールが運営（9:00〜17:00）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.tengu.co.jp/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "おたる市内線バス1日乗車券提示でロープウエイ料金割引"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR小樽駅",
+   "howJa": "小樽駅前ターミナル4番乗り場から路線バス「天狗山ロープウエイ線」で約17〜20分（1時間に2〜3本）",
+   "howEn": "Local bus 'Tenguyama Ropeway Line' from Otaru Sta. bus terminal stop 4, about 17-20 min (2-3 runs/hour)",
+   "fromCityBus": "札幌駅から高速バスで小樽まで約60分（日中5〜10分間隔）、小樽駅前で路線バスに乗り換え"
+  },
+  "sourceUrls": [
+   "https://tenguyama.ckk.chuo-bus.co.jp/winter/",
+   "https://tenguyama.ckk.chuo-bus.co.jp/access/"
+  ]
+ },
+ {
+  "id": "iwamizawa_haginoyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・帽子・手袋・ゴーグルもレンタル可。2026-27から料金改定"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://haginoyama.com/lesson.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://haginoyama.com/",
+   "https://haginoyama.com/mountain.html",
+   "https://haginoyama.com/charge.html",
+   "https://haginoyama.com/lesson.html"
+  ]
+ },
+ {
+  "id": "horonobe_higashigaoka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR幌延駅",
+   "howJa": "徒歩約10分",
+   "howEn": "About 10 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.horonobe.lg.jp/www4/section/edu/le009f0000001go7.html"
+  ]
+ },
+ {
+  "id": "tohma_yama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "ロープリフト1基で利用料無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.tohma.hokkaido.jp/all-about/03/01/1763"
+  ]
+ },
+ {
+  "id": "eniwa_shimin",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/hokenhukushibu/kenkosportska/supotsu/2/7966.html",
+   "https://www.city.eniwa.hokkaido.jp/material/files/group/29/R07ryokin.pdf"
+  ]
+ },
+ {
+  "id": "shintokuyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルスキーあり（3時間・1日）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://www.npo-sahoro.com/pg/index.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新得駅",
+   "howJa": "徒歩約7分",
+   "howEn": "About 7 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.shintoku-town.jp/bunka-sports/sports/sports_shisetsu/shintokuyama/"
+  ]
+ },
+ {
+  "id": "kamifurano_hinode",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.kamifurano.hokkaido.jp/index.php?id=5472"
+  ]
+ },
+ {
+  "id": "hidaka_kokusai",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.town.hidaka.hokkaido.jp/culture/?content=1154"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR占冠駅",
+   "howJa": "日高町営バス「占冠線」で終点（日高総合支所）まで約25分（特急に接続、1月1日運休）",
+   "howEn": "Hidaka town bus (Shimukappu Line) to the terminal (Hidaka branch office), about 25 min (connects with limited express trains; no service Jan 1)",
+   "fromCityBus": "札幌から高速ペガサス号＋道南バス乗り継ぎで日高ターミナルへ（要予約）"
+  },
+  "sourceUrls": [
+   "http://www.town.hidaka.hokkaido.jp/ski/",
+   "https://www.town.hidaka.hokkaido.jp/culture/?content=1154",
+   "https://www.town.hidaka.hokkaido.jp/culture/?content=1160"
+  ]
+ },
+ {
+  "id": "makubetsu_akenogaoka",
+  "rental": {
+   "available": false,
+   "reserveUrl": null,
+   "note": "スキー・スノーボード等のレンタルは行っていない"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://makubetsu-ski.com/akenogaoka/page-9-3-3/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://makubetsu-ski.com/akenogaoka/page-7/",
+   "https://makubetsu-ski.com/akenogaoka/page-9-3-3/"
+  ]
+ },
+ {
+  "id": "tomamu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.trunktools.jp/_app/tomamurental/#!/",
+   "note": "ウェア・小物込みのフルセットあり。Web予約可。連日レンタルで割引"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.snowtomamu.jp/winter/ski/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/HZp4pw51kr/",
+   "note": "アソビューでオンライン購入（返金・変更不可）。宿泊者は窓口で優待券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JRトマム駅",
+   "howJa": "無料送迎バスでトマム ザ・タワーまで約5分、リゾナーレトマムまで約10分（特急のみ停車）",
+   "howEn": "Free shuttle bus, about 5 min to The Tower / 10 min to Risonare (limited express trains only stop)",
+   "fromCityBus": "札幌・新千歳空港から予約制バスライナーあり（旭川・帯広・ニセコ方面も運行）"
+  },
+  "sourceUrls": [
+   "https://www.snowtomamu.jp/winter/ski/rental/",
+   "https://www.snowtomamu.jp/winter/ski/lesson/",
+   "https://www.snowtomamu.jp/winter/ski/ticket/",
+   "https://www.snowtomamu.jp/winter/access/",
+   "https://www.snowtomamu.jp/bus_26w/"
+  ]
+ },
+ {
+  "id": "chuurui_hakugindai",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ロッジ内レンタルコーナー。ウェアはサイズ・数量限定で要事前問い合わせ"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://makubetsu-ski.com/hakugindai/page-35-2/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://makubetsu-ski.com/hakugindai/page-31/",
+   "https://makubetsu-ski.com/hakugindai/page-33-2/",
+   "https://makubetsu-ski.com/hakugindai/page-35-2/"
+  ]
+ }
+]

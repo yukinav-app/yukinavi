@@ -1,0 +1,359 @@
+[
+{
+"id": "yunomaru",
+"nameJa": "湯の丸スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://yunomaru.co.jp/",
+"accessJa": "上信越道 東部湯の丸ICから約20分"
+},
+{
+"id": "shirakaba_resort_ikenotaira",
+"nameJa": "白樺リゾート池の平スノーパーク",
+"prefJa": "長野県",
+"officialUrl": "https://www.shirakabaresort.jp/snowpark/about/",
+"accessJa": null
+},
+{
+"id": "shirakabako_royal_hill",
+"nameJa": "白樺湖ロイヤルヒルスキー場",
+"prefJa": "長野県",
+"officialUrl": "https://royalhill.co.jp/",
+"accessJa": null
+},
+{
+"id": "shirakaba_kogen_kokusai",
+"nameJa": "白樺高原国際スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://whitebirch.co.jp/kokusai/",
+"accessJa": null
+},
+{
+"id": "hakuba_cortina",
+"nameJa": "白馬コルチナ国際スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.nori-cor.com/",
+"accessJa": null
+},
+{
+"id": "hakuba_goryu",
+"nameJa": "白馬五竜スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.hakubagoryu.jp/",
+"accessJa": "JR長野駅からバスで約1時間15分（エスカルプラザ・白馬五竜下車）／JR神城駅から無料シャトルバス"
+},
+{
+"id": "hakuba",
+"nameJa": "白馬八方尾根スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.happo-one.jp/",
+"accessJa": "上信越道 長野ICから白馬長野オリンピック道路経由／JR長野駅から特急バス「長野-白馬線」"
+},
+{
+"id": "hakuba_iwatake",
+"nameJa": "白馬岩岳スノーフィールド",
+"prefJa": "長野県",
+"officialUrl": "https://iwatake-mountain-resort.com/",
+"accessJa": "上信越道 長野ICから約60分／JR白馬駅から無料シャトルバス（期間限定）"
+},
+{
+"id": "ryuoo_ski_park",
+"nameJa": "竜王スキーパーク",
+"prefJa": "長野県",
+"officialUrl": "https://ryuoo.com/winter/price_w/",
+"accessJa": "上信越道 信州中野ICから約16km"
+},
+{
+"id": "hijiri_kogen",
+"nameJa": "聖高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.vill.omi.nagano.jp/kanko/guide/enjoy/kanko66.html",
+"accessJa": null
+},
+{
+"id": "sugadaira_kogen",
+"nameJa": "菅平高原スノーリゾート",
+"prefJa": "長野県",
+"officialUrl": "https://sugadaira-snowresort.com/",
+"accessJa": "東京から車で約2時間30分。土日祝はJR上田駅温泉口から直行バスで約50分（2027/1/9〜3/28運行）"
+},
+{
+"id": "tateshina_tokyu",
+"nameJa": "蓼科東急スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.tateshina-tokyu.com/activity/ski/",
+"accessJa": null
+},
+{
+"id": "kurumayama_kogen",
+"nameJa": "車山高原SKYPARKスキー場",
+"prefJa": "長野県",
+"officialUrl": "https://winter.kurumayama-skypark.com/",
+"accessJa": "JR茅野駅から車山高原行き路線バスで約60分"
+},
+{
+"id": "karuizawa",
+"nameJa": "軽井沢プリンスホテルスキー場",
+"prefJa": "長野県",
+"officialUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/",
+"accessJa": "北陸新幹線 軽井沢駅南口から徒歩約10分（タクシー約2分・無料シャトルバスあり）"
+},
+{
+"id": "nozawa",
+"nameJa": "野沢温泉スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://nozawaski.com/",
+"accessJa": "上信越道 豊田飯山ICから／北陸新幹線 飯山駅から直通バス「野沢温泉ライナー」"
+},
+{
+"id": "nomugitoge",
+"nameJa": "野麦峠スキー場",
+"prefJa": "長野県",
+"officialUrl": "http://gakutoresort.jp/facility",
+"accessJa": null
+},
+{
+"id": "komagane_kogen",
+"nameJa": "駒ヶ根高原スキー場",
+"prefJa": "長野県",
+"officialUrl": "https://komaganeski.com/",
+"accessJa": "中央道 駒ヶ根ICから約2km"
+},
+{
+"id": "takamine_mountain_park",
+"nameJa": "高峰マウンテンパーク",
+"prefJa": "長野県",
+"officialUrl": "https://asama2000.com/",
+"accessJa": "冬季は小諸側（チェリーパークライン）からのみアクセス可。軽井沢から車で約1時間。JR佐久平駅からJRバス（冬季運行）で約1時間"
+},
+{
+"id": "kurohime_kogen",
+"nameJa": "黒姫高原スノーパーク",
+"prefJa": "長野県",
+"officialUrl": "https://kurohime-kogen.co.jp/winter/",
+"accessJa": "上信越道 信濃町ICから約5km（約6分）。しなの鉄道 黒姫駅からタクシーで約10分"
+},
+{
+"id": "fujiten_snow_resort",
+"nameJa": "ふじてんスノーリゾート",
+"prefJa": "山梨県",
+"officialUrl": "https://www.fujiten.net/",
+"accessJa": null
+},
+{
+"id": "kamui_misaka",
+"nameJa": "カムイみさかスキー場",
+"prefJa": "山梨県",
+"officialUrl": "https://misaka.kamuisp.com/",
+"accessJa": "中央道 八王子ICから約80分"
+},
+{
+"id": "sunmeadows_kiyosato",
+"nameJa": "サンメドウズ清里スキー場",
+"prefJa": "山梨県",
+"officialUrl": "https://www.sunmeadows.co.jp/winter/",
+"accessJa": "中央道 小淵沢ICから八ヶ岳高原ライン経由で約30分"
+},
+{
+"id": "hirugano_kogen",
+"nameJa": "ひるがの高原スキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://www.hiruganokogen.com/",
+"accessJa": "東海北陸道 荘川ICから国道156号線経由で約11km"
+},
+{
+"id": "meiho",
+"nameJa": "めいほうスキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://www.meihoski.co.jp/winter/",
+"accessJa": null
+},
+{
+"id": "winghills_shirotori",
+"nameJa": "ウイングヒルズ白鳥リゾート",
+"prefJa": "岐阜県",
+"officialUrl": "https://winghills.net/",
+"accessJa": "東海北陸道 白鳥IC・高鷲ICから車で約30分"
+},
+{
+"id": "snowwave_park_shirotori_kogen",
+"nameJa": "スノーウェーブパーク白鳥高原",
+"prefJa": "岐阜県",
+"officialUrl": "https://siratori-k.jp/swp/",
+"accessJa": "東海北陸道 白鳥ICから約25分"
+},
+{
+"id": "dynaland",
+"nameJa": "ダイナランドスキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://www.dynaland.co.jp/",
+"accessJa": "東海北陸道 高鷲ICから約10分（ひるがの高原スマートICから約15分）"
+},
+{
+"id": "whitepia_takasu",
+"nameJa": "ホワイトピアたかす",
+"prefJa": "岐阜県",
+"officialUrl": "https://whitepia.jp/",
+"accessJa": "東海北陸道 高鷲ICから「やまびこロード」経由"
+},
+{
+"id": "hirayu_onsen",
+"nameJa": "平湯温泉スキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://www.hirayunomori.com/",
+"accessJa": null
+},
+{
+"id": "hida_hoonokidaira",
+"nameJa": "飛騨ほおのき平スキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://hounoki-daira.com/",
+"accessJa": "JR高山駅から濃飛バスで約40分（スキー場前下車）"
+},
+{
+"id": "takasu",
+"nameJa": "高鷲スノーパーク",
+"prefJa": "岐阜県",
+"officialUrl": "https://www.takasu.gr.jp/",
+"accessJa": "東海北陸道 高鷲ICから約10分（ひるがの高原スマートICから約15分）"
+},
+{
+"id": "washigatake",
+"nameJa": "鷲ヶ岳スキー場",
+"prefJa": "岐阜県",
+"officialUrl": "https://ski.washigatake.jp/",
+"accessJa": "東海北陸道 高鷲ICから約3km・約5分"
+},
+{
+"id": "snowpark_yeti",
+"nameJa": "スノーパーク イエティ",
+"prefJa": "静岡県",
+"officialUrl": "https://www.yeti-resort.com/",
+"accessJa": null
+},
+{
+"id": "rivawell_ikawa",
+"nameJa": "リバウェル井川スキー場",
+"prefJa": "静岡県",
+"officialUrl": "https://www.at-s.com/event/article/118973",
+"accessJa": "新東名 新静岡ICから車で約90分"
+},
+{
+"id": "iox_arosa",
+"nameJa": "IOX-AROSA（イオックス・アローザ）",
+"prefJa": "富山県",
+"officialUrl": "https://iox-arosa.jp/white",
+"accessJa": "富山ICから北陸道・東海北陸道 福光スマートIC経由で約42.9km（約50分）"
+},
+{
+"id": "taira",
+"nameJa": "たいらスキー場",
+"prefJa": "富山県",
+"officialUrl": "https://gokayama-taira.com/ski/",
+"accessJa": null
+},
+{
+"id": "tonami_yumenotaira",
+"nameJa": "となみ夢の平スキー場",
+"prefJa": "富山県",
+"officialUrl": "https://ski.yumeno-taira.com/",
+"accessJa": "北陸道 砺波ICから車で約17分"
+},
+{
+"id": "takanbo",
+"nameJa": "タカンボースキー場",
+"prefJa": "富山県",
+"officialUrl": null,
+"accessJa": "東海北陸道 五箇山ICから車で約5分"
+},
+{
+"id": "ushidake_onsen",
+"nameJa": "牛岳温泉スキー場",
+"prefJa": "富山県",
+"officialUrl": "https://ushidake.com/ski/",
+"accessJa": null
+},
+{
+"id": "tateyama",
+"nameJa": "立山山麓スキー場",
+"prefJa": "富山県",
+"officialUrl": "https://www.tateyama36.co.jp/",
+"accessJa": "北陸道 立山ICから約25分／富山地方鉄道 立山駅からバス約10分（冬季のみ）"
+},
+{
+"id": "unazuki_onsen",
+"nameJa": "黒部市宇奈月温泉スキー場",
+"prefJa": "富山県",
+"officialUrl": "https://www.pref.toyama.jp/sportslink/facility/00015.html",
+"accessJa": "北陸道 黒部ICから車で約20分、富山地方鉄道 宇奈月温泉駅から車で約5分"
+},
+{
+"id": "nanao_korosa",
+"nameJa": "七尾コロサスキー場",
+"prefJa": "石川県",
+"officialUrl": "https://topics.smt.docomo.ne.jp/article/hokkoku/region/hokkoku-20260215204030",
+"accessJa": null
+},
+{
+"id": "okuradake_kogen",
+"nameJa": "大倉岳高原スキー場",
+"prefJa": "石川県",
+"officialUrl": "https://www.hot-ishikawa.jp/event/detail_30771.html",
+"accessJa": null
+},
+{
+"id": "hakusan_ichirino_onsen",
+"nameJa": "白山一里野温泉スキー場",
+"prefJa": "石川県",
+"officialUrl": "https://www.sam-hakusan.com/",
+"accessJa": null
+},
+{
+"id": "hakusan_seymour",
+"nameJa": "白山千丈温泉セイモアスキー場",
+"prefJa": "石川県",
+"officialUrl": "https://www.sam-hakusan.com/",
+"accessJa": null
+},
+{
+"id": "kanazawa_iozen",
+"nameJa": "金沢市営医王山スキー場",
+"prefJa": "石川県",
+"officialUrl": null,
+"accessJa": null
+},
+{
+"id": "skijam_katsuyama",
+"nameJa": "JAM福井勝山マウンテンリゾート（旧スキージャム勝山）",
+"prefJa": "福井県",
+"officialUrl": "https://jamresort.jp/",
+"accessJa": "中部縦貫道 勝山ICから約20分／えちぜん鉄道 勝山駅から無料シャトルバス（JR福井駅からは宿泊者専用送迎バス）"
+},
+{
+"id": "kuzuryu",
+"nameJa": "九頭竜スキー場",
+"prefJa": "福井県",
+"officialUrl": "https://fupo.jp/article/fukuiski/",
+"accessJa": null
+},
+{
+"id": "imajo_365",
+"nameJa": "今庄365スキー場",
+"prefJa": "福井県",
+"officialUrl": "https://imajyo365.jp/",
+"accessJa": null
+},
+{
+"id": "shinbo_family",
+"nameJa": "新保ファミリースキー場",
+"prefJa": "福井県",
+"officialUrl": "http://www.ski.ikeda-kibou.com/",
+"accessJa": "北陸道 武生ICから約20分"
+},
+{
+"id": "fukui_izumi",
+"nameJa": "福井和泉スキー場",
+"prefJa": "福井県",
+"officialUrl": "https://fukuiizumi.com/",
+"accessJa": null
+}
+]

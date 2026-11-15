@@ -621,6 +621,7 @@ const STRINGS = {
     accessLabel:"アクセス",
     cachedWeather:(d)=>`保存済みの天気（${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点）`,
     allListLink:"都道府県別の一覧ページ",
+    winterClosedNote:"※このスキー場は冬季は営業していません（春〜夏に営業）。",
     prepTitle:"おでかけ準備",
     prepAccess:"行き方を調べる",
     prepAccessUnknown:"行き方は公式サイトでご確認ください",
@@ -810,6 +811,7 @@ const STRINGS = {
     accessLabel:"Access",
     cachedWeather:(d)=>`Saved weather (as of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")})`,
     allListLink:"List by prefecture",
+    winterClosedNote:"This resort is closed in winter (open spring to summer).",
     prepTitle:"Trip prep",
     prepAccess:"Plan your route",
     prepAccessUnknown:"Check the official site for access",
@@ -1365,6 +1367,7 @@ function selectMapPoint(p){
         <div><h3>${name}</h3><div class="mp-sub">${prefLabel(r.prefJa)} ・ ${t("nearestFrom")}: ${city} <span class="num">${r.distKm}km</span></div></div>
         <div style="display:flex;gap:2px;flex:0 0 auto"><button class="fav-btn ${fav?"on":""}" id="mpFav" aria-label="${t("favToggle")}" aria-pressed="${fav}">${fav?"★":"☆"}</button><button class="close-btn" id="mpClose" aria-label="${t("close")}">✕</button></div>
       </div>
+      ${r.winterClosed ? `<div class="mp-note" style="color:#C2410C">${t("winterClosedNote")}</div>` : ""}
       <div class="mp-stats">
         <div class="mp-stat"><b>${r.liftAdult!=null ? yen(r.liftAdult) : "—"}</b>${t("mpAdult")}</div>
         <div class="mp-stat"><b>${r.base!=null&&r.top!=null ? (r.top-r.base)+"m" : "—"}</b>${t("mpVertical")}</div>
@@ -1608,6 +1611,7 @@ function openDetail(id){
         <button class="close-btn" id="closeBtn" aria-label="${t('close')}">✕</button>
       </div>
     </div>
+    ${r.winterClosed ? `<div class="reco-approx-note">${t("winterClosedNote")}</div>` : ""}
     <p>${desc}</p>
     <div class="info-cards">
       <div class="info-card"><div class="big num">${r.base!=null&&r.top!=null ? `${r.base}–${r.top}m` : "—"}</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>
@@ -1777,7 +1781,7 @@ function scoreResort(r, pref, levelIdx, isDayTrip){
 function computeRanking(){
   const pref = PREFECTURES[wiz.prefIdx];
   const isDayTrip = wiz.trip===0;
-  return RESORTS.filter(r=>r.lat!=null).map(r=>({r, s:scoreResort(r, pref, wiz.level, isDayTrip)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
+  return RESORTS.filter(r=>r.lat!=null && !r.winterClosed).map(r=>({r, s:scoreResort(r, pref, wiz.level, isDayTrip)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
 }
 
 function renderRecommendation(){

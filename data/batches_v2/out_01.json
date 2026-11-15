@@ -1,0 +1,955 @@
+[
+ {
+  "id": "numata_takaho",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.numata.hokkaido.jp/section/kyouiku/ujj7s30000001mvv.html"
+  ]
+ },
+ {
+  "id": "fus_snow_area",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://webket.jp/pc/ticket/index?fc=00138&ac=8012",
+   "note": "ウェアもレンタル可。Web（Webket）で事前申込可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.fujino-yagai-sports.jp/school"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.fujino-yagai-sports.jp/winter/websale",
+   "note": "Webketでリフト券（ICカード）の事前購入・チャージが可能"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "地下鉄真駒内駅",
+   "howJa": "じょうてつバスで「藤野4条11丁目」下車、徒歩約5分（JR札幌駅前発もあり）",
+   "howEn": "Jotetsu bus to 'Fujino 4-jo 11-chome', then about 5 min walk (also from JR Sapporo Sta.)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.fujino-yagai-sports.jp/winter/access",
+   "https://www.fujino-yagai-sports.jp/winter/fee",
+   "https://www.fujino-yagai-sports.jp/winter/websale"
+  ]
+ },
+ {
+  "id": "iwanai_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://rental-ski-app.vercel.app/en",
+   "note": "ウェアもレンタル可。オンライン事前予約・決済可"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://iwanairesort.com/jp/ski",
+   "https://iwanairesort.com/jp/-rental-1",
+   "https://iwanairesort.com/jp/getting-here"
+  ]
+ },
+ {
+  "id": "engaru_rockvalley",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。リフト券付きレンタルパックあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR遠軽駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://engaru-mori-no-okhotsk.jp/skiing/price/",
+   "https://engaru-mori-no-okhotsk.jp/"
+  ]
+ },
+ {
+  "id": "kamoidake_kokusai",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.kamoidake.co.jp"
+  ]
+ },
+ {
+  "id": "sapporo_bankei",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア付きセット・手ぶらパックあり"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://bankei-ski.com/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "地下鉄円山公園駅",
+   "howJa": "路線バス（ばんけいバス）が毎日運行（発寒南駅・真駒内駅からも）",
+   "howEn": "Bankei Bus runs daily (also from Hassamu-minami and Makomanai stations)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.bankei.co.jp/ski/",
+   "https://www.bankei.co.jp/rental/",
+   "https://www.bankei.co.jp/access/",
+   "https://bankei-ski.com/"
+  ]
+ },
+ {
+  "id": "shintotsukawa_sotchidake",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は現金のみ（窓口購入）"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.shintotsukawa.lg.jp/kanko/detail/00005359.html"
+  ]
+ },
+ {
+  "id": "nukabira_gensenkyo",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ichida54.wixsite.com/nukabiraskijyo/スクール"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR帯広駅",
+   "howJa": "帯広駅バスターミナルから十勝バスで約100分（1日4往復）",
+   "howEn": "Tokachi Bus from Obihiro Sta. bus terminal, about 100 min (4 round trips a day)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ichida54.wixsite.com/nukabiraskijyo",
+   "https://ichida54.wixsite.com/nukabiraskijyo/レンタル",
+   "https://ichida54.wixsite.com/nukabiraskijyo/スクール",
+   "https://rurubu.jp/andmore/spot/80001781",
+   "https://www.jalan.net/kankou/spt_01633cd2110076303/"
+  ]
+ },
+ {
+  "id": "pippu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "場内「雪番屋」でレンタル"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://pippu.ski/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR比布駅",
+   "howJa": "営業期間中は無料送迎バスが毎日運行（約15分）。旭川駅前から道北バス（有料・約65分）も",
+   "howEn": "Free shuttle bus daily during the season (about 15 min). Paid Dohoku Bus from Asahikawa Sta. (about 65 min)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://pippu.ski/rental/",
+   "https://pippu.ski/lesson/",
+   "https://pippu.ski/access/",
+   "https://pippu.ski/lift/"
+  ]
+ },
+ {
+  "id": "kikonai_furusatonomori",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフトの運行なし。使用料は原則無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://kikonai.ed.jp/facility/ski_resort/"
+  ]
+ },
+ {
+  "id": "horotachi",
+  "rental": {
+   "available": false,
+   "reserveUrl": null,
+   "note": "公式に「レンタルなし」（チューブの無料貸出のみ）"
+  },
+  "school": {
+   "available": false,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR深川駅",
+   "howJa": "JR北海道バス深名線で「幌加内」下車（約100分）、徒歩約2km",
+   "howEn": "JR Hokkaido Bus (Shinmei Line) to 'Horokanai' (about 100 min), then about 2 km walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.horotachi-horokanai.com/slopesandcourses",
+   "https://www.horotachi-horokanai.com"
+  ]
+ },
+ {
+  "id": "windsor_snow_village",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ホテルでウェア・ブーツ・ヘルメット含めレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR洞爺駅",
+   "howJa": "ホテルの無料シャトルバスで約40分（前日18時までに要予約）",
+   "howEn": "Hotel free shuttle bus, about 40 min (reserve by 6 pm the day before)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.windsor-hotels.co.jp/ja/post-6775/",
+   "https://www.windsor-hotels.co.jp/ja/access/"
+  ]
+ },
+ {
+  "id": "shari_unabetsu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "有料"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.shari.hokkaido.jp/soshikikarasagasu/shokokankoka/shisetsuannai/406.html"
+  ]
+ },
+ {
+  "id": "kamui_ski_links",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・手袋・ゴーグルもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.kamui-skilinks.com/international-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://kamuiski.axess.shop/",
+   "note": "WEBストアでICカード（1日券・4時間券のみ）を事前購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR旭川駅",
+   "howJa": "旭川駅前（22番バス停）からシャトルバス（有料）で約40分",
+   "howEn": "Paid shuttle bus from Asahikawa Sta. (bus stop No.22), about 40 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.kamui-skilinks.com/guide/",
+   "https://www.kamui-skilinks.com/international-school/",
+   "https://www.kamui-skilinks.com/accsess/"
+  ]
+ },
+ {
+  "id": "karurusu_sanlaiva",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://sanlaiva.com/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR登別駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://sanlaiva.com/rental",
+   "https://sanlaiva.com/school",
+   "https://sanlaiva.com/access"
+  ]
+ },
+ {
+  "id": "canmore_ski_village",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。レンタル付きリフト券セットあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.canmore.jp/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "公式にWeb事前購入（QRコードで受取）の案内あり。当日券は窓口"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.canmore-ski.jp/",
+   "https://www.canmore-ski.jp/rental/",
+   "https://www.canmore-ski.jp/access/"
+  ]
+ },
+ {
+  "id": "kiroro",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://webstore.kiroro.co.jp/JA/",
+   "note": "ウェアもレンタル可。Web購入で5%OFF（ゴーグル・帽子・手袋のレンタルなし）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.kiroro.co.jp/ja/ski_lessons/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webstore.kiroro.co.jp/JA/",
+   "note": "Webストアで通常料金から5%OFF"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR小樽駅",
+   "howJa": "スキーシーズンは小樽〜キロロ間のバスあり（要予約）。タクシーなら約40分",
+   "howEn": "Ski-season bus between Otaru and Kiroro (reservation required). About 40 min by taxi",
+   "fromCityBus": "札幌から直行バス「キロロパウダーエクスプレス」あり（要予約）"
+  },
+  "sourceUrls": [
+   "https://www.kiroro.co.jp/ja/access-winter/",
+   "https://www.kiroro.co.jp/ja/lift_price/",
+   "https://www.kiroro.co.jp/ja/rental_price/",
+   "https://www.kiroro.co.jp/ja/ski_international_lesson/"
+  ]
+ },
+ {
+  "id": "consadole_niki_skipark",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券はチケット売場で現金のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR然別駅",
+   "howJa": "徒歩約20分（町のコミュニティバス「ニキバス」、中央バス銀山線もあり）",
+   "howEn": "About 20 min walk (Niki community bus and Chuo Bus Ginzan Line also available)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://nikipark.jp/"
+  ]
+ },
+ {
+  "id": "sapporo_teine",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://sapporo-teine.com/snow/rental/before-booking",
+   "note": "ウェアもレンタル可。事前オンライン申込で受取がスムーズ"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://sapporo-teine.com/snow/school"
+  },
+  "ticket": {
+   "onlineUrl": "https://kamori.co.jp/axesswebshop/",
+   "note": "オンライン事前購入は窓口より約1,000円安い（1日券）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR手稲駅",
+   "howJa": "JR手稲駅南口からJR北海道バスで約16分（オリンピア）／約28分（ハイランド）",
+   "howEn": "JR Hokkaido Bus from Teine Sta. south exit, about 16 min (Olympia) / 28 min (Highland)",
+   "fromCityBus": "札幌市内ホテルから直行バス「ビッグランズ号」（約50分・予約制）"
+  },
+  "sourceUrls": [
+   "https://sapporo-teine.com/snow/rental",
+   "https://sapporo-teine.com/snow/lift-time",
+   "https://sapporo-teine.com/snow/school/daily",
+   "https://sapporo-teine.com/snow/access/other",
+   "https://sapporo-teine.com/snow/plan/bus-pack"
+  ]
+ },
+ {
+  "id": "santa_present_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.asahikawasantapresentpark.com/cont1/13.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR旭川駅",
+   "howJa": "冬期限定の道北バス455番「快速サンタリンク線」",
+   "howEn": "Winter-only Dohoku Bus No.455 'Santa Link' rapid line",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.asahikawasantapresentpark.com/",
+   "https://www.asahikawasantapresentpark.com/cont1/10.html",
+   "https://www.asahikawasantapresentpark.com/cont1/13.html",
+   "https://www.asahikawasantapresentpark.com/cont9/43.html"
+  ]
+ },
+ {
+  "id": "snow_cruise_onze",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約・Web申込は不可（在庫限り）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://onze.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR銭函駅",
+   "howJa": "無料シャトルバス（JR銭函駅前発、15〜20分間隔）",
+   "howEn": "Free shuttle bus from JR Zenibako Sta. (every 15-20 min)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://onze.jp/rental/",
+   "https://onze.jp/school/",
+   "https://onze.jp/bus/",
+   "https://onze.jp/access/"
+  ]
+ },
+ {
+  "id": "dynasty_ski_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・小物込みの手ぶらパックあり。支払いは現金のみ"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.dynasty-resort.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "支払いは現金のみ"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR北広島駅",
+   "howJa": "タクシーで約20分",
+   "howEn": "About 20 min by taxi",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.dynasty-resort.jp/lift/",
+   "https://www.dynasty-resort.jp/school/",
+   "https://www.dynasty-resort.jp/access/"
+  ]
+ },
+ {
+  "id": "niseko_hanazono",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://hanazononiseko.com/ja/winter/rental-and-retail/rental",
+   "note": "ウェアもレンタル可。Web予約は利用開始4日前まで"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://hanazononiseko.com/ja/winter/ski-school"
+  },
+  "ticket": {
+   "onlineUrl": "https://hanazononiseko.com/ja/winter/resort/lift-tickets",
+   "note": "オンライン購入で1日券が窓口より約700円安い（初回はキーカード代500円）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR倶知安駅",
+   "howJa": "中央バス（ヒルトンニセコヴィレッジ行き）でヒラフへ、無料HANAZONOシャトルバスに乗り換え。パークハイアットの無料シャトル（約40分）もあり",
+   "howEn": "Chuo Bus to Hirafu, then free HANAZONO shuttle. Park Hyatt free shuttle also runs (about 40 min)",
+   "fromCityBus": "新千歳空港から空港シャトルバスあり（約2.5〜3.5時間・要予約）"
+  },
+  "sourceUrls": [
+   "https://hanazononiseko.com/ja/winter/rental-and-retail/rental-niseko-sports",
+   "https://hanazononiseko.com/ja/winter/ski-school",
+   "https://hanazononiseko.com/ja/winter/resort/lift-tickets",
+   "https://hanazononiseko.com/ja/winter/resort/access"
+  ]
+ },
+ {
+  "id": "niseko_annupuri",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.skirental.jp/",
+   "note": "ゲレンデ内「スポーツレントチャオ」でレンタル"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://nassmiyata.wixsite.com/nass-jp"
+  },
+  "ticket": {
+   "onlineUrl": "https://annupuri.bookfast.jp/public/landing/ja/shop.html",
+   "note": "オンラインリフト券は当日購入も可。8〜12日券などはオンライン販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JRニセコ駅",
+   "howJa": "路線バスまたはタクシーで約10分",
+   "howEn": "Local bus or taxi, about 10 min",
+   "fromCityBus": "札幌から高速ニセコ号（北海道中央バス）で約3時間"
+  },
+  "sourceUrls": [
+   "https://annupuri.info/",
+   "https://annupuri.info/facility/index.php",
+   "https://annupuri.info/lift-tickets/"
+  ]
+ },
+ {
+  "id": "niseko_village",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・ヘルメットもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.niseko-village.com/ja/white/niseko-village-snow-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://niseko-village.bookfast.jp/public/landing/ja/shop.html",
+   "note": "3〜7日券はオンライン販売限定"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR倶知安駅",
+   "howJa": "ニセコビレッジ行きバスまたは無料シャトルバス（宿泊者優先・約25分）",
+   "howEn": "Bus to Niseko Village or free shuttle (hotel guests prioritized, about 25 min)",
+   "fromCityBus": "札幌市内・新千歳空港から中央バスの冬季バスあり（要予約）"
+  },
+  "sourceUrls": [
+   "https://www.niseko-village.com/ja/white/lift-passes/",
+   "https://www.niseko-village.com/ja/white/equipment-rental/",
+   "https://www.niseko-village.com/ja/white/niseko-village-snow-school/",
+   "https://www.niseko-village.com/ja/nisekovillage/access/"
+  ]
+ },
+ {
+  "id": "niseko_moiwa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。事前予約不要（先着順）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://niseko-moiwa.jp/ja/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://shop.niseko-moiwa.jp/",
+   "note": "オンライン購入で窓口より約10%安い"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JRニセコ駅",
+   "howJa": "タクシーで約10分（町内予約制の「にこっとBUS」もあり）",
+   "howEn": "About 10 min by taxi (Niseko town on-demand 'Nikotto Bus' also available)",
+   "fromCityBus": "札幌市内・新千歳空港からルスツ・ニセコ行きバスで約3時間（「甘露の森」から徒歩約15分）"
+  },
+  "sourceUrls": [
+   "https://niseko-moiwa.jp/ja/rental/",
+   "https://niseko-moiwa.jp/ja/school/",
+   "https://niseko-moiwa.jp/ja/lift-pass/",
+   "https://niseko-moiwa.jp/ja/about-moiwa/"
+  ]
+ },
+ {
+  "id": "niseko",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://www.niseko.ne.jp/ja/online-liftpass/",
+   "note": "全山共通オンラインリフト券は定価の約5%割引・当日購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR倶知安駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "札幌（JR札幌駅北口・地下鉄真駒内駅）・新千歳空港からスキーバスあり（北海道中央バス・要予約）"
+  },
+  "sourceUrls": [
+   "https://www.niseko.ne.jp/ja/online-liftpass/",
+   "https://www.niseko.ne.jp/ja/getting-to-niseko/"
+  ]
+ },
+ {
+  "id": "niseko_grand_hirafu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.reserve.tokyu-snow-resort.com/ja/grand-hirafu",
+   "note": "ゴーグル・手袋・ビーニーは新品提供の小物セットあり"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.grand-hirafu.jp/snow/schools/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.grand-hirafu.jp/snow/tickets/",
+   "note": "オンライン購入で約5%割引（初回キーカード代500円）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR倶知安駅",
+   "howJa": "バスで約20分（タクシー約15分）",
+   "howEn": "About 20 min by bus (about 15 min by taxi)",
+   "fromCityBus": "札幌・新千歳空港からスキーバスあり（北海道中央バス・要予約）"
+  },
+  "sourceUrls": [
+   "https://www.grand-hirafu.jp/snow/rentals/",
+   "https://www.grand-hirafu.jp/snow/schools/",
+   "https://www.grand-hirafu.jp/snow/tickets/",
+   "https://www.grand-hirafu.jp/snow/access/",
+   "https://www.niseko.ne.jp/ja/getting-to-niseko/"
+  ]
+ },
+ {
+  "id": "northern_arc_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://northernarcresort.co.jp/contents/golfski/ski.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://northernarcresort.co.jp/contents/golfski/ski.html"
+  ]
+ },
+ {
+  "id": "mount_racey",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://yubari-resort.co.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://mount-racey.easy-myshop.jp/c-item-list?category_id=1&parent_category_id=1",
+   "note": "オンライン販売（easy my shop）はシーズン券など。時期限定"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新夕張駅",
+   "howJa": "夕鉄バス「夕張市内線」で「レースイリゾート前」下車",
+   "howEn": "Yutetsu Bus (Yubari city line) to 'Racey Resort-mae'",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://yubari-resort.co.jp/price/",
+   "https://yubari-resort.co.jp/rental/",
+   "https://yubari-resort.co.jp/school/",
+   "https://yubari-resort.co.jp/access/"
+  ]
+ },
+ {
+  "id": "memuro",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "管理業務受託者の自主事業としてレンタル実施"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://memuro.axess.shop/ja/Products/Tickets/",
+   "note": "ICリフト券のWEB販売・チャージ可"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.memuro.net/administration/soshiki/miryoku/shin-arashiyama/2025-1112-1623-114.html"
+  ]
+ },
+ {
+  "id": "greenpia_onuma",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。宿泊者20%OFF・レッスン受講者30%OFF"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.gp-onuma.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR大沼公園駅",
+   "howJa": "大沼公園駅からタクシー約15分。宿泊者は新函館北斗駅から無料送迎バス（約50分・前日18時までに予約）",
+   "howEn": "About 15 min by taxi from Onuma-Koen Sta. Hotel guests: free shuttle from Shin-Hakodate-Hokuto Sta. (about 50 min, reserve by 6 pm the day before)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.gp-onuma.com/ski/",
+   "https://www.gp-onuma.com/school/",
+   "https://www.gp-onuma.com/access/"
+  ]
+ },
+ {
+  "id": "rusutsu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://rusutsu.com/ski-lessons/"
+  },
+  "ticket": {
+   "onlineUrl": "https://rusutsu.axess.shop/ja/Products/Tickets/",
+   "note": "オンライン購入は窓口より割安（ルスツアプリが必要）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "札幌から有料バス「ルスツエクスプレス」（約105分・事前予約制）。新千歳空港・ニセコからもバスあり"
+  },
+  "sourceUrls": [
+   "https://rusutsu.com/winter-lift-tickets/",
+   "https://rusutsu.com/ski-rentals/",
+   "https://rusutsu.com/ski-lessons/",
+   "https://rusutsu.com/access-shuttle-bus-sapporo/"
+  ]
+ }
+]
