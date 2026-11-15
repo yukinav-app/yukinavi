@@ -750,5 +750,763 @@
    "https://winghills.net/news/206/",
    "https://winghills.net/access/"
   ]
+ },
+ {
+  "id": "snowwave_park_shirotori_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルハウス「シュルンツ」。ウェアもレンタル可。WEB事前登録で窓口手続き短縮（貸出は当日のみ）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://siratori-k.jp/swp/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "LINEお友だちクーポンで平日リフト1日券＋レンタルセットのパック割引（窓口購入）"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://siratori-k.jp/swp/price",
+   "https://siratori-k.jp/swp/school/",
+   "https://siratori-k.jp/swp/access"
+  ]
+ },
+ {
+  "id": "dynaland",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.dynaland.co.jp/features/#rental",
+   "note": "前日12時までの事前決済で用具予約・取り置き可。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.dynaland.co.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.dynaland.co.jp/ec/",
+   "note": "WEBチケットサイトLIPACA（アソビュー提供）で購入→QRで発券。高鷲スノーパークと共通の早割1日券 6,400円→4,500円（11/30まで・数量限定）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "名古屋（名鉄バスセンター）・岐阜・高山から岐阜バス高速バスで「高速ひるがの高原」下車→無料のタカススノーシャトルバスに乗り換え（名古屋から約2時間半〜3時間半）",
+   "howEn": "Gifu Bus highway bus from Nagoya/Gifu/Takayama to 'Kosoku Hirugano Kogen' stop, then free Takasu Snow Shuttle (about 2.5-3.5 h from Nagoya)",
+   "fromCityBus": "名古屋・大阪・四日市・岡崎等から直行ツアーバスあり（名古屋は毎日、12月中旬〜3月下旬）"
+  },
+  "sourceUrls": [
+   "https://www.dynaland.co.jp/rental/",
+   "https://www.dynaland.co.jp/school/",
+   "https://www.dynaland.co.jp/ec/",
+   "https://www.dynaland.co.jp/access/"
+  ]
+ },
+ {
+  "id": "whitepia_takasu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://pia.smartgelande.com/reserve/",
+   "note": "スマホ・PCから申込、前日正午までの事前決済で取り置き（予約）可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://whitepia.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/c6giohd9hp/",
+   "note": "アソビューでWeb購入可。金曜日は半額デー。鷲ヶ岳との共通券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "名古屋（名鉄バスセンター）・岐阜・高山から岐阜バス高速バスで「高速ひるがの高原」下車→無料のタカススノーシャトルバス（鷲ヶ岳LINE）に乗り換え",
+   "howEn": "Gifu Bus highway bus to 'Kosoku Hirugano Kogen' stop, then free Takasu Snow Shuttle (Washigatake Line)",
+   "fromCityBus": "日帰りバスツアーの案内あり（公式「日帰りバスツアー」ページ）"
+  },
+  "sourceUrls": [
+   "https://whitepia.jp/rental/",
+   "https://whitepia.jp/school/",
+   "https://whitepia.jp/liftticket/",
+   "https://whitepia.jp/access/",
+   "https://www.dynaland.co.jp/access/",
+   "https://whitepia.jp/bustour/"
+  ]
+ },
+ {
+  "id": "hirayu_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。ヘルメット・ゴーグル・手袋・帽子も各500円でレンタル"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.hirayunomori.com/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "当日のリフト1日券・半日券で「ひらゆの森」温泉に無料入浴可。窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hirayunomori.com/",
+   "https://www.hirayunomori.com/price/"
+  ]
+ },
+ {
+  "id": "hida_hoonokidaira",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。リフト1日券付き「手ぶ楽パック」あり"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://hounoki-daira.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=51591&ac=9000",
+   "note": "公式サイトからWebketでリフト券WEB購入可。子供料金は中学生まで"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR高山駅",
+   "howJa": "高山駅から濃飛バスで約40分（スキー場前バス停直結）",
+   "howEn": "Nohi Bus from JR Takayama Sta., about 40 min (stop right at the ski area)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://hounoki-daira.com/price/",
+   "https://hounoki-daira.com/school/",
+   "https://hounoki-daira.com/access/",
+   "https://hounoki-daira.com/"
+  ]
+ },
+ {
+  "id": "takasu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.takasu.gr.jp/rental/",
+   "note": "申込はすべてWEB。事前決済で取り置き（予約）可。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.takasu.gr.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.takasu.gr.jp/ec/",
+   "note": "WEBチケットサイトLIPACA（アソビュー提供）。ダイナランド共通早割1日券 6,400円→4,500円（11/30まで・数量限定）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "名古屋（名鉄バスセンター）・岐阜・高山から岐阜バス高速バスで「高速ひるがの高原」下車→無料のタカススノーシャトルバスに乗り換え",
+   "howEn": "Gifu Bus highway bus from Nagoya/Gifu/Takayama to 'Kosoku Hirugano Kogen' stop, then free Takasu Snow Shuttle",
+   "fromCityBus": "名古屋・大阪・三重から直行ツアーバスあり（名古屋・大阪は毎日）"
+  },
+  "sourceUrls": [
+   "https://www.takasu.gr.jp/rental/",
+   "https://www.takasu.gr.jp/school/",
+   "https://www.takasu.gr.jp/ec/",
+   "https://www.takasu.gr.jp/access/"
+  ]
+ },
+ {
+  "id": "washigatake",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://ski.washigatake.jp/rental/",
+   "note": "専用フォームで事前クレジット決済の取り置き（手数料500円）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ski.washigatake.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://ski.washigatake.jp/ec/",
+   "note": "WEBチケットサイトLIPACA（アソビュー提供）で鷲ヶ岳単独リフト券を販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "名古屋（名鉄バスセンター）・岐阜・高山から岐阜バス高速バスで「高速ひるがの高原」下車→無料のタカススノーシャトルバス（鷲ヶ岳LINE）に乗り換え",
+   "howEn": "Gifu Bus highway bus to 'Kosoku Hirugano Kogen' stop, then free Takasu Snow Shuttle (Washigatake Line)",
+   "fromCityBus": "大阪発の直行ツアーバス（夜発・朝発、予約制）を公式で案内"
+  },
+  "sourceUrls": [
+   "https://ski.washigatake.jp/rental/",
+   "https://ski.washigatake.jp/school/",
+   "https://ski.washigatake.jp/ec/",
+   "https://ski.washigatake.jp/access/",
+   "https://www.dynaland.co.jp/access/"
+  ]
+ },
+ {
+  "id": "snowpark_yeti",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可（グローブ・ゴーグル・帽子は貸出なし）。前売りWEBチケットにレンタル付きプランあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.yeti-resort.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.fujiyamaconnect.jp/tenant/32/",
+   "note": "前売りWEBチケット（Fujiyama Connect）で事前購入。初級者向けスクールは予約不要"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR御殿場駅",
+   "howJa": "御殿場駅から富士急モビリティの路線バス（十里木で乗り換え、片道1,570円）",
+   "howEn": "Fujikyu Mobility local bus from JR Gotemba Sta. (transfer at Jurigi, 1,570 yen one way)",
+   "fromCityBus": "新宿・新横浜等から直行バス（ライナーバス、リフト券込み・要予約）。新宿から約2時間30分"
+  },
+  "sourceUrls": [
+   "https://www.yeti-resort.com/rental/",
+   "https://www.yeti-resort.com/school/",
+   "https://www.yeti-resort.com/service/",
+   "https://www.yeti-resort.com/access/bus.html",
+   "https://www.yeti-resort.com/access/linerbus.html"
+  ]
+ },
+ {
+  "id": "rivawell_ikawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボード・ウェア・ソリのレンタルあり（現金払い）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券 大人1,040円・子供310円（リフト券のみキャッシュレス可）。窓口販売のみの案内"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.shizuoka.lg.jp/okushizuoka/spot/s000004.html",
+   "https://www.at-s.com/event/article/118973"
+  ]
+ },
+ {
+  "id": "iox_arosa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボード・ウェアのレンタルあり（帽子・ゴーグル・手袋は貸出なし）。申込用紙で現地受付"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://iox-arosa.jp/white/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "早割券（紙・web）あり（購入ページのURLは公式で未確認）。インフォメーションで1日券に引換"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR城端線 福光駅",
+   "howJa": "福光駅からのバス・シャトルの案内なし。福光駅からタクシー（公式案内）",
+   "howEn": "No bus/shuttle listed; taxi from Fukumitsu Sta. (per official site)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://iox-arosa.jp/white/archives/3733",
+   "https://iox-arosa.jp/white/school",
+   "https://iox-arosa.jp/white/price",
+   "https://iox-arosa.jp/white/access"
+  ]
+ },
+ {
+  "id": "taira",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・ヘルメットもレンタル可（手袋・帽子・ゴーグルは要持参）。支払いは現金・PayPayのみ"
+  },
+  "school": {
+   "available": false,
+   "english": null,
+   "url": "https://gokayama-taira.com/ski/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": false,
+   "station": null,
+   "howJa": "公式は新高岡駅・金沢駅からレンタカー等での来場を案内（公共交通の案内なし）",
+   "howEn": "Official site suggests rental car from Shin-Takaoka/Kanazawa Sta. (no public transit listed)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://gokayama-taira.com/ski/rental",
+   "https://gokayama-taira.com/ski/school",
+   "https://gokayama-taira.com/access"
+  ]
+ },
+ {
+  "id": "tonami_yumenotaira",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキーセット・ウェア・そりのレンタルあり（別途保証金が必要）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR城端線 城端駅／JR高岡駅",
+   "howJa": "公式は駅から車での所要時間のみ案内（城端駅から車で約30分、高岡駅から約33分）。バスの案内なし",
+   "howEn": "Official site lists only drive times from stations (about 30 min from Johana Sta.); no bus info",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ski.yumeno-taira.com/fee/index.php",
+   "https://ski.yumeno-taira.com/access/index.php"
+  ]
+ },
+ {
+  "id": "takanbo",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://gokayama-kankou.com/fees/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://gokayama-kankou.com/takanbo/",
+   "https://gokayama-kankou.com/fees/"
+  ]
+ },
+ {
+  "id": "ushidake_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボード・ウェアのレンタルあり（場内レンタル店へ問い合わせ）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ushidake.com/ski/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "窓口販売の案内のみ。毎週土曜はお子様デー（小中学生1日券1,200円）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR高山本線 越中八尾駅",
+   "howJa": "八尾駅から富山市営バス（山田コミュニティバス）で山田中核型地区センター前まで約25分→乗り継いでスキー場まで約10分（臨時便あり）",
+   "howEn": "Toyama city community bus from Etchu-Yatsuo Sta. to Yamada center (~25 min), then transfer to the ski area (~10 min)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ushidake.com/ski/rental/",
+   "https://ushidake.com/ski/school/",
+   "https://ushidake.com/ski/liftprice/",
+   "https://ushidake.com/ski/access/"
+  ]
+ },
+ {
+  "id": "tateyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー場直営レンタル（ウェアも可）。予約不可。リフト券＋レンタルのお得なセットあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.tateyama36.co.jp/price/#School"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト1日券＋レンタルのセット券で最大1,500円お得（窓口）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "富山地方鉄道 立山駅",
+   "howJa": "立山駅前からスキー場行き路線バス（らいちょうバレー・粟巣野・極楽坂を経由して立山駅に戻る循環）",
+   "howEn": "Local bus from Tateyama Sta. looping via Raicho Valley, Awasuno and Gokurakuzaka ski areas",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.tateyama36.co.jp/price/",
+   "https://www.tateyama36.co.jp/access/"
+  ]
+ },
+ {
+  "id": "unazuki_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "中島スキーセンターでスキー・ボードのレンタル"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.unazuki-snowpark.com/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券 大人1,560円・子供1,030円。窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "富山地方鉄道 宇奈月温泉駅",
+   "howJa": "宇奈月温泉駅から徒歩約5分で第1ペアリフト乗り場（リフトでスキー場へ）",
+   "howEn": "About 5 min walk from Unazuki-Onsen Sta. to the No.1 pair lift up to the slopes",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.unazuki-snowpark.com/",
+   "https://www.skicen.com",
+   "https://www.pref.toyama.jp/sportslink/facility/00015.html"
+  ]
+ },
+ {
+  "id": "nanao_korosa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキーレンタルあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券・ナイター券 大人1,500円（クレジットカード不可）"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hot-ishikawa.jp/spot/detail_5421.html"
+  ]
+ },
+ {
+  "id": "okuradake_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルスキーあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券 一般4,000円。窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hot-ishikawa.jp/event/detail_30771.html"
+  ]
+ },
+ {
+  "id": "hakusan_ichirino_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "エリア内5つのレンタルショップを利用（スキー・ボードセット大人1日4,000円〜）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.sam-hakusan.com/ichirino/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://jp.wamazing.com/snow/languages.html?source=aGFrdXNhbi1pY2hpcmluby1vbnNlbg==",
+   "note": "公式サイトでWAmazing Snowでの事前購入を案内（主に訪日客向け）。金沢発直行バスのスキークーポンあり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR金沢駅",
+   "howJa": "金沢駅から北陸鉄道のゲレンデ直行バス（運行日限定）。小松発シャトルバス（ホワイトリング）もあり",
+   "howEn": "Hokutetsu direct ski bus from JR Kanazawa Sta. (select days); shuttle bus from Komatsu also available",
+   "fromCityBus": "金沢発ゲレンデ直行バス（北陸鉄道）、金沢・加賀温泉発の日帰りスキーツアー（リフト券・レンタル付き）"
+  },
+  "sourceUrls": [
+   "https://www.sam-hakusan.com/ichirino/rental/",
+   "https://www.sam-hakusan.com/ichirino/school/",
+   "https://www.sam-hakusan.com/ichirino/lift/",
+   "https://www.sam-hakusan.com/ichirino/bus/"
+  ]
+ },
+ {
+  "id": "hakusan_seymour",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "インフォメーションセンター2Fのセイモアレンタル。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.sam-hakusan.com/seymour/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://jp.wamazing.com/snow/languages.html?source=aGFrdXNhbi1zZXltb3Vy",
+   "note": "公式サイトでWAmazing Snowでの事前購入を案内（主に訪日客向け）。金沢発直行バスのスキークーポンあり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR金沢駅",
+   "howJa": "金沢駅から北陸鉄道のゲレンデ直行バス（運行日限定）",
+   "howEn": "Hokutetsu direct ski bus from JR Kanazawa Sta. (select days)",
+   "fromCityBus": "金沢発着ゲレンデ直行バス（北陸鉄道、スキークーポンあり）"
+  },
+  "sourceUrls": [
+   "https://www.sam-hakusan.com/seymour/rental_shop/",
+   "https://www.sam-hakusan.com/seymour/school/",
+   "https://www.sam-hakusan.com/seymour/bus/"
+  ]
+ },
+ {
+  "id": "kanazawa_iozen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "土日祝はレンタルスキー「Green-Up」、平日は医王山スポーツセンター等で受付（当日のみ）。年末年始はレンタルなし"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券1,570円。ペアリフト券売所は土日祝のみ販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR金沢駅",
+   "howJa": "金沢駅東口8番乗り場から北鉄バス「医王山線」で約55分（土日のみ運行、「医王山スキー場前」下車徒歩約1分）",
+   "howEn": "Hokutetsu Bus 'Iozen Line' from Kanazawa Sta. East Exit stop 8, about 55 min (weekends only)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.kanazawa-sports.jp/use/search/546/",
+   "https://www.kanazawa-kankoukyoukai.or.jp/article/detail_83.html"
+  ]
+ },
+ {
+  "id": "skijam_katsuyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://smartclub.tokyu-snow-resort.com/ja/jam",
+   "note": "スキー・ボード各1,000セット。事前クレジット決済の申込可（公式サイトのレンタル予約導線）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://jamresort.jp/activity-white/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://jamresort.jp/hayawari2026/",
+   "note": "早割（〜12/18）をWebketで販売：大人全日券 6,200円→4,500円（最大31%OFF）、QRでICカード受取"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "えちぜん鉄道 勝山駅",
+   "howJa": "勝山駅（または恐竜博物館）から無料シャトルバス（誰でも利用可・WEB事前予約制、12/18〜4/4）。JR福井駅からは宿泊者専用の無料送迎バス",
+   "howEn": "Free shuttle bus from Echizen Railway Katsuyama Sta. (open to all, web reservation required; Dec 18 - Apr 4). Free bus from JR Fukui Sta. for hotel guests only",
+   "fromCityBus": "大阪発（クイックライナー）・名古屋発（オリオンツアー）・福井駅発（京福バス）のツアーバスを公式で案内"
+  },
+  "sourceUrls": [
+   "https://jamresort.jp/activity-white/rental/",
+   "https://jamresort.jp/activity-white/school/",
+   "https://jamresort.jp/hayawari2026/",
+   "https://jamresort.jp/access/"
+  ]
+ },
+ {
+  "id": "kuzuryu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア込みフルセット大人5,000円。レンタル予約は公式LINE・レンタルフォームから可、当日申込もOK。現金のみ"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://kuzuryu-skiland.com/top/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "公式サイトのWEB割クーポン（画面提示か印刷）でリフト1日券割引。支払いは現金のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越美北線 九頭竜湖駅",
+   "howJa": "九頭竜湖駅から徒歩約10分",
+   "howEn": "About 10 min walk from JR Kuzuryuko Sta.",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://kuzuryu-skiland.com/top/rental",
+   "https://kuzuryu-skiland.com/top/school",
+   "https://kuzuryu-skiland.com/top/price",
+   "https://kuzuryu-skiland.com/top/",
+   "https://kuzuryu-skiland.com/top/access"
+  ]
+ },
+ {
+  "id": "imajo_365",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア込みフルセットあり（スキー大人1日5,800円）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://imajyo365.jp/rental"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "公式サイトでバスツアーの案内あり（2025年12月開始）"
+  },
+  "sourceUrls": [
+   "https://imajyo365.jp/rental",
+   "https://imajyo365.jp/"
+  ]
+ },
+ {
+  "id": "shinbo_family",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボードのレンタルあり（子ども用スキーも充実）。スノーボード滑走は平日の月・金のみ"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://www.ski.ikeda-kibou.com/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券2,500円。窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://www.ski.ikeda-kibou.com/"
+  ]
+ },
+ {
+  "id": "fukui_izumi",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア込みセットあり（大人1日7,000円）。小物も1日500円でレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://fukuiizumi.com/ryoukin/"
+  },
+  "ticket": {
+   "onlineUrl": "https://fukuiizumi-r.com/ticket/",
+   "note": "公式チケットサイトで早割チケット（5,200円→3,800円）を販売"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "大阪（なんば）・名古屋・東岡崎から直行バスのリフト券付き日帰り／宿泊パックを公式で案内"
+  },
+  "sourceUrls": [
+   "https://fukuiizumi.com/ryoukin/",
+   "https://fukuiizumi-r.com/ticket/",
+   "https://fukuiizumi.com/bustour/",
+   "https://fukuiizumi.com/access/"
+  ]
  }
 ]

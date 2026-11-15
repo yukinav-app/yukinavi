@@ -156,6 +156,7 @@ main{padding-block:18px 24px;}
 .wizard-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px;margin-bottom:18px;}
 .q-block{margin-bottom:20px;}
 .q-label{font-size:14.5px;font-weight:600;margin-bottom:10px;}
+.q-opt{font-size:12px;font-weight:500;color:var(--text-muted);}
 .pill-row{display:flex;flex-wrap:wrap;gap:8px;}
 .pill{border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:999px;padding:9px 16px;font-size:13.5px;font-weight:500;cursor:pointer;}
 .pill.sel{background:var(--accent);border-color:var(--accent);color:#fff;}
@@ -381,6 +382,10 @@ main{padding-block:18px 24px;}
           <div class="q-label" data-t="qTransport"></div>
           <div class="pill-row" id="pillTransport"></div>
         </div>
+        <div class="q-block">
+          <div class="q-label"><span data-t="qMust"></span> <span class="q-opt" data-t="qOptional"></span></div>
+          <div class="pill-row" id="pillMust"></div>
+        </div>
         <button class="wizard-submit" id="wizardSubmit" disabled data-t="wizardSubmit"></button>
       </div>
       <div id="wizardResult" hidden></div>
@@ -515,7 +520,7 @@ const GEAR_CATEGORIES = [
 
 const STRINGS = {
   ja:{
-    tagline:"5つの質問であなたにぴったりのゲレンデを",
+    tagline:"かんたん診断で、あなたにぴったりのゲレンデを",
     tabWizard:"診断",
     tabMap:"地図",
     tabNearby:"検索",
@@ -567,7 +572,7 @@ const STRINGS = {
     disclaimer:"※天気・降雪・積雪はOpen-Meteoの気象モデルによる推定値で、スキー場が発表する積雪とは異なる場合があります。リフト券は各スキー場の公式発表に基づく通常期の窓口価格です（時期・曜日・購入方法で変わります）。",
     liveWeatherBadge:"ライブ",
     close:"閉じる",
-    wizardIntro:"5つ答えるだけ。あとは私がぜんぶ決めます。",
+    wizardIntro:"いくつか答えるだけ。あとは私がぜんぶ決めます。",
     heroTitle:"次の休み、どこ滑る？",
     chipFav:"お気に入り",
     sortAccess:"アクセスが近い順",
@@ -626,6 +631,7 @@ const STRINGS = {
     prepAccess:"行き方を調べる",
     prepAccessUnknown:"行き方は公式サイトでご確認ください",
     prepCarOnly:"※車でのアクセスが基本のスキー場です",
+    prepTaxi:"※駅からはタクシーでの移動になります",
     prepByTrain:"電車・バスの経路",
     prepByCar:"車の経路",
     prepTicket:"リフト券を用意する",
@@ -672,6 +678,11 @@ const STRINGS = {
     budget4:"〜4,000円", budget6:"〜6,000円", budget8:"〜8,000円", budgetAny:"こだわらない",
     qTransport:"どうやって行く？",
     transCar:"車で", transPublic:"電車・バスで",
+    qMust:"これは欲しい！",
+    qOptional:"（任意・いくつでも）",
+    mustRental:"レンタルがある", mustSchool:"スクールがある", mustEnglish:"英語レッスンがある", mustOnline:"リフト券をネットで買える",
+    mustUnmetNote:(labels)=>`※「${labels.join("」「")}」は、このスキー場では確認できていません。公式サイトでご確認ください。`,
+    transitTaxiNote:"※最寄り駅からはタクシーでの移動になります（バス・シャトルの案内はありません）。",
     overBudgetNote:(p)=>`※ご予算内で条件に合うスキー場が近くに見つからなかったため、少し予算オーバー（大人1日券 ¥${p.toLocaleString()}）の候補です。`,
     transitUnknownNote:"※このスキー場は電車・バスでの行き方を確認できていません。出発前に公式サイトでご確認ください。",
     tripDay:"日帰りがいい",
@@ -705,7 +716,7 @@ const STRINGS = {
     gearSub:"カテゴリを選ぶと、楽天市場の検索結果に移動します",
   },
   en:{
-    tagline:"Find your perfect ski resort in 5 quick questions",
+    tagline:"Find your perfect ski resort in a few quick questions",
     tabWizard:"Match",
     tabMap:"Map",
     tabNearby:"Search",
@@ -757,7 +768,7 @@ const STRINGS = {
     disclaimer:"Weather, snowfall and snow depth are model estimates from Open-Meteo and may differ from resort-reported snow. Lift prices are standard window prices from each resort's official announcement and vary by date and purchase method.",
     liveWeatherBadge:"LIVE",
     close:"Close",
-    wizardIntro:"Just answer 5 quick questions. We'll handle the rest.",
+    wizardIntro:"Just answer a few quick questions. We'll handle the rest.",
     heroTitle:"Where will you ski next?",
     chipFav:"Favorites",
     sortAccess:"Closest access",
@@ -816,6 +827,7 @@ const STRINGS = {
     prepAccess:"Plan your route",
     prepAccessUnknown:"Check the official site for access",
     prepCarOnly:"Mainly reached by car",
+    prepTaxi:"You'll need a taxi from the station",
     prepByTrain:"Train / bus route",
     prepByCar:"Driving route",
     prepTicket:"Get your lift pass",
@@ -862,6 +874,11 @@ const STRINGS = {
     budget4:"Up to ¥4,000", budget6:"Up to ¥6,000", budget8:"Up to ¥8,000", budgetAny:"No limit",
     qTransport:"How will you get there?",
     transCar:"By car", transPublic:"By train / bus",
+    qMust:"Must-haves",
+    qOptional:"(optional, pick any)",
+    mustRental:"Rentals", mustSchool:"Ski school", mustEnglish:"English lessons", mustOnline:"Buy lift pass online",
+    mustUnmetNote:(labels)=>`We couldn't confirm ${labels.join(", ")} at this resort. Please check the official site.`,
+    transitTaxiNote:"From the nearest station you'll need a taxi (no bus or shuttle listed).",
     overBudgetNote:(p)=>`No resort nearby matched your budget, so this one is a little over (adult day pass ¥${p.toLocaleString()}).`,
     transitUnknownNote:"We couldn't confirm a train/bus route to this resort. Please check the official site before you go.",
     tripDay:"Day trip only",
@@ -912,7 +929,7 @@ function toggleFav(id){
   if(FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
   try{ localStorage.setItem(FAV_KEY, JSON.stringify([...FAVS])); }catch(e){}
 }
-const wiz = {block:null, prefIdx:null, trip:null, level:null, budget:null, transport:null, lastId:null, shown:[]};
+const wiz = {block:null, prefIdx:null, trip:null, level:null, budget:null, transport:null, must:new Set(), lastId:null, shown:[]};
 const terrainColors = ["var(--good)","var(--cold)","var(--accent)"];
 
 function t(key){ return STRINGS[state.lang][key]; }
@@ -986,6 +1003,23 @@ const LEVEL_OPTS = ["levelBeginner","levelMid","levelAdv"];
 const BUDGET_OPTS = ["budget4","budget6","budget8","budgetAny"];
 const BUDGET_LIMITS = [4000, 6000, 8000, null];
 const TRANSPORT_OPTS = ["transCar","transPublic"];
+const MUST_OPTS = ["mustRental","mustSchool","mustEnglish","mustOnline"];
+function mustValue(r, key){
+  if(key==="mustRental") return r.rental ? r.rental.available : null;
+  if(key==="mustSchool") return r.school ? r.school.available : null;
+  if(key==="mustEnglish") return r.school ? r.school.english : null;
+  if(key==="mustOnline") return !!(r.ticket && r.ticket.onlineUrl) || null;
+  return null;
+}
+function buildMustPills(){
+  const el = document.getElementById("pillMust");
+  el.innerHTML = MUST_OPTS.map(k=>`<button type="button" class="pill ${wiz.must.has(k)?"sel":""}" data-must="${k}">${t(k)}</button>`).join("");
+  el.querySelectorAll(".pill").forEach(btn=>btn.addEventListener("click", ()=>{
+    const k = btn.dataset.must;
+    if(wiz.must.has(k)) wiz.must.delete(k); else wiz.must.add(k);
+    btn.classList.toggle("sel", wiz.must.has(k));
+  }));
+}
 
 function buildPills(container, items, groupKey, labelFn){
   const el = document.getElementById(container);
@@ -1081,6 +1115,7 @@ function applyStaticText(){
   buildPills("pillTransport", TRANSPORT_OPTS, "transport", (key)=> t(key));
   if(wiz.budget!==null) document.querySelector(`#pillBudget .pill[data-idx="${wiz.budget}"]`)?.classList.add("sel");
   if(wiz.transport!==null) document.querySelector(`#pillTransport .pill[data-idx="${wiz.transport}"]`)?.classList.add("sel");
+  buildMustPills();
   updateSubmitState();
 }
 
@@ -1637,7 +1672,8 @@ function openDetail(id){
           ? `${escapeHtml(r.transit.station)}${(state.lang==="ja"?r.transit.howJa:(r.transit.howEn||r.transit.howJa)) ? " → "+escapeHtml(state.lang==="ja"?r.transit.howJa:(r.transit.howEn||r.transit.howJa)) : ""}`
           : escapeHtml((state.lang==="ja" ? r.accessJa : (r.accessEn||r.accessJa)) || time || t("prepAccessUnknown"))}
           ${r.transit && r.transit.fromCityBus ? `<br><span class="prep-sub">${escapeHtml(r.transit.fromCityBus)}</span>` : ""}
-          ${transitOk(r)===false ? `<br><span class="prep-sub">${t("prepCarOnly")}</span>` : ""}</div>
+          ${transitOk(r)===false ? `<br><span class="prep-sub">${t("prepCarOnly")}</span>` : ""}
+          ${transitOk(r)==="taxi" ? `<br><span class="prep-sub">${t("prepTaxi")}</span>` : ""}</div>
         <div class="prep-btns">
           <a class="cta-btn" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=transit" target="_blank" rel="noopener">${t("prepByTrain")}</a>
           <a class="cta-btn sec" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=driving" target="_blank" rel="noopener">${t("prepByCar")}</a>
@@ -1728,6 +1764,7 @@ function roadKmFrom(pref, r){
 // 電車・バスで行けるか：調査データがあればそれを、なければアクセス文から判定（不明はnull）
 function transitOk(r){
   if(r.transit && r.transit.byPublic!=null) return r.transit.byPublic;
+  if(r.transit && r.transit.taxiOnly) return "taxi";
   const txt = (r.accessJa||"") + (r.timeJa||"");
   if(/駅|バス|シャトル|新幹線|電車|JR|鉄道/.test(txt)) return true;
   if(txt) return false;
@@ -1762,6 +1799,10 @@ function scoreResort(r, pref, levelIdx, isDayTrip){
     if(indoor) score -= 100;
   }
   score += (r.terrain ? r.terrain[levelIdx] : 30) * 0.6;
+  wiz.must.forEach(k=>{
+    const v = mustValue(r, k);
+    score += v===true ? 12 : v===false ? -50 : -12;
+  });
   const limit = BUDGET_LIMITS[wiz.budget];
   if(limit!=null){
     if(r.liftAdult==null) score -= 8;
@@ -1770,7 +1811,7 @@ function scoreResort(r, pref, levelIdx, isDayTrip){
   }
   if(wiz.transport===1){
     const ok = transitOk(r);
-    score += ok===true ? 15 : ok===false ? -60 : -15;
+    score += ok===true ? 15 : ok==="taxi" ? -25 : ok===false ? -60 : -15;
     // 電車で日帰りなら、駅から長く乗り継ぐスキー場は現実的でない
     const mins = stationMinutes(r);
     if(isDayTrip && mins!=null){ if(mins > 90) score -= 35; else if(mins > 60) score -= 15; }
@@ -1813,9 +1854,11 @@ function renderRecommendation(){
     <div class="reco-card">
       <div class="reco-eyebrow">${t("recoEyebrow")}</div>
       <h2>${name}</h2>
-      <div class="reco-sub">${t("recoWhy")([tripLabel, levelLabel, t(BUDGET_OPTS[wiz.budget]), t(TRANSPORT_OPTS[wiz.transport])])}</div>
+      <div class="reco-sub">${t("recoWhy")([tripLabel, levelLabel, t(BUDGET_OPTS[wiz.budget]), t(TRANSPORT_OPTS[wiz.transport]), ...[...wiz.must].map(k=>t(k))])}</div>
       ${BUDGET_LIMITS[wiz.budget]!=null && r.liftAdult!=null && r.liftAdult > BUDGET_LIMITS[wiz.budget] ? `<div class="reco-approx-note">${t("overBudgetNote")(r.liftAdult)}</div>` : ""}
-      ${wiz.transport===1 && transitOk(r)!==true ? `<div class="reco-approx-note">${t("transitUnknownNote")}</div>` : ""}
+      ${wiz.transport===1 && transitOk(r)==="taxi" ? `<div class="reco-approx-note">${t("transitTaxiNote")}</div>` : ""}
+      ${wiz.transport===1 && transitOk(r)!==true && transitOk(r)!=="taxi" ? `<div class="reco-approx-note">${t("transitUnknownNote")}</div>` : ""}
+      ${[...wiz.must].some(k=>mustValue(r,k)!==true) ? `<div class="reco-approx-note">${t("mustUnmetNote")([...wiz.must].filter(k=>mustValue(r,k)!==true).map(k=>t(k)))}</div>` : ""}
       ${fromKm > 250 ? `<div class="reco-approx-note">${t("approxNote")}</div>` : ""}
       <div class="reco-rows">
         <div class="reco-row"><div class="ic">${icon("car",20)}</div><div><div class="rt">${t("rowAccess")}</div><div class="rv">${accessLine}${r.flight?`<br><span style="font-size:11.5px;color:var(--text-muted)">${t("flightNote")}</span>`:""}</div></div></div>
@@ -1838,7 +1881,7 @@ function renderRecommendation(){
 }
 
 function resetWizard(){
-  wiz.block=null; wiz.prefIdx=null; wiz.trip=null; wiz.level=null; wiz.budget=null; wiz.transport=null; wiz.lastId=null; wiz.shown=[];
+  wiz.block=null; wiz.prefIdx=null; wiz.trip=null; wiz.level=null; wiz.budget=null; wiz.transport=null; wiz.must=new Set(); wiz.lastId=null; wiz.shown=[];
   document.getElementById("wizardResult").hidden = true;
   document.getElementById("wizardResult").innerHTML = "";
   document.getElementById("prefBlockWrap").hidden = true;
