@@ -2,13 +2,22 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>YukiNavi</title>
+<title>YukiNavi｜全国のスキー場選びと、おでかけ準備</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#14263A">
-<meta name="description" content="全国403のスキー場から、初心者にも分かりやすく行き先と準備をまとめるアプリ。リフト券・レンタル・アクセス・お得情報まで。">
+<meta name="description" content="全国のスキー場から、初心者でも行き先と準備がすぐ決まる無料アプリ。リフト券・レンタル・行き方・天気・お得情報まで、日本語と英語で。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YukiNavi">
+<meta property="og:title" content="YukiNavi｜次の休み、どこ滑る？">
+<meta property="og:description" content="全国のスキー場から、初心者でも行き先と準備がすぐ決まる無料アプリ。リフト券・レンタル・行き方・天気・お得情報まで、日本語と英語で。">
+<meta property="og:url" content="https://yukinavi-app.github.io/yukinavi/">
+<meta property="og:image" content="https://yukinavi-app.github.io/yukinavi/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="YukiNavi">
@@ -127,6 +136,8 @@ main{padding-block:16px 24px;}
 .price .unit{font-family:var(--font-body);font-size:11.5px;color:var(--text-muted);font-weight:500;}
 .badge{font-size:11px;font-weight:700;border-radius:4px;padding:3px 7px;}
 .badge.student{background:var(--good-soft);color:var(--good);}
+.badge.open-soon{background:#FCE7DD;color:#7F2E0E;}
+.open-soon-line{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:700;color:#7F2E0E;background:#FCE7DD;border-radius:4px;padding:3px 8px;margin:0 0 12px;}
 .card-badges{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;}
 .snow-badge{font-size:11px;font-weight:700;border-radius:4px;padding:3px 7px;background:var(--cold-soft);color:var(--cold);}
 .fav-btn{border:none;background:transparent;color:var(--border);font-size:20px;line-height:1;cursor:pointer;padding:2px 4px;}
@@ -172,6 +183,11 @@ main{padding-block:16px 24px;}
 .packing-item{background:var(--cold-soft);color:var(--cold);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:500;}
 .reco-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;}
 .reco-secondary-btn{flex:1 1 auto;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer;}
+.a2hs{margin-top:12px;border:1px solid var(--border);background:var(--surface);border-radius:10px;padding:14px 14px 12px;font-size:13px;line-height:1.6;}
+.a2hs b{display:block;font-size:13.5px;margin-bottom:2px;}
+.a2hs-row{display:flex;gap:8px;justify-content:flex-end;margin-top:8px;}
+.a2hs-row button{border:none;background:none;color:var(--text-muted);font-size:12.5px;font-weight:700;padding:6px 8px;cursor:pointer;}
+.a2hs-row .a2hs-go{background:var(--navy);color:#fff;border-radius:6px;padding:6px 12px;}
 .reco-detail-btn{flex:1 1 auto;border:none;background:var(--accent);color:#fff;border-radius:8px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer;}
 
 /* full-screen map */
@@ -590,6 +606,7 @@ const ICONS = {
   case:'<rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5.3a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2V7M4 12h16"/>',
   check:'<path d="M5 12.5l4.2 4.2L19 7"/>',
   alert:'<path d="M12 7.5v6M12 17h.01"/><circle cx="12" cy="12" r="9"/>',
+  share:'<path d="M12 15V3M7.5 7.5 12 3l4.5 4.5"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>',
   refresh:'<path d="M20.5 12a8.5 8.5 0 1 1-2.8-6.3M20.5 4v5h-5"/>',
   gradCap:'<path d="M2 9l10-4 10 4-10 4z"/><path d="M6 11v4c0 1.5 2.7 3 6 3s6-1.5 6-3v-4"/>',
   globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
@@ -694,6 +711,18 @@ const STRINGS = {
     emptyState:"条件に合うゲレンデが見つかりませんでした。検索条件を変えてみてください。",
     priceUnit:"大人1日券",
     studentBadge:"学生・ユース割",
+    openSoon:(m,d)=>`${m}/${d}オープン予定`,
+    openSoonShort:(m,d)=>`${m}/${d}〜`,
+    openNotYet:"今季まだオープン前",
+    shareReco:"シェア",
+    shareText:(n)=>`YukiNaviで診断したら「${n}」がおすすめだった`,
+    shareCopied:"リンクをコピーしました",
+    a2hsTitle:"ホーム画面に追加すると、アプリのように使えます",
+    a2hsIOS:"Safariの下にある共有ボタン（□に↑）を押して、「ホーム画面に追加」を選んでください。",
+    a2hsAndroid:"下の「追加する」を押すと、ホーム画面にYukiNaviのアイコンができます。",
+    a2hsOther:"ブラウザのメニューから「ホーム画面に追加」または「アプリをインストール」を選んでください。",
+    a2hsLater:"今はしない",
+    a2hsAdd:"追加する",
     nearestFrom:"最寄り都市",
     flightNote:"✈ 東京からは新千歳空港経由がおすすめ",
     depthLabel:"積雪（推定）",
@@ -907,6 +936,18 @@ const STRINGS = {
     emptyState:"No resorts match your filters. Try broadening your search.",
     priceUnit:"adult day pass",
     studentBadge:"Student / youth rate",
+    openSoon:(m,d)=>`Opens ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m-1]} ${d}`,
+    openSoonShort:(m,d)=>`Opens ${m}/${d}`,
+    openNotYet:"Not open yet this season",
+    shareReco:"Share",
+    shareText:(n)=>`YukiNavi picked ${n} for me`,
+    shareCopied:"Link copied",
+    a2hsTitle:"Add YukiNavi to your home screen to use it like an app",
+    a2hsIOS:"In Safari, tap the Share button (square with an arrow), then choose Add to Home Screen.",
+    a2hsAndroid:"Tap Add below and the YukiNavi icon appears on your home screen.",
+    a2hsOther:"Open your browser menu and choose Add to Home Screen or Install app.",
+    a2hsLater:"Not now",
+    a2hsAdd:"Add",
     nearestFrom:"Nearest city",
     flightNote:"✈ From Tokyo, flying via New Chitose Airport is recommended",
     depthLabel:"Snow depth (est.)",
@@ -1383,6 +1424,23 @@ async function loadAllLiveWeather(){
 // 6時間以上前のデータ（取得が止まっている・圏外の保存分）は注意色で示す
 function weatherStale(r){ return r.weatherAsOf && Date.now() - r.weatherAsOf > 6*3600000; }
 
+// オープン予定日は「オープン前」の間だけ表示する。日付未定（「12月中旬予定」等）は年明けまでだけ出す
+const OPEN_NOTE_UNTIL = "2027-01-16";
+function todayIso(){ const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`; }
+function openInfo(r){
+  const today = todayIso();
+  if(r.openDate){
+    if(today >= r.openDate) return null;
+    const [, m, d] = r.openDate.split("-").map(Number);
+    return {long:t("openSoon")(m,d), short:t("openSoonShort")(m,d)};
+  }
+  if(r.openNote && !r.alreadyOpen && today < OPEN_NOTE_UNTIL){
+    const txt = state.lang==="ja" ? r.openNote : t("openNotYet");
+    return {long:txt, short:t("openNotYet")};
+  }
+  return null;
+}
+
 const NO_WX = {tempC:null,condJa:"",condEn:"",wind:null,depth:null,snowYesterday:null,snow7d:null,elevation:null};
 function wx(r){ return r.weather || NO_WX; }
 function nv(v, unit){ return v==null ? "—" : `${v}${unit||""}`; }
@@ -1447,7 +1505,7 @@ function renderGrid(){
       </div>
       <div class="price-row">
         <div class="price">${r.liftAdult!=null ? `<span class="num">${yen(r.liftAdult)}</span> <span class="unit">${t("priceUnit")}</span>` : `<span class="price-unknown">${t("priceUnknown")}</span>`}</div>
-        <div class="card-badges">${miniTerrain(r)}${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
+        <div class="card-badges">${openInfo(r) ? `<span class="badge open-soon">${openInfo(r).short}</span>` : ""}${miniTerrain(r)}${snowBadge(r)}${r.liftStudent!=null ? `<span class="badge student">${t("studentBadge")}</span>` : ""}</div>
       </div>
     </div>`;
   }).join("");
@@ -1830,6 +1888,7 @@ function openDetail(id){
     <div class="sheet-head">
       <div>
         <h2>${name}</h2>
+        ${openInfo(r) ? `<div class="open-soon-line" style="margin:4px 0 6px">${openInfo(r).long}</div>` : ""}
         <div class="sheet-sub">${pref}${SEP()}${fromCityText(city, r.distKm)}${r.timeJa?`（${time}）`:""}${r.accessJa?`<br>${t("accessLabel")}: ${state.lang==="ja"?r.accessJa:(r.accessEn||r.accessJa)}`:""}${r.flight?`<br>${t("flightNote")}`:""}</div>
       </div>
       <div style="display:flex;gap:2px;flex:0 0 auto">
@@ -2083,6 +2142,7 @@ function renderRecommendation(){
       <div class="reco-eyebrow">${t("recoEyebrow")}</div>
       <h2>${name}</h2>
       <div class="reco-place">${icon("pin",14)} ${state.lang==="ja" ? r.prefJa : r.prefEn}</div>
+      ${openInfo(r) ? `<div class="open-soon-line">${icon("alert",14)} ${openInfo(r).long}</div>` : ""}
       ${recoStats(r, fromKm)}
       ${recoMatches(r, fromKm)}
       ${BUDGET_LIMITS[wiz.budget]!=null && r.liftAdult!=null && r.liftAdult > BUDGET_LIMITS[wiz.budget] ? `<div class="reco-approx-note">${t("overBudgetNote")(r.liftAdult)}</div>` : ""}
@@ -2098,16 +2158,59 @@ function renderRecommendation(){
       </div>
       <div class="reco-actions">
         <button class="reco-secondary-btn" id="anotherBtn">${icon("refresh",15)} ${t("another")}</button>
+        <button class="reco-secondary-btn" id="shareRecoBtn" style="flex:0 0 auto">${icon("share",15)} ${t("shareReco")}</button>
         <button class="reco-detail-btn" id="seeDetailBtn">${t("seeDetail")}</button>
       </div>
     </div>
     <button class="reco-secondary-btn" id="startOverBtn" style="width:100%">${t("startOver")}</button>
+    ${a2hsCard()}
   `;
+  document.getElementById("shareRecoBtn").addEventListener("click", e=>shareResort(r, e.currentTarget));
+  bindA2hs();
   document.getElementById("anotherBtn").addEventListener("click", renderRecommendation);
   document.getElementById("seeDetailBtn").addEventListener("click", ()=>openDetail(r.id));
   document.getElementById("startOverBtn").addEventListener("click", resetWizard);
   document.getElementById("wizardQuiz").hidden = true;
   box.scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+// 診断結果のシェア：そのスキー場の静的ページ（OGP付き）を共有する
+async function shareResort(r, btn){
+  const base = location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,"");
+  const url = base + (state.lang==="ja" ? `r/${r.id}/` : `en/r/${r.id}/`);
+  const text = t("shareText")(state.lang==="ja" ? r.nameJa : r.nameEn);
+  try{
+    if(navigator.share){ await navigator.share({title:"YukiNavi", text, url}); return; }
+    await navigator.clipboard.writeText(`${text} ${url}`);
+    btn.innerHTML = `${icon("check",15)} ${t("shareCopied")}`;
+  }catch(e){ /* 共有シートを閉じただけ */ }
+}
+
+// ホーム画面への追加案内（未追加・未非表示のときだけ、診断結果の下に1回出す）
+const A2HS_KEY = "yukinavi_a2hs_dismissed";
+let deferredInstall = null;
+window.addEventListener("beforeinstallprompt", e=>{ e.preventDefault(); deferredInstall = e; });
+function isStandalone(){ return window.matchMedia("(display-mode: standalone)").matches || navigator.standalone === true; }
+function isIOS(){ return /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1); }
+function a2hsCard(){
+  let dismissed = false;
+  try{ dismissed = localStorage.getItem(A2HS_KEY)==="1"; }catch(e){}
+  if(dismissed || isStandalone()) return "";
+  const how = deferredInstall ? t("a2hsAndroid") : isIOS() ? t("a2hsIOS") : t("a2hsOther");
+  return `<div class="a2hs" id="a2hsCard"><b>${t("a2hsTitle")}</b>${how}
+    <div class="a2hs-row"><button id="a2hsClose">${t("a2hsLater")}</button>${deferredInstall ? `<button class="a2hs-go" id="a2hsGo">${t("a2hsAdd")}</button>` : ""}</div></div>`;
+}
+function bindA2hs(){
+  const card = document.getElementById("a2hsCard");
+  if(!card) return;
+  document.getElementById("a2hsClose").addEventListener("click", ()=>{ try{ localStorage.setItem(A2HS_KEY,"1"); }catch(e){} card.remove(); });
+  const go = document.getElementById("a2hsGo");
+  if(go) go.addEventListener("click", async ()=>{
+    deferredInstall.prompt();
+    const {outcome} = await deferredInstall.userChoice;
+    deferredInstall = null;
+    if(outcome==="accepted") card.remove();
+  });
 }
 
 function resetWizard(){

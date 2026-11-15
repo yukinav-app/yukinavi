@@ -1,7 +1,7 @@
 {
-  "name": "YukiNavi - ゲレンデ診断アプリ",
+  "name": "YukiNavi｜スキー場選びと、おでかけ準備",
   "short_name": "YukiNavi",
-  "description": "スキー・スノボのゲレンデ選びを3問で診断。天気・持ち物・行き方までまとめて提案します。",
+  "description": "全国のスキー場から、初心者でも行き先と準備がすぐ決まる無料アプリ。",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
