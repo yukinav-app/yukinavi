@@ -30,7 +30,7 @@ T = {
         "english": "英語対応", "en": {"high": "高い", "medium": "あり", "low": "限定的"}, "official": "公式サイト",
         "maps": "Googleマップで見る", "stay": "周辺の宿を探す（楽天トラベル）", "cta": "YukiNaviで天気・7日間の降雪予報を見る", "same": "{pref}のほかのスキー場",
         "checked": "掲載情報の確認日：{d}。料金・営業状況は変わることがあります。お出かけ前に公式サイトでご確認ください。",
-        "na": "—", "list_title": "全国のスキー場一覧（都道府県別）｜YukiNavi",
+        "na": "—", "see_official": "公式サイトで確認", "list_title": "全国のスキー場一覧（都道府県別）｜YukiNavi",
         "list_desc": "日本全国{n}か所のスキー場の2026-27シーズンのリフト券料金・コース数・アクセスを都道府県別にまとめました。",
         "list_h1": "全国のスキー場一覧", "home": "YukiNavi トップ", "all": "全国のスキー場一覧",
         "runs_n": "{n}コース", "lifts_n": "{n}基", "season": "（{s}シーズン）",
@@ -45,7 +45,7 @@ T = {
         "official": "Official site", "maps": "Open in Google Maps", "stay": "Find hotels nearby (Rakuten Travel)",
         "cta": "See weather and 7-day snowfall on YukiNavi", "same": "More ski resorts in {pref}",
         "checked": "Info last checked: {d}. Prices and operating status can change; check the official site before you go.",
-        "na": "—", "list_title": "All ski resorts in Japan by prefecture | YukiNavi",
+        "na": "—", "see_official": "See official site", "list_title": "All ski resorts in Japan by prefecture | YukiNavi",
         "list_desc": "Lift pass prices, runs and access for {n} ski resorts across Japan for the 2026-27 season, by prefecture.",
         "list_h1": "Ski resorts in Japan", "home": "YukiNavi home", "all": "All ski resorts in Japan",
         "runs_n": "{n} runs", "lifts_n": "{n} lifts", "season": "{s} ",
@@ -102,10 +102,23 @@ def resort_page(r, L, same_pref):
     if not access and r.get("timeJa"):
         access = f"{r['cityJa']}から {r['timeJa']}" if ja else f"{r.get('timeEn') or r['timeJa']} from {r.get('cityEn') or r['cityJa']}"
     season = t["season"].format(s=r["priceSeason"]) if r.get("priceSeason") else ""
-    price = yen(r["liftAdult"], L) if r.get("liftAdult") is not None else t["na"]
-    elev = f"{r['base']}–{r['top']}m" if r.get("base") is not None and r.get("top") is not None else t["na"]
-    courses = t["runs_n"].format(n=r["courses"]) if r.get("courses") is not None else t["runs"] + " " + t["na"]
-    desc = t["desc"].format(name=name, pref=pref, season=season, price=price, elev=elev, courses=courses, text=text)[:160]
+    has_price = r.get("liftAdult") is not None
+    has_elev = r.get("base") is not None and r.get("top") is not None
+    price = yen(r["liftAdult"], L) if has_price else t["see_official"]
+    elev = f"{r['base']}–{r['top']}m" if has_elev else None
+    # 説明文には分かっている数字だけを並べる（「—」を入れない）
+    parts = []
+    if ja:
+        if has_price: parts.append(f"{season}大人1日券{price}")
+        if has_elev: parts.append(f"標高{elev}")
+        if r.get("courses") is not None: parts.append(t["runs_n"].format(n=r["courses"]))
+        desc = (f"{name}（{pref}）の" + "、".join(parts) + "。" if parts else f"{name}（{pref}）。") + text
+    else:
+        if has_price: parts.append(f"{season}adult day pass {price}")
+        if has_elev: parts.append(f"elevation {elev}")
+        if r.get("courses") is not None: parts.append(t["runs_n"].format(n=r["courses"]))
+        desc = f"{name} in {pref}, Japan" + (": " + ", ".join(parts) if parts else "") + ". " + text
+    desc = desc[:160]
     url_ja, url_en = page_url("ja", r["id"]), page_url("en", r["id"])
     jsonld = {"@context": "https://schema.org", "@type": "SkiResort", "name": name,
               "address": {"@type": "PostalAddress", "addressRegion": pref, "addressCountry": "JP"},
@@ -118,12 +131,14 @@ def resort_page(r, L, same_pref):
     boxes = [(price, t["adult"] + (f" ({r['priceSeason']})" if r.get("priceSeason") else ""))]
     if r.get("liftStudent") is not None:
         boxes.append((yen(r["liftStudent"], L), t["student"]))
-    boxes.append((elev, t["elev"]))
+    if has_elev:
+        boxes.append((elev, t["elev"]))
     if r.get("courses") is not None:
         boxes.append((t["runs_n"].format(n=r["courses"]), t["runs"]))
     if r.get("lifts") is not None:
         boxes.append((t["lifts_n"].format(n=r["lifts"]), t["lifts"]))
-    boxes.append((t["en"].get(r.get("english"), t["na"]), t["english"]))
+    if r.get("english") in t["en"]:
+        boxes.append((t["en"][r["english"]], t["english"]))
     grid = "".join(f'<div class="box"><b>{esc(v)}</b><span>{esc(k)}</span></div>' for v, k in boxes)
 
     terrain = ""
