@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yukinav-app.github.io/yukinavi/sitemap.xml
+Sitemap: https://yukinavi-app.github.io/yukinavi/sitemap.xml
