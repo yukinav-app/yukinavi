@@ -13,6 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 SITE = json.load(open(os.path.join(DATA, "site.json"), encoding="utf-8"))
 BASE = SITE["baseUrl"].rstrip("/")
+A8_LINKMGR = '<script src="https://statics.8me.jp/a8link/a8linkmgr.js"></script><script>a8linkmgr({"config_id": "6ixko2yPeJmsYAuUlTIr"});</script>'  # A8の自動リンク変換（提携済み案件のリンクだけを書き換える）
 RAKUTEN_ID = "575c1e8f.95c040c9.575c1e90.5e7d0fd7"
 
 PREF_ORDER = ["北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県", "栃木県", "群馬県", "埼玉県",
@@ -28,7 +29,7 @@ T = {
         "adult": "大人1日券", "student": "学生・ユース", "free": "無料", "elev": "標高（麓〜山頂）", "runs": "コース数",
         "lifts": "リフト数", "access": "アクセス", "terrain": "コース難易度", "beg": "初級", "int": "中級", "adv": "上級",
         "english": "英語対応", "en": {"high": "高い", "medium": "あり", "low": "限定的"}, "official": "公式サイト",
-        "maps": "Googleマップで見る", "stay": "周辺の宿を探す（楽天トラベル）", "cta": "YukiNaviで天気・7日間の降雪予報を見る", "same": "{pref}のほかのスキー場",
+        "maps": "Googleマップで見る", "stay": "周辺の宿を探す（楽天トラベル）", "cta": "YukiNaviで今日の天気と雪の予報を見る", "same": "{pref}のほかのスキー場",
         "checked": "掲載情報の確認日：{d}。料金・営業状況は変わることがあります。お出かけ前に公式サイトでご確認ください。",
         "na": "—", "see_official": "公式サイトで確認", "list_title": "全国のスキー場一覧（都道府県別）｜YukiNavi",
         "list_desc": "日本全国{n}か所のスキー場の2026-27シーズンのリフト券料金・コース数・アクセスを都道府県別にまとめました。",
@@ -43,7 +44,7 @@ T = {
         "lifts": "Lifts", "access": "Access", "terrain": "Terrain", "beg": "Beginner", "int": "Intermediate",
         "adv": "Advanced", "english": "English support", "en": {"high": "Good", "medium": "Some", "low": "Limited"},
         "official": "Official site", "maps": "Open in Google Maps", "stay": "Find hotels nearby (Rakuten Travel)",
-        "cta": "See weather and 7-day snowfall on YukiNavi", "same": "More ski resorts in {pref}",
+        "cta": "See today’s weather and snow forecast on YukiNavi", "same": "More ski resorts in {pref}",
         "checked": "Info last checked: {d}. Prices and operating status can change; check the official site before you go.",
         "na": "—", "see_official": "See official site", "list_title": "All ski resorts in Japan by prefecture | YukiNavi",
         "list_desc": "Lift pass prices, runs and access for {n} ski resorts across Japan for the 2026-27 season, by prefecture.",
@@ -173,7 +174,7 @@ def resort_page(r, L, same_pref):
             + f'<div class="links">{"".join(links)}</div>'
             + (f'<h2>{esc(t["same"].format(pref=pref))}</h2><ul class="list">{others}</ul>' if others else "")
             + f'<div class="note">{esc(t["checked"].format(d=r.get("checkedAt", "")))}<br><a href="{BASE}/about/">{t["about"]}</a></div>'
-            + "</main></body></html>")
+            + "</main>" + A8_LINKMGR + "</body></html>")
 
 
 def list_page(L, by_pref, n):
@@ -236,7 +237,7 @@ def article_page(a, L, ids, others):
             + f'<article class="article">{link_resorts(a["html"], L, ids)}</article>'
             + f'<a class="cta" href="{BASE}/{"?lang=en" if L == "en" else ""}">{t["cta"]}</a>'
             + (f'<h2>{t["more"]}</h2><ul>{more}</ul>' if more else "")
-            + f'<div class="note"><a href="{BASE}/about/">{T[L]["about"]}</a></div></main></body></html>')
+            + f'<div class="note"><a href="{BASE}/about/">{T[L]["about"]}</a></div></main>{A8_LINKMGR}</body></html>')
 
 
 def articles_list_page(L, arts):
