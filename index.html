@@ -190,6 +190,9 @@ main{padding-block:16px 24px;}
 .a2hs-row .a2hs-go{background:var(--navy);color:#fff;border-radius:6px;padding:6px 12px;}
 .wx-credit{font-size:11px;color:var(--text-muted);}
 .wx-credit a{color:inherit;}
+.toast{position:fixed;left:50%;bottom:calc(var(--nav-h,64px) + 16px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--navy);color:#fff;font-size:13px;font-weight:700;padding:10px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50;}
+.toast.on{opacity:1;transform:translate(-50%,0);}
+@media (prefers-reduced-motion:reduce){.toast{transition:none;}}
 .reco-detail-btn{flex:1 1 auto;border:none;background:var(--accent);color:#fff;border-radius:8px;padding:11px;font-size:13.5px;font-weight:700;cursor:pointer;}
 
 /* full-screen map */
@@ -577,10 +580,35 @@ ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);fon
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
+// iPhone／Androidアプリ（Capacitor）で動いているか。アプリではWebサイトの最新データを取りに行き、
+// 圏外などで取れなければアプリに同梱したデータを使う
+const IS_NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+const SITE_BASE = "https://yukinavi-app.github.io/yukinavi/";
+async function fetchData(path, opts){
+  if(IS_NATIVE){
+    try{
+      const res = await fetch(SITE_BASE + path + "?t=" + Math.floor(Date.now()/600000), opts);
+      if(res.ok) return res;
+    }catch(e){ /* 圏外：同梱データへ */ }
+  }
+  return fetch(path, opts);
+}
+// アプリ版では外部リンクを必ずSafariで開く（アプリ内に他社ページを表示しない。Amazon等の規約とAppleのプライバシー申告のため）
+if(IS_NATIVE){
+  document.addEventListener("click", e=>{
+    const a = e.target.closest && e.target.closest("a[href]");
+    if(!a) return;
+    const href = a.getAttribute("href");
+    if(!/^https?:\/\//.test(href)) return;
+    e.preventDefault();
+    const AL = window.Capacitor.Plugins && window.Capacitor.Plugins.AppLauncher;
+    if(AL) AL.openUrl({url: href}); else window.open(href, "_system");
+  }, true);
+}
 let RESORTS = [];
 async function loadResorts(){
   try{
-    const res = await fetch("data/resorts.json");
+    const res = await fetchData("data/resorts.json");
     RESORTS = (await res.json()).filter(r=>r.status!=="closed");
   }catch(e){ RESORTS = []; }
 }
@@ -629,7 +657,7 @@ function icon(name, size){
 let ALL_RESORTS = [];
 async function loadAllResorts(){
   try{
-    const res = await fetch("data/resorts_all.json");
+    const res = await fetchData("data/resorts_all.json");
     ALL_RESORTS = await res.json();
   }catch(e){
     ALL_RESORTS = [];
@@ -920,6 +948,9 @@ const STRINGS = {
     another:"別の提案を見る",
     seeDetail:"詳しく見る",
     ctaStay:"この近くの宿を探す",
+    openAlertTitle:(n)=>`${n}が今日オープン`,
+    openAlertBody:"今シーズンの営業が始まります。最新の状況は公式サイトで確認してください。",
+    openAlertSet:"オープン日の朝にお知らせします",
     klookSki:"Klookでリフト券・レンタル",
     barStay:"宿",
     barTicket:"リフト券",
@@ -1154,6 +1185,9 @@ const STRINGS = {
     another:"Show another option",
     seeDetail:"See full details",
     ctaStay:"Find a place to stay nearby",
+    openAlertTitle:(n)=>`${n} opens today`,
+    openAlertBody:"The season starts today. Check the official site for current conditions.",
+    openAlertSet:"We will remind you on opening morning",
     klookSki:"Lift tickets & rentals on Klook",
     barStay:"Stay",
     barTicket:"Lift pass",
@@ -1190,6 +1224,36 @@ function isFav(id){ return FAVS.has(id); }
 function toggleFav(id){
   if(FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
   try{ localStorage.setItem(FAV_KEY, JSON.stringify([...FAVS])); }catch(e){}
+  if(IS_NATIVE) scheduleOpeningAlerts(FAVS.has(id) ? id : null);
+}
+
+// アプリ版だけ：お気に入りのスキー場のオープン日の朝8時に、端末の中で通知を出す（サーバーには何も送らない）
+function notifId(rid){ let h = 0; for(const c of rid) h = (h*31 + c.charCodeAt(0)) | 0; return Math.abs(h) % 2000000000; }
+async function scheduleOpeningAlerts(justAdded){
+  const LN = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications;
+  if(!LN) return;
+  try{
+    const today = todayIso();
+    const targets = RESORTS.filter(r=>FAVS.has(r.id) && r.openDate && r.openDate > today);
+    const asking = justAdded && targets.some(r=>r.id===justAdded);
+    let perm = await LN.checkPermissions();
+    if(perm.display !== "granted" && asking) perm = await LN.requestPermissions();
+    if(perm.display !== "granted") return;
+    const pending = await LN.getPending();
+    if(pending.notifications.length) await LN.cancel({notifications: pending.notifications.map(n=>({id:n.id}))});
+    if(targets.length) await LN.schedule({notifications: targets.map(r=>{
+      const [y,m,d] = r.openDate.split("-").map(Number);
+      const name = state.lang==="ja" ? r.nameJa : r.nameEn;
+      return {id:notifId(r.id), title:t("openAlertTitle")(name), body:t("openAlertBody"), schedule:{at:new Date(y, m-1, d, 8, 0)}, extra:{rid:r.id}};
+    })});
+    if(asking) showToast(t("openAlertSet"));
+  }catch(e){ console.warn("notification schedule failed", e); }
+}
+function showToast(msg){
+  let el = document.getElementById("toast");
+  if(!el){ el = document.createElement("div"); el.id = "toast"; el.className = "toast"; el.setAttribute("role","status"); document.body.appendChild(el); }
+  el.textContent = msg; el.classList.add("on");
+  clearTimeout(el._t); el._t = setTimeout(()=>el.classList.remove("on"), 2800);
 }
 const wiz = {block:null, prefIdx:null, trip:null, level:null, budget:null, transport:null, must:new Set(), lastId:null, shown:[]};
 const terrainColors = ["var(--pg)","var(--pr)","var(--pk)"];
@@ -1473,7 +1537,7 @@ function loadWeatherCache(){
 let WX_DONE = false;
 async function loadAllLiveWeather(){
   try{
-    const res = await fetch("data/weather.json", {cache:"no-cache"});
+    const res = await fetchData("data/weather.json", {cache:"no-cache"});
     if(!res.ok) throw new Error("weather http " + res.status);
     const o = await res.json();
     if(applyWeatherFile(o)){ try{ localStorage.setItem(WX_KEY, JSON.stringify(o)); }catch(e){} }
@@ -1808,7 +1872,7 @@ function showMap(){
 let DEALS = [];
 async function loadDeals(){
   try{
-    const res = await fetch("data/deals_2026_27.json");
+    const res = await fetchData("data/deals_2026_27.json");
     if(res.ok) DEALS = await res.json();
   }catch(e){ DEALS = []; }
 }
@@ -2255,7 +2319,7 @@ function renderRecommendation(){
 
 // 診断結果のシェア：そのスキー場の静的ページ（OGP付き）を共有する
 async function shareResort(r, btn){
-  const base = location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,"");
+  const base = IS_NATIVE ? SITE_BASE : location.href.replace(/[#?].*$/,"").replace(/[^/]*$/,"");
   const url = base + (state.lang==="ja" ? `r/${r.id}/` : `en/r/${r.id}/`);
   const text = t("shareText")(state.lang==="ja" ? r.nameJa : r.nameEn);
   try{
@@ -2274,7 +2338,7 @@ function isIOS(){ return /iPhone|iPad|iPod/.test(navigator.userAgent) || (naviga
 function a2hsCard(){
   let dismissed = false;
   try{ dismissed = localStorage.getItem(A2HS_KEY)==="1"; }catch(e){}
-  if(dismissed || isStandalone()) return "";
+  if(dismissed || isStandalone() || IS_NATIVE) return "";
   const how = deferredInstall ? t("a2hsAndroid") : isIOS() ? t("a2hsIOS") : t("a2hsOther");
   return `<div class="a2hs" id="a2hsCard"><b>${t("a2hsTitle")}</b>${how}
     <div class="a2hs-row"><button id="a2hsClose">${t("a2hsLater")}</button>${deferredInstall ? `<button class="a2hs-go" id="a2hsGo">${t("a2hsAdd")}</button>` : ""}</div></div>`;
@@ -2395,23 +2459,30 @@ setView("wizard");
 const resortsReady = loadResorts();
 resortsReady.then(()=>{
   loadWeatherCache(); render(); loadAllLiveWeather();
+  if(IS_NATIVE) scheduleOpeningAlerts(null);
   const rid = params.get("r");
   if(rid && RESORTS.some(r=>r.id===rid)){ setView("nearby"); openDetail(rid); }
 });
 Promise.all([resortsReady, loadAllResorts()]).then(()=>{ renderHeroStat(); buildMapPoints(); if(state.view==="map") renderMapLayer(); });
 loadDeals().then(()=>{ if(state.view==="deals") renderDeals(); });
 
-if("serviceWorker" in navigator){
+if("serviceWorker" in navigator && !IS_NATIVE){
   window.addEventListener("load", ()=>{
     navigator.serviceWorker.register("sw.js").catch(err=>console.warn("SW registration failed", err));
   });
 }
 </script>
 
-<script src="https://statics.8me.jp/a8link/a8linkmgr.js"></script>
 <script>
-// A8の自動リンク変換。読み込み時に1回しか走らないので、画面を開くたびに出るリンクにも掛け直す
+// A8の自動リンク変換（Webサイトのみ。A8は通常アカウントの広告をアプリに載せるのを禁止しているので、アプリ版では読み込まない）。
+// 読み込み時に1回しか走らないので、画面を開くたびに出るリンクにも掛け直す
 (function(){
+  if(IS_NATIVE) return;
+  const sc = document.createElement("script");
+  sc.src = "https://statics.8me.jp/a8link/a8linkmgr.js";
+  sc.onload = start;
+  document.body.appendChild(sc);
+  function start(){
   if(typeof a8linkmgr !== "function") return;
   const run = ()=>{ try{ a8linkmgr({"config_id": "6ixko2yPeJmsYAuUlTIr"}); }catch(e){} };
   let timer = null;
@@ -2420,6 +2491,7 @@ if("serviceWorker" in navigator){
     clearTimeout(timer); timer = setTimeout(run, 700);
   }).observe(document.body, {childList:true, subtree:true});
   run();
+  }
 })();
 </script>
 </body></html>
