@@ -138,6 +138,12 @@ def main():
     # 閉鎖・スキー不可は地図から外し、詳細データ化したものは簡易ピンを二重に出さない
     detailed_keys = {r.get("srcKey") for r in resorts if r.get("srcKey")}
     allr = [a for a in allr if a.get("key") not in closed_keys and a.get("key") not in detailed_keys]
+    # ファクトチェックで外した簡易ピン（重複・実在確認できず等）と位置修正
+    if os.path.exists(ov_path):
+        allr = [a for a in allr if a.get("key") not in ov.get("pins_remove", {})]
+        for a in allr:
+            if a.get("key") in ov.get("pin_coords", {}):
+                a["lat"], a["lng"] = ov["pin_coords"][a["key"]]
 
     json.dump(resorts, open(os.path.join(DATA, "resorts.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     json.dump(allr, open(os.path.join(DATA, "resorts_all.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
