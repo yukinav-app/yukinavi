@@ -34,7 +34,7 @@ T = {
         "list_desc": "日本全国{n}か所のスキー場の2026-27シーズンのリフト券料金・コース数・アクセスを都道府県別にまとめました。",
         "list_h1": "全国のスキー場一覧", "home": "YukiNavi トップ", "all": "全国のスキー場一覧",
         "runs_n": "{n}コース", "lifts_n": "{n}基", "season": "（{s}シーズン）",
-        "ad": "このページには広告（アフィリエイトリンク）が含まれます。", "about": "運営者情報・プライバシーポリシー",
+        "ad": "PR：このページには広告（アフィリエイトリンク）が含まれます。", "about": "運営者情報・プライバシーポリシー",
     },
     "en": {
         "lang": "en", "title": "{name} ({pref}) lift pass price, runs & access | YukiNavi",
@@ -49,11 +49,11 @@ T = {
         "list_desc": "Lift pass prices, runs and access for {n} ski resorts across Japan for the 2026-27 season, by prefecture.",
         "list_h1": "Ski resorts in Japan", "home": "YukiNavi home", "all": "All ski resorts in Japan",
         "runs_n": "{n} runs", "lifts_n": "{n} lifts", "season": "{s} ",
-        "ad": "This page contains affiliate links.", "about": "About & privacy policy",
+        "ad": "Ad: this page contains affiliate links.", "about": "About & privacy policy",
     },
 }
 
-CSS = """*{box-sizing:border-box}body{margin:0;font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;background:#F7F8F6;color:#14263A;line-height:1.65}
+CSS = """.pr-note{font-size:13px;color:#5E6D7C;margin:6px 0 14px}*{box-sizing:border-box}body{margin:0;font-family:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,'Hiragino Sans',sans-serif;background:#F7F8F6;color:#14263A;line-height:1.65}
 .num,.box b{font-family:'Barlow Condensed','Zen Kaku Gothic New',sans-serif;font-weight:600;font-variant-numeric:tabular-nums}
 a{color:#14263A}.wrap{max-width:760px;margin:0 auto;padding:16px}header{background:#14263A;color:#fff}header a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.02em}
 .crumb{font-size:12px;color:#5E6D7C;margin:6px 0 2px}.crumb a{color:#5E6D7C}h1{font-size:26px;line-height:1.3;margin:4px 0 6px}.sub{color:#5E6D7C;font-size:13px;margin-bottom:14px}
@@ -165,13 +165,14 @@ def resort_page(r, L, same_pref):
     return (head(L, t["title"].format(name=name, pref=pref), desc, page_url(L, r["id"]), url_ja, url_en, jsonld)
             + f'{other_lang}<div class="crumb"><a href="{BASE}/{"en/" if not ja else ""}r/">{t["all"]}</a> › {esc(pref)}</div>'
             + f'<h1>{esc(name)}</h1><div class="sub">{esc(pref)}{" ・ " + esc(access) if access else ""}</div>'
+            + f'<p class="pr-note">{esc(t["ad"])}</p>'
             + (f"<p>{esc(text)}</p>" if text else "")
             + f'<div class="grid">{grid}</div>{terrain}'
             + f'<a class="cta" href="{app_link}">{t["cta"]}</a>'
             + (f'<h2>{t["access"]}</h2><p>{esc(access)}</p>' if access else "")
             + f'<div class="links">{"".join(links)}</div>'
             + (f'<h2>{esc(t["same"].format(pref=pref))}</h2><ul class="list">{others}</ul>' if others else "")
-            + f'<div class="note">{esc(t["checked"].format(d=r.get("checkedAt", "")))}<br>{esc(t["ad"])}<br><a href="{BASE}/about/">{t["about"]}</a></div>'
+            + f'<div class="note">{esc(t["checked"].format(d=r.get("checkedAt", "")))}<br><a href="{BASE}/about/">{t["about"]}</a></div>'
             + "</main></body></html>")
 
 
@@ -196,12 +197,12 @@ ARTICLE_T = {
     "ja": {"by": "書いた人：しい（現役スキーインストラクター・SAJクラウンプライズ）", "updated": "更新日：{d}",
            "list_title": "スキーの読みもの｜YukiNavi", "list_h1": "スキーの読みもの",
            "list_desc": "はじめてのスキーの準備、持ち物、行き方、お得なリフト券の買い方を、現役インストラクターがまとめました。",
-           "cta": "YukiNaviで自分に合うスキー場を探す", "ad": "このページには広告（アフィリエイトリンク）が含まれます。",
+           "cta": "YukiNaviで自分に合うスキー場を探す", "ad": "PR：このページには広告（アフィリエイトリンク）が含まれます。",
            "more": "ほかの読みもの"},
     "en": {"by": "Written by Schi, working ski instructor (SAJ Crown Prize)", "updated": "Updated {d}",
            "list_title": "Ski guides for Japan | YukiNavi", "list_h1": "Ski guides",
            "list_desc": "Practical guides for skiing in Japan: first-timer prep, train access, English lessons and lift pass prices.",
-           "cta": "Find a resort that suits you on YukiNavi", "ad": "This page contains affiliate links.",
+           "cta": "Find a resort that suits you on YukiNavi", "ad": "Ad: this page contains affiliate links.",
            "more": "More guides"},
 }
 
