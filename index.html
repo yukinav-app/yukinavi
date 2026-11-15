@@ -289,6 +289,15 @@ main{padding-block:18px 24px;}
 .cta-card .cta-desc{font-size:12px;color:var(--text-muted);flex:1;}
 .cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;background:var(--accent);color:#fff;text-decoration:none;font-size:12.5px;font-weight:600;border-radius:8px;padding:8px 10px;}
 .cta-btn:hover{opacity:0.9;}
+.prep{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:10px;}
+.prep-step{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px;}
+.prep-h{font-weight:700;font-size:14px;display:flex;gap:8px;align-items:center;margin-bottom:6px;}
+.prep-n{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.prep-txt{font-size:13px;margin-bottom:8px;}
+.prep-sub{font-size:12px;color:var(--text-muted);}
+.prep-btns{display:flex;gap:8px;flex-wrap:wrap;}
+.prep-btns .cta-btn{border:none;cursor:pointer;font-family:inherit;}
+.cta-btn.sec{background:var(--surface);color:var(--text);border:1px solid var(--border);}
 .checked-at{font-size:12px;color:var(--text-muted);margin:-6px 0 10px;}
 .disclaimer{font-size:11.5px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:14px;margin-top:6px;}
 .empty{padding-block:40px;text-align:center;color:var(--text-muted);}
@@ -364,6 +373,14 @@ main{padding-block:18px 24px;}
           <div class="q-label" data-t="qLevel"></div>
           <div class="pill-row" id="pillLevel"></div>
         </div>
+        <div class="q-block">
+          <div class="q-label" data-t="qBudget"></div>
+          <div class="pill-row" id="pillBudget"></div>
+        </div>
+        <div class="q-block">
+          <div class="q-label" data-t="qTransport"></div>
+          <div class="pill-row" id="pillTransport"></div>
+        </div>
         <button class="wizard-submit" id="wizardSubmit" disabled data-t="wizardSubmit"></button>
       </div>
       <div id="wizardResult" hidden></div>
@@ -378,6 +395,8 @@ main{padding-block:18px 24px;}
     <div id="dealsView" hidden>
       <h2 class="view-title" data-t="dealsTitle"></h2>
       <div class="view-sub" data-t="dealsSub"></div>
+      <div class="search-box" style="margin-bottom:10px"><input id="dealsSearch" type="search" autocomplete="off" data-t-placeholder="dealsSearchPlaceholder"></div>
+      <div class="map-chips" id="dealsChips" style="margin-bottom:16px"></div>
       <div id="dealsContent"></div>
     </div>
 
@@ -496,7 +515,7 @@ const GEAR_CATEGORIES = [
 
 const STRINGS = {
   ja:{
-    tagline:"3問であなたにぴったりのゲレンデを",
+    tagline:"5つの質問であなたにぴったりのゲレンデを",
     tabWizard:"診断",
     tabMap:"地図",
     tabNearby:"検索",
@@ -548,7 +567,7 @@ const STRINGS = {
     disclaimer:"※天気・降雪・積雪はOpen-Meteoの気象モデルによる推定値で、スキー場が発表する積雪とは異なる場合があります。リフト券は各スキー場の公式発表に基づく通常期の窓口価格です（時期・曜日・購入方法で変わります）。",
     liveWeatherBadge:"ライブ",
     close:"閉じる",
-    wizardIntro:"3つだけ答えてください。あとは私がぜんぶ決めます。",
+    wizardIntro:"5つ答えるだけ。あとは私がぜんぶ決めます。",
     heroTitle:"次の休み、どこ滑る？",
     chipFav:"お気に入り",
     sortAccess:"アクセスが近い順",
@@ -594,12 +613,39 @@ const STRINGS = {
     dealNational:"全国",
     dealLink:"公式ページで確認",
     dealsEmpty:"お得情報を集めています。もうしばらくお待ちください。",
+    dealsNoMatch:"条件に合うお得情報はありません。",
+    dealsSearchPlaceholder:"スキー場名・都道府県で検索",
     dealsNote:"掲載している情報は公式サイトで確認したものです。期限が過ぎた情報は自動で非表示になります。購入前に必ず公式ページで最新の条件をご確認ください。",
     stuSave:(n)=>`大人より ¥${n.toLocaleString()} お得`,
     adultDayLabel:"大人1日券",
     accessLabel:"アクセス",
     cachedWeather:(d)=>`保存済みの天気（${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点）`,
     allListLink:"都道府県別の一覧ページ",
+    prepTitle:"おでかけ準備",
+    prepAccess:"行き方を調べる",
+    prepAccessUnknown:"行き方は公式サイトでご確認ください",
+    prepCarOnly:"※車でのアクセスが基本のスキー場です",
+    prepByTrain:"電車・バスの経路",
+    prepByCar:"車の経路",
+    prepTicket:"リフト券を用意する",
+    prepBuyOnline:"オンラインで買う（公式）",
+    prepTicketOfficial:"公式で料金・買い方を確認",
+    prepDeals:(n)=>`このスキー場のお得 ${n}件`,
+    prepStay:"宿を探す（泊まりの場合）",
+    prepRental:"レンタル・スクール",
+    prepRentalLine:(rental, school, english)=>{
+      const parts = [];
+      parts.push(rental===true ? "レンタルあり" : rental===false ? "レンタルなし" : "レンタル：確認中");
+      parts.push(school===true ? "スクールあり" : school===false ? "スクールなし" : "スクール：確認中");
+      if(english===true) parts.push("英語レッスンあり");
+      return parts.join("　・　");
+    },
+    prepRentalBtn:"レンタルを予約",
+    prepSchoolBtn:"スクールを見る",
+    prepCheckOfficial:"公式サイトで確認",
+    prepPack:"持ち物をそろえる",
+    prepGearBtn:"装備をそろえる",
+    prepLocal:"現地で",
     officialTitle:"公式サイト",
     officialDesc:"今日の営業状況・リフト運行・最新のお知らせは公式でご確認ください。",
     officialBtn:"公式サイトを開く",
@@ -621,6 +667,12 @@ const STRINGS = {
     fromPrefKm:(p,km)=>`${p}から約${km}km（道のりの目安）`,
     qTrip:"日帰り？泊まりでもOK？",
     qLevel:"滑るレベルは？",
+    qBudget:"リフト券（大人1日）の予算は？",
+    budget4:"〜4,000円", budget6:"〜6,000円", budget8:"〜8,000円", budgetAny:"こだわらない",
+    qTransport:"どうやって行く？",
+    transCar:"車で", transPublic:"電車・バスで",
+    overBudgetNote:(p)=>`※ご予算内で条件に合うスキー場が近くに見つからなかったため、少し予算オーバー（大人1日券 ¥${p.toLocaleString()}）の候補です。`,
+    transitUnknownNote:"※このスキー場は電車・バスでの行き方を確認できていません。出発前に公式サイトでご確認ください。",
     tripDay:"日帰りがいい",
     tripStay:"泊まりでもOK",
     levelBeginner:"初心者",
@@ -628,7 +680,7 @@ const STRINGS = {
     levelAdv:"上級",
     wizardSubmit:"おすすめを見る",
     recoEyebrow:"あなたへのおすすめ",
-    recoWhy:(trip,level)=>`${trip}・${level}むけに選びました`,
+    recoWhy:(labels)=>`${labels.join("・")} で選びました`,
     rowAccess:"行き方",
     rowWeather:"今日の天気",
     rowPacking:"持ち物リスト",
@@ -652,7 +704,7 @@ const STRINGS = {
     gearSub:"カテゴリを選ぶと、楽天市場の検索結果に移動します",
   },
   en:{
-    tagline:"Find your perfect ski resort in 3 questions",
+    tagline:"Find your perfect ski resort in 5 quick questions",
     tabWizard:"Match",
     tabMap:"Map",
     tabNearby:"Search",
@@ -704,7 +756,7 @@ const STRINGS = {
     disclaimer:"Weather, snowfall and snow depth are model estimates from Open-Meteo and may differ from resort-reported snow. Lift prices are standard window prices from each resort's official announcement and vary by date and purchase method.",
     liveWeatherBadge:"LIVE",
     close:"Close",
-    wizardIntro:"Just answer 3 quick questions. We'll handle the rest.",
+    wizardIntro:"Just answer 5 quick questions. We'll handle the rest.",
     heroTitle:"Where will you ski next?",
     chipFav:"Favorites",
     sortAccess:"Closest access",
@@ -750,12 +802,39 @@ const STRINGS = {
     dealNational:"Nationwide",
     dealLink:"Check official page",
     dealsEmpty:"We're collecting deals. Check back soon.",
+    dealsNoMatch:"No deals match your search.",
+    dealsSearchPlaceholder:"Search by resort or prefecture",
     dealsNote:"Every deal listed here was checked on the official site. Expired deals are hidden automatically. Always confirm the latest terms on the official page before buying.",
     stuSave:(n)=>`Save ¥${n.toLocaleString()} vs adult`,
     adultDayLabel:"Adult day pass",
     accessLabel:"Access",
     cachedWeather:(d)=>`Saved weather (as of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")})`,
     allListLink:"List by prefecture",
+    prepTitle:"Trip prep",
+    prepAccess:"Plan your route",
+    prepAccessUnknown:"Check the official site for access",
+    prepCarOnly:"Mainly reached by car",
+    prepByTrain:"Train / bus route",
+    prepByCar:"Driving route",
+    prepTicket:"Get your lift pass",
+    prepBuyOnline:"Buy online (official)",
+    prepTicketOfficial:"Prices & how to buy (official)",
+    prepDeals:(n)=>`${n} deal${n>1?"s":""} for this resort`,
+    prepStay:"Find a place to stay",
+    prepRental:"Rentals & ski school",
+    prepRentalLine:(rental, school, english)=>{
+      const parts = [];
+      parts.push(rental===true ? "Rentals available" : rental===false ? "No rentals" : "Rentals: checking");
+      parts.push(school===true ? "Ski school available" : school===false ? "No ski school" : "Ski school: checking");
+      if(english===true) parts.push("English lessons");
+      return parts.join(" · ");
+    },
+    prepRentalBtn:"Book rentals",
+    prepSchoolBtn:"See ski school",
+    prepCheckOfficial:"Check official site",
+    prepPack:"What to bring",
+    prepGearBtn:"Get your gear",
+    prepLocal:"While you're there",
     officialTitle:"Official site",
     officialDesc:"Check today's operating status, lift schedule and latest news on the official site.",
     officialBtn:"Open official site",
@@ -777,6 +856,12 @@ const STRINGS = {
     fromPrefKm:(p,km)=>`About ${km}km from ${p} (approx. road distance)`,
     qTrip:"Day trip, or okay to stay overnight?",
     qLevel:"What's your level?",
+    qBudget:"Budget for an adult day pass?",
+    budget4:"Up to ¥4,000", budget6:"Up to ¥6,000", budget8:"Up to ¥8,000", budgetAny:"No limit",
+    qTransport:"How will you get there?",
+    transCar:"By car", transPublic:"By train / bus",
+    overBudgetNote:(p)=>`No resort nearby matched your budget, so this one is a little over (adult day pass ¥${p.toLocaleString()}).`,
+    transitUnknownNote:"We couldn't confirm a train/bus route to this resort. Please check the official site before you go.",
     tripDay:"Day trip only",
     tripStay:"Overnight is fine",
     levelBeginner:"Beginner",
@@ -784,7 +869,7 @@ const STRINGS = {
     levelAdv:"Advanced",
     wizardSubmit:"Show my recommendation",
     recoEyebrow:"Recommended for you",
-    recoWhy:(trip,level)=>`Picked for a ${trip.toLowerCase()}, ${level.toLowerCase()} rider`,
+    recoWhy:(labels)=>`Picked for: ${labels.join(" · ")}`,
     rowAccess:"How to get there",
     rowWeather:"Today's weather",
     rowPacking:"What to bring",
@@ -825,7 +910,7 @@ function toggleFav(id){
   if(FAVS.has(id)) FAVS.delete(id); else FAVS.add(id);
   try{ localStorage.setItem(FAV_KEY, JSON.stringify([...FAVS])); }catch(e){}
 }
-const wiz = {block:null, prefIdx:null, trip:null, level:null, lastId:null, shown:[]};
+const wiz = {block:null, prefIdx:null, trip:null, level:null, budget:null, transport:null, lastId:null, shown:[]};
 const terrainColors = ["var(--good)","var(--cold)","var(--accent)"];
 
 function t(key){ return STRINGS[state.lang][key]; }
@@ -896,6 +981,9 @@ const PREFECTURES = [
 ];
 const TRIP_OPTS = ["tripDay","tripStay"];
 const LEVEL_OPTS = ["levelBeginner","levelMid","levelAdv"];
+const BUDGET_OPTS = ["budget4","budget6","budget8","budgetAny"];
+const BUDGET_LIMITS = [4000, 6000, 8000, null];
+const TRANSPORT_OPTS = ["transCar","transPublic"];
 
 function buildPills(container, items, groupKey, labelFn){
   const el = document.getElementById(container);
@@ -951,7 +1039,7 @@ function buildPrefPills(){
 }
 
 function updateSubmitState(){
-  document.getElementById("wizardSubmit").disabled = !(wiz.prefIdx!==null && wiz.trip!==null && wiz.level!==null);
+  document.getElementById("wizardSubmit").disabled = !(wiz.prefIdx!==null && wiz.trip!==null && wiz.level!==null && wiz.budget!==null && wiz.transport!==null);
 }
 
 function renderHeroStat(){
@@ -987,6 +1075,10 @@ function applyStaticText(){
   buildPills("pillLevel", LEVEL_OPTS, "level", (key)=> t(key));
   if(wiz.trip!==null) document.querySelector(`#pillTrip .pill[data-idx="${wiz.trip}"]`)?.classList.add("sel");
   if(wiz.level!==null) document.querySelector(`#pillLevel .pill[data-idx="${wiz.level}"]`)?.classList.add("sel");
+  buildPills("pillBudget", BUDGET_OPTS, "budget", (key)=> t(key));
+  buildPills("pillTransport", TRANSPORT_OPTS, "transport", (key)=> t(key));
+  if(wiz.budget!==null) document.querySelector(`#pillBudget .pill[data-idx="${wiz.budget}"]`)?.classList.add("sel");
+  if(wiz.transport!==null) document.querySelector(`#pillTransport .pill[data-idx="${wiz.transport}"]`)?.classList.add("sel");
   updateSubmitState();
 }
 
@@ -1184,6 +1276,7 @@ const MAP_FILTERS = [
   {id:"fav", key:"mfFav", test:p=>p.kind==="main" && isFav(p.id)},
 ];
 const mapState = {filter:"all", selected:null, map:null, layer:null, me:null};
+const dealsState = {q:"", cat:"all"};
 
 function updateLayoutVars(){
   const root = document.documentElement;
@@ -1404,19 +1497,37 @@ function dealCard(d){
       <a class="deal-link" href="${safeUrl(d.url)}" target="_blank" rel="noopener">${t("dealLink")}</a>
     </div>`;
 }
+const DEAL_CATS = ["all","student","early","online","campaign"];
+function renderDealsChips(){
+  document.getElementById("dealsChips").innerHTML = DEAL_CATS.map(c=>`<button class="map-chip ${dealsState.cat===c?"on":""}" data-cat="${c}">${c==="all" ? t("mfAll") : t("dealCat_"+c)}</button>`).join("");
+}
+function dealMatchesQuery(d, q){
+  if(!q) return true;
+  const names = dealResorts(d).map(r=>r.nameJa+" "+r.nameEn+" "+r.prefJa+" "+(r.prefEn||"")).join(" ");
+  const hay = (names+" "+(d.titleJa||"")+" "+(d.titleEn||"")+" "+(dealResorts(d).length?"":t("dealNational"))).toLowerCase();
+  return hay.includes(q);
+}
 function renderDeals(){
+  renderDealsChips();
   const el = document.getElementById("dealsContent");
   const today = localToday();
+  const q = dealsState.q.trim().toLowerCase();
   const active = DEALS.filter(d=>d && (d.validUntil ? d.validUntil>=today : !!d.validUntilNote))
+    .filter(d=>dealsState.cat==="all" || d.category===dealsState.cat)
+    .filter(d=>dealMatchesQuery(d, q))
     .sort((a,b)=>(a.validUntil||"9999").localeCompare(b.validUntil||"9999"));
   const national = active.filter(d=>dealResorts(d).length!==1);
   const perResort = active.filter(d=>dealResorts(d).length===1);
-  const stu = RESORTS.filter(r=>r.liftStudent!=null && r.liftAdult).sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent));
+  const stu = (dealsState.cat==="all" || dealsState.cat==="student")
+    ? RESORTS.filter(r=>r.liftStudent!=null && r.liftAdult)
+        .filter(r=>!q || (r.nameJa+" "+r.nameEn+" "+r.prefJa+" "+(r.prefEn||"")).toLowerCase().includes(q))
+        .sort((a,b)=>(b.liftAdult-b.liftStudent)-(a.liftAdult-a.liftStudent))
+    : [];
   let html = "";
   if(national.length) html += `<div class="deal-section"><h3>${t("dealSecNational")}</h3><div class="deal-list">${national.map(dealCard).join("")}</div></div>`;
   if(perResort.length) html += `<div class="deal-section"><h3>${t("dealSecResort")}</h3><div class="deal-list">${perResort.map(dealCard).join("")}</div></div>`;
-  if(!national.length && !perResort.length) html += `<div class="deal-section"><div class="deal-empty">${t("dealsEmpty")}</div></div>`;
-  html += `<div class="deal-section"><h3>${t("dealSecStudent")}</h3><div class="deal-list">${stu.map(r=>`
+  if(!national.length && !perResort.length && !stu.length) html += `<div class="deal-section"><div class="deal-empty">${q || dealsState.cat!=="all" ? t("dealsNoMatch") : t("dealsEmpty")}</div></div>`;
+  if(stu.length) html += `<div class="deal-section"><h3>${t("dealSecStudent")}</h3><div class="deal-list">${stu.map(r=>`
     <button class="stu-row" data-id="${r.id}">
       <div><div class="sr-name">${state.lang==="ja"?r.nameJa:r.nameEn}</div><div class="sr-pref">${prefLabel(r.prefJa)}</div></div>
       <div class="sr-price">¥${r.liftAdult.toLocaleString()} → <b>${r.liftStudent===0 ? t("freeLabel") : "¥"+r.liftStudent.toLocaleString()}</b><br>${t("stuSave")(r.liftAdult-r.liftStudent)}</div>
@@ -1424,6 +1535,17 @@ function renderDeals(){
   html += `<div class="disclaimer">${t("dealsNote")}</div>`;
   el.innerHTML = html;
   el.querySelectorAll(".stu-row").forEach(btn=>btn.addEventListener("click", ()=>openDetail(btn.dataset.id)));
+}
+// スキー場詳細などから、そのスキー場のお得情報に絞って開く
+function openDealsFor(r){
+  dealsState.q = r.nameJa; dealsState.cat = "all";
+  document.getElementById("dealsSearch").value = r.nameJa;
+  closeDetail();
+  setView("deals");
+}
+function dealsForResort(r){
+  const today = localToday();
+  return DEALS.filter(d=>d && (d.validUntil ? d.validUntil>=today : !!d.validUntilNote) && dealResorts(d).some(x=>x.id===r.id));
 }
 
 const gearState = {selected: GEAR_CATEGORIES[0].id};
@@ -1503,22 +1625,65 @@ function openDetail(id){
     <div class="terrain-legend">${t("terrainUnknown")}</div>`}
     <div class="section-label">${t("englishLabel")}</div>
     <p style="margin-top:0;margin-bottom:20px;font-size:13.5px;color:var(--text-muted);">${englishText}</p>
-    <div class="section-label">${state.lang==="ja"?"周辺サービスへ送客":"Connect to nearby services"}</div>
-    <div class="cta-grid">
-      <div class="cta-card"><div class="cta-title">${icon("globe",16)} ${t("officialTitle")}</div><div class="cta-desc">${t("officialDesc")}</div>${r.officialUrl
-        ? `<a class="cta-btn" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("officialBtn")}</a>`
-        : `<a class="cta-btn" href="https://www.google.com/search?q=${encodeURIComponent(r.nameJa+" 公式")}" target="_blank" rel="noopener">${t("officialSearchBtn")}</a>`}</div>
-      <div class="cta-card"><div class="cta-title">${icon("pin",16)} ${t("placeTitle")}</div><div class="cta-desc">${t("placeDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/?api=1&query=${placeQuery}" target="_blank" rel="noopener">${t("placeBtn")}</a></div>
-      <div class="cta-card"><div class="cta-title">${icon("hotel",16)} ${t("lodgingTitle")}</div><div class="cta-desc">${t("lodgingDesc")}</div><a class="cta-btn" href="https://travel.rakuten.co.jp/dosearch/?f_keyword=${lodgingQuery}" target="_blank" rel="noopener">${t("lodgingBtn")}</a></div>
-      <div class="cta-card"><div class="cta-title">${icon("food",16)} ${t("foodTitle")}</div><div class="cta-desc">${t("foodDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/${foodQuery}" target="_blank" rel="noopener">${t("foodBtn")}</a></div>
-      <div class="cta-card"><div class="cta-title">${icon("ski",16)} ${t("gearTitle")}</div><div class="cta-desc">${t("gearDesc")}</div><a class="cta-btn" href="https://search.rakuten.co.jp/search/mall/${gearQuery}/" target="_blank" rel="noopener">${t("gearBtn")}</a></div>
-      <div class="cta-card"><div class="cta-title">${icon("onsen",16)} ${t("onsenTitle")}</div><div class="cta-desc">${t("onsenDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/${onsenQuery}" target="_blank" rel="noopener">${t("onsenBtn")}</a></div>
-    </div>
+    <div class="section-label">${t("prepTitle")}</div>
+    <ol class="prep">
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">1</span>${t("prepAccess")}</div>
+        <div class="prep-txt">${r.transit && r.transit.station
+          ? `${escapeHtml(r.transit.station)}${(state.lang==="ja"?r.transit.howJa:(r.transit.howEn||r.transit.howJa)) ? " → "+escapeHtml(state.lang==="ja"?r.transit.howJa:(r.transit.howEn||r.transit.howJa)) : ""}`
+          : escapeHtml((state.lang==="ja" ? r.accessJa : (r.accessEn||r.accessJa)) || time || t("prepAccessUnknown"))}
+          ${r.transit && r.transit.fromCityBus ? `<br><span class="prep-sub">${escapeHtml(r.transit.fromCityBus)}</span>` : ""}
+          ${transitOk(r)===false ? `<br><span class="prep-sub">${t("prepCarOnly")}</span>` : ""}</div>
+        <div class="prep-btns">
+          <a class="cta-btn" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=transit" target="_blank" rel="noopener">${t("prepByTrain")}</a>
+          <a class="cta-btn sec" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=driving" target="_blank" rel="noopener">${t("prepByCar")}</a>
+        </div>
+      </li>
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">2</span>${t("prepTicket")}</div>
+        <div class="prep-txt">${r.liftAdult!=null ? `${t("adultDayLabel")} <b>${yen(r.liftAdult)}</b>${r.priceSeason?` (${r.priceSeason})`:""}` : t("priceUnknown")}${r.ticket && r.ticket.note ? `<br><span class="prep-sub">${escapeHtml(r.ticket.note)}</span>` : ""}</div>
+        <div class="prep-btns">
+          ${r.ticket && r.ticket.onlineUrl
+            ? `<a class="cta-btn" href="${safeUrl(r.ticket.onlineUrl)}" target="_blank" rel="noopener">${t("prepBuyOnline")}</a>`
+            : (r.officialUrl ? `<a class="cta-btn" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("prepTicketOfficial")}</a>` : "")}
+          ${dealsForResort(r).length ? `<button class="cta-btn sec" id="prepDeals">${t("prepDeals")(dealsForResort(r).length)}</button>` : ""}
+        </div>
+      </li>
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">3</span>${t("prepStay")}</div>
+        <div class="prep-txt">${t("lodgingDesc")}</div>
+        <div class="prep-btns"><a class="cta-btn" href="https://travel.rakuten.co.jp/dosearch/?f_keyword=${lodgingQuery}" target="_blank" rel="noopener">${t("lodgingBtn")}</a></div>
+      </li>
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">4</span>${t("prepRental")}</div>
+        <div class="prep-txt">${t("prepRentalLine")(r.rental ? r.rental.available : null, r.school ? r.school.available : null, r.school ? r.school.english : null)}${r.rental && r.rental.note ? `<br><span class="prep-sub">${escapeHtml(r.rental.note)}</span>` : ""}</div>
+        <div class="prep-btns">
+          ${r.rental && r.rental.reserveUrl ? `<a class="cta-btn" href="${safeUrl(r.rental.reserveUrl)}" target="_blank" rel="noopener">${t("prepRentalBtn")}</a>` : ""}
+          ${r.school && r.school.url ? `<a class="cta-btn sec" href="${safeUrl(r.school.url)}" target="_blank" rel="noopener">${t("prepSchoolBtn")}</a>` : ""}
+          ${!(r.rental && r.rental.reserveUrl) && !(r.school && r.school.url) && r.officialUrl ? `<a class="cta-btn sec" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("prepCheckOfficial")}</a>` : ""}
+        </div>
+      </li>
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">5</span>${t("prepPack")}</div>
+        <div class="packing-list" style="margin-bottom:8px">${packingList(r).map(p=>`<span class="packing-item">${p}</span>`).join("")}</div>
+        <div class="prep-btns"><button class="cta-btn" id="prepGear">${t("prepGearBtn")}</button></div>
+      </li>
+      <li class="prep-step">
+        <div class="prep-h"><span class="prep-n">6</span>${t("prepLocal")}</div>
+        <div class="prep-btns">
+          <a class="cta-btn sec" href="https://www.google.com/maps/search/${foodQuery}" target="_blank" rel="noopener">${t("foodBtn")}</a>
+          <a class="cta-btn sec" href="https://www.google.com/maps/search/${onsenQuery}" target="_blank" rel="noopener">${t("onsenBtn")}</a>
+          ${r.officialUrl ? `<a class="cta-btn sec" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("officialBtn")}</a>` : ""}
+        </div>
+      </li>
+    </ol>
     ${r.checkedAt ? `<div class="checked-at">${t("checkedAtLabel")(fmtDate(r.checkedAt))}</div>` : ""}
     <div class="disclaimer">${t("disclaimer")}</div>
   `;
   document.getElementById("overlay").hidden = false;
   document.getElementById("closeBtn").addEventListener("click", closeDetail);
+  document.getElementById("prepDeals")?.addEventListener("click", ()=>openDealsFor(r));
+  document.getElementById("prepGear")?.addEventListener("click", ()=>{ closeDetail(); setView("gear"); });
   document.getElementById("detailFav").addEventListener("click", ()=>{
     toggleFav(r.id);
     const on = isFav(r.id), b = document.getElementById("detailFav");
@@ -1556,6 +1721,26 @@ function roadKmFrom(pref, r){
   return Math.round(distKmBetween({lat:o[0],lng:o[1]}, r) * ROAD_FACTOR);
 }
 
+// 電車・バスで行けるか：調査データがあればそれを、なければアクセス文から判定（不明はnull）
+function transitOk(r){
+  if(r.transit && r.transit.byPublic!=null) return r.transit.byPublic;
+  const txt = (r.accessJa||"") + (r.timeJa||"");
+  if(/駅|バス|シャトル|新幹線|電車|JR|鉄道/.test(txt)) return true;
+  if(txt) return false;
+  return null;
+}
+
+// 駅からの所要時間（分）をアクセス文から読む。複数あれば最大、読めなければnull
+function stationMinutes(r){
+  const txt = (r.transit && (r.transit.howJa||"")) || (r.accessJa||"");
+  let max = null;
+  for(const m of txt.matchAll(/約?(\d+)\s*時間(?:\s*(\d+)\s*分)?|約?(\d+)\s*分/g)){
+    const v = m[1] ? Number(m[1])*60 + Number(m[2]||0) : Number(m[3]);
+    if(max===null || v>max) max = v;
+  }
+  return max;
+}
+
 function scoreResort(r, pref, levelIdx, isDayTrip){
   const km = roadKmFrom(pref, r);
   const route = (r.timeJa||"") + (r.accessJa||"");
@@ -1573,6 +1758,19 @@ function scoreResort(r, pref, levelIdx, isDayTrip){
     if(indoor) score -= 100;
   }
   score += (r.terrain ? r.terrain[levelIdx] : 30) * 0.6;
+  const limit = BUDGET_LIMITS[wiz.budget];
+  if(limit!=null){
+    if(r.liftAdult==null) score -= 8;
+    else if(r.liftAdult <= limit) score += 12;
+    else score -= 10 + (r.liftAdult - limit) / 100;
+  }
+  if(wiz.transport===1){
+    const ok = transitOk(r);
+    score += ok===true ? 15 : ok===false ? -60 : -15;
+    // 電車で日帰りなら、駅から長く乗り継ぐスキー場は現実的でない
+    const mins = stationMinutes(r);
+    if(isDayTrip && mins!=null){ if(mins > 90) score -= 35; else if(mins > 60) score -= 15; }
+  }
   return score;
 }
 
@@ -1611,7 +1809,9 @@ function renderRecommendation(){
     <div class="reco-card">
       <div class="reco-eyebrow">${t("recoEyebrow")}</div>
       <h2>${name}</h2>
-      <div class="reco-sub">${t("recoWhy")(tripLabel, levelLabel)}</div>
+      <div class="reco-sub">${t("recoWhy")([tripLabel, levelLabel, t(BUDGET_OPTS[wiz.budget]), t(TRANSPORT_OPTS[wiz.transport])])}</div>
+      ${BUDGET_LIMITS[wiz.budget]!=null && r.liftAdult!=null && r.liftAdult > BUDGET_LIMITS[wiz.budget] ? `<div class="reco-approx-note">${t("overBudgetNote")(r.liftAdult)}</div>` : ""}
+      ${wiz.transport===1 && transitOk(r)!==true ? `<div class="reco-approx-note">${t("transitUnknownNote")}</div>` : ""}
       ${fromKm > 250 ? `<div class="reco-approx-note">${t("approxNote")}</div>` : ""}
       <div class="reco-rows">
         <div class="reco-row"><div class="ic">${icon("car",20)}</div><div><div class="rt">${t("rowAccess")}</div><div class="rv">${accessLine}${r.flight?`<br><span style="font-size:11.5px;color:var(--text-muted)">${t("flightNote")}</span>`:""}</div></div></div>
@@ -1634,7 +1834,7 @@ function renderRecommendation(){
 }
 
 function resetWizard(){
-  wiz.block=null; wiz.prefIdx=null; wiz.trip=null; wiz.level=null; wiz.lastId=null; wiz.shown=[];
+  wiz.block=null; wiz.prefIdx=null; wiz.trip=null; wiz.level=null; wiz.budget=null; wiz.transport=null; wiz.lastId=null; wiz.shown=[];
   document.getElementById("wizardResult").hidden = true;
   document.getElementById("wizardResult").innerHTML = "";
   document.getElementById("prefBlockWrap").hidden = true;
@@ -1705,6 +1905,11 @@ document.getElementById("mapChips").addEventListener("click", (e)=>{
   renderMapChips(); renderMapLayer();
 });
 document.getElementById("mapSearch").addEventListener("input", renderSuggest);
+document.getElementById("dealsSearch").addEventListener("input", (e)=>{ dealsState.q = e.target.value; renderDeals(); });
+document.getElementById("dealsChips").addEventListener("click", (e)=>{
+  const b = e.target.closest("[data-cat]"); if(!b) return;
+  dealsState.cat = b.dataset.cat; renderDeals();
+});
 document.getElementById("mapSearch").addEventListener("keydown", (e)=>{
   if(e.key==="Enter"){ const first = document.querySelector("#mapSuggest button"); if(first) first.click(); }
 });
