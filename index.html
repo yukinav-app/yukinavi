@@ -641,16 +641,19 @@ function rakutenAff(url){
   const e = encodeURIComponent(url);
   return `https://hb.afl.rakuten.co.jp/hgc/${AFF.rakuten}/?pc=${e}&m=${e}`;
 }
-// Klook（訪日向け）。aidは提携後に入れる
-const KLOOK = { aid: "" };
-function klookSearch(q){ return `https://www.klook.com/en-US/search/result/?query=${encodeURIComponent(q)}${KLOOK.aid ? "&aid="+KLOOK.aid : ""}`; }
+// Klook（訪日向け）。公式のリンク生成ルール：affiliate.klook.com/redirect?aid=…&aff_label1〜3=…&k_site=<エンコードしたKlookのURL>
+const KLOOK = { aid: "143472" };
+function klookAff(url, place, rid){
+  return `https://affiliate.klook.com/redirect?aid=${KLOOK.aid}&aff_label1=yukinavi&aff_label2=${encodeURIComponent(place||"")}&aff_label3=${encodeURIComponent(rid||"")}&k_site=${encodeURIComponent(url)}`;
+}
+function klookSearch(q, place, rid){ return klookAff(`https://www.klook.com/en-US/search/result/?query=${encodeURIComponent(q)}`, place, rid); }
 // 宿：日本語は楽天トラベル、英語は日本語の予約画面で離脱しないようKlookへ
 function stayUrl(r){
   return state.lang==="ja"
     ? rakutenAff(`https://travel.rakuten.co.jp/dosearch/?f_keyword=${encodeURIComponent(r.nameJa+" 周辺 宿泊")}`)
-    : klookSearch(`${r.nameEn} hotel`);
+    : klookSearch(`${r.nameEn} hotel`, "stay", r.id);
 }
-function busUrl(r){ return state.lang==="ja" ? rakutenAff("https://travel.rakuten.co.jp/bus/") : klookSearch(`${r.nameEn} bus`); }
+function busUrl(r){ return state.lang==="ja" ? rakutenAff("https://travel.rakuten.co.jp/bus/") : klookSearch(`${r.nameEn} bus`, "bus", r.id); }
 function rakutenSearch(keyword){ return rakutenAff(`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}/`); }
 
 // レベル別の装備：上から順に「買う順番」
@@ -917,6 +920,7 @@ const STRINGS = {
     another:"別の提案を見る",
     seeDetail:"詳しく見る",
     ctaStay:"この近くの宿を探す",
+    klookSki:"Klookでリフト券・レンタル",
     barStay:"宿",
     barTicket:"リフト券",
     barRental:"レンタル",
@@ -1150,6 +1154,7 @@ const STRINGS = {
     another:"Show another option",
     seeDetail:"See full details",
     ctaStay:"Find a place to stay nearby",
+    klookSki:"Lift tickets & rentals on Klook",
     barStay:"Stay",
     barTicket:"Lift pass",
     barRental:"Rentals",
@@ -1996,6 +2001,7 @@ function openDetail(id){
           ${r.ticket && r.ticket.onlineUrl
             ? `<a class="cta-btn" href="${safeUrl(r.ticket.onlineUrl)}" target="_blank" rel="noopener">${t("prepBuyOnline")}</a>`
             : (r.officialUrl ? `<a class="cta-btn" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("prepTicketOfficial")}</a>` : "")}
+          ${state.lang!=="ja" ? `<a class="cta-btn sec" href="${klookSearch(`${r.nameEn} ski`, "ticket", r.id)}" target="_blank" rel="noopener sponsored">${t("klookSki")}</a>` : ""}
           ${dealsForResort(r).length ? `<button class="cta-btn sec" id="prepDeals">${t("prepDeals")(dealsForResort(r).length)}</button>` : ""}
         </div>
       </li>

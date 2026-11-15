@@ -13,6 +13,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 SITE = json.load(open(os.path.join(DATA, "site.json"), encoding="utf-8"))
 BASE = SITE["baseUrl"].rstrip("/")
+KLOOK_AID = "143472"
+
+
+def klook_search(q, place, rid):
+    """Klook公式のリンク生成ルール（affiliate.klook.com/redirect、k_siteはエンコードしたKlookのURL）"""
+    from urllib.parse import quote
+    target = f"https://www.klook.com/en-US/search/result/?query={quote(q)}"
+    return (f"https://affiliate.klook.com/redirect?aid={KLOOK_AID}&amp;aff_label1=yukinavi&amp;aff_label2={place}"
+            f"&amp;aff_label3={rid}&amp;k_site={quote(target, safe='-_.~')}")
+
+
 A8_LINKMGR = '<script src="https://statics.8me.jp/a8link/a8linkmgr.js"></script><script>a8linkmgr({"config_id": "6ixko2yPeJmsYAuUlTIr"});</script>'  # A8の自動リンク変換（提携済み案件のリンクだけを書き換える）
 RAKUTEN_ID = "575c1e8f.95c040c9.575c1e90.5e7d0fd7"
 
@@ -43,7 +54,7 @@ T = {
         "adult": "Adult day pass", "student": "Student / youth", "free": "Free", "elev": "Elevation (base–top)", "runs": "Runs",
         "lifts": "Lifts", "access": "Access", "terrain": "Terrain", "beg": "Beginner", "int": "Intermediate",
         "adv": "Advanced", "english": "English support", "en": {"high": "Good", "medium": "Some", "low": "Limited"},
-        "official": "Official site", "maps": "Open in Google Maps", "stay": "Find hotels nearby (Rakuten Travel)",
+        "official": "Official site", "maps": "Open in Google Maps", "stay": "Find hotels nearby (Klook)", "klook_ski": "Lift tickets & rentals on Klook",
         "cta": "See today’s weather and snow forecast on YukiNavi", "same": "More ski resorts in {pref}",
         "checked": "Info last checked: {d}. Prices and operating status can change; check the official site before you go.",
         "na": "—", "see_official": "See official site", "list_title": "All ski resorts in Japan by prefecture | YukiNavi",
@@ -154,8 +165,14 @@ def resort_page(r, L, same_pref):
         links.append(f'<a href="{esc(r["officialUrl"])}" rel="noopener" target="_blank">{t["official"]}</a>')
     from urllib.parse import quote
     links.append(f'<a href="https://www.google.com/maps/search/?api=1&query={quote(r["nameJa"])}" rel="noopener" target="_blank">{t["maps"]}</a>')
-    stay = quote(f"https://travel.rakuten.co.jp/dosearch/?f_keyword={quote(r['nameJa'] + ' 周辺')}", safe="")
-    links.append(f'<a href="https://hb.afl.rakuten.co.jp/hgc/{RAKUTEN_ID}/?pc={stay}&m={stay}" rel="noopener sponsored" target="_blank">{t["stay"]}</a>')
+    if ja:
+        stay = quote(f"https://travel.rakuten.co.jp/dosearch/?f_keyword={quote(r['nameJa'] + ' 周辺')}", safe="")
+        links.append(f'<a href="https://hb.afl.rakuten.co.jp/hgc/{RAKUTEN_ID}/?pc={stay}&m={stay}" rel="noopener sponsored" target="_blank">{t["stay"]}</a>')
+    else:
+        # 英語ページは日本語の予約画面で離脱しないようKlookへ
+        en_name = r.get("nameEn") or r["nameJa"]
+        links.append(f'<a href="{klook_search(en_name + " hotel", "page-stay", r["id"])}" rel="noopener sponsored" target="_blank">{t["stay"]}</a>')
+        links.append(f'<a href="{klook_search(en_name + " ski", "page-ticket", r["id"])}" rel="noopener sponsored" target="_blank">{t["klook_ski"]}</a>')
 
     others = "".join(
         f'<li><a href="{page_url(L, o["id"])}">{esc(o["nameJa"] if ja else (o.get("nameEn") or o["nameJa"]))}</a></li>'
