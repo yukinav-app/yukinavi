@@ -818,6 +818,372 @@
   ]
  },
  {
+  "id": "mashike_shokanbetsu",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "「道の駅るもい」前発の無料送迎スキーバス（1月初旬〜2月末の土日祝のみ）",
+   "howEn": "Free ski shuttle from Michi-no-Eki Rumoi (weekends/holidays only, early Jan to end of Feb)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.mashike.hokkaido.jp/tourism/place/ski/index.html"
+  ]
+ },
+ {
+  "id": "asarigawa_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約不可（当日ゲレンデハウスで受付）。ウェア込みフルセットあり。リフト券付きレンタルパックはWeb購入可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://asari-ski.com/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": "https://asari-ski.com/online-ticket/",
+   "note": "リフト券はWeb購入がお得（公式案内）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR小樽築港駅",
+   "howJa": "中央バス「朝里川温泉線」で約15分「温泉南」下車、徒歩5分（小樽駅前からは約30分）",
+   "howEn": "Chuo Bus (Asarigawa Onsen Line) about 15 min to 'Onsen Minami', then 5 min walk (about 30 min from Otaru Sta.)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://asari-ski.com/",
+   "https://asari-ski.com/rental/",
+   "https://asari-ski.com/lesson/",
+   "https://asari-ski.com/online-ticket/"
+  ]
+ },
+ {
+  "id": "sapporo_kokusai",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://webket.jp/pc/ticket/index?fc=00323&ac=1595",
+   "note": "ウェアもレンタル可。Web予約で当日スムーズ"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.sapporo-kokusai.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.sapporo-kokusai.jp/webshop/",
+   "note": "1日券・4時間券はWeb購入で300円お得（Webket）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR札幌駅",
+   "howJa": "予約制スキーバスを利用（札幌駅エリアから直行「国際スキー場ダイレクト便」で約80分）。復路も要予約",
+   "howEn": "Reservation-only ski bus ('Kokusai Ski Resort Direct' from Sapporo Sta. area, about 80 min). Book the return trip too",
+   "fromCityBus": "札幌市内（札幌駅・大通・すすきの・ホテル発）・小樽から予約制スキーバスあり（リフト券付きプランあり）"
+  },
+  "sourceUrls": [
+   "https://www.sapporo-kokusai.jp/rental/",
+   "https://www.sapporo-kokusai.jp/school/private.php",
+   "https://www.sapporo-kokusai.jp/webshop/",
+   "https://www.sapporo-kokusai.jp/access/"
+  ]
+ },
+ {
+  "id": "sapporo_moiwa",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://sapporo-moiwa.jp/onlinebooking",
+   "note": "ウェア・小物もレンタル可。Web予約可。南斜面ではレンタルなし（北斜面を利用）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://sapporo-moiwa.jp/school"
+  },
+  "ticket": {
+   "onlineUrl": "https://sapporo-moiwa.axess.shop/",
+   "note": "Web購入（WEB割）で通常料金よりお得。当日はピックアップボックスでIC券に引換"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "地下鉄南北線 真駒内駅",
+   "howJa": "シャトルバスで北斜面まで約15分（片道1,000円、シーズン中毎日運行）。南斜面へは路線バス【南98】で終点「道路管理事務所」下車",
+   "howEn": "Shuttle bus to the North Slope, about 15 min (1,000 yen one way, daily in season). For the South Slope, take route bus Minami 98 to the terminal",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://sapporo-moiwa.jp/access",
+   "https://sapporo-moiwa.jp/onlinebooking",
+   "https://sapporo-moiwa.jp/rental",
+   "https://sapporo-moiwa.jp/school"
+  ]
+ },
+ {
+  "id": "esashi_mikasayama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "シーズン単位のレンタルスキー（要申込、スキー場ヒュッテで受取）。日帰りレンタルの記載なし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.emsc.npo-emsc.net/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.emsc.npo-emsc.net/facility/mikasayama",
+   "https://www.emsc.npo-emsc.net/archives/7347",
+   "https://www.emsc.npo-emsc.net/school"
+  ]
+ },
+ {
+  "id": "mikasa_katsurazawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。小学生以下へのスキー・スノーボードのレンタルなし。数に限りあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト料金の支払いは現金のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.mikasa.hokkaido.jp/sightseeing/detail/00013069.html",
+   "https://www.city.mikasa.hokkaido.jp/sightseeing/detail/00002643.html"
+  ]
+ },
+ {
+  "id": "takinoue_sakuragaoka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.takinoue.hokkaido.jp/kyoikuiinkai/social/shisetsu/sakuragaokaski.html"
+  ]
+ },
+ {
+  "id": "shibetsu_kanayama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルスキー・スノーボードあり（有料）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.shibetsutown.jp/administration/?content=261"
+  ]
+ },
+ {
+  "id": "kiyosato_midori",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.kiyosato.hokkaido.jp/education/?content=706"
+  ]
+ },
+ {
+  "id": "yubetsu_gokazan",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券はスキー場ロッジで販売"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.yubetsu.lg.jp/administration/culture/detail.html?content=271"
+  ]
+ },
+ {
+  "id": "takino_snow_world",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ウェアのレンタルあり（予約不可・1日料金のみ）。スノーボードのレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://takinopark.com/slope/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "地下鉄南北線 真駒内駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.takinopark.com/",
+   "https://takinopark.com/rental/",
+   "https://takinopark.com/slope/school/",
+   "https://takinopark.com/access/"
+  ]
+ },
+ {
+  "id": "sarufutsu_sonei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.vill.sarufutsu.hokkaido.jp/eventcal/detail/00000407.html"
+  ]
+ },
+ {
+  "id": "rubeshibe_happodai",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券・シーズン券は八方台スキー場ロッジで販売"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR留辺蘂駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.kitami.lg.jp/administration/town/detail.php?content=12858"
+  ]
+ },
+ {
   "id": "chuurui_hakugindai",
   "rental": {
    "available": true,
@@ -844,6 +1210,230 @@
    "http://makubetsu-ski.com/hakugindai/page-31/",
    "https://makubetsu-ski.com/hakugindai/page-33-2/",
    "https://makubetsu-ski.com/hakugindai/page-35-2/"
+  ]
+ },
+ {
+  "id": "shiriuchi_choei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト利用料金は無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.shiriuchi.hokkaido.jp/about/shisetsu/sports/ski.html"
+  ]
+ },
+ {
+  "id": "ishikari_heigen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "時間制限なし。帽子・グローブ・ゴーグルのレンタルは中止"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.ishikari-heigen-ski.net/skischool"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "各種キャッシュレス決済可。スクールはリフト券込み料金"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.ishikari-heigen-ski.net/",
+   "https://www.ishikari-heigen-ski.net/rental",
+   "https://www.ishikari-heigen-ski.net/skischool",
+   "https://www.ishikari-heigen-ski.net/bus"
+  ]
+ },
+ {
+  "id": "wakkanai_komadori",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": "レンタルは稚内市内のショップ「Seamore」へ問い合わせるよう公式が案内"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は山麓ロッジで販売"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://w-shinko.co.jp/komadori-ski/",
+   "https://w-shinko.co.jp/komadori-ski/lodge",
+   "https://w-shinko.co.jp/komadori-ski/access/"
+  ]
+ },
+ {
+  "id": "shakotan_yagai_sports",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.shakotan.lg.jp/topics/storyid-post_119.html"
+  ]
+ },
+ {
+  "id": "mombetsu_oyama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://mombetsu.jp/news/detail.html?content=2700"
+  ]
+ },
+ {
+  "id": "abashiri_lakeview",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "山麓ロッジでスキー・スノーボード・ウェアのレンタルあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.abashiri.hokkaido.jp/soshiki/28/1271.html",
+   "https://www.city.abashiri.hokkaido.jp/soshiki/28/1285.html"
+  ]
+ },
+ {
+  "id": "oketo_minamigaoka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.oketo.hokkaido.jp/kyouiku_bunka/shakai/minamigaokaski/"
+  ]
+ },
+ {
+  "id": "bibai_kokusetsu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボードともレンタル可（1日料金）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "温泉入浴券付きパックあり"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://bibaiski.jp/",
+   "https://bibaiski.jp/price/",
+   "https://bibaiski.jp/access/"
   ]
  }
 ]

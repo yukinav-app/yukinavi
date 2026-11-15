@@ -951,5 +951,307 @@
    "https://rusutsu.com/ski-lessons/",
    "https://rusutsu.com/access-shuttle-bus-sapporo/"
   ]
+ },
+ {
+  "id": "kaminokuni_chomin",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.town.kaminokuni.lg.jp/hotnews/detail/00000301.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR木古内駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.kaminokuni.lg.jp/hotnews/detail/00000301.html"
+  ]
+ },
+ {
+  "id": "kamikawa_nakayama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "ロープ・トゥは無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/geo5a80000000l60.html"
+  ]
+ },
+ {
+  "id": "shimokawa",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "スキーロープリフトは無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.shimokawa-time.net/activity/skipark/"
+  ]
+ },
+ {
+  "id": "nakayama_toge",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "フルセットはグローブ・キャップ・ゴーグル込み。前日までの事前予約制"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR札幌駅",
+   "howJa": "札幌駅から道南バス（洞爺湖温泉行）で「中山峠」下車（約1時間30分）、徒歩約15分",
+   "howEn": "Donan Bus from Sapporo Sta. (for Toyako Onsen) to 'Nakayama-toge' (about 90 min), then about 15 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://nakayama-ski.com/rental-2",
+   "https://nakayama-ski.com/access",
+   "https://nakayama-ski.com/price-2"
+  ]
+ },
+ {
+  "id": "nakagawa_chomin",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR天塩中川駅",
+   "howJa": "徒歩約10分",
+   "howEn": "About 10 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.nakagawa.hokkaido.jp/section/kyouikuiinkai/b02d3l0000002by4.html"
+  ]
+ },
+ {
+  "id": "nakatonbetsu_kotobuki",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://r.goope.jp/kotobuki-ski/"
+  ]
+ },
+ {
+  "id": "setana_niwa",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.hiyama.pref.hokkaido.lg.jp/ss/srk/hiyama_kankou/kankou/ski.html"
+  ]
+ },
+ {
+  "id": "rebun_kushukohan",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.rebun.hokkaido.jp/kyoiku/detail/00000529.html"
+  ]
+ },
+ {
+  "id": "imakane_pirika",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルは「スノースクールピリカ」で受付（9:00〜15:00）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://kurplazapirika.net/ski/ski_school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://kurplazapirika.net/lift_ticket_info/",
+   "note": "公式の「リフト券WEB販売」ページあり（掲載は昨季情報）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR長万部駅",
+   "howJa": "函館バス（瀬棚三本杉行）で約30分「クアプラザピリカ」下車",
+   "howEn": "Hakodate Bus (for Setana Sanbonsugi), about 30 min to 'Kur Plaza Pirika'",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://kurplazapirika.net/ski/rental/",
+   "https://kurplazapirika.net/ski/ski_school/",
+   "https://kurplazapirika.net/lift_ticket_info/",
+   "https://kurplazapirika.net/access/"
+  ]
+ },
+ {
+  "id": "saroma_chouei",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.saroma.hokkaido.jp/shisetsu/sports_bunka/ski.html"
+  ]
+ },
+ {
+  "id": "kutchan_asahigaoka",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": "公式に案内があるのはクロスカントリースキーの貸出（雪ん子館）のみ"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.kutchan.hokkaido.jp/culture-sports/sports-shisetsu/asahigaoka-ski/"
+  ]
  }
 ]
