@@ -1748,7 +1748,7 @@ function scoreResort(r, pref, levelIdx, isDayTrip){
   let score = 0;
   if(isDayTrip){
     // 新幹線で行けるスキー場は、道のりが長くても日帰りしやすい
-    const eff = (/新幹線/.test(route) && km <= 300) ? km * 0.5 : km;
+    const eff = (wiz.transport===1 && /新幹線/.test(route) && km <= 300) ? km * 0.5 : km;
     score -= eff * 0.45;
     if(eff > 200) score -= 80;
     if(indoor) score -= 40;
