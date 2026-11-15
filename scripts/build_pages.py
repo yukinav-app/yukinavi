@@ -62,7 +62,10 @@ a{color:#14263A}.wrap{max-width:760px;margin:0 auto;padding:16px}header{backgrou
 .legend{font-size:12px;color:#5E6D7C}.cta{display:block;text-align:center;background:#EF5A1F;color:#fff;font-weight:700;text-decoration:none;border-radius:10px;padding:14px;margin:18px 0}
 .links a{display:inline-block;margin:0 14px 8px 0}.note{font-size:12px;color:#5E6D7C;border-top:1px solid #D3DDE5;padding-top:12px;margin-top:20px}
 ul.list{list-style:none;padding:0;columns:2;font-size:14px}ul.list li{margin:3px 0;break-inside:avoid}h2{font-size:18px;margin:22px 0 8px}
-.lang{float:right;font-size:12px}"""
+.lang{float:right;font-size:12px}
+.article h2{font-size:19px;margin:28px 0 8px;padding-bottom:6px;border-bottom:1px solid #D3DDE5}.article p,.article li{font-size:15px;line-height:1.85}
+.article table{border-collapse:collapse;width:100%;font-size:13.5px;margin:10px 0;display:block;overflow-x:auto}.article th,.article td{border-bottom:1px solid #D3DDE5;padding:7px 8px;text-align:left;white-space:nowrap}.article th{background:#EEF3F6}
+ul.guides{list-style:none;padding:0}ul.guides li{background:#fff;border:1px solid #D3DDE5;border-radius:10px;padding:12px 14px;margin:10px 0}"""
 
 
 def esc(s):
@@ -174,6 +177,60 @@ def list_page(L, by_pref, n):
             + f'{other}<h1>{t["list_h1"]}</h1><p>{esc(t["list_desc"].format(n=n))}</p>{body}</main></body></html>')
 
 
+ARTICLE_T = {
+    "ja": {"by": "書いた人：しい（現役スキーインストラクター・SAJクラウンプライズ）", "updated": "更新日：{d}",
+           "list_title": "スキーの読みもの｜YukiNavi", "list_h1": "スキーの読みもの",
+           "list_desc": "はじめてのスキーの準備、持ち物、行き方、お得なリフト券の買い方を、現役インストラクターがまとめました。",
+           "cta": "YukiNaviで自分に合うスキー場を探す", "ad": "このページには広告（アフィリエイトリンク）が含まれます。",
+           "more": "ほかの読みもの"},
+    "en": {"by": "Written by Schi, working ski instructor (SAJ Crown Prize)", "updated": "Updated {d}",
+           "list_title": "Ski guides for Japan | YukiNavi", "list_h1": "Ski guides",
+           "list_desc": "Practical guides for skiing in Japan: first-timer prep, train access, English lessons and lift pass prices.",
+           "cta": "Find a resort that suits you on YukiNavi", "ad": "This page contains affiliate links.",
+           "more": "More guides"},
+}
+
+
+def article_url(L, slug):
+    return f"{BASE}/{'en/' if L == 'en' else ''}guide/{slug}/"
+
+
+def link_resorts(html_body, L, ids):
+    import re as _re
+    def sub(m):
+        rid = m.group(1)
+        r = ids.get(rid)
+        if not r:
+            return esc(rid)
+        name = r["nameJa"] if L == "ja" else (r.get("nameEn") or r["nameJa"])
+        return f'<a href="{page_url(L, rid)}">{esc(name)}</a>'
+    return _re.sub(r"\[\[([a-z0-9_]+)\]\]", sub, html_body)
+
+
+def article_page(a, L, ids, others):
+    t = ARTICLE_T[L]
+    url = article_url(L, a["slug"])
+    jsonld = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"], "description": a["description"],
+              "dateModified": a["updated"], "author": {"@type": "Person", "name": "Schi"}, "inLanguage": L}
+    more = "".join(f'<li><a href="{article_url(L, o["slug"])}">{esc(o["title"])}</a></li>' for o in others if o["slug"] != a["slug"])
+    return (head(L, f'{a["title"]}｜YukiNavi' if L == "ja" else f'{a["title"]} | YukiNavi', a["description"], url, url, url, jsonld)
+            + f'<div class="crumb"><a href="{BASE}/{"en/" if L == "en" else ""}guide/">{t["list_h1"]}</a></div>'
+            + f'<h1>{esc(a["title"])}</h1><div class="sub">{t["by"]}<br>{t["updated"].format(d=a["updated"])}</div>'
+            + f'<div class="note" style="border:none;padding:0;margin:0 0 14px">{t["ad"]}</div>'
+            + f'<article class="article">{link_resorts(a["html"], L, ids)}</article>'
+            + f'<a class="cta" href="{BASE}/{"?lang=en" if L == "en" else ""}">{t["cta"]}</a>'
+            + (f'<h2>{t["more"]}</h2><ul>{more}</ul>' if more else "")
+            + f'<div class="note"><a href="{BASE}/about/">{T[L]["about"]}</a></div></main></body></html>')
+
+
+def articles_list_page(L, arts):
+    t = ARTICLE_T[L]
+    url = f"{BASE}/{'en/' if L == 'en' else ''}guide/"
+    items = "".join(f'<li><a href="{article_url(L, a["slug"])}"><b>{esc(a["title"])}</b></a><br><span class="legend">{esc(a["description"])}</span></li>' for a in arts)
+    return (head(L, t["list_title"], t["list_desc"], url, url, url)
+            + f'<h1>{t["list_h1"]}</h1><p>{esc(t["list_desc"])}</p><ul class="guides">{items}</ul></main></body></html>')
+
+
 def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, "w", encoding="utf-8").write(content)
@@ -197,6 +254,21 @@ def main():
                 urls.append(page_url(L, r["id"]))
     write(os.path.join(ROOT, "r", "index.html"), list_page("ja", by_pref, len(resorts)))
     write(os.path.join(ROOT, "en", "r", "index.html"), list_page("en", by_pref, len(resorts)))
+
+    ids = {r["id"]: r for r in resorts}
+    for L in ("ja", "en"):
+        ap = os.path.join(DATA, f"articles_{L}.json")
+        sub = "guide" if L == "ja" else os.path.join("en", "guide")
+        shutil.rmtree(os.path.join(ROOT, sub), ignore_errors=True)
+        if not os.path.exists(ap):
+            continue
+        arts = json.load(open(ap, encoding="utf-8"))
+        for a in arts:
+            write(os.path.join(ROOT, sub, a["slug"], "index.html"), article_page(a, L, ids, arts))
+            urls.append(article_url(L, a["slug"]))
+        write(os.path.join(ROOT, sub, "index.html"), articles_list_page(L, arts))
+        urls.append(f"{BASE}/{'en/' if L == 'en' else ''}guide/")
+        print(f"articles {L}: {len(arts)}")
 
     sm = "".join(f"<url><loc>{u}</loc></url>" for u in urls)
     write(os.path.join(ROOT, "sitemap.xml"),

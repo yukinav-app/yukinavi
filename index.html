@@ -424,7 +424,7 @@ ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);fon
         <button class="wizard-submit" id="wizardSubmit" disabled data-t="wizardSubmit"></button>
       </div>
       <div id="wizardResult" hidden></div>
-      <div class="foot-links"><a href="about/" data-t="aboutLink"></a></div>
+      <div class="foot-links"><a href="guide/" id="guideLink" data-t="guideLink"></a>　<a href="about/" data-t="aboutLink"></a></div>
     </div>
 
     <div id="nearbyView" hidden>
@@ -711,6 +711,7 @@ const STRINGS = {
     winterClosedNote:"※このスキー場は冬季は営業していません（春〜夏に営業）。",
     adDisclosure:"このページには広告（アフィリエイトリンク）が含まれます。リンク先での予約・購入により運営者に報酬が入ることがあります。",
     aboutLink:"運営者情報・プライバシーポリシー",
+    guideLink:"スキーの読みもの",
     prepTitle:"おでかけ準備",
     prepAccess:"行き方を調べる",
     prepAccessUnknown:"行き方は公式サイトでご確認ください",
@@ -914,6 +915,7 @@ const STRINGS = {
     winterClosedNote:"This resort is closed in winter (open spring to summer).",
     adDisclosure:"This page contains affiliate links. We may earn a commission from bookings or purchases made through them.",
     aboutLink:"About & privacy policy",
+    guideLink:"Ski guides",
     prepTitle:"Trip prep",
     prepAccess:"Plan your route",
     prepAccessUnknown:"Check the official site for access",
@@ -1193,6 +1195,7 @@ function applyStaticText(){
   document.querySelectorAll("[data-t-placeholder]").forEach(el=>{
     el.placeholder = t(el.getAttribute("data-t-placeholder"));
   });
+  document.getElementById("guideLink").href = state.lang==="en" ? "en/guide/" : "guide/";
   document.getElementById("btnJa").classList.toggle("active", state.lang==="ja");
   document.getElementById("btnEn").classList.toggle("active", state.lang==="en");
 

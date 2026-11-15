@@ -26,14 +26,13 @@ hr{border:none;border-top:1px solid #D3DDE5;margin:40px 0}
 
 <h2>運営者</h2>
 <ul>
-<li>運営者：<span class="todo">［要記入：氏名または屋号］</span></li>
+<li>運営者：YukiNavi運営事務局（代表：しい／現役スキーインストラクター）</li>
 <li>所在地：日本</li>
-<li>お問い合わせ：<span class="todo">［要記入：メールアドレス または お問い合わせフォームのURL］</span></li>
+<li>お問い合わせ：<span class="mail" data-u="mail2schi" data-d="gmail.com">（JavaScriptを有効にすると表示されます）</span></li>
 </ul>
 
 <h2>広告・アフィリエイトについて</h2>
 <p>YukiNaviは無料で提供するため、ページ内に広告（アフィリエイトリンク）を含みます。リンク先のサービス（楽天トラベル、楽天市場、アソビュー、Klook、各スキー場公式のチケット販売など）で予約・購入が行われた場合、運営者に紹介報酬が支払われることがあります。報酬の有無によって、掲載するスキー場や情報の内容を変えることはありません。アフィリエイトリンクを含むページには、その旨を表示しています。</p>
-<p>当サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。<span class="todo">［Amazonアソシエイトに登録しない場合はこの段落を削除］</span></p>
 
 <h2>プライバシーポリシー</h2>
 <ul>
@@ -43,7 +42,7 @@ hr{border:none;border-top:1px solid #D3DDE5;margin:40px 0}
 <li><b>天気情報</b>は Open-Meteo（open-meteo.com）から取得します。取得時にスキー場の緯度経度のみを送信します。</li>
 <li><b>地図</b>は国土地理院の地図タイルと Leaflet を使用しています。</li>
 <li><b>Cookie</b>：アフィリエイトリンクをクリックした場合、リンク先の事業者が成果計測のためにCookieを使用することがあります。各事業者のプライバシーポリシーをご確認ください。</li>
-<li><b>アクセス解析</b>：<span class="todo">［導入時に記入：使用するツール名と取得する情報。未導入なら「現在、アクセス解析ツールは使用していません」］</span></li>
+<li><b>アクセス解析</b>：現在、アクセス解析ツールは使用していません。</li>
 </ul>
 
 <h2>免責事項</h2>
@@ -59,7 +58,7 @@ hr{border:none;border-top:1px solid #D3DDE5;margin:40px 0}
 <h2>What YukiNavi is</h2>
 <p>YukiNavi is a free web app that helps first-time skiers and visitors to Japan choose a ski resort and get ready for the trip. Lift pass prices, elevation, runs and access details are taken only from each resort's official site or the operating municipality; anything we could not confirm is left blank.</p>
 <h2>Operator</h2>
-<ul><li>Operator: <span class="todo">[name or trade name]</span></li><li>Location: Japan</li><li>Contact: <span class="todo">[email or contact form URL]</span></li></ul>
+<ul><li>Operator: YukiNavi team (run by Schi, a working ski instructor)</li><li>Location: Japan</li><li>Contact: <span class="mail" data-u="mail2schi" data-d="gmail.com">(enable JavaScript to see the address)</span></li></ul>
 <h2>Advertising and affiliate links</h2>
 <p>YukiNavi is free to use and contains affiliate links. If you book or buy through a linked service (Rakuten Travel, Rakuten Ichiba, Asoview, Klook, a resort's official ticket shop and others), the operator may receive a commission. Commissions never influence which resorts or information we show. Pages containing affiliate links say so.</p>
 <h2>Privacy</h2>
@@ -70,11 +69,13 @@ hr{border:none;border-top:1px solid #D3DDE5;margin:40px 0}
 <li>Weather comes from Open-Meteo; only the resort's coordinates are sent to that service.</li>
 <li>Maps use Geospatial Information Authority of Japan tiles and Leaflet.</li>
 <li>Affiliate partners may set cookies for tracking referrals after you click a link; see their own privacy policies.</li>
-<li>Analytics: <span class="todo">[tool name and data collected, or "none at present"]</span></li>
+<li>Analytics: none at present.</li>
 </ul>
 <h2>Disclaimer</h2>
 <p>Information is correct as of the date it was checked. Prices, operating status and lift schedules change; always confirm on the official site before you go. Weather, snowfall and snow depth are model estimates and may differ from resort reports. The operator accepts no liability for losses arising from use of this site.</p>
 <h2>Found a mistake?</h2>
 <p>Please tell us via the contact above. We will check it against official sources and correct it.</p>
 </section>
-</main></body></html>
+</main>
+<script>document.querySelectorAll(".mail").forEach(function(el){var a=el.dataset.u+"@"+el.dataset.d;el.innerHTML='<a href="mailto:'+a+'">'+a+"</a>";});</script>
+</body></html>
