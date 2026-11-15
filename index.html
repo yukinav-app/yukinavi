@@ -370,7 +370,7 @@ main{padding-block:18px 24px;}
     </div>
 
     <div id="nearbyView" hidden>
-      <div class="result-count" id="resultCount"></div>
+      <div class="result-count"><span id="resultCount"></span> ・ <a href="r/" id="allListLink" data-t="allListLink"></a></div>
       <div class="grid" id="grid"></div>
       <div class="empty" id="emptyState" hidden></div>
     </div>
@@ -599,6 +599,7 @@ const STRINGS = {
     adultDayLabel:"大人1日券",
     accessLabel:"アクセス",
     cachedWeather:(d)=>`保存済みの天気（${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点）`,
+    allListLink:"都道府県別の一覧ページ",
     officialTitle:"公式サイト",
     officialDesc:"今日の営業状況・リフト運行・最新のお知らせは公式でご確認ください。",
     officialBtn:"公式サイトを開く",
@@ -754,6 +755,7 @@ const STRINGS = {
     adultDayLabel:"Adult day pass",
     accessLabel:"Access",
     cachedWeather:(d)=>`Saved weather (as of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")})`,
+    allListLink:"List by prefecture",
     officialTitle:"Official site",
     officialDesc:"Check today's operating status, lift schedule and latest news on the official site.",
     officialBtn:"Open official site",
@@ -1721,10 +1723,17 @@ document.getElementById("icGear").innerHTML = icon("backpack", 20);
 document.getElementById("mapSearchIc").innerHTML = icon("search", 18);
 document.getElementById("mapLocate").innerHTML = icon("locate", 20);
 
+// 検索ページなどからのリンク：?lang=en で英語表示、?r=<id> でそのスキー場の詳細を開く
+const params = new URLSearchParams(location.search);
+if(params.get("lang")==="en") state.lang = "en";
 applyStaticText();
 setView("wizard");
 const resortsReady = loadResorts();
-resortsReady.then(()=>{ loadWeatherCache(); render(); loadAllLiveWeather(); });
+resortsReady.then(()=>{
+  loadWeatherCache(); render(); loadAllLiveWeather();
+  const rid = params.get("r");
+  if(rid && RESORTS.some(r=>r.id===rid)){ setView("nearby"); openDetail(rid); }
+});
 Promise.all([resortsReady, loadAllResorts()]).then(()=>{ renderHeroStat(); buildMapPoints(); if(state.view==="map") renderMapLayer(); });
 loadDeals().then(()=>{ if(state.view==="deals") renderDeals(); });
 
