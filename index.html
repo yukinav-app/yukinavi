@@ -777,7 +777,7 @@ const STRINGS = {
     stuSave:(n)=>`大人より ¥${n.toLocaleString()} お得`,
     adultDayLabel:"大人1日券",
     accessLabel:"アクセス",
-    cachedWeather:(d)=>`保存済みの天気（${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点）`,
+    cachedWeather:(d)=>`${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点`,
     allListLink:"都道府県別の一覧ページ",
     winterClosedNote:"※このスキー場は冬季は営業していません（春〜夏に営業）。",
     adDisclosure:"このページには広告（アフィリエイトリンク）が含まれます。リンク先での予約・購入により運営者に報酬が入ることがあります。",
@@ -990,7 +990,7 @@ const STRINGS = {
     stuSave:(n)=>`Save ¥${n.toLocaleString()} vs adult`,
     adultDayLabel:"Adult day pass",
     accessLabel:"Access",
-    cachedWeather:(d)=>`Saved weather (as of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")})`,
+    cachedWeather:(d)=>`As of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}`,
     allListLink:"List by prefecture",
     winterClosedNote:"This resort is closed in winter (open spring to summer).",
     adDisclosure:"This page contains affiliate links. We may earn a commission from bookings or purchases made through them.",
@@ -1108,6 +1108,7 @@ try{
   FAVS = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || localStorage.getItem(OLD_FAV_KEY) || "[]"));
   localStorage.setItem(FAV_KEY, JSON.stringify([...FAVS]));
   localStorage.removeItem(OLD_FAV_KEY);
+  localStorage.removeItem("yukinavi_wx");
 }catch(e){}
 function isFav(id){ return FAVS.has(id); }
 function toggleFav(id){
@@ -1342,85 +1343,45 @@ function matches(r){
   return true;
 }
 
-function wmoToCondition(code){
-  if([71,73,75,77,85,86].includes(code)) return {ja:"雪", en:"Snow"};
-  if(code===0) return {ja:"快晴", en:"Clear"};
-  if([1,2].includes(code)) return {ja:"晴れ", en:"Sunny"};
-  if([51,53,55,56,57,61,63,65,66,67,80,81,82].includes(code)) return {ja:"雨", en:"Rain"};
-  if([95,96,99].includes(code)) return {ja:"雷雨", en:"Thunderstorm"};
-  return {ja:"曇り", en:"Cloudy"};
+const WX_COND = {snow:["雪","Snow"], clear:["快晴","Clear"], sunny:["晴れ","Sunny"], rain:["雨","Rain"], storm:["雷雨","Thunderstorm"], cloudy:["曇り","Cloudy"]};
+function applyWeather(r, w, asOf){
+  if(!w) return;
+  const c = WX_COND[w.c] || WX_COND.cloudy;
+  r.weather = {tempC:w.t, condJa:c[0], condEn:c[1], wind:w.w, depth:w.d, snowYesterday:w.y, snow7d:w.s7, elevation:w.e};
+  r.weatherAsOf = asOf;
 }
 
-function applyWeather(r, d){
-  if(!d || !d.current) return;
-  const cond = wmoToCondition(d.current.weather_code);
-  const sf = (d.daily && d.daily.snowfall_sum) || [];
-  r.weather = {
-    tempC: Math.round(d.current.temperature_2m),
-    condJa: cond.ja,
-    condEn: cond.en,
-    wind: Math.round(d.current.wind_speed_10m),
-    depth: Math.round((d.current.snow_depth || 0) * 100),
-    snowYesterday: sf.length ? Math.round(sf[0]) : null,
-    snow7d: sf.length > 1 ? Math.round(sf.slice(1).reduce((a,b)=>a+(b||0),0)) : null,
-    elevation: d.elevation!=null ? Math.round(d.elevation) : null,
-  };
-  r.liveWeather = true;
-  r.weatherCachedAt = null;
-}
-
-// 圏外でも直近の天気を見られるよう、取得した天気を端末に保存する
-const WX_KEY = "yukinavi_wx";
-function saveWeatherCache(){
-  try{
-    const o = {ts: Date.now(), wx: {}};
-    RESORTS.forEach(r=>{ if(r.weather && r.liveWeather) o.wx[r.id] = r.weather; });
-    localStorage.setItem(WX_KEY, JSON.stringify(o));
-  }catch(e){}
+// 天気はGitHub Actionsが3時間ごとに data/weather.json へまとめて取得している（訪問者ごとにOpen-Meteoを呼ばない）
+// 圏外でも直近の天気を見られるよう、端末にも保存する
+const WX_KEY = "yukinavi_wx2";
+function applyWeatherFile(o){
+  if(!o || !o.wx) return false;
+  const asOf = Date.parse(o.updatedAt);
+  RESORTS.forEach(r=>applyWeather(r, o.wx[r.id], asOf));
+  return true;
 }
 function loadWeatherCache(){
   try{
     const o = JSON.parse(localStorage.getItem(WX_KEY) || "null");
-    if(!o || Date.now() - o.ts > 3*86400000) return;
-    RESORTS.forEach(r=>{ if(!r.weather && o.wx[r.id]){ r.weather = o.wx[r.id]; r.weatherCachedAt = o.ts; } });
+    if(o && Date.now() - Date.parse(o.updatedAt) < 3*86400000) applyWeatherFile(o);
   }catch(e){}
-}
-
-async function fetchWeatherBatch(list, useElev){
-  for(let i=0;i<list.length;i+=50){
-    const chunk = list.slice(i,i+50);
-    const q = new URLSearchParams({
-      latitude: chunk.map(r=>r.lat).join(","),
-      longitude: chunk.map(r=>r.lng).join(","),
-      current: "temperature_2m,weather_code,wind_speed_10m,snow_depth",
-      daily: "snowfall_sum",
-      past_days: "1",
-      forecast_days: "7",
-      timezone: "Asia/Tokyo",
-    });
-    if(useElev) q.set("elevation", chunk.map(r=>Math.round((r.base+r.top)/2)).join(","));
-    try{
-      const res = await fetch("https://api.open-meteo.com/v1/forecast?" + q.toString());
-      if(!res.ok) throw new Error("weather http " + res.status);
-      const data = await res.json();
-      const arr = Array.isArray(data) ? data : [data];
-      arr.forEach((d,j)=>applyWeather(chunk[j], d));
-    }catch(err){
-      console.warn("live weather batch failed", err);
-    }
-  }
 }
 
 let WX_DONE = false;
 async function loadAllLiveWeather(){
-  const list = RESORTS.filter(r=>r.lat!=null && r.lng!=null);
-  const withElev = list.filter(r=>r.base!=null && r.top!=null);
-  const noElev = list.filter(r=>!(r.base!=null && r.top!=null));
-  await Promise.all([fetchWeatherBatch(withElev,true), fetchWeatherBatch(noElev,false)]);
+  try{
+    const res = await fetch("data/weather.json", {cache:"no-cache"});
+    if(!res.ok) throw new Error("weather http " + res.status);
+    const o = await res.json();
+    if(applyWeatherFile(o)){ try{ localStorage.setItem(WX_KEY, JSON.stringify(o)); }catch(e){} }
+  }catch(err){
+    console.warn("weather load failed", err);
+  }
   WX_DONE = true;
-  saveWeatherCache();
   render();
 }
+// 6時間以上前のデータ（取得が止まっている・圏外の保存分）は注意色で示す
+function weatherStale(r){ return r.weatherAsOf && Date.now() - r.weatherAsOf > 6*3600000; }
 
 const NO_WX = {tempC:null,condJa:"",condEn:"",wind:null,depth:null,snowYesterday:null,snow7d:null,elevation:null};
 function wx(r){ return r.weather || NO_WX; }
@@ -1882,7 +1843,7 @@ function openDetail(id){
       ${r.base!=null&&r.top!=null ? `<div class="info-card"><div class="big num">${r.base}–${r.top}m</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>` : ""}
       ${r.courses!=null||r.lifts!=null ? `<div class="info-card"><div class="big">${r.courses!=null?`<span class="num">${r.courses}</span><span class="unit">${t("unitCourses")}</span>`:""}${r.courses!=null&&r.lifts!=null?" ":""}${r.lifts!=null?`<span class="num">${r.lifts}</span><span class="unit">${t("unitLifts")}</span>`:""}</div><div class="label">${t("coursesLiftsLabel")}</div></div>` : ""}
       ${hasWx ? `
-      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${r.weatherCachedAt ? `<span style="color:#C2410C">${t("cachedWeather")(new Date(r.weatherCachedAt))}</span><br>` : ""}${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+SEP() : ""}${cond}${SEP()}${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
+      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${r.weatherAsOf ? `<span${weatherStale(r) ? ' style="color:#C2410C"' : ""}>${t("cachedWeather")(new Date(r.weatherAsOf))}</span><br>` : ""}${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+SEP() : ""}${cond}${SEP()}${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
