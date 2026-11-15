@@ -1,0 +1,1494 @@
+[
+ {
+  "id": "nikko_yumoto_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "日光湯元ロッヂ内でレンタル・販売。グローブ・ゴーグル・帽子のレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://nikkoyumoto-ski.com/info.html#school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は日光湯元ロッヂ内の窓口で販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "東武日光駅",
+   "howJa": "東武路線バス（湯元温泉行き）で約86分",
+   "howEn": "Tobu route bus (for Yumoto Onsen), about 86 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://nikkoyumoto-ski.com/",
+   "https://nikkoyumoto-ski.com/info.html",
+   "https://nikkoyumoto-ski.com/access.html"
+  ]
+ },
+ {
+  "id": "snova_shinyokohama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボード・ウェアまで一式レンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新横浜駅",
+   "howJa": "路線バス（104系統 鶴見駅西口行き）で約20分、「陸橋下」下車すぐ",
+   "howEn": "Route bus No.104 (for Tsurumi Sta. West Exit), about 20 min to 'Rikkyoshita' stop, then a short walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.kanagawa-kankou.or.jp/spot/303",
+   "https://iko-yo.net/facilities/6039"
+  ]
+ },
+ {
+  "id": "mt_t_hoshino",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "板・ブーツ・ウェアのレンタル可（グローブ・ゴーグル・帽子・ヘルメットはなし）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=00387&ac=8001",
+   "note": "公式サイトからWebket（オンライン）でチケット予約可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "Mt.T（谷川岳ヨッホ）行きバスで約35分（直行バス。路線バスは約50分）。JR水上駅からはバスで約25分",
+   "howEn": "Bus for Mt.T (Tanigawadake Joch), about 35 min (direct bus; about 50 min by route bus). From JR Minakami Sta., about 25 min by bus",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://tanigawadake-joch.com/mt-t/",
+   "https://tanigawadake-joch.com/mt-t/rental/",
+   "https://tanigawadake-joch.com/mt-t/route/"
+  ]
+ },
+ {
+  "id": "katashina_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://katashinakogen.co.jp/rental-reserve/",
+   "note": "事前レンタル予約は土日祝のみ・前日12時まで。ウェア・ヘルメットもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://katashinakogen.co.jp/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": "https://katashinakogen.co.jp/payment-lift-ticket/",
+   "note": "土日祝の事前リフト券購入（12月1日販売開始）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "関越交通路線バスで「片品スキー場入口」まで約1時間40分、下車徒歩約1分（JR沼田駅からは約1時間10分）",
+   "howEn": "Kan-etsu Kotsu route bus to 'Katashina Ski-jo Iriguchi', about 1 h 40 min, then 1 min walk (about 1 h 10 min from JR Numata Sta.)",
+   "fromCityBus": "バスタ新宿から「かたしなスノーエクスプレス号」（道の駅尾瀬かたしな経由、スキー場シャトルに乗り換え・要予約）"
+  },
+  "sourceUrls": [
+   "https://katashinakogen.co.jp/rental-ski/",
+   "https://katashinakogen.co.jp/lesson/",
+   "https://katashinakogen.co.jp/price/",
+   "https://katashinakogen.co.jp/access-way/"
+  ]
+ },
+ {
+  "id": "tambara",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://smartclub.tokyu-snow-resort.com/ja/tambara/rental",
+   "note": "Web事前申込＆決済可。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.tambara.co.jp/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.tambara.co.jp/winter/ticket/buy/",
+   "note": "WEB前売り券は窓口より最大500円安い。当日は無人発券機で引き換え"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR沼田駅",
+   "howJa": "無料シャトルバス（要予約・期間限定）で約50分（特定日はJR上毛高原駅からも運行）",
+   "howEn": "Free shuttle bus (reservation required, limited period), about 50 min (on specific days also from JR Jomo-Kogen Sta.)",
+   "fromCityBus": "首都圏からのツアーバスあり（旅行代理店経由）"
+  },
+  "sourceUrls": [
+   "https://www.tambara.co.jp/winter/rental/",
+   "https://www.tambara.co.jp/winter/school/",
+   "https://www.tambara.co.jp/winter/ticket/buy/",
+   "https://www.tambara.co.jp/winter/access/train/",
+   "https://www.tambara.co.jp/winter/access/access-tourbus/"
+  ]
+ },
+ {
+  "id": "ogna_hotaka",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約不可（当日受付）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://k-hotaka.jp/ogna/school"
+  },
+  "ticket": {
+   "onlineUrl": "https://k-hotaka.oze-katashina.info/",
+   "note": "WEBチケットはWEB特別価格で事前決済、自動引換機でQRコード発券"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR沼田駅",
+   "howJa": "タクシーで約60分（駅からの路線バス・シャトルの案内なし）",
+   "howEn": "About 60 min by taxi (no bus/shuttle from the station is listed)",
+   "fromCityBus": "バスタ新宿から高速バス「かたしなスノーエクスプレス号」（冬季・要予約）で道の駅尾瀬かたしなへ、スキー場の無料送迎に乗り換え。新宿・立川・八王子・大宮から日帰りバスツアーあり"
+  },
+  "sourceUrls": [
+   "https://k-hotaka.jp/ogna/rental",
+   "https://k-hotaka.jp/ogna/school",
+   "https://k-hotaka.jp/ogna/price",
+   "https://k-hotaka.jp/ogna/access"
+  ]
+ },
+ {
+  "id": "snowpark_oze_tokura",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "尾瀬戸倉直営レンタル（駐車場前）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ozetokura.co.jp/pages/service"
+  },
+  "ticket": {
+   "onlineUrl": "https://ozetokura.co.jp/products/2627-passport5",
+   "note": "公式オンラインストアで回数券「パスポート5」を販売。1日券は現地窓口"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "関越交通路線バス（スノーパーク尾瀬戸倉行き）で約2時間（JR沼田駅からは約1時間30分）",
+   "howEn": "Kan-etsu Kotsu route bus (for Snow Park Oze Tokura), about 2 h (about 1 h 30 min from JR Numata Sta.)",
+   "fromCityBus": "バスタ新宿から高速バス「かたしなスノーエクスプレス号」（冬季・要予約）で道の駅尾瀬かたしなへ、スキー場の無料送迎に乗り換え（約4時間）"
+  },
+  "sourceUrls": [
+   "https://ozetokura.co.jp/",
+   "https://ozetokura.co.jp/pages/rental",
+   "https://ozetokura.co.jp/pages/service"
+  ]
+ },
+ {
+  "id": "norn_minakami",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルの事前予約なし。ウェア・ヘルメットもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://norn.co.jp/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "Webketでのオンライン販売はシーズン券のみ確認"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR水上駅",
+   "howJa": "無料シャトルバスで約20分（予約不要）。上越新幹線 上毛高原駅からは予約制シャトルバスで約30分",
+   "howEn": "Free shuttle bus, about 20 min (no reservation). From Jomo-Kogen Sta. (Joetsu Shinkansen), reservation-only shuttle, about 30 min",
+   "fromCityBus": "東京・埼玉・神奈川から日帰りバスツアーあり"
+  },
+  "sourceUrls": [
+   "https://norn.co.jp/winter/rental/",
+   "https://norn.co.jp/winter/school/",
+   "https://norn.co.jp/winter/lift/",
+   "https://norn.co.jp/winter/access/"
+  ]
+ },
+ {
+  "id": "palcall_tsumagoi",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルの事前予約は不可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://palcallresort.com/alss_ski_snowboard_lessons_japan/"
+  },
+  "ticket": {
+   "onlineUrl": "https://palcallresort.com/lifttickets/",
+   "note": "早割・Web割あり（購入時期が早いほどお得）"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR万座・鹿沢口駅",
+   "howJa": "スキー場への送迎シャトルバスなし。駅からタクシーで約20分（軽井沢駅から宿泊者専用無料シャトルあり）",
+   "howEn": "No shuttle bus to the ski area; about 20 min by taxi from the station (free shuttle from Karuizawa Sta. for hotel guests only)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://palcallresort.com/rentals/",
+   "https://palcallresort.com/alss_ski_snowboard_lessons_japan/",
+   "https://palcallresort.com/lifttickets/",
+   "https://palcallresort.com/access/"
+  ]
+ },
+ {
+  "id": "white_world_oze_iwakura",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。グローブ・帽子・ゴーグルのレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.oze-iwakura.co.jp/ski/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.oze-iwakura.co.jp/ski/webket/",
+   "note": "Webketで購入。Web販売は窓口販売よりお得、ICカードにチャージで直接リフトへ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "バスタ新宿から高速バス「かたしなスノーエクスプレス号」（冬季・要予約）で道の駅尾瀬かたしなへ、スキー場の無料送迎に乗り換え（送迎はエクスプレス号予約時に同時申込）"
+  },
+  "sourceUrls": [
+   "https://www.oze-iwakura.co.jp/ski/price/rental/",
+   "https://www.oze-iwakura.co.jp/ski/school/",
+   "https://www.oze-iwakura.co.jp/ski/webket/",
+   "https://www.oze-iwakura.co.jp/ski/access/"
+  ]
+ },
+ {
+  "id": "manza",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルは当日受付。ウェア・ヘルメットもあり（グローブ・ゴーグル・帽子はなし）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.princehotels.co.jp/ski/manza/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/manza/winter/lift/",
+   "note": "Webketで事前購入（早割リフト1日券・シーズン券）。小学生以下はリフト無料"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR万座・鹿沢口駅",
+   "howJa": "西武観光バスで約43分（JR軽井沢駅からも同路線あり）",
+   "howEn": "Seibu Kanko Bus, about 43 min (same route also runs from JR Karuizawa Sta.)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/manza/winter/info/",
+   "https://www.princehotels.co.jp/ski/manza/winter/school/",
+   "https://www.princehotels.co.jp/ski/manza/winter/lift/",
+   "https://www.princehotels.co.jp/ski/manza/winter/access/"
+  ]
+ },
+ {
+  "id": "marunuma",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。ゴーグル・グローブ・帽子のレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.marunuma.jp/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.marunuma.jp/winter/online-ticket/",
+   "note": "オンライン限定で11時間・22時間券を販売。ICリフトカードにWEBチャージで売場に寄らずリフトへ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "バスタ新宿から高速バス「かたしなスノーエクスプレス号」（冬季・要予約）で道の駅尾瀬かたしなへ、スキー場の無料送迎に乗り換え（丸沼高原行き送迎は同時予約）。首都圏発の日帰りバスツアーもあり"
+  },
+  "sourceUrls": [
+   "https://www.marunuma.jp/winter/rental/",
+   "https://www.marunuma.jp/winter/school/",
+   "https://www.marunuma.jp/winter/ticket/",
+   "https://www.marunuma.jp/winter/access/"
+  ]
+ },
+ {
+  "id": "okutone_snow_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://okutone.jp/",
+   "note": "公式特設サイトから早割リフト券（11月30日まで）をWebket・アソビューで購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR水上駅",
+   "howJa": "無料シャトルバス（時刻は公式サイト参照）",
+   "howEn": "Free shuttle bus (see official site for timetable)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://okutone.jp/",
+   "https://gunma-snow.com/snowarea/okutone/",
+   "https://www.minakamisnow.com/freeshuttlebus",
+   "https://area.jaf.or.jp/area/2025/12/kanto/gunma/special-benefits/okutonesnowpark-20251213"
+  ]
+ },
+ {
+  "id": "kawaba",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.kawaba.co.jp/web/",
+   "note": "前日までのレンタル事前決済でお得（用具の取り置き保証はなし）。ウェアもあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.kawaba.co.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.kawaba.co.jp/web/",
+   "note": "WEB1日券は窓口より安い。WEB早割・まとめ買い券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "無料送迎バス（要予約、上毛高原駅8:00発の1日1往復。JR沼田駅からも9:00発）",
+   "howEn": "Free shuttle bus (reservation required; one round trip a day, departs Jomo-Kogen Sta. 8:00, also from JR Numata Sta. 9:00)",
+   "fromCityBus": "首都圏からの日帰りバスツアーあり"
+  },
+  "sourceUrls": [
+   "https://www.kawaba.co.jp/rental/",
+   "https://www.kawaba.co.jp/school/",
+   "https://www.kawaba.co.jp/lift-prices/",
+   "https://www.kawaba.co.jp/web/",
+   "https://www.kawaba.co.jp/access/"
+  ]
+ },
+ {
+  "id": "minakami_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。小物類のレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.minakami-ski.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "有料送迎バス「水上高原ライナー」（完全予約制・前日17時までWEB予約）で約70分（JR水上駅からは約50分）",
+   "howEn": "Paid shuttle bus 'Minakami Kogen Liner' (advance web reservation required by 5pm the day before), about 70 min (about 50 min from JR Minakami Sta.)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.minakami-ski.jp/rental/",
+   "https://www.minakami-ski.jp/school/",
+   "https://www.minakami-ski.jp/price/",
+   "https://www.minakami-ski.jp/access/"
+  ]
+ },
+ {
+  "id": "minakami_kogen_fujiwara",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前のレンタル予約なし。ウェア・小物（ゴーグル・帽子・手袋）もレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://fujiwaraski.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://fujiwaraski.com/asoview/",
+   "note": "前売WEBチケット（アソビュー）でリフト券・レンタルがお得。期間限定早割あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上毛高原駅",
+   "howJa": "関越交通路線バス（水上駅経由・湯の小屋方面）で「藤原スキー場入口」まで約50分",
+   "howEn": "Kan-etsu Kotsu route bus (via Minakami Sta., for Yunokoya) to 'Fujiwara Ski-jo Iriguchi', about 50 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://fujiwaraski.com/rental/",
+   "https://fujiwaraski.com/school/",
+   "https://fujiwaraski.com/asoview/",
+   "https://fujiwaraski.com/access/"
+  ]
+ },
+ {
+  "id": "gunma_minakami_hodaigi",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。小物のレンタルは中止"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://hodaigi.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://ticket.nippon-ski.com/ja/hodaigi.html",
+   "note": "Webで事前購入し現地の自動発券機で発券。早割webリフト券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR水上駅",
+   "howJa": "無料シャトルバスで約45分（JR上毛高原駅からは約85分）。予約者優先。運行日以外は路線バス・タクシー",
+   "howEn": "Free shuttle bus, about 45 min (about 85 min from JR Jomo-Kogen Sta.); reserved passengers have priority. On non-operating days use route bus or taxi",
+   "fromCityBus": "首都圏からの日帰りバスツアーあり"
+  },
+  "sourceUrls": [
+   "https://hodaigi.jp/rental/",
+   "https://hodaigi.jp/school/",
+   "https://hodaigi.jp/lift-price/",
+   "https://hodaigi.jp/access/",
+   "https://hodaigi.jp/shuttle-bus/"
+  ]
+ },
+ {
+  "id": "kusatsu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://webket.jp/pc/agent/index?fc=00236&ac=8002",
+   "note": "オンラインレンタル予約は12月1日開始。ウェア・小物もレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.932-onsen.com/winter/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.932-onsen.com/winter/webticket/",
+   "note": "Webketで事前購入し、セルフ交換機でリフト券に交換。早割オンラインリフト券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR長野原草津口駅",
+   "howJa": "路線バスで草津温泉へ、温泉街からスキー場へは無料シャトルバス（車で約5分の距離）",
+   "howEn": "Route bus to Kusatsu Onsen, then free shuttle bus from the town to the ski area (about 5 min by car)",
+   "fromCityBus": "高速バス「上州ゆめぐり号」等（東京駅・新宿・渋谷・横浜・大宮・池袋などから）"
+  },
+  "sourceUrls": [
+   "https://www.932-onsen.com/winter/ryokin/",
+   "https://www.932-onsen.com/winter/lesson/",
+   "https://www.932-onsen.com/winter/webticket/",
+   "https://www.932-onsen.com/common/access/"
+  ]
+ },
+ {
+  "id": "akagiyama_daiichi",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキーセット・ソリのレンタルあり（売店・レンタルは土日祝のみ）"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR前橋駅",
+   "howJa": "バスで約70分",
+   "howEn": "About 70 min by bus",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://iko-yo.net/facilities/20975",
+   "https://travel.yahoo.co.jp/kanko/spot-00000871/"
+  ]
+ },
+ {
+  "id": "kazawa_snow_area",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://kazawa.axess.shop/ja/Products/Tickets/",
+   "note": null
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR万座・鹿沢口駅",
+   "howJa": "タクシーで約25分（バスの案内なし）",
+   "howEn": "About 25 min by taxi (no bus service listed)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://www.kazawa.com/snow/access.html",
+   "http://www.kazawa.com/13922619850915"
+  ]
+ },
+ {
+  "id": "gala_yuzawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://gala.co.jp/winter/rental/",
+   "note": "Web申込み・事前決済可（受取BOX「PICK UP BOX」あり）。ウェア・小物もレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://gala.co.jp/winter/examination-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=00082&ac=7000",
+   "note": "WEB価格は窓口より安い（例：4時間券WEB 7,000円／窓口7,500円）。Webket・JRE MALLで販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JRガーラ湯沢駅（冬季）",
+   "howJa": "駅直結。JR越後湯沢駅からは無料シャトルバスで約10分",
+   "howEn": "Directly connected to the station. From JR Echigo-Yuzawa Sta., free shuttle bus about 10 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://gala.co.jp/winter/rental/",
+   "https://gala.co.jp/winter/examination-school/",
+   "https://gala.co.jp/winter/hours-pricing/",
+   "https://gala.co.jp/winter/access/"
+  ]
+ },
+ {
+  "id": "naspa_ski_garden",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約不要。ウェアもレンタル可（何度でも交換OK）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.naspa.co.jp/ski/ski-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.naspa.co.jp/ski/lift",
+   "note": "Web限定の早割1日券あり（Webket・セブンチケット等）。NASPAニューオータニ宿泊者はリフト券サービス"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "シャトルバスで約3分",
+   "howEn": "Shuttle bus, about 3 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.naspa.co.jp/ski/rental/",
+   "https://www.naspa.co.jp/ski/ski-school/",
+   "https://www.naspa.co.jp/ski/lift",
+   "https://www.naspa.co.jp/ski/"
+  ]
+ },
+ {
+  "id": "kagura",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "当日レンタル申込書で受付。グローブ・ゴーグル・帽子のレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.princehotels.co.jp/ski/kagura/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/kagura/winter/lift/advance_tickets/",
+   "note": "Webketで事前購入し、セルフピックアップ機で発券。小学生以下はリフト無料"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "路線バスで約18分",
+   "howEn": "Route bus, about 18 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/kagura/winter/info/",
+   "https://www.princehotels.co.jp/ski/kagura/winter/school/",
+   "https://www.princehotels.co.jp/ski/kagura/winter/lift/advance_tickets/",
+   "https://www.princehotels.co.jp/ski/kagura/winter/access/"
+  ]
+ },
+ {
+  "id": "tochio_family",
+  "rental": {
+   "available": false,
+   "reserveUrl": null,
+   "note": "スキー場でのレンタルなし（栃尾地域内のスポーツ店で対応）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.tochio.jp/ski/winter.html#LESSON_WINTER1"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.tochio.jp/ski/winter.html"
+  ]
+ },
+ {
+  "id": "arai_mountain_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルショップ「SALOMON STATION」。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.lottehotel.com/arai-resort/ja/snow/ski-lesson/myoko-snow-sports"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.lottehotel.com/arai-resort/ja/snow/ski-lift/online-ticket",
+   "note": "オンライン購入は現地購入より安い。QRコードで自動発券機から受取"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "えちごトキめき鉄道・JR上越妙高駅",
+   "howJa": "シャトルバスで約25〜30分（完全予約制・ホテル施設利用者のみ）",
+   "howEn": "Shuttle bus, about 25-30 min (reservation required; for hotel facility guests only)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.lottehotel.com/arai-resort/ja/snow/ski-lift/economy-class",
+   "https://www.lottehotel.com/arai-resort/ja/snow/ski-lift/online-ticket",
+   "https://www.lottehotel.com/arai-resort/ja/facilities/shuttle-bus-service",
+   "https://www.lottehotel.com/arai-resort/ja/snow/ski-lesson/salomon-station"
+  ]
+ },
+ {
+  "id": "cupid_valley",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "好きなブランドを選べる「BRAND VIKING」"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.yukidaruma-kogen.com/winter/school.html"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.smiletk.jp/ticket/?store=%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%94%E3%83%83%E3%83%88%E3%83%90%E3%83%AC%E3%82%A4",
+   "note": "公式サイトの「リフト券購入」から事前購入可（Smile Ticket）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "北越急行ほくほく線 虫川大杉駅",
+   "howJa": "無料送迎バスで約25分（特定日のみ・前日16時までの完全予約制）。運行日以外はタクシー",
+   "howEn": "Free shuttle bus, about 25 min (specific days only; reservation required by 4pm the day before). Taxi on other days",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.yukidaruma-kogen.com/winter/lift-rental.html",
+   "https://www.yukidaruma-kogen.com/winter/school.html",
+   "https://www.yukidaruma-kogen.com/winter/access.html"
+  ]
+ },
+ {
+  "id": "chateau_shiozawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://chateau-shiozawa.jp/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR越後湯沢駅",
+   "howJa": "送迎シャトルバスは宿泊者のみ（日帰り客向けの公共交通の案内なし）",
+   "howEn": "Shuttle bus for hotel guests only (no public transport option listed for day visitors)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://chateau-shiozawa.jp/lift-rental-price",
+   "https://chateau-shiozawa.jp/school",
+   "https://chateau-shiozawa.jp/access"
+  ]
+ },
+ {
+  "id": "charmant_hiuchi",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ファットスキー等のエキスパートレンタルあり。グローブ・ゴーグルのレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://charmant-hiuchi.jp/%e3%82%b9%e3%82%af%e3%83%bc%e3%83%ab/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/CGwQyBFGKD/",
+   "note": "公式サイトからアソビューでシーズンパス・チケットをオンライン購入"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "えちごトキめき鉄道 能生駅",
+   "howJa": "路線バスで田麦平へ、無料シャトルバスに乗り換え（土日祝・冬休みのみ運行、約35分）",
+   "howEn": "Route bus to Tamugidaira, then transfer to free shuttle bus (weekends/holidays and winter break only, about 35 min)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://charmant-hiuchi.jp/price/",
+   "https://charmant-hiuchi.jp/%e3%82%b9%e3%82%af%e3%83%bc%e3%83%ab/",
+   "https://charmant-hiuchi.jp/access/"
+  ]
+ },
+ {
+  "id": "ninox_snow_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約不可。帽子・グローブ・ゴーグルのレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.ninox.co.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://smile-resort.com/ticket/ninox/",
+   "note": "公式「Smile Ticket」でWeb購入（一部券種）・早割あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR新発田駅",
+   "howJa": "無料送迎バスで約30分（平日は前日17時までに要予約）",
+   "howEn": "Free shuttle bus, about 30 min (weekdays: reservation required by 5pm the day before)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.ninox.co.jp/rental/",
+   "https://www.ninox.co.jp/school/",
+   "https://www.ninox.co.jp/lift/",
+   "https://www.ninox.co.jp/access/"
+  ]
+ },
+ {
+  "id": "new_greenpia_tsunan",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://new-greenpia.com/ski_rental/",
+   "note": "Webフォームで予約可（3日前15時まで）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://new-greenpia.com/ski_school_info/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=51680&ac=9000",
+   "note": "公式サイトからWebket・アソビュー等でお得なWEBチケット（最大38%オフ）"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR津南駅",
+   "howJa": "タクシーで約20分（JR越後湯沢駅からの送迎バスは宿泊者専用・要予約）",
+   "howEn": "About 20 min by taxi (shuttle from JR Echigo-Yuzawa Sta. is for hotel guests only, reservation required)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://new-greenpia.com/ski_ryoukin/",
+   "https://new-greenpia.com/ski_rental/",
+   "https://new-greenpia.com/ski_school_info/",
+   "https://new-greenpia.com/access_top/"
+  ]
+ },
+ {
+  "id": "muika_snow_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "チェンジフリー。事前予約は2日前正午まで。ウェアもレンタル可（小物なし）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.muikamachi.com/ski/school.php"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.smiletk.jp/ticket/?store=%E3%83%A0%E3%82%A4%E3%82%AB%E3%82%B9%E3%83%8E%E3%83%BC%E3%83%AA%E3%82%BE%E3%83%BC%E3%83%88&gtm-resort-from=muikamachi",
+   "note": "公式チケットサイト「Smile Ticket」で購入、自動発券機でQR発券。早割あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR六日町駅",
+   "howJa": "無料送迎バス（前日までの予約制、平日はホテル宿泊者限定）で約10分",
+   "howEn": "Free shuttle bus (reservation by the day before; weekdays for hotel guests only), about 10 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.muikamachi.com/ski/rent.php",
+   "https://www.muikamachi.com/ski/school.php",
+   "https://www.muikamachi.com/ski/lift.php",
+   "https://www.muikamachi.com/access.php"
+  ]
+ },
+ {
+  "id": "ipponsugi_snow_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "場内レンタルショップあり（事前予約不可）。スノーボードはレッスン受講者のみ滑走可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.ipponsugi.net/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "徒歩約3分",
+   "howEn": "About 3 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.ipponsugi.net/"
+  ]
+ },
+ {
+  "id": "mikawa_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。現金払いのみ"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/467.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "リフト券は現金払いのみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR磐越西線 三川駅",
+   "howJa": "バスで「川口」バス停下車、徒歩約10分（タクシーなら約5分）",
+   "howEn": "Bus to 'Kawaguchi' stop, then about 10 min walk (about 5 min by taxi)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/index.html",
+   "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/464.html",
+   "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/467.html",
+   "https://www.town.aga.niigata.jp/kanko_rekishi/mikawa_onsenski/469.html"
+  ]
+ },
+ {
+  "id": "joetsu_kokusai",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.wasabiya-rental-system.com/jokokuhigaeri/top?counter_query_name=annex",
+   "note": "日帰りセンター「アネックス」でのレンタルはWEB申込みが必要。サロモン最新モデル"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://jkokusai.co.jp/ski/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel-lp/joetsu-iwappara/",
+   "note": "アソビューで入場券（リフト券）を購入。オンライン価格あり・早割セット券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR上越国際スキー場前駅",
+   "howJa": "駅を降りると目の前がゲレンデ（徒歩すぐ）",
+   "howEn": "The slopes are right in front of the station",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://jkokusai.co.jp/ski/rental/",
+   "https://jkokusai.co.jp/ski/school/",
+   "https://jkokusai.co.jp/ski/lift/",
+   "https://jkokusai.co.jp/ski/access/"
+  ]
+ },
+ {
+  "id": "nakazato_snow_wood",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後中里駅",
+   "howJa": "徒歩約5分（約300m）",
+   "howEn": "About 5 min walk (about 300 m)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.e-yuzawa.gr.jp/sys/ski_p/snow-wood/"
+  ]
+ },
+ {
+  "id": "kyukamura_myoko_runrun",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.qkamura.or.jp/myoukou/ski/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "えちごトキめき鉄道 関山駅",
+   "howJa": "休暇村の送迎バス（前日までに要予約）で約15分。時間が合わない場合は路線バス",
+   "howEn": "Kyukamura shuttle bus (reservation by the day before), about 15 min; otherwise route bus",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.qkamura.or.jp/myoukou/ski/",
+   "https://www.qkamura.or.jp/myoukou/access/"
+  ]
+ },
+ {
+  "id": "sado_daira",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルウェアあり（数に限りあり）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.sadoski.net/school.html"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "佐渡市役所第2庁舎前から無料シャトルバス（土日祝・要予約）",
+   "howEn": "Free shuttle bus from Sado City Hall Annex 2 (weekends/holidays, reservation required)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.sadoski.net/page008.html",
+   "https://www.sadoski.net/schoolinfo.html"
+  ]
+ },
+ {
+  "id": "hakkaisanroku",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://hakkai36.com/schools/"
+  },
+  "ticket": {
+   "onlineUrl": "https://webket.jp/pc/ticket/index?fc=51684&ac=9000",
+   "note": "公式サイトからWebketで購入"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR浦佐駅",
+   "howJa": "車で約10分（バスの案内なし）",
+   "howEn": "About 10 min by car (no bus service listed)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://hakkai36.com/fee/",
+   "https://hakkai36.com/schools/",
+   "https://hakkai36.com/access_map/"
+  ]
+ },
+ {
+  "id": "muikamachi_hakkaisan",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ゴーグル・手袋の貸出なし（販売あり）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.princehotels.co.jp/ski/hakkaisan/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/hakkaisan/winter/lift/",
+   "note": "オンライン（KKday）で事前にお得な料金で購入。小学生以下はリフト無料"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR六日町駅",
+   "howJa": "駅から約13km。スキー場までの路線バス延伸は2026年10月で終了",
+   "howEn": "About 13 km from the station; the route bus extension to the ski area ended in Oct 2026",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/hakkaisan/winter/info/",
+   "https://www.princehotels.co.jp/ski/hakkaisan/winter/school/",
+   "https://www.princehotels.co.jp/ski/hakkaisan/winter/lift/",
+   "https://www.princehotels.co.jp/ski/hakkaisan/winter/access/localbus_green/"
+  ]
+ },
+ {
+  "id": "fuyu_torigoe",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "Tバーリフト2基の小規模スキー場。リフト運行は火木土日祝のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR加茂駅",
+   "howJa": "乗合タクシー（1時間前までに要予約）",
+   "howEn": "Shared-ride taxi (reservation required at least 1 hour ahead)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.city.kamo.niigata.jp/docs/306932.html",
+   "https://niigata-kankou.or.jp/spot/10725"
+  ]
+ },
+ {
+  "id": "koshi_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・スノーボード・ウェアのレンタルあり"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR小千谷駅",
+   "howJa": "車で約20分（公共交通の案内なし）",
+   "howEn": "About 20 min by car (no public transport listed)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://koshikogen.com/fee/",
+   "http://koshikogen.com/rental/"
+  ]
+ },
+ {
+  "id": "okutadami_maruyama",
+  "rental": {
+   "available": null,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR浦佐駅",
+   "howJa": "無料送迎バス（東口8:45発・前日15時までの完全予約制）で約80分",
+   "howEn": "Free shuttle bus (departs East Exit 8:45; reservation required by 3pm the day before), about 80 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://www.okutadami.co.jp/ski/access3.html",
+   "http://www.okutadami.co.jp/ski/price.html"
+  ]
+ },
+ {
+  "id": "myoko",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ブランドバイキング。ゴーグル・グローブ・帽子のレンタルなし"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.princehotels.co.jp/ski/myoko/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/myoko/winter/lift/",
+   "note": "WAmazing Snowで事前購入。小学生以下はリフト無料"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "妙高高原駅（えちごトキめき鉄道・しなの鉄道）",
+   "howJa": "路線バス（杉野沢線・冬期のみ運行）で約30分。タクシーなら約10分",
+   "howEn": "Route bus (Suginosawa Line, winter only), about 30 min; about 10 min by taxi",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/myoko/winter/info/",
+   "https://www.princehotels.co.jp/ski/myoko/winter/school/",
+   "https://www.princehotels.co.jp/ski/myoko/winter/lift/",
+   "https://www.princehotels.co.jp/ski/myoko/winter/access/"
+  ]
+ },
+ {
+  "id": "koide",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "Web事前予約フォームは準備中。ウェア・グローブもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://sites.google.com/sp-koide.org/lesson/%E3%83%9B%E3%83%BC%E3%83%A0"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "電子チケット（事前購入）は準備中"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR小出駅",
+   "howJa": "徒歩約7分",
+   "howEn": "About 7 min walk",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.sp-koide.org/ski/rental",
+   "https://www.sp-koide.org/ski/lift_fees",
+   "https://www.sp-koide.org/ski/access"
+  ]
+ },
+ {
+  "id": "iwappara",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.wasabiya-rental-system.com/iwappara/top?counter_query_name=resortcenter",
+   "note": "出発前のWeb申込みが便利"
+  },
+  "school": {
+   "available": true,
+   "english": false,
+   "url": "https://iwa-ppara.com/lesson/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel-lp/joetsu-iwappara/",
+   "note": "アソビューで早割・シーズンパス等を販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "無料シャトルバスで約6〜16分（土休日・特定日運行、予約不要）。平日は予約制の循環バス",
+   "howEn": "Free shuttle bus, about 6-16 min (weekends/holidays/specific days, no reservation); reservation-only loop bus on weekdays",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://iwa-ppara.com/rental/",
+   "https://iwa-ppara.com/lesson/",
+   "https://iwa-ppara.com/access/"
+  ]
+ },
+ {
+  "id": "matsunoyama_onsen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.matsunoyama-ski.com/Discountpack.htm"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "直通バス（片道1,000円・事前予約制）。ほくほく線まつだい駅からは東頸バスに乗り換え",
+   "howEn": "Direct bus (1,000 yen one way, advance reservation). From Matsudai Sta. (Hokuhoku Line), transfer to Tokei Bus",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.matsunoyama-ski.com/Discountpack.htm",
+   "https://www.matsunoyama-ski.com/Access.htm"
+  ]
+ },
+ {
+  "id": "matsudai_family",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボードのレンタルあり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ski.matsudai.jp/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": null
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "北越急行ほくほく線 まつだい駅",
+   "howJa": "徒歩約15分（約2km、タクシーなら約3分）",
+   "howEn": "About 15 min walk (about 2 km; about 3 min by taxi)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ski.matsudai.jp/",
+   "https://ski.matsudai.jp/%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9/"
+  ]
+ },
+ {
+  "id": "ikenotaira_alpenblick",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "場内にレンタルショップ2店（ウェア・ソリ等もあり）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://alpenblick-resort.com/ski"
+  },
+  "ticket": {
+   "onlineUrl": "https://alpenblick-resort.com/ski/26-27-ticket-info#lift-ticket",
+   "note": "スノーナビ・アソビュー・ワメイジングスノー・楽天チケットでオンライン購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "妙高高原駅（えちごトキめき鉄道・しなの鉄道）",
+   "howJa": "シャトルバス（12月中旬〜3月、毎日運行）",
+   "howEn": "Shuttle bus (mid-Dec to Mar, daily)",
+   "fromCityBus": "冬季は高速バス「SNOW LINER」（妙高・斑尾ツアー）で来場可"
+  },
+  "sourceUrls": [
+   "https://alpenblick-resort.com/ski",
+   "https://alpenblick-resort.com/ski/26-27-ticket-info",
+   "https://alpenblick-resort.com/access"
+  ]
+ },
+ {
+  "id": "yuzawa_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": null
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.skip-lab.com/"
+  },
+  "ticket": {
+   "onlineUrl": "https://leisure.tstar.jp/event/rlywpks/",
+   "note": "公式サイトから楽天チケットでリフト券を購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "無料送迎バス（スキーシーズン運行・予約不要）で約10分",
+   "howEn": "Free shuttle bus (ski season, no reservation), about 10 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.park-resort.com/ski/",
+   "https://www.park-resort.com/ski/price",
+   "https://www.park-resort.com/access/"
+  ]
+ },
+ {
+  "id": "yuzawa_nakazato",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "事前予約不可。ウェアもレンタル可（小物なし）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.yuzawa-nakazato.com/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.yuzawa-nakazato.com/smile-ticket/language.html",
+   "note": "公式サイトで事前購入し自動発券機で引換え可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後中里駅",
+   "howJa": "駅とスキーセンターが直結（徒歩すぐ）。JR越後湯沢駅西口からは無料シャトルバスで約15分",
+   "howEn": "Station connected directly to the ski center. From JR Echigo-Yuzawa Sta. (West Exit), free shuttle bus about 15 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.yuzawa-nakazato.com/winter/rental/",
+   "https://www.yuzawa-nakazato.com/winter/school/",
+   "https://www.yuzawa-nakazato.com/winter/access/"
+  ]
+ },
+ {
+  "id": "ishiuchi_maruyama",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア付きフルセットあり。周辺にもレンタルショップ多数"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ishiuchi.or.jp/winter/ski-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://ishiuchi.or.jp/winter/price",
+   "note": "事前WEBは変動価格で窓口より安い（利用前日までに購入）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR越後湯沢駅",
+   "howJa": "東口から無料シャトルバスで約10分（冬季営業期間中）",
+   "howEn": "Free shuttle bus from East Exit, about 10 min (winter season)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ishiuchi.or.jp/winter/rental",
+   "https://ishiuchi.or.jp/winter/ski-school",
+   "https://ishiuchi.or.jp/winter/price",
+   "https://ishiuchi.or.jp/winter/access"
+  ]
+ }
+]
