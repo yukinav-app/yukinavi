@@ -1,0 +1,82 @@
+[
+ {
+  "id": "nakafurano_hokusei",
+  "openDate": null,
+  "openNote": "2027年1月中旬〜3月上旬を予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://nakafukanko.com/spot/spot-2676"
+ },
+ {
+  "id": "hobetsu",
+  "openDate": null,
+  "openNote": "2027年1月上旬頃開設予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.town.mukawa.lg.jp/item/10531.htm"
+ },
+ {
+  "id": "namioka_nishiyama_park",
+  "openDate": null,
+  "openNote": "2026年12月下旬に営業開始予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.city.aomori.aomori.jp/bunka_sports_kankou/kankou/1005212/1005359/1005365.html"
+ },
+ {
+  "id": "soyumura_229_skiland",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.town.takko.lg.jp/index.cfm/11,0,37,164,html"
+ },
+ {
+  "id": "yamagata_shonen_shizennoie",
+  "openDate": null,
+  "openNote": "期間未定（近くなったら公式・広報やまがたで告知）",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.ymgt.ed.jp/shizennoie/user_s.html"
+ },
+ {
+  "id": "karuizawa_snow_park",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-03-31",
+  "alreadyOpen": null,
+  "sourceUrl": "https://karuizawa-snowpark.com/"
+ },
+ {
+  "id": "yamada_onsen_kids_snow_park",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://shinshu-takayama-onsenkyo.com/facility/kids-ski-park/"
+ },
+ {
+  "id": "hakuba_norikura_onsen",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.hakunori.com/ticket/"
+ },
+ {
+  "id": "yuzawa_kogen",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.yuzawakogen.com/winter/tickets/"
+ },
+ {
+  "id": "gujo_vacance_mura",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://gujotakasu.com/skiresort/gujovacance.html"
+ }
+]

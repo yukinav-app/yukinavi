@@ -1,0 +1,794 @@
+[
+ {
+  "id": "hachimantai_panorama",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.hachimantai.co.jp/"
+ },
+ {
+  "id": "miyagi_zao_eboshi",
+  "openDate": "2026-12-05",
+  "openNote": "公式カレンダーで12/5スキー場OPEN（一部情報誌は12/1と記載）",
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://eboshi.co.jp/winter/"
+ },
+ {
+  "id": "miyagi_zao_sumikawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "inakawa_suberotta",
+  "openDate": null,
+  "openNote": "2026年12月下旬頃営業開始予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.city-yuzawa.jp/site/yuzawatrip/493.html"
+ },
+ {
+  "id": "taiheizan_opas",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kushibiki_taranokidai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kurofushi_jungle_jungle",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://snoway.jp/gelande/10153/"
+ },
+ {
+  "id": "shonai_haguro",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-07",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.qkamura.or.jp/haguro/ski/index.asp"
+ },
+ {
+  "id": "hachimoriyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "hanagasa_kogen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "matsuyama_sakata",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "yamagata_akakura_onsen",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-31",
+  "alreadyOpen": null,
+  "sourceUrl": "https://mogami-portal.net/"
+ },
+ {
+  "id": "yudonosan",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.tsuruokakanko.com/spot/1882"
+ },
+ {
+  "id": "yunodai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "yokone_oguni",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "yonezawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "sol_fa_oda",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "iwamizawa_haginoyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "mikasa_katsurazawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kamoidake_kokusai",
+  "openDate": "2026-12-25",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.kamoidake.co.jp"
+ },
+ {
+  "id": "shintotsukawa_sotchidake",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kita_naganuma",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "numata_takaho",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-07",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.town.numata.hokkaido.jp/section/kyouiku/ujj7s30000001mvv.html"
+ },
+ {
+  "id": "bibai_kokusetsu",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://bibaiski.jp/INFORMATION/scheduled-to-open/"
+ },
+ {
+  "id": "greenland_white_park",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "mount_racey",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://yubari-resort.co.jp/price/"
+ },
+ {
+  "id": "asahidake_ropeway",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "asahikawa_inosawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "otoifuji",
+  "openDate": null,
+  "openNote": "12月上旬〜3月下旬営業予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.vill.otoineppu.hokkaido.jp/kakuka/sangyoushinkou/syoukougyou/skizyou.html"
+ },
+ {
+  "id": "kamikawa_nakayama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kamui_ski_links",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "canmore_ski_village",
+  "openDate": "2026-12-19",
+  "openNote": "積雪状況により変更の場合あり",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.canmore-ski.jp/"
+ },
+ {
+  "id": "minami_furano_kokusetsu",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "santa_present_park",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "shibetsu_hinata",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "shimokawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kurodake",
+  "openDate": "2026-12-01",
+  "openNote": "積雪状況により変更の場合あり",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.rinyu.co.jp/kurodake/information/02/p0053.htm"
+ },
+ {
+  "id": "tohma_yama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nakagawa_chomin",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nayoro_piyashiri",
+  "openDate": "2026-12-11",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.nayoro.co.jp/piyashiri/"
+ },
+ {
+  "id": "biei_chomin",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "pippu",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kamifurano_hinode",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "bifuka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "horotachi",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "wassamu_higashiyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "urabandai",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.urabandai-ski.jp/lift/"
+ },
+ {
+  "id": "numajiri",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.numajiri-ski.jp/price.html"
+ },
+ {
+  "id": "sannokura",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "listel_ski_fantasia",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.listel-inawashiro.jp/sp/snow_season/"
+ },
+ {
+  "id": "aizu_kogen_daikura",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://news.yahoo.co.jp/articles/bc86adc6605ee892b9379d196cae45df9462bd40"
+ },
+ {
+  "id": "aizu_kogen_kitanikko_takatsue",
+  "openDate": "2026-12-18",
+  "openNote": "積雪状況により前後の可能性",
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://takatsue.jp/information/6/"
+ },
+ {
+  "id": "kitanikko_takahata",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "aizu_kogen_nango",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://surfsnow.jp/guide/htm/r0333s.htm"
+ },
+ {
+  "id": "tadami",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "oze_hinoemata_onsen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "fairyland_kaneyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "adatara_kogen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nihonmatsu_shiozawa",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "obira_boyodai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "teshio_chomin",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "mashike_shokanbetsu",
+  "openDate": "2026-12-12",
+  "openNote": "積雪状況により延期の可能性",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.town.mashike.hokkaido.jp/division/shokokanko/newsroom/detail_1703057617.html"
+ },
+ {
+  "id": "esashi_mikasayama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "sarufutsu_sonei",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "toyotomi_onsen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nakatonbetsu_kotobuki",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://r.goope.jp/kotobuki-ski/"
+ },
+ {
+  "id": "horonobe_higashigaoka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "rebun_kushukohan",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "rebun_fujimigaoka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "wakkanai_komadori",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "rishiri_tenbozan",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "abashiri_lakeview",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "shari_unabetsu",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "engaru_rockvalley",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "oketo_minamigaoka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "okoppe_chouei",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kitami_wakamatsu",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kiyosato_midori",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "yubetsu_gokazan",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "saroma_chouei",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "takinoue_sakuragaoka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "northern_arc_resort",
+  "openDate": null,
+  "openNote": "2026年12月中旬OPEN予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "http://northernarcresort.co.jp/contents/golfski/ski.html"
+ },
+ {
+  "id": "mombetsu_oyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "rubeshibe_happodai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "abira_anpeizan",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "windsor_snow_village",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.windsor-hotels.co.jp/ja/2026winterseason/"
+ },
+ {
+  "id": "orofure",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "karurusu_sanlaiva",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://sanlaiva.com/"
+ },
+ {
+  "id": "muroran_danpara",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "hidaka_kokusai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "makubetsu_akenogaoka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "sahoro",
+  "openDate": "2026-12-01",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://sahoro-resort.com/winter/ski"
+ },
+ {
+  "id": "shintokuyama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nukabira_gensenkyo",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "chuurui_hakugindai",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "memuro",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "akan_royal_valley",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "akan_kohan_utara",
+  "openDate": "2026-12-25",
+  "openNote": "公式表記は「12月25日（木）」",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://akan-ski.com/2026/09/18/"
+ },
+ {
+  "id": "shibetsu_kanayama",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ }
+]

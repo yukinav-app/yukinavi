@@ -1,0 +1,608 @@
+[
+ {
+  "id": "niseko",
+  "nameJa": "ニセコユナイテッド",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.niseko.ne.jp/"
+ },
+ {
+  "id": "rusutsu",
+  "nameJa": "ルスツリゾート",
+  "prefJa": "北海道",
+  "officialUrl": "https://rusutsu.com/"
+ },
+ {
+  "id": "furano",
+  "nameJa": "富良野スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.princehotels.co.jp/ski/furano/winter/"
+ },
+ {
+  "id": "hakuba",
+  "nameJa": "白馬八方尾根スキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.happo-one.jp/"
+ },
+ {
+  "id": "nozawa",
+  "nameJa": "野沢温泉スキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://nozawaski.com/"
+ },
+ {
+  "id": "shiga",
+  "nameJa": "志賀高原マウンテンリゾート",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.shigakogen-ski.or.jp/"
+ },
+ {
+  "id": "myoko",
+  "nameJa": "妙高杉ノ原スキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://www.princehotels.co.jp/ski/myoko/winter/"
+ },
+ {
+  "id": "naeba",
+  "nameJa": "苗場スキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://www.princehotels.co.jp/ski/naeba/winter/"
+ },
+ {
+  "id": "karuizawa",
+  "nameJa": "軽井沢プリンスホテルスキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/"
+ },
+ {
+  "id": "zao",
+  "nameJa": "蔵王温泉スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://zaomountainresort.com/ski/"
+ },
+ {
+  "id": "washigatake",
+  "nameJa": "鷲ヶ岳スキー場",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://ski.washigatake.jp/"
+ },
+ {
+  "id": "okuibuki",
+  "nameJa": "グランスノー奥伊吹",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://www.okuibuki.co.jp/"
+ },
+ {
+  "id": "tambara",
+  "nameJa": "たんばらスキーパーク",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.tambara.co.jp/winter/"
+ },
+ {
+  "id": "marunuma",
+  "nameJa": "丸沼高原スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.marunuma.jp/winter/"
+ },
+ {
+  "id": "hunter",
+  "nameJa": "ハンターマウンテン塩原",
+  "prefJa": "栃木県",
+  "officialUrl": "https://www.hunter.co.jp/winter/"
+ },
+ {
+  "id": "tateyama",
+  "nameJa": "立山山麓スキー場",
+  "prefJa": "富山県",
+  "officialUrl": "https://www.tateyama36.co.jp/"
+ },
+ {
+  "id": "appi",
+  "nameJa": "安比高原スキー場",
+  "prefJa": "岩手県",
+  "officialUrl": "https://www.appi.co.jp/snow-mountain-resort/"
+ },
+ {
+  "id": "inawashiro",
+  "nameJa": "絶景・猪苗代スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.inawashiro-ski.com/"
+ },
+ {
+  "id": "kuju",
+  "nameJa": "くじゅうスキー場",
+  "prefJa": "大分県",
+  "officialUrl": "https://www.kujyuski.co.jp/"
+ },
+ {
+  "id": "hakuba_goryu",
+  "nameJa": "白馬五竜スキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.hakubagoryu.jp/"
+ },
+ {
+  "id": "hakuba_iwatake",
+  "nameJa": "白馬岩岳スノーフィールド",
+  "prefJa": "長野県",
+  "officialUrl": "https://iwatake-mountain-resort.com/"
+ },
+ {
+  "id": "hakuba47",
+  "nameJa": "Hakuba47ウィンタースポーツパーク",
+  "prefJa": "長野県",
+  "officialUrl": "https://hakuba47.co.jp/"
+ },
+ {
+  "id": "hakuba_cortina",
+  "nameJa": "白馬コルチナ国際スキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.nori-cor.com/"
+ },
+ {
+  "id": "tsugaike",
+  "nameJa": "栂池高原スキー場",
+  "prefJa": "長野県",
+  "officialUrl": "https://www.tsugaike.gr.jp/"
+ },
+ {
+  "id": "tomamu",
+  "nameJa": "星野リゾート トマム スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.snowtomamu.jp/winter/"
+ },
+ {
+  "id": "kiroro",
+  "nameJa": "キロロスノーワールド",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.kiroro.co.jp/ja/"
+ },
+ {
+  "id": "zao_raiza",
+  "nameJa": "蔵王ライザスキーワールド",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.zaoliza.co.jp/wntr/"
+ },
+ {
+  "id": "gala_yuzawa",
+  "nameJa": "GALA湯沢スキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://gala.co.jp/"
+ },
+ {
+  "id": "ishiuchi_maruyama",
+  "nameJa": "石打丸山スキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://ishiuchi.or.jp/winter/"
+ },
+ {
+  "id": "iwappara",
+  "nameJa": "岩原スキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://www.iwa-ppara.com/"
+ },
+ {
+  "id": "kagura",
+  "nameJa": "かぐらスキー場",
+  "prefJa": "新潟県",
+  "officialUrl": "https://www.princehotels.co.jp/ski/kagura/winter/"
+ },
+ {
+  "id": "nekoma_mountain",
+  "nameJa": "星野リゾート ネコマ マウンテン（南エリア・旧アルツ磐梯）",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.nekoma.co.jp/"
+ },
+ {
+  "id": "grandeco",
+  "nameJa": "グランデコスノーリゾート",
+  "prefJa": "福島県",
+  "officialUrl": "https://grandecoresort.co.jp/snow/"
+ },
+ {
+  "id": "kawaba",
+  "nameJa": "川場スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.kawaba.co.jp/"
+ },
+ {
+  "id": "manza",
+  "nameJa": "万座温泉スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.princehotels.co.jp/ski/manza/winter/"
+ },
+ {
+  "id": "kusatsu",
+  "nameJa": "草津温泉スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.932-onsen.com/winter"
+ },
+ {
+  "id": "takasu",
+  "nameJa": "高鷲スノーパーク",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://www.takasu.gr.jp/"
+ },
+ {
+  "id": "dynaland",
+  "nameJa": "ダイナランドスキー場",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://www.dynaland.co.jp/"
+ },
+ {
+  "id": "rokko",
+  "nameJa": "六甲山スノーパーク",
+  "prefJa": "兵庫県",
+  "officialUrl": "https://www.rokkosan.com/ski/"
+ },
+ {
+  "id": "skijam_katsuyama",
+  "nameJa": "JAM福井勝山マウンテンリゾート（旧スキージャム勝山）",
+  "prefJa": "福井県",
+  "officialUrl": "https://jamresort.jp/"
+ },
+ {
+  "id": "sapporo_kokusai",
+  "nameJa": "札幌国際スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.sapporo-kokusai.jp/"
+ },
+ {
+  "id": "sapporo_teine",
+  "nameJa": "サッポロテイネ",
+  "prefJa": "北海道",
+  "officialUrl": "https://sapporo-teine.com/snow/"
+ },
+ {
+  "id": "niseko_hanazono",
+  "nameJa": "ニセコHANAZONOリゾート",
+  "prefJa": "北海道",
+  "officialUrl": "https://hanazononiseko.com/ja"
+ },
+ {
+  "id": "niseko_grand_hirafu",
+  "nameJa": "ニセコ東急グラン・ヒラフ",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.grand-hirafu.jp/"
+ },
+ {
+  "id": "zao_sarukura",
+  "nameJa": "蔵王猿倉スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.zao-sarukura.co.jp/"
+ },
+ {
+  "id": "edelweiss",
+  "nameJa": "エーデルワイススキーリゾート",
+  "prefJa": "栃木県",
+  "officialUrl": "https://edelsnow.com/"
+ },
+ {
+  "id": "nikko_yumoto_onsen",
+  "nameJa": "日光湯元温泉スキー場",
+  "prefJa": "栃木県",
+  "officialUrl": "https://nikkoyumoto-ski.com/"
+ },
+ {
+  "id": "ogna_hotaka",
+  "nameJa": "オグナほたかスキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://k-hotaka.jp/ogna/"
+ },
+ {
+  "id": "katashina_kogen",
+  "nameJa": "かたしな高原スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://katashinakogen.co.jp/"
+ },
+ {
+  "id": "snowpark_oze_tokura",
+  "nameJa": "スノーパーク尾瀬戸倉",
+  "prefJa": "群馬県",
+  "officialUrl": "https://ozetokura.co.jp/"
+ },
+ {
+  "id": "white_world_oze_iwakura",
+  "nameJa": "ホワイトワールド尾瀬岩鞍",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.oze-iwakura.co.jp/ski/"
+ },
+ {
+  "id": "okutone_snow_park",
+  "nameJa": "奥利根スノーパーク",
+  "prefJa": "群馬県",
+  "officialUrl": "https://okutone.jp/"
+ },
+ {
+  "id": "mt_t_hoshino",
+  "nameJa": "Mt.T by 星野リゾート（旧 谷川岳天神平スキー場）",
+  "prefJa": "群馬県",
+  "officialUrl": "https://tanigawadake-joch.com/mt-t/"
+ },
+ {
+  "id": "norn_minakami",
+  "nameJa": "ノルンみなかみスキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://norn.co.jp/winter/"
+ },
+ {
+  "id": "minakami_kogen",
+  "nameJa": "水上高原スキーリゾート",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.minakami-ski.jp/"
+ },
+ {
+  "id": "minakami_kogen_fujiwara",
+  "nameJa": "水上高原・奥利根温泉 藤原スキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://fujiwaraski.com/"
+ },
+ {
+  "id": "gunma_minakami_hodaigi",
+  "nameJa": "群馬みなかみほうだいぎスキー場",
+  "prefJa": "群馬県",
+  "officialUrl": "https://hodaigi.jp/"
+ },
+ {
+  "id": "kazawa_snow_area",
+  "nameJa": "鹿沢スノーエリア",
+  "prefJa": "群馬県",
+  "officialUrl": "http://www.kazawa.com/"
+ },
+ {
+  "id": "palcall_tsumagoi",
+  "nameJa": "パルコール嬬恋リゾート",
+  "prefJa": "群馬県",
+  "officialUrl": "https://tsumagoiskiresort.life/"
+ },
+ {
+  "id": "akagiyama_daiichi",
+  "nameJa": "赤城山第1スキー場（赤城山ファミリーゲレンデ）",
+  "prefJa": "群馬県",
+  "officialUrl": "https://www.maebashi-cvb.com/spot/8261"
+ },
+ {
+  "id": "sayama",
+  "nameJa": "狭山スキー場",
+  "prefJa": "埼玉県",
+  "officialUrl": "https://www.seibu-leisure.co.jp/ski_web/"
+ },
+ {
+  "id": "snova_shinyokohama",
+  "nameJa": "スノーヴァ新横浜",
+  "prefJa": "神奈川県",
+  "officialUrl": "https://snovashinyoko.co.jp/"
+ },
+ {
+  "id": "kamui_misaka",
+  "nameJa": "カムイみさかスキー場",
+  "prefJa": "山梨県",
+  "officialUrl": "https://misaka.kamuisp.com/"
+ },
+ {
+  "id": "biwako_valley",
+  "nameJa": "びわ湖バレイ",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://www.biwako-valley.com/winter/"
+ },
+ {
+  "id": "ohana_resort",
+  "nameJa": "Ohana Resort",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://ohana-shiga.com/"
+ },
+ {
+  "id": "hakodateyama",
+  "nameJa": "びわこ箱館山スキー場",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://www.hakodateyama.com/winter/price/"
+ },
+ {
+  "id": "kutsuki",
+  "nameJa": "朽木スキー場",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://kutsuki-snowpark.com/"
+ },
+ {
+  "id": "makino_kogen",
+  "nameJa": "マキノ高原ファミリースキー場",
+  "prefJa": "滋賀県",
+  "officialUrl": "https://makinokougen.co.jp/pages/275/"
+ },
+ {
+  "id": "kagamiganaru",
+  "nameJa": "鏡ヶ成スキー場",
+  "prefJa": "鳥取県",
+  "officialUrl": "https://qkamura.or.jp/daisen/ski/"
+ },
+ {
+  "id": "daisen_mountain_resort",
+  "nameJa": "大山マウンテンリゾート",
+  "prefJa": "鳥取県",
+  "officialUrl": "https://daisen-mountain.jp/"
+ },
+ {
+  "id": "daisen_masumizu_kogen",
+  "nameJa": "大山ますみず高原スノーパーク",
+  "prefJa": "鳥取県",
+  "officialUrl": "https://www.masumizu.net/"
+ },
+ {
+  "id": "wakasa_hyonosen",
+  "nameJa": "わかさ氷ノ山スキー場",
+  "prefJa": "鳥取県",
+  "officialUrl": "https://hyounosen-ski.jp/"
+ },
+ {
+  "id": "azo_koen",
+  "nameJa": "安蔵公園スキー場",
+  "prefJa": "鳥取県",
+  "officialUrl": "https://www.torican.jp/spot/detail_2277.html"
+ },
+ {
+  "id": "kotobiki_forest_park",
+  "nameJa": "琴引フォレストパーク スキー場",
+  "prefJa": "島根県",
+  "officialUrl": "https://ski.kotobiki.co.jp/"
+ },
+ {
+  "id": "miinohara",
+  "nameJa": "三井野原スキー場",
+  "prefJa": "島根県",
+  "officialUrl": "https://okuizumo.org/jp/guide/detail/3801/"
+ },
+ {
+  "id": "mizuho_highland",
+  "nameJa": "瑞穂ハイランド",
+  "prefJa": "島根県",
+  "officialUrl": "https://www.mizuhohighland.com/"
+ },
+ {
+  "id": "ibukinosato",
+  "nameJa": "いぶきの里スキー場",
+  "prefJa": "岡山県",
+  "officialUrl": "https://www.ibukinosato.co.jp/ski"
+ },
+ {
+  "id": "ombara_kogen",
+  "nameJa": "恩原高原スキー場",
+  "prefJa": "岡山県",
+  "officialUrl": "https://www.ombara-kogen.com/ski/price/"
+ },
+ {
+  "id": "hiruzen_bear_valley",
+  "nameJa": "ひるぜんベアバレースキー場",
+  "prefJa": "岡山県",
+  "officialUrl": "https://bear-ski.amebaownd.com/"
+ },
+ {
+  "id": "osorakan",
+  "nameJa": "恐羅漢スノーパーク",
+  "prefJa": "広島県",
+  "officialUrl": "https://osorakan.co.jp/winter/"
+ },
+ {
+  "id": "dogoyama_kogen",
+  "nameJa": "道後山高原スキー場",
+  "prefJa": "広島県",
+  "officialUrl": "https://www.dogoyamakogen.com/"
+ },
+ {
+  "id": "geihoku_kogen_osa",
+  "nameJa": "芸北高原大佐スキー場",
+  "prefJa": "広島県",
+  "officialUrl": "https://www.osaski.co.jp/"
+ },
+ {
+  "id": "hiroshima_kenmin_no_mori",
+  "nameJa": "ひろしま県民の森スキー場",
+  "prefJa": "広島県",
+  "officialUrl": "https://hiroshima-kenmori.com/activity"
+ },
+ {
+  "id": "megahira",
+  "nameJa": "めがひらスキー場",
+  "prefJa": "広島県",
+  "officialUrl": "https://www.megahira.co.jp/"
+ },
+ {
+  "id": "yawata_highland_191",
+  "nameJa": "やわたハイランド191リゾート",
+  "prefJa": "広島県",
+  "officialUrl": "https://yawata191.com/"
+ },
+ {
+  "id": "utopia_saioto",
+  "nameJa": "ユートピアサイオト",
+  "prefJa": "広島県",
+  "officialUrl": "https://www.saioto.co.jp/"
+ },
+ {
+  "id": "ringo_kyowakoku",
+  "nameJa": "りんご今日話国スキー場",
+  "prefJa": "広島県",
+  "officialUrl": "https://www.shobara-info.com/spot/309"
+ },
+ {
+  "id": "tokusagamine",
+  "nameJa": "十種ヶ峰スキー場",
+  "prefJa": "山口県",
+  "officialUrl": "http://www.woodpark.jp/snow/index.html"
+ },
+ {
+  "id": "ishizuchi",
+  "nameJa": "石鎚スキー場",
+  "prefJa": "愛媛県",
+  "officialUrl": "https://www.ishizuchi.com/ski"
+ },
+ {
+  "id": "kuma_ski_land",
+  "nameJa": "久万スキーランド",
+  "prefJa": "愛媛県",
+  "officialUrl": "https://kumax.co.jp/"
+ },
+ {
+  "id": "sunmeadows_kiyosato",
+  "nameJa": "サンメドウズ清里スキー場",
+  "prefJa": "山梨県",
+  "officialUrl": "https://www.sunmeadows.co.jp/winter/"
+ },
+ {
+  "id": "fujiten_snow_resort",
+  "nameJa": "ふじてんスノーリゾート",
+  "prefJa": "山梨県",
+  "officialUrl": "https://www.fujiten.net/"
+ },
+ {
+  "id": "snowpark_yeti",
+  "nameJa": "スノーパーク イエティ",
+  "prefJa": "静岡県",
+  "officialUrl": "https://www.yeti-resort.com/"
+ },
+ {
+  "id": "rivawell_ikawa",
+  "nameJa": "リバウェル井川スキー場",
+  "prefJa": "静岡県",
+  "officialUrl": "https://www.at-s.com/event/article/118973"
+ },
+ {
+  "id": "meiho",
+  "nameJa": "めいほうスキー場",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://www.meihoski.co.jp/winter/"
+ },
+ {
+  "id": "whitepia_takasu",
+  "nameJa": "ホワイトピアたかす",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://whitepia.jp/"
+ },
+ {
+  "id": "hirugano_kogen",
+  "nameJa": "ひるがの高原スキー場",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://www.hiruganokogen.com/"
+ },
+ {
+  "id": "winghills_shirotori",
+  "nameJa": "ウイングヒルズ白鳥リゾート",
+  "prefJa": "岐阜県",
+  "officialUrl": "https://winghills.net/"
+ },
+ {
+  "id": "up_kannabe",
+  "nameJa": "アップかんなべスキー場",
+  "prefJa": "兵庫県",
+  "officialUrl": "https://kannabe.co.jp/"
+ },
+ {
+  "id": "okukannabe",
+  "nameJa": "奥神鍋スキー場",
+  "prefJa": "兵庫県",
+  "officialUrl": "https://okukan.com/"
+ },
+ {
+  "id": "tajima_bokujo_koen",
+  "nameJa": "但馬牧場公園スキー場",
+  "prefJa": "兵庫県",
+  "officialUrl": "http://www.bokujyo.com/winter/information.html"
+ }
+]

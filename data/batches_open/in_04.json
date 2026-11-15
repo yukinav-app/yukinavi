@@ -1,0 +1,596 @@
+[
+ {
+  "id": "hachimantai_panorama",
+  "nameJa": "八幡平リゾートパノラマスキー場",
+  "prefJa": "岩手県",
+  "officialUrl": "https://www.hachimantai.co.jp/winter/panorama/"
+ },
+ {
+  "id": "miyagi_zao_eboshi",
+  "nameJa": "みやぎ蔵王えぼしリゾート",
+  "prefJa": "宮城県",
+  "officialUrl": "https://eboshi.co.jp/winter/"
+ },
+ {
+  "id": "miyagi_zao_sumikawa",
+  "nameJa": "マウンテンフィールド宮城蔵王すみかわスノーパーク",
+  "prefJa": "宮城県",
+  "officialUrl": "https://www.zao-sumikawa.jp/"
+ },
+ {
+  "id": "inakawa_suberotta",
+  "nameJa": "稲川スキー場スベロッタ",
+  "prefJa": "秋田県",
+  "officialUrl": "https://www.city-yuzawa.jp/site/yuzawatrip/493.html"
+ },
+ {
+  "id": "taiheizan_opas",
+  "nameJa": "太平山スキー場オーパス",
+  "prefJa": "秋田県",
+  "officialUrl": "http://www.theboon.net/opas/information/index.html"
+ },
+ {
+  "id": "kushibiki_taranokidai",
+  "nameJa": "櫛引たらのきだいスキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.city.tsuruoka.lg.jp/shisei/shiyakusyo/infomation/kushibiki/kanko/taranokidaiskilift6.html"
+ },
+ {
+  "id": "kurofushi_jungle_jungle",
+  "nameJa": "黒伏高原スノーパーク ジャングル・ジャングル",
+  "prefJa": "山形県",
+  "officialUrl": "https://jxj.co.jp/"
+ },
+ {
+  "id": "shonai_haguro",
+  "nameJa": "休暇村庄内羽黒スキー場（羽黒山スキー場）",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.qkamura.or.jp/haguro/ski/index.asp"
+ },
+ {
+  "id": "hachimoriyama",
+  "nameJa": "八森山スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://hatimoriyama.sanze.jp/ski/"
+ },
+ {
+  "id": "hanagasa_kogen",
+  "nameJa": "花笠高原スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://obanazawa-ski.jp/price/price.html"
+ },
+ {
+  "id": "matsuyama_sakata",
+  "nameJa": "松山スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "http://matuyama-net.com/ski/"
+ },
+ {
+  "id": "yamagata_akakura_onsen",
+  "nameJa": "やまがた赤倉温泉スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://mogami-portal.net/special/%E5%B1%B1%E5%BD%A2%E7%9C%8C%E6%9C%80%E4%B8%8A%E7%94%BA-%E8%B5%A4%E5%80%89%E6%B8%A9%E6%B3%89%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/"
+ },
+ {
+  "id": "yudonosan",
+  "nameJa": "湯殿山スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://yudonosan.com/price/"
+ },
+ {
+  "id": "yunodai",
+  "nameJa": "湯ノ台スキー場",
+  "prefJa": "山形県",
+  "officialUrl": null
+ },
+ {
+  "id": "yokone_oguni",
+  "nameJa": "小国町横根スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.siroimori.co.jp/yokone-ski/ryokin.html"
+ },
+ {
+  "id": "yonezawa",
+  "nameJa": "米沢スキー場",
+  "prefJa": "山形県",
+  "officialUrl": "https://www.yonezawa-ski.co.jp/price.html"
+ },
+ {
+  "id": "sol_fa_oda",
+  "nameJa": "SOL-FAオダスキーゲレンデ",
+  "prefJa": "愛媛県",
+  "officialUrl": "https://www.we-love-uchiko.jp/ski/"
+ },
+ {
+  "id": "iwamizawa_haginoyama",
+  "nameJa": "岩見沢萩の山市民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://haginoyama.com/"
+ },
+ {
+  "id": "mikasa_katsurazawa",
+  "nameJa": "桂沢国設スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.mikasa.hokkaido.jp/sightseeing/detail/00013069.html"
+ },
+ {
+  "id": "kamoidake_kokusai",
+  "nameJa": "かもい岳国際スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.kamoidake.co.jp"
+ },
+ {
+  "id": "shintotsukawa_sotchidake",
+  "nameJa": "そっち岳スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.shintotsukawa.lg.jp/kanko/detail/00005359.html"
+ },
+ {
+  "id": "kita_naganuma",
+  "nameJa": "北長沼スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://ski-kitanaganuma.com/"
+ },
+ {
+  "id": "numata_takaho",
+  "nameJa": "ASHIMOI KANKO高穂スキー場（沼田町営高穂スキー場）",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.numata.hokkaido.jp/section/kyouiku/ujj7s30000001mvv.html"
+ },
+ {
+  "id": "bibai_kokusetsu",
+  "nameJa": "美唄国設スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://bibaiski.jp/"
+ },
+ {
+  "id": "greenland_white_park",
+  "nameJa": "北海道グリーンランドホワイトパーク",
+  "prefJa": "北海道",
+  "officialUrl": "https://h-greenland.com/ski/"
+ },
+ {
+  "id": "mount_racey",
+  "nameJa": "マウントレースイスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://yubari-resort.co.jp/price/"
+ },
+ {
+  "id": "asahidake_ropeway",
+  "nameJa": "大雪山旭岳ロープウェイ（旭岳スキーコース）",
+  "prefJa": "北海道",
+  "officialUrl": null
+ },
+ {
+  "id": "asahikawa_inosawa",
+  "nameJa": "伊ノ沢市民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": null
+ },
+ {
+  "id": "otoifuji",
+  "nameJa": "音威富士スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.vill.otoineppu.hokkaido.jp/kakuka/sangyoushinkou/syoukougyou/skizyou.html"
+ },
+ {
+  "id": "kamikawa_nakayama",
+  "nameJa": "上川町営中山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.hokkaido-kamikawa.lg.jp/section/sangyoukeizai/geo5a80000000l60.html"
+ },
+ {
+  "id": "kamui_ski_links",
+  "nameJa": "カムイスキーリンクス",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.kamui-skilinks.com/"
+ },
+ {
+  "id": "canmore_ski_village",
+  "nameJa": "キャンモアスキービレッジ",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.canmore-ski.jp/"
+ },
+ {
+  "id": "minami_furano_kokusetsu",
+  "nameJa": "国設南ふらのスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://minamifurano-kousya.com/ski.php"
+ },
+ {
+  "id": "santa_present_park",
+  "nameJa": "サンタプレゼントパーク マロースゲレンデ",
+  "prefJa": "北海道",
+  "officialUrl": null
+ },
+ {
+  "id": "shibetsu_hinata",
+  "nameJa": "士別市日向スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.shibetsu.lg.jp/soshikikarasagasu/gasshukunosato_supotsusuishinka/shiminsupotsukakari/1351.html"
+ },
+ {
+  "id": "shimokawa",
+  "nameJa": "下川町スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.shimokawa-time.net/activity/skipark/"
+ },
+ {
+  "id": "kurodake",
+  "nameJa": "大雪山層雲峡・黒岳スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.rinyu.co.jp/kurodake/"
+ },
+ {
+  "id": "tohma_yama",
+  "nameJa": "当麻町営スキー場（とうま山スキー場）",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.tohma.hokkaido.jp/all-about/03/01/1763"
+ },
+ {
+  "id": "nakagawa_chomin",
+  "nameJa": "中川町民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.nakagawa.hokkaido.jp/section/kyouikuiinkai/b02d3l0000002by4.html"
+ },
+ {
+  "id": "nayoro_piyashiri",
+  "nameJa": "名寄ピヤシリスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.nayoro.co.jp/piyashiri/"
+ },
+ {
+  "id": "biei_chomin",
+  "nameJa": "美瑛町民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://town.biei.hokkaido.jp/culture/sports/"
+ },
+ {
+  "id": "pippu",
+  "nameJa": "ぴっぷスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://pippu.ski/"
+ },
+ {
+  "id": "kamifurano_hinode",
+  "nameJa": "日の出公園スキー場（上富良野町営スキーリフト）",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.kamifurano.hokkaido.jp/index.php?id=5472"
+ },
+ {
+  "id": "bifuka",
+  "nameJa": "美深スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.bifuka.hokkaido.jp/cms/section/kyouiku/qlmcaj0000005my2.html"
+ },
+ {
+  "id": "horotachi",
+  "nameJa": "ほろたちスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.horotachi-horokanai.com/slopesandcourses"
+ },
+ {
+  "id": "wassamu_higashiyama",
+  "nameJa": "和寒東山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.wassamu.hokkaido.jp/school-board/facility/ski-resort/"
+ },
+ {
+  "id": "urabandai",
+  "nameJa": "裏磐梯スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.urabandai-ski.jp/lift/"
+ },
+ {
+  "id": "numajiri",
+  "nameJa": "沼尻スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.numajiri-ski.jp/price.html"
+ },
+ {
+  "id": "sannokura",
+  "nameJa": "三ノ倉スキー場",
+  "prefJa": "福島県",
+  "officialUrl": null
+ },
+ {
+  "id": "listel_ski_fantasia",
+  "nameJa": "リステルスキーファンタジア",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.listel-inawashiro.jp/sp/snow_season/price.php"
+ },
+ {
+  "id": "aizu_kogen_daikura",
+  "nameJa": "会津高原だいくらスキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://daikura.net/price/"
+ },
+ {
+  "id": "aizu_kogen_kitanikko_takatsue",
+  "nameJa": "会津高原北日光たかつえスキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://takatsue.jp/lift-ticket/"
+ },
+ {
+  "id": "kitanikko_takahata",
+  "nameJa": "北日光高畑スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.takahata-ski.net/lift/"
+ },
+ {
+  "id": "aizu_kogen_nango",
+  "nameJa": "会津高原南郷スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.nango-ski.com/lift/"
+ },
+ {
+  "id": "tadami",
+  "nameJa": "只見スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://tadamikousya.sakura.ne.jp/ski/"
+ },
+ {
+  "id": "oze_hinoemata_onsen",
+  "nameJa": "尾瀬檜枝岐温泉スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.oze-info.jp/ozh_shop/ski/"
+ },
+ {
+  "id": "fairyland_kaneyama",
+  "nameJa": "フェアリーランドかねやまスキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.town.kaneyama.fukushima.jp/site/kanko/1222skiii.html"
+ },
+ {
+  "id": "adatara_kogen",
+  "nameJa": "あだたら高原スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "https://www.adatara-resort.com/ski/charge.html"
+ },
+ {
+  "id": "nihonmatsu_shiozawa",
+  "nameJa": "二本松塩沢スキー場",
+  "prefJa": "福島県",
+  "officialUrl": "http://tohoku-safaripark.co.jp/ski/time"
+ },
+ {
+  "id": "obira_boyodai",
+  "nameJa": "小平町望洋台スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.obira.hokkaido.jp/hotnews/detail/00002973.html"
+ },
+ {
+  "id": "teshio_chomin",
+  "nameJa": "天塩町町民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.teshiotown.hokkaido.jp/?page_id=636"
+ },
+ {
+  "id": "mashike_shokanbetsu",
+  "nameJa": "暑寒別岳スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.mashike.hokkaido.jp/tourism/place/ski/index.html"
+ },
+ {
+  "id": "esashi_mikasayama",
+  "nameJa": "枝幸町三笠山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.emsc.npo-emsc.net/facility/mikasayama"
+ },
+ {
+  "id": "sarufutsu_sonei",
+  "nameJa": "猿払村営スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.vill.sarufutsu.hokkaido.jp/eventcal/detail/00000407.html"
+ },
+ {
+  "id": "toyotomi_onsen",
+  "nameJa": "豊富温泉スキー場",
+  "prefJa": "北海道",
+  "officialUrl": null
+ },
+ {
+  "id": "nakatonbetsu_kotobuki",
+  "nameJa": "中頓別町寿スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://r.goope.jp/kotobuki-ski/"
+ },
+ {
+  "id": "horonobe_higashigaoka",
+  "nameJa": "幌延町東ヶ丘スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.horonobe.lg.jp/www4/section/edu/le009f0000001go7.html"
+ },
+ {
+  "id": "rebun_kushukohan",
+  "nameJa": "久種湖畔スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.rebun.hokkaido.jp/kyoiku/detail/00000529.html"
+ },
+ {
+  "id": "rebun_fujimigaoka",
+  "nameJa": "富士見ヶ丘スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.rebun.hokkaido.jp/hotnews/detail/00001468.html"
+ },
+ {
+  "id": "wakkanai_komadori",
+  "nameJa": "稚内市こまどりスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://w-shinko.co.jp/komadori-ski/"
+ },
+ {
+  "id": "rishiri_tenbozan",
+  "nameJa": "利尻町天望山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://rishiri-town.jp/%E3%81%8F%E3%82%89%E3%81%97%E3%83%BB%E5%90%84%E7%A8%AE%E6%89%8B%E7%B6%9A%E3%81%8D/%E5%88%A9%E5%B0%BB%E7%94%BA%E5%85%AC%E5%85%B1%E6%96%BD%E8%A8%AD/%E5%B1%95%E6%9C%9B%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4/"
+ },
+ {
+  "id": "abashiri_lakeview",
+  "nameJa": "網走レークビュースキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.abashiri.hokkaido.jp/soshiki/28/1271.html"
+ },
+ {
+  "id": "shari_unabetsu",
+  "nameJa": "ウナベツスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.shari.hokkaido.jp/soshikikarasagasu/shokokankoka/shisetsuannai/406.html"
+ },
+ {
+  "id": "engaru_rockvalley",
+  "nameJa": "えんがるロックバレースキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://engaru-mori-no-okhotsk.jp/skiing/"
+ },
+ {
+  "id": "oketo_minamigaoka",
+  "nameJa": "置戸町南ヶ丘スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.oketo.hokkaido.jp/kyouiku_bunka/shakai/minamigaokaski/"
+ },
+ {
+  "id": "okoppe_chouei",
+  "nameJa": "興部町営スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.okoppe.lg.jp/cms/section/education/shakai/nbm3tm0000001f0q.html"
+ },
+ {
+  "id": "kitami_wakamatsu",
+  "nameJa": "北見若松市民スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=7589"
+ },
+ {
+  "id": "kiyosato_midori",
+  "nameJa": "清里町営緑スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.kiyosato.hokkaido.jp/education/?content=706"
+ },
+ {
+  "id": "yubetsu_gokazan",
+  "nameJa": "湧別町五鹿山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.yubetsu.lg.jp/administration/culture/detail.html?content=271"
+ },
+ {
+  "id": "saroma_chouei",
+  "nameJa": "佐呂間町営スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.saroma.hokkaido.jp/shisetsu/sports_bunka/ski.html"
+ },
+ {
+  "id": "takinoue_sakuragaoka",
+  "nameJa": "桜ヶ丘スキー場（滝上町）",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.takinoue.hokkaido.jp/kyoikuiinkai/social/shisetsu/sakuragaokaski.html"
+ },
+ {
+  "id": "northern_arc_resort",
+  "nameJa": "ノーザンアークリゾートスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "http://northernarcresort.co.jp/contents/golfski/ski.html"
+ },
+ {
+  "id": "mombetsu_oyama",
+  "nameJa": "紋別市営大山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://mombetsu.jp/news/detail.html?content=2700"
+ },
+ {
+  "id": "rubeshibe_happodai",
+  "nameJa": "留辺蘂町八方台スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.kitami.lg.jp/administration/town/detail.php?content=12858"
+ },
+ {
+  "id": "abira_anpeizan",
+  "nameJa": "安平山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.town.abira.lg.jp/midokoro/shisetsu/sport/149"
+ },
+ {
+  "id": "windsor_snow_village",
+  "nameJa": "ウィンザースノービレッジ",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.windsor-hotels.co.jp/ja/post-6775/"
+ },
+ {
+  "id": "orofure",
+  "nameJa": "オロフレスキー場",
+  "prefJa": "北海道",
+  "officialUrl": null
+ },
+ {
+  "id": "karurusu_sanlaiva",
+  "nameJa": "カルルス温泉サンライバスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://sanlaiva.com/"
+ },
+ {
+  "id": "muroran_danpara",
+  "nameJa": "室蘭市だんパラスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.city.muroran.lg.jp/content/?content=1605"
+ },
+ {
+  "id": "hidaka_kokusai",
+  "nameJa": "日高国際スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "http://www.town.hidaka.hokkaido.jp/ski/"
+ },
+ {
+  "id": "makubetsu_akenogaoka",
+  "nameJa": "明野ヶ丘スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "http://makubetsu-ski.com/akenogaoka/page-7/"
+ },
+ {
+  "id": "sahoro",
+  "nameJa": "十勝サホロリゾート",
+  "prefJa": "北海道",
+  "officialUrl": "https://sahoro-resort.com/winter/ski"
+ },
+ {
+  "id": "shintokuyama",
+  "nameJa": "新得山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.shintoku-town.jp/bunka-sports/sports/sports_shisetsu/shintokuyama/"
+ },
+ {
+  "id": "nukabira_gensenkyo",
+  "nameJa": "ぬかびら源泉郷スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://ichida54.wixsite.com/nukabiraskijyo"
+ },
+ {
+  "id": "chuurui_hakugindai",
+  "nameJa": "白銀台スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "http://makubetsu-ski.com/hakugindai/page-31/"
+ },
+ {
+  "id": "memuro",
+  "nameJa": "メムロスキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.memuro.net/administration/soshiki/miryoku/shin-arashiyama/2025-1112-1623-114.html"
+ },
+ {
+  "id": "akan_royal_valley",
+  "nameJa": "阿寒ロイヤルバレイ",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.akanroyalvalley.jp/"
+ },
+ {
+  "id": "akan_kohan_utara",
+  "nameJa": "国設阿寒湖畔スキー場（ウタラ）",
+  "prefJa": "北海道",
+  "officialUrl": "https://akan-ski.com/"
+ },
+ {
+  "id": "shibetsu_kanayama",
+  "nameJa": "標津町営金山スキー場",
+  "prefJa": "北海道",
+  "officialUrl": "https://www.shibetsutown.jp/administration/?content=261"
+ }
+]

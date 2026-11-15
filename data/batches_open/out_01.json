@@ -1,0 +1,810 @@
+[
+ {
+  "id": "niseko",
+  "openDate": "2026-11-28",
+  "openNote": "4スキー場同日オープン。終了日はエリアにより2027/4/4～5/5",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.niseko.ne.jp/ja/lift/"
+ },
+ {
+  "id": "rusutsu",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://rusutsu.com/winter-early-booking-offer/"
+ },
+ {
+  "id": "furano",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/furano/winter/"
+ },
+ {
+  "id": "hakuba",
+  "openDate": "2026-12-01",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.happo-one.jp/"
+ },
+ {
+  "id": "nozawa",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://nozawaski.com/"
+ },
+ {
+  "id": "shiga",
+  "openDate": null,
+  "openNote": "熊の湯・横手山は11/14予定から積雪不足で延期、積雪次第。焼額山は12/4プレオープン予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.snownavi.com/topics/news_26111301"
+ },
+ {
+  "id": "myoko",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/myoko/winter/"
+ },
+ {
+  "id": "naeba",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/naeba/winter/"
+ },
+ {
+  "id": "karuizawa",
+  "openDate": "2026-10-31",
+  "openNote": null,
+  "closeDate": "2027-03-31",
+  "alreadyOpen": true,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/"
+ },
+ {
+  "id": "zao",
+  "openDate": "2026-12-12",
+  "openNote": "スキー場開き予定（滑走可否は積雪次第）。終了は最長5/5",
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://zaomountainresort.com/chrage/"
+ },
+ {
+  "id": "washigatake",
+  "openDate": "2026-11-21",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://ski.washigatake.jp/news/2026/08/11/5655/"
+ },
+ {
+  "id": "okuibuki",
+  "openDate": "2026-11-13",
+  "openNote": null,
+  "closeDate": "2027-04-11",
+  "alreadyOpen": true,
+  "sourceUrl": "https://www.okuibuki.co.jp/"
+ },
+ {
+  "id": "tambara",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.tambara.co.jp/winter/news/26-27season/"
+ },
+ {
+  "id": "marunuma",
+  "openDate": "2026-12-04",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.marunuma.jp/winter/14199/"
+ },
+ {
+  "id": "hunter",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://prtimes.jp/main/html/rd/p/000001084.000055787.html"
+ },
+ {
+  "id": "tateyama",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.tateyama36.co.jp/"
+ },
+ {
+  "id": "appi",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.appi.co.jp/snow-mountain-resort/"
+ },
+ {
+  "id": "inawashiro",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.inawashiro-ski.com/information/113/"
+ },
+ {
+  "id": "kuju",
+  "openDate": null,
+  "openNote": "今季の開始日は未発表（例年12月中旬）",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.kujyuski.co.jp/"
+ },
+ {
+  "id": "hakuba_goryu",
+  "openDate": "2026-11-21",
+  "openNote": "開始時はとおみ第1リフトのみ・一部滑走",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.hakubagoryu.jp/information/news/12043/"
+ },
+ {
+  "id": "hakuba_iwatake",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://iwatake-mountain-resort.com/winter"
+ },
+ {
+  "id": "hakuba47",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "hakuba_cortina",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-03-29",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.nori-cor.com/"
+ },
+ {
+  "id": "tsugaike",
+  "openDate": "2026-12-01",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.tsugaike.gr.jp/"
+ },
+ {
+  "id": "tomamu",
+  "openDate": "2026-12-01",
+  "openNote": null,
+  "closeDate": "2027-04-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.snowtomamu.jp/winter/"
+ },
+ {
+  "id": "kiroro",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.kiroro.co.jp/ja/lift_price/"
+ },
+ {
+  "id": "zao_raiza",
+  "openDate": "2026-12-11",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.zaoliza.co.jp/wntr/topics/2026/11/post-47.html"
+ },
+ {
+  "id": "gala_yuzawa",
+  "openDate": "2026-12-19",
+  "openNote": "12/12～18は観光営業のみ（滑走不可）",
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gala.co.jp/winter/hours-pricing/"
+ },
+ {
+  "id": "ishiuchi_maruyama",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://ishiuchi.or.jp/winter/"
+ },
+ {
+  "id": "iwappara",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://iwa-ppara.com/price/"
+ },
+ {
+  "id": "kagura",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-16",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/kagura/winter/"
+ },
+ {
+  "id": "nekoma_mountain",
+  "openDate": "2026-12-12",
+  "openNote": "南エリア。北エリアは11月28日",
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.nekoma.co.jp/"
+ },
+ {
+  "id": "grandeco",
+  "openDate": "2026-11-21",
+  "openNote": "11/21～12/11はプレシーズン営業",
+  "closeDate": "2027-04-11",
+  "alreadyOpen": null,
+  "sourceUrl": "https://grandecoresort.co.jp/snow/ticket/"
+ },
+ {
+  "id": "kawaba",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": "2027-04-18",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/Kawaba/"
+ },
+ {
+  "id": "manza",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.princehotels.co.jp/ski/manza/winter/"
+ },
+ {
+  "id": "kusatsu",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.932-onsen.com/winter/ryokin/"
+ },
+ {
+  "id": "takasu",
+  "openDate": "2026-12-11",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.takasu.gr.jp/"
+ },
+ {
+  "id": "dynaland",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.dynaland.co.jp/"
+ },
+ {
+  "id": "rokko",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.rokkosan.com/ski/"
+ },
+ {
+  "id": "skijam_katsuyama",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://jamresort.jp/"
+ },
+ {
+  "id": "sapporo_kokusai",
+  "openDate": "2026-11-20",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.sapporo-kokusai.jp/"
+ },
+ {
+  "id": "sapporo_teine",
+  "openDate": "2026-11-21",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://sapporo-teine.com/snow/"
+ },
+ {
+  "id": "niseko_hanazono",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-04-11",
+  "alreadyOpen": null,
+  "sourceUrl": "https://hanazononiseko.com/ja"
+ },
+ {
+  "id": "niseko_grand_hirafu",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": "2027-05-05",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.grand-hirafu.jp/"
+ },
+ {
+  "id": "zao_sarukura",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "edelweiss",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "nikko_yumoto_onsen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "ogna_hotaka",
+  "openDate": "2026-12-25",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/ogunahotaka/"
+ },
+ {
+  "id": "katashina_kogen",
+  "openDate": "2026-12-24",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://katashinakogen.co.jp/"
+ },
+ {
+  "id": "snowpark_oze_tokura",
+  "openDate": "2026-12-21",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://ozetokura.co.jp/"
+ },
+ {
+  "id": "white_world_oze_iwakura",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.oze-iwakura.co.jp/ski/"
+ },
+ {
+  "id": "okutone_snow_park",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-03-31",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/okutone/"
+ },
+ {
+  "id": "mt_t_hoshino",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://tanigawadake-joch.com/mt-t/"
+ },
+ {
+  "id": "norn_minakami",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://norn.co.jp/winter/"
+ },
+ {
+  "id": "minakami_kogen",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": "2027-04-04",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/minakami-kogen/"
+ },
+ {
+  "id": "minakami_kogen_fujiwara",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/fujiwara/"
+ },
+ {
+  "id": "gunma_minakami_hodaigi",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": null,
+  "sourceUrl": "https://hodaigi.jp/"
+ },
+ {
+  "id": "kazawa_snow_area",
+  "openDate": "2026-11-21",
+  "openNote": null,
+  "closeDate": "2027-04-07",
+  "alreadyOpen": null,
+  "sourceUrl": "https://gunma-snow.com/snowarea/Kazawa/"
+ },
+ {
+  "id": "palcall_tsumagoi",
+  "openDate": "2026-12-05",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://tsumagoiskiresort.life/"
+ },
+ {
+  "id": "akagiyama_daiichi",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "sayama",
+  "openDate": "2026-10-30",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": true,
+  "sourceUrl": "https://www.seibu-leisure.co.jp/ski_web/"
+ },
+ {
+  "id": "snova_shinyokohama",
+  "openDate": null,
+  "openNote": "通年営業の屋内ゲレンデ",
+  "closeDate": null,
+  "alreadyOpen": true,
+  "sourceUrl": "https://www.kanagawa-kankou.or.jp/spot/303"
+ },
+ {
+  "id": "kamui_misaka",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "biwako_valley",
+  "openDate": null,
+  "openNote": "12月下旬オープン予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.biwako-valley.com/winter/"
+ },
+ {
+  "id": "ohana_resort",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "hakodateyama",
+  "openDate": "2026-12-25",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.hakodateyama.com/winter/"
+ },
+ {
+  "id": "kutsuki",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "makino_kogen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kagamiganaru",
+  "openDate": "2026-12-19",
+  "openNote": "積雪不足の場合は延期",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://qkamura.or.jp/daisen/ski/"
+ },
+ {
+  "id": "daisen_mountain_resort",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://daisen-mountain.jp/"
+ },
+ {
+  "id": "daisen_masumizu_kogen",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.masumizu.net/"
+ },
+ {
+  "id": "wakasa_hyonosen",
+  "openDate": null,
+  "openNote": "12月下旬開始予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://hyounosen-ski.jp/"
+ },
+ {
+  "id": "azo_koen",
+  "openDate": null,
+  "openNote": "積雪時のみ営業（例年1～3月の土日祝）",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.torican.jp/spot/detail_2277.html"
+ },
+ {
+  "id": "kotobiki_forest_park",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://ski.kotobiki.co.jp/5878/"
+ },
+ {
+  "id": "miinohara",
+  "openDate": null,
+  "openNote": "例年12月下旬～3月上旬（積雪次第）",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://okuizumo.org/jp/guide/detail/3801/"
+ },
+ {
+  "id": "mizuho_highland",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "ibukinosato",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.ibukinosato.co.jp/ski"
+ },
+ {
+  "id": "ombara_kogen",
+  "openDate": "2026-12-19",
+  "openNote": "積雪がない場合は開始が遅れる",
+  "closeDate": "2027-03-07",
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.ombara-kogen.com/ski/post1492/"
+ },
+ {
+  "id": "hiruzen_bear_valley",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "osorakan",
+  "openDate": null,
+  "openNote": "12月中旬頃、積雪状況によりオープン",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://osorakan.co.jp/winter/2026/09/01/20262027seasonticket/"
+ },
+ {
+  "id": "dogoyama_kogen",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "geihoku_kogen_osa",
+  "openDate": null,
+  "openNote": "12月26日以降、積雪状況によりオープン",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://osorakan.co.jp/winter/2026/09/01/20262027seasonticket/"
+ },
+ {
+  "id": "hiroshima_kenmin_no_mori",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "megahira",
+  "openDate": "2026-12-18",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://osorakan.co.jp/winter/2026/09/01/20262027seasonticket/"
+ },
+ {
+  "id": "yawata_highland_191",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://yawata191.com/"
+ },
+ {
+  "id": "utopia_saioto",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "ringo_kyowakoku",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "tokusagamine",
+  "openDate": null,
+  "openNote": "十分な積雪がある場合に営業",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "http://www.woodpark.jp/snow/index.html"
+ },
+ {
+  "id": "ishizuchi",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "kuma_ski_land",
+  "openDate": "2026-12-04",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://kumax.co.jp/wp_news_info.php?p=18234"
+ },
+ {
+  "id": "sunmeadows_kiyosato",
+  "openDate": "2026-12-12",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.sunmeadows.co.jp/winter/"
+ },
+ {
+  "id": "fujiten_snow_resort",
+  "openDate": null,
+  "openNote": "12月中旬オープン予定",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.fujiten.net/"
+ },
+ {
+  "id": "snowpark_yeti",
+  "openDate": "2026-10-23",
+  "openNote": null,
+  "closeDate": "2027-03-28",
+  "alreadyOpen": true,
+  "sourceUrl": "https://prtimes.jp/main/html/rd/p/000002082.000001110.html"
+ },
+ {
+  "id": "rivawell_ikawa",
+  "openDate": null,
+  "openNote": "今季日程は未発表（例年1月中旬開始）",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.city.shizuoka.lg.jp/okushizuoka/s013796.html"
+ },
+ {
+  "id": "meiho",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "whitepia_takasu",
+  "openDate": "2026-11-28",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://whitepia.jp/"
+ },
+ {
+  "id": "hirugano_kogen",
+  "openDate": "2026-12-23",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.hiruganokogen.com/"
+ },
+ {
+  "id": "winghills_shirotori",
+  "openDate": "2026-12-11",
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://surfsnow.jp/open/"
+ },
+ {
+  "id": "up_kannabe",
+  "openDate": null,
+  "openNote": null,
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": null
+ },
+ {
+  "id": "okukannabe",
+  "openDate": "2026-12-19",
+  "openNote": null,
+  "closeDate": "2027-03-22",
+  "alreadyOpen": null,
+  "sourceUrl": "https://okukan.com/"
+ },
+ {
+  "id": "tajima_bokujo_koen",
+  "openDate": null,
+  "openNote": "積雪状況により営業開始",
+  "closeDate": null,
+  "alreadyOpen": null,
+  "sourceUrl": "https://www.torican.jp/spot/detail_2276.html"
+ }
+]
