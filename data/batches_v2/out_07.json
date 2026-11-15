@@ -1,0 +1,754 @@
+[
+ {
+  "id": "yunomaru",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://yunomaru.co.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "インターネット割引券・コンビニ券は各乗場券売所で対応。シーズン券はアソビューで販売"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "しなの鉄道 田中駅／滋野駅",
+   "howJa": "路線バスなし（佐久平駅からの定期バスは廃止）。滋野駅からタクシーで約25分",
+   "howEn": "No bus service (Sakudaira route discontinued). Taxi from Shigeno Sta., about 25 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://yunomaru.co.jp/yunomaru/rental/",
+   "https://yunomaru.co.jp/school/",
+   "https://yunomaru.co.jp/yunomaru/lift/",
+   "https://yunomaru.co.jp/yunomaru/access/"
+  ]
+ },
+ {
+  "id": "shirakaba_resort_ikenotaira",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ベビー用品（ウェア等）のレンタルもあり"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://shirakaba-ski.com/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.shirakabaresort.jp/snowpark/ticket/",
+   "note": "前売り券をアソビュー・セブンチケット等で販売（公式チケットページから案内）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR茅野駅",
+   "howJa": "茅野駅西口からアルピコ交通の路線バス（白樺湖・車山高原線）で東白樺湖下車。池の平ホテル宿泊者は茅野駅・佐久平駅から無料送迎バス（要予約）",
+   "howEn": "Alpico local bus from Chino Sta. West Exit to Higashi-Shirakabako stop. Free reserved shuttle from Chino/Sakudaira Sta. for Ikenotaira Hotel guests",
+   "fromCityBus": "新宿・名古屋から池の平ホテル宿泊者向けの直行バスあり（要予約）"
+  },
+  "sourceUrls": [
+   "https://www.shirakabaresort.jp/snowpark/about/",
+   "https://www.shirakabaresort.jp/snowpark/ticket/",
+   "https://shirakaba-ski.com/",
+   "https://www.shirakabaresort.jp/access/train.html",
+   "https://www.shirakabaresort.jp/access/plan.html"
+  ]
+ },
+ {
+  "id": "shirakabako_royal_hill",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー場直営レンタルショップ（白樺湖ロイヤルホテル内）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/Rl4FLsJlZH/",
+   "note": "早割リフト券（11/30まで）をWebket・アソビューで販売。公式サイトは12月初旬リニューアル予定"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR茅野駅",
+   "howJa": "茅野駅西口からアルピコ交通の路線バスで約50分（南白樺湖下車、徒歩2〜3分）",
+   "howEn": "Alpico local bus from Chino Sta. West Exit, about 50 min (Minami-Shirakabako stop, 2-3 min walk)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://royalhill.co.jp/",
+   "https://www.shinshu-tabi.com/ski/roiyaru.html",
+   "https://jp.wamazing.com/snow/articles/176"
+  ]
+ },
+ {
+  "id": "shirakaba_kogen_kokusai",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "レンタルショップ ストリーム／白樺高原ホテル アクティビティパーク"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://whitebirch.co.jp/kokusai-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://shirakaba-ski.axess.shop/ja",
+   "note": "Webで無料メンバー登録→事前購入、QRコードでピックアップBOX受取（窓口に並ばずに済む）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR茅野駅",
+   "howJa": "茅野駅から路線バスで東白樺湖下車→白樺湖レイクサイドプラザ前からスキー場巡回バス（1日1,000円、共通1日券購入者は無料）",
+   "howEn": "Local bus from Chino Sta. to Higashi-Shirakabako, then resort loop bus from Lakeside Plaza (1,000 yen/day; free with 1-day lift ticket)",
+   "fromCityBus": "新宿発の直行スキーバス（トラベルロード）を公式サイトで案内"
+  },
+  "sourceUrls": [
+   "https://whitebirch.co.jp/rental-kokusai/",
+   "https://whitebirch.co.jp/kokusai-school/",
+   "https://whitebirch.co.jp/webticket/",
+   "https://whitebirch.co.jp/menu-winter/"
+  ]
+ },
+ {
+  "id": "hakuba_cortina",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボード・ウェア等をレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.hakubavalley.com/ski_resort_info/#detail_cortina"
+  },
+  "ticket": {
+   "onlineUrl": "https://jp.wamazing.com/snow/languages.html?source=aGFrdWJhLWNvcnRpbmE=",
+   "note": "白馬乗鞍温泉との共通WEBリフト券（窓口より割安、QRコードで券売機発券）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "Hakuba Valleyシャトルバス（Line V）がスキー場に停車",
+   "howEn": "Hakuba Valley shuttle bus (Line V) stops at the resort",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.nori-cor.com/",
+   "https://www.hakubavalley.com/ski_resort_info/",
+   "https://www.hakubavalley.com/access/shuttlebus/",
+   "https://travel.rakuten.co.jp/ski/234/lift.html",
+   "https://travel.rakuten.co.jp/ski/234/"
+  ]
+ },
+ {
+  "id": "hakuba_goryu",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.hakubagoryu.jp/ski/rental/goryu-rentals/",
+   "note": "オンライン事前申込（予約ではなく受付簡略化）。ウェアもレンタル可。いいもりベースセンターにも別店舗"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.hakubagoryu.jp/ski/school-and-lessons/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.hakubagoryu.jp/ski/buy-tickets-online/",
+   "note": "Hakuba47との共通券をオンライン購入→QRで自動発券機引換。チャージ購入で割安。半日券・回数券・ユース券は窓口のみ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR神城駅",
+   "howJa": "神城駅から白馬五竜無料シャトルバス（冬季）。JR長野駅からはバスで約1時間15分（エスカルプラザ・白馬五竜下車）",
+   "howEn": "Free Hakuba Goryu shuttle bus from Kamishiro Sta. (winter). Bus from JR Nagano Sta., about 1 h 15 min",
+   "fromCityBus": "新宿駅から白馬駅までバスで約5時間（公式アクセス案内）"
+  },
+  "sourceUrls": [
+   "https://www.hakubagoryu.jp/ski/rental/goryu-rentals/",
+   "https://www.hakubagoryu.jp/ski/school-and-lessons/",
+   "https://www.hakubagoryu.jp/ski/buy-tickets-online/",
+   "https://www.hakubagoryu.jp/getting-here/"
+  ]
+ },
+ {
+  "id": "hakuba",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー場周辺に多数のレンタルショップ（公式で案内）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.happo-one.jp/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.happo-one.jp/ticket/onlineticket",
+   "note": "WEBSHOPで購入→QRコードで自動発券機。11/30までの早割券、アソビューでも購入可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR白馬駅",
+   "howJa": "白馬駅から路線バスで八方へ。JR長野駅からは特急バス「長野-白馬線」",
+   "howEn": "Local bus from Hakuba Sta.; Nagano-Hakuba express bus from JR Nagano Sta.",
+   "fromCityBus": "新宿から高速バス「新宿-白馬線」あり"
+  },
+  "sourceUrls": [
+   "https://www.happo-one.jp/shop/rental",
+   "https://www.happo-one.jp/school/",
+   "https://www.happo-one.jp/ticket/onlineticket",
+   "https://www.happo-one.jp/access/tokyo"
+  ]
+ },
+ {
+  "id": "hakuba_iwatake",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ゴンドラ山麓駅周辺に複数のレンタルショップ（ウェアもあり）"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://iwatake-mountain-resort.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://iwatake.nippon-ski.com/ja/lift-ticket.html",
+   "note": "オンライン事前購入・チャージは窓口より割安（1日券 大人7,000円→6,300円）。早割リフト券あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR白馬駅",
+   "howJa": "白馬駅・八方バスターミナルから無料シャトルバス（期間限定）。JR長野駅から特急バス「長野-白馬線」で約1時間20分（岩岳ゴンドラ乗り場前発着）",
+   "howEn": "Free shuttle bus from Hakuba Sta./Happo bus terminal (limited period). Nagano-Hakuba express bus from JR Nagano Sta., about 1 h 20 min",
+   "fromCityBus": "新宿から白馬直通高速バス（新宿→白馬→岩岳、約5時間20分）"
+  },
+  "sourceUrls": [
+   "https://iwatake-mountain-resort.com/rental/",
+   "https://iwatake-mountain-resort.com/school/",
+   "https://iwatake-mountain-resort.com/rates/",
+   "https://iwatake-mountain-resort.com/access/"
+  ]
+ },
+ {
+  "id": "ryuoo_ski_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "SPICYレンタル（ウェア込みフルセットあり）。スノボデビューエリアでヘルメット無料貸出"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://ryuoo.com/winter/debut/"
+  },
+  "ticket": {
+   "onlineUrl": "https://ryuoo.geekoutsnow.com/ja/%E3%83%AA%E3%83%95%E3%83%88%E5%88%B8.html",
+   "note": "公式HPで前売1日券・時間券を販売、QRで発券機引換。予約不要の無料スノボデビューレッスンあり"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "長野電鉄 湯田中駅",
+   "howJa": "昨季は土日の特定日のみ湯田中駅から北志賀4スキー場周遊無料バスを運行（2026-27シーズンの冬季運行は未発表）",
+   "howEn": "Last season a free Kitashiga shuttle from Yudanaka Sta. ran on select weekends only (2026-27 winter schedule not yet announced)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://ryuoo.com/winter/facility/",
+   "https://ryuoo.com/winter/debut/",
+   "https://ryuoo.com/winter/price_w/",
+   "https://ryuoo.com/magazine/magazine-8168/",
+   "https://ryuoo.com/access/",
+   "https://db.go-nagano.net/topics_detail11/id=21487"
+  ]
+ },
+ {
+  "id": "hijiri_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボードのレンタルあり。ウェアのレンタルなし"
+  },
+  "school": {
+   "available": null,
+   "english": null,
+   "url": null
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "1日券 大人3,000円（休日）。窓口販売のみの案内"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": "JR篠ノ井線 聖高原駅",
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.vill.omi.nagano.jp/kanko/guide/enjoy/kanko66.html",
+   "https://www.vill.omi.nagano.jp/kanko/other/access.html"
+  ]
+ },
+ {
+  "id": "sugadaira_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "各エリアに多数のレンタルショップ（公式の場内施設ページで案内）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://sugadaira-snowresort.com/facility/#lnk_school"
+  },
+  "ticket": {
+   "onlineUrl": "https://sugadaira-snowresort.com/ticket/#lnk_preselling",
+   "note": "WEB前売りリフト券は12/1販売開始（ダボス・太郎エリア1日券 大人5,800円→5,200円）。2回目以降は直接リフトゲートへ"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR・しなの鉄道 上田駅",
+   "howJa": "土日祝は上田駅温泉口から直行バス（1,000円・先着順）で約50〜60分（2027/1/9〜3/28運行）。高原内は路線バス1回100円",
+   "howEn": "Weekend/holiday direct bus from Ueda Sta. Onsen Exit (1,000 yen, first-come), about 50-60 min (Jan 9 - Mar 28, 2027)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://sugadaira-snowresort.com/facility/",
+   "https://sugadaira-snowresort.com/ticket/",
+   "https://sugadaira-snowresort.com/access/"
+  ]
+ },
+ {
+  "id": "tateshina_tokyu",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可（「手ぶらでGO！」セットあり）。ゴーグル・グローブの貸出なし"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.tateshina-tokyu.com/ski/school/"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "親子スキーデビュープラン（リフト1日券＋レッスン、要予約）あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR茅野駅",
+   "howJa": "茅野駅から東急リゾートタウン蓼科まで無料シャトルバス（タクシーなら約35分）。タウン内はホテルラウンドバス・AIオンデマンド交通（無料）",
+   "howEn": "Free shuttle bus from Chino Sta. to Tokyu Resort Town Tateshina (taxi about 35 min); free in-town round bus / on-demand bus",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.tateshina-tokyu.com/ski/rental/",
+   "https://www.tateshina-tokyu.com/ski/school/",
+   "https://www.tateshina-tokyu.com/ski/access/",
+   "https://www.tateshina-tokyu.com/access/"
+  ]
+ },
+ {
+  "id": "kurumayama_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "スキー・ボード・ウェア一式をレンタル可（SKYGATEレンタル）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://kurumayama-ski.com/"
+  },
+  "ticket": {
+   "onlineUrl": "https://cloud-pass.jp/project/skyparkresort",
+   "note": "公式（CLOUD PASS）・アソビュー・楽天でWEB事前購入、QRで券売機引換。早割（最大40%OFF）は12/11まで"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR茅野駅",
+   "howJa": "茅野駅から車山高原行き路線バスで約60分（車山高原バス停下車）",
+   "howEn": "Local bus from Chino Sta. to Kurumayama Kogen, about 60 min",
+   "fromCityBus": "上野駅そばから直行バス（7:00発→10:50着、片道4,400円・2026/12/12運行開始）。新宿・名古屋等発のツアーバスも案内あり"
+  },
+  "sourceUrls": [
+   "https://winter.kurumayama-skypark.com/rental",
+   "https://kurumayama-ski.com/",
+   "https://winter.kurumayama-skypark.com/ticket-sites",
+   "https://winter.kurumayama-skypark.com/access",
+   "https://winter.kurumayama-skypark.com/access-ueno/",
+   "https://winter.kurumayama-skypark.com/bus"
+  ]
+ },
+ {
+  "id": "karuizawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/advance_tickets/#rental",
+   "note": "事前Web決済で現地より割安（スキー/ボードセット大人1日 7,500円→7,200円）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://www.princehotels.co.jp/ski/karuizawa/winter/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/advance_tickets/#lift",
+   "note": "事前Web購入可（手数料100円）。小学生までリフト無料"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR北陸新幹線・しなの鉄道 軽井沢駅",
+   "howJa": "軽井沢駅南口から無料シャトルバス（予約不要）。徒歩約10分、タクシー約2分",
+   "howEn": "Free shuttle bus from Karuizawa Sta. South Exit (no reservation). About 10 min walk, 2 min by taxi",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.princehotels.co.jp/ski/karuizawa/winter/info/",
+   "https://www.princehotels.co.jp/ski/karuizawa/winter/school/",
+   "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/",
+   "https://www.princehotels.co.jp/ski/karuizawa/winter/access/"
+  ]
+ },
+ {
+  "id": "nozawa",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "場内・村内に多数のレンタルショップ（多くが予約可、公式一覧で検索可）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://nozawaski.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://nozawaski.com/winter/lift_price/icticket/#web-ticket",
+   "note": "ICチケットのWeb購入可。スクールはWEB予約（RoomBoss）可"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR北陸新幹線 飯山駅",
+   "howJa": "飯山駅から直通バス「野沢温泉ライナー」または長電バス路線バス。村内からスキー場は無料シャトルバス（12/12〜3/28）",
+   "howEn": "Direct bus 'Nozawa Onsen Liner' or Nagaden local bus from Iiyama Sta.; free village shuttle to the slopes (Dec 12 - Mar 28)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://nozawaski.com/winter/facilities/",
+   "https://nozawaski.com/school/",
+   "https://nozawaski.com/winter/lift_price/",
+   "https://nozawaski.com/winter/access/train-bus/",
+   "https://nozawaski.com/winter/access/bus/"
+  ]
+ },
+ {
+  "id": "nomugitoge",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "センターハウス内にレンタルコーナー"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "http://gakutoresort.jp/school"
+  },
+  "ticket": {
+   "onlineUrl": null,
+   "note": "平日割1日券あり。窓口販売の案内のみ"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "http://gakutoresort.jp/facility",
+   "http://gakutoresort.jp/school",
+   "http://gakutoresort.jp/access"
+  ]
+ },
+ {
+  "id": "komagane_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェア・小物込みの「こみこみ手ぶらパック」あり"
+  },
+  "school": {
+   "available": true,
+   "english": true,
+   "url": "https://komaganeski.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/eGQmv8QC3F/",
+   "note": "公式サイトの「オンライン予約」はアソビュー（販売券種はリンク先で確認）。リフト＋レンタルの時間パックあり"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://komaganeski.com/price/",
+   "https://komaganeski.com/school/",
+   "https://komaganeski.com/access/"
+  ]
+ },
+ {
+  "id": "takamine_mountain_park",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "センターハウス内。ウェアもレンタル可（小物は販売のみ）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://asama2000.com/school.html"
+  },
+  "ticket": {
+   "onlineUrl": "https://ticket.takamine-mountainpark.com/",
+   "note": "リフト券はWEB購入がお得（公式案内）。アソビューでも販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "JR・しなの鉄道 佐久平駅",
+   "howJa": "佐久平駅蓼科口からJRバス（冬季運行、1日1往復）で約1時間（8:35発→9:35着、帰りはスキー場16:18発）",
+   "howEn": "JR Bus from Sakudaira Sta. Tateshina Exit (winter, 1 round trip/day), about 1 h (8:35→9:35; return 16:18)",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://asama2000.com/rental.html",
+   "https://asama2000.com/school.html",
+   "https://asama2000.com/lift.html",
+   "https://asama2000.com/access.html"
+  ]
+ },
+ {
+  "id": "kurohime_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "場内にレンタルあり。リフト券＋レンタルのお得なパックをWeb販売"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://kurohime-kogen.co.jp/winter/kurohime-ski-school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://kurohime-kogen.co.jp/winter/ticket/",
+   "note": "前売りチケット（日時指定・数量限定の割引券、1day＋レンタルパック）をアソビューで販売"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "しなの鉄道北しなの線 黒姫駅",
+   "howJa": "駅からのバス・シャトルの案内なし。黒姫駅からタクシーで約10分",
+   "howEn": "No bus/shuttle listed. Taxi from Kurohime Sta., about 10 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://kurohime-kogen.co.jp/?page_id=581",
+   "https://kurohime-kogen.co.jp/winter/kurohime-ski-school/",
+   "https://kurohime-kogen.co.jp/winter/ticket/",
+   "https://kurohime-kogen.co.jp/winter/access/"
+  ]
+ },
+ {
+  "id": "fujiten_snow_resort",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://webket.jp/pc/agent/index?fc=00467&ac=8003",
+   "note": "WEB事前予約あり（数量限定、現地でもレンタル可）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.fujiten.net/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.fujiten.net/charges/webstores/",
+   "note": "Webketで事前購入（平日1日券 大人5,800円→WEB5,300円、チャージ5,000円）"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": "富士急行線 河口湖駅",
+   "howJa": "河口湖駅前から有料シャトルバス（往復4,400円・要予約、9:50/11:15発、2026/12/25〜2027/2/28）",
+   "howEn": "Paid shuttle bus from Kawaguchiko Sta. (4,400 yen round trip, reservation required; Dec 25 - Feb 28)",
+   "fromCityBus": "関東近郊からの日帰りバスツアー（富士観光トラベル）を公式で案内"
+  },
+  "sourceUrls": [
+   "https://www.fujiten.net/rental/",
+   "https://www.fujiten.net/school/",
+   "https://www.fujiten.net/charges/webstores/",
+   "https://www.fujiten.net/access/",
+   "https://www.fujikanko-travel.jp/fujiten_bus/"
+  ]
+ },
+ {
+  "id": "kamui_misaka",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可（グローブ・ゴーグルは貸出なし）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://misaka.kamuisp.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/LKa6wEWAQT/",
+   "note": "アソビューで事前購入：平日1日券40%OFF、土日祝30%OFF（大人4,500円→2,700円/3,150円）"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "新宿発の日帰りバスツアー（オリオンツアー・ビッグホリデー）を公式で案内"
+  },
+  "sourceUrls": [
+   "https://misaka.kamuisp.com/rental/",
+   "https://misaka.kamuisp.com/school/",
+   "https://misaka.kamuisp.com/price/sp/",
+   "https://misaka.kamuisp.com/access/"
+  ]
+ },
+ {
+  "id": "sunmeadows_kiyosato",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。予約不可（数量限定・品切れの場合あり）"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.sunmeadows.co.jp/winter/school/ski_snowboard/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.sunmeadows.co.jp/winter/ticket/lift/",
+   "note": "Web前売り券は当日窓口より割安（昨季：土日祝 大人6,900円→6,000円）。購入日翌日以降利用可"
+  },
+  "transit": {
+   "byPublic": false,
+   "station": "JR小海線 清里駅",
+   "howJa": "冬季は駅からのバスなし（周遊ピクニックバスは夏季のみ）。清里駅からタクシーで約5分",
+   "howEn": "No winter bus (Picnic Bus is summer only). Taxi from Kiyosato Sta., about 5 min",
+   "fromCityBus": null
+  },
+  "sourceUrls": [
+   "https://www.sunmeadows.co.jp/winter/ticket/rental/",
+   "https://www.sunmeadows.co.jp/winter/school/ski_snowboard/",
+   "https://www.sunmeadows.co.jp/winter/ticket/lift/",
+   "https://www.sunmeadows.co.jp/access/"
+  ]
+ },
+ {
+  "id": "hirugano_kogen",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.hiruganokogen.com/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/c1SjSq0HWP/",
+   "note": "公式サイトからアソビュー・セブンチケットでリフト券購入可。ファストパス（各日80セット限定）あり"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "最寄り駅からの路線バス案内なし。名古屋から岐阜バス高速バス「ひるがの高原スキー場直通便」で約2時間29分（スキー場バス停下車）",
+   "howEn": "No local bus from a nearby station. Gifu Bus highway bus direct service from Nagoya, about 2 h 29 min (stops at the ski area)",
+   "fromCityBus": "名古屋から高速バス直通便（約2時間29分）。日帰りバスツアーの案内もあり"
+  },
+  "sourceUrls": [
+   "https://www.hiruganokogen.com/rental/",
+   "https://www.hiruganokogen.com/school/",
+   "https://www.hiruganokogen.com/price/",
+   "https://www.hiruganokogen.com/access/"
+  ]
+ },
+ {
+  "id": "meiho",
+  "rental": {
+   "available": true,
+   "reserveUrl": "https://rental.meihoski.co.jp/",
+   "note": "WEB事前予約がおすすめ（クレジット決済のみ、今季受付開始前）。ウェアもレンタル可"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://www.meihoski.co.jp/winter/price/#link_school"
+  },
+  "ticket": {
+   "onlineUrl": "https://meihoski.geekoutsnow.com/",
+   "note": "WEBチケットで窓口に並ばず入場（QRコード）。早割リフト券も販売"
+  },
+  "transit": {
+   "byPublic": true,
+   "station": null,
+   "howJa": "郡上八幡（城下町プラザ等）から専用無料シャトルバス（予約制・前々日まで、8:35発→9:30着、12月中旬〜3月下旬）",
+   "howEn": "Free reserved shuttle bus from Gujo-Hachiman (Joka-machi Plaza etc.), 8:35→9:30 (mid-Dec to late Mar; book 2 days ahead)",
+   "fromCityBus": "名古屋・岐阜・三河・浜松発、大阪発のスキーバスツアーを公式で案内"
+  },
+  "sourceUrls": [
+   "https://www.meihoski.co.jp/winter/rentals/",
+   "https://www.meihoski.co.jp/winter/webticket/",
+   "https://www.meihoski.co.jp/winter/price/",
+   "https://www.meihoski.co.jp/winter/access"
+  ]
+ },
+ {
+  "id": "winghills_shirotori",
+  "rental": {
+   "available": true,
+   "reserveUrl": null,
+   "note": "ウェアもレンタル可。リフト1日券付き「手ぶらフルセット」（新品小物3点プレゼント）あり"
+  },
+  "school": {
+   "available": true,
+   "english": null,
+   "url": "https://winghills.net/snow/facilities/school/"
+  },
+  "ticket": {
+   "onlineUrl": "https://www.asoview.com/channel/tickets/YK4L4zMWoN/",
+   "note": "アソビューでWEB事前購入（早割：大人1日券 6,200円→4,200円）。スクールは事前WEB予約で当日より1,000円安い"
+  },
+  "transit": {
+   "byPublic": null,
+   "station": null,
+   "howJa": null,
+   "howEn": null,
+   "fromCityBus": "JR名古屋駅から格安シャトルバス（2月の月・水・金限定、事前WEB予約・往復2,000円）。大阪・名古屋発の日帰りバスツアーあり"
+  },
+  "sourceUrls": [
+   "https://winghills.net/snow/facilities/rental/",
+   "https://winghills.net/snow/facilities/school/",
+   "https://winghills.net/news/206/",
+   "https://winghills.net/access/"
+  ]
+ }
+]
