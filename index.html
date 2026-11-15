@@ -291,6 +291,15 @@ main{padding-block:16px 24px;}
 .checked-at{font-size:12px;color:var(--text-muted);margin:6px 0 10px;}
 .disclaimer{font-size:11.5px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:12px;margin-top:6px;line-height:1.6;}
 .empty{padding-block:40px;text-align:center;color:var(--text-muted);}
+.gear-intro{font-size:14px;margin:0 0 12px;max-width:60ch;}
+.gear-list{list-style:none;padding:0;margin:0 0 18px;counter-reset:gear;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.gear-item{display:flex;align-items:center;gap:12px;padding:13px 14px;border-bottom:1px solid var(--border);}
+.gear-item:last-child{border-bottom:none;}
+ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);font-family:var(--font-display);font-weight:600;font-size:22px;color:var(--text-muted);width:20px;text-align:right;flex:0 0 auto;}
+.gear-item-main{flex:1;min-width:0;}
+.gear-item-name{font-weight:700;font-size:14.5px;}
+.gear-item-why{font-size:12.5px;color:var(--text-muted);margin-top:2px;}
+.gear-item .cta-btn{flex:0 0 auto;}
 .info-card .unit{font-family:var(--font-body);font-size:12px;font-weight:500;color:var(--text-muted);margin-left:2px;}
 .meta-access{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .ad-note{font-size:11.5px;color:var(--text-muted);background:var(--surface-2);border-radius:6px;padding:7px 10px;margin:0 0 12px;line-height:1.5;}
@@ -534,6 +543,48 @@ async function loadAllResorts(){
     ALL_RESORTS = [];
   }
 }
+// アフィリエイト：楽天は任意のURLを公式の汎用リンク（hgc）で包むと成果計測される
+const AFF = { rakuten: "575c1e8f.95c040c9.575c1e90.5e7d0fd7" };
+function rakutenAff(url){
+  const e = encodeURIComponent(url);
+  return `https://hb.afl.rakuten.co.jp/hgc/${AFF.rakuten}/?pc=${e}&m=${e}`;
+}
+function rakutenSearch(keyword){ return rakutenAff(`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}/`); }
+
+// レベル別の装備：上から順に「買う順番」
+const GEAR_PLAN = [
+  { // 初心者
+    introJa:"最初はレンタルで十分です。自分で買うなら、肌に触れる小物から。続けると決めたら、次はブーツです。",
+    introEn:"Rent everything at first. If you buy, start with the small things that touch your skin. Once you know you'll keep skiing, buy boots next.",
+    items:[
+      {ja:"防水グローブ", en:"Waterproof gloves", whyJa:"軍手は濡れてすぐ冷たくなります。レンタルがないことも多い小物です。", whyEn:"Cotton gloves get wet and cold fast, and gloves are often not for rent.", q:"スキー グローブ 防水"},
+      {ja:"ゴーグル", en:"Goggles", whyJa:"雪の照り返しは想像以上に眩しい。メガネの人は「メガネ対応」を。", whyEn:"Snow glare is stronger than you expect. If you wear glasses, get an over-glasses (OTG) model.", q:"スキーゴーグル メガネ対応"},
+      {ja:"速乾インナー・ネックウォーマー", en:"Base layer & neck warmer", whyJa:"綿は汗で冷えます。化繊かウールを。", whyEn:"Cotton stays wet and chills you. Choose synthetic or wool.", q:"スキー インナー 速乾"},
+      {ja:"ヘルメット", en:"Helmet", whyJa:"転ぶ回数が多い最初こそ。レンタルできる所もあります。", whyEn:"You fall most in your first days. Some resorts rent them.", q:"スキー ヘルメット"},
+      {ja:"ブーツ", en:"Boots", whyJa:"続けるなら最初に買う大物。合わないブーツは痛くて、それだけでスキーが嫌になります。お店で足に合わせて選ぶのがおすすめ。", whyEn:"The first big item to buy if you continue. Boots that don't fit hurt enough to ruin skiing. Get them fitted in a shop if you can.", q:"スキーブーツ 初心者"},
+      {ja:"ウェア上下", en:"Jacket & pants", whyJa:"レンタルでも困りませんが、毎回借りるなら買った方が安くなります。", whyEn:"Renting is fine, but if you go often, owning works out cheaper.", q:"スキーウェア 上下 セット"},
+      {ja:"板・ビンディングのセット", en:"Skis with bindings", whyJa:"最後でOK。初心者向けの短めで柔らかいセットが扱いやすいです。", whyEn:"Last on the list. A shorter, softer beginner set is easiest to control.", q:"スキー板 初心者 セット ビンディング"},
+    ]},
+  { // 中級
+    introJa:"ターンが安定してきたら、道具で上達が変わる段階です。まずはブーツと板を自分に合ったものに。",
+    introEn:"Once your turns are stable, gear starts to make a difference. Get boots and skis that suit you.",
+    items:[
+      {ja:"ブーツ（少し硬め）", en:"Boots (a little stiffer)", whyJa:"初心者用より少し硬いブーツで、板に力が伝わりやすくなります。", whyEn:"A slightly stiffer boot than beginner models transfers your movement to the ski better.", q:"スキーブーツ 中級"},
+      {ja:"オールラウンドの板", en:"All-mountain skis", whyJa:"圧雪も少しの新雪もこなせる一本。", whyEn:"One pair for groomed runs and a bit of fresh snow.", q:"スキー板 オールラウンド"},
+      {ja:"調光ゴーグル", en:"Photochromic goggles", whyJa:"晴れでも曇りでもレンズ交換いらず。", whyEn:"Adjusts to sun and cloud, no lens swaps.", q:"スキーゴーグル 調光"},
+      {ja:"プロテクター", en:"Protectors", whyJa:"スピードが上がってきたら、お尻と背中を守るものを。", whyEn:"As you get faster, protect your hips and back.", q:"スキー プロテクター"},
+      {ja:"チューンナップ用品", en:"Tuning & wax", whyJa:"ワックスを塗るだけで板の走りが変わります。", whyEn:"Even basic waxing makes your skis glide noticeably better.", q:"スキー ワックス 簡易"},
+    ]},
+  { // 上級
+    introJa:"ここから先は好みと目的次第。現役インストラクターでアルペン競技の経験もある運営者のおすすめを載せています。",
+    introEn:"From here it depends on your goals. These are picks from a working ski instructor with an alpine racing background.",
+    curated:true,
+    items:[
+      {ja:"基礎スキー向けの板", en:"Technical skis", whyJa:"検定や基礎の練習なら、基礎系モデルを。", whyEn:"For technique and certification training, choose a technical model.", q:"スキー板 基礎"},
+      {ja:"レーシングブーツ", en:"Race boots", whyJa:"足にぴったり合わせることが前提の硬いブーツ。", whyEn:"Stiff boots that only work when fitted closely to your feet.", q:"スキーブーツ レーシング"},
+    ]},
+];
+
 const GEAR_CATEGORIES = [
   {id:"bag", ic:"backpack", ja:"バッグ", en:"Bag", real:true, productJa:"VOLKL RACE BOOT PACK（ブーツ用バッグ）", productEn:"VOLKL RACE BOOT PACK (boot bag)", url:"https://hb.afl.rakuten.co.jp/ichiba/575c1e8f.95c040c9.575c1e90.5e7d0fd7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftanabesp%2Fcd63643%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"},
   {id:"boots", ic:"boots", ja:"ブーツ", en:"Boots", real:true, productJa:"DALBELLO DRS WC S", productEn:"DALBELLO DRS WC S", url:"https://a.r10.to/hPs2xw"},
@@ -667,6 +718,8 @@ const STRINGS = {
     prepTaxi:"※駅からはタクシーでの移動になります",
     prepByTrain:"電車・バスの経路",
     prepByCar:"車の経路",
+    prepBus:"高速バスを予約",
+    prepCar:"レンタカーを予約",
     prepTicket:"リフト券を用意する",
     prepBuyOnline:"オンラインで買う（公式）",
     prepTicketOfficial:"公式で料金・買い方を確認",
@@ -747,7 +800,7 @@ const STRINGS = {
     onsenDesc:"ゲレンデ周辺の日帰り温泉をGoogleマップで検索できます。",
     onsenBtn:"周辺の温泉を見る（Googleマップへ）",
     gearTitle2:"装備を探す",
-    gearSub:"カテゴリを選ぶと、楽天市場の検索結果に移動します",
+    gearSub:"レベルを選ぶと、買う順番におすすめの装備が並びます。",
   },
   en:{
     tagline:"Pick a resort, get ready.",
@@ -868,6 +921,8 @@ const STRINGS = {
     prepTaxi:"You'll need a taxi from the station",
     prepByTrain:"Train / bus route",
     prepByCar:"Driving route",
+    prepBus:"Book a highway bus",
+    prepCar:"Rent a car",
     prepTicket:"Get your lift pass",
     prepBuyOnline:"Buy online (official)",
     prepTicketOfficial:"Prices & how to buy (official)",
@@ -948,7 +1003,7 @@ const STRINGS = {
     onsenDesc:"Search day-trip hot springs near the resort on Google Maps.",
     onsenBtn:"Find nearby onsen (Google Maps)",
     gearTitle2:"Find gear",
-    gearSub:"Pick a category to search Rakuten Ichiba",
+    gearSub:"Pick your level to see what to get, in the order to buy it.",
   }
 };
 
@@ -1628,35 +1683,30 @@ function dealsForResort(r){
   return DEALS.filter(d=>d && (d.validUntil ? d.validUntil>=today : !!d.validUntilNote) && dealResorts(d).some(x=>x.id===r.id));
 }
 
-const gearState = {selected: GEAR_CATEGORIES[0].id};
 
+const gearState = {selected: GEAR_CATEGORIES[0].id, level: null};
 function renderGearTab(){
-  const tabs = document.getElementById("gearTabs");
-  tabs.innerHTML = GEAR_CATEGORIES.map(g=>{
-    const label = state.lang==="ja" ? g.ja : g.en;
-    const sel = g.id===gearState.selected ? "sel" : "";
-    const dot = g.real ? "" : `<span class="dot-missing" title="${state.lang==="ja"?"準備中":"coming soon"}"></span>`;
-    return `<button type="button" class="gear-tab-btn ${sel}" data-id="${g.id}">${icon(g.ic,16)} ${label} ${dot}</button>`;
-  }).join("");
-  tabs.querySelectorAll(".gear-tab-btn").forEach(btn=>{
-    btn.addEventListener("click", ()=>{ gearState.selected = btn.dataset.id; renderGearTab(); });
-  });
-
-  const g = GEAR_CATEGORIES.find(x=>x.id===gearState.selected);
-  const content = document.getElementById("gearContent");
-  if(g.real){
-    const name = state.lang==="ja" ? g.productJa : g.productEn;
-    content.innerHTML = `
-      <div class="gear-product-card">
-        <div class="gear-product-ic">${icon(g.ic,40)}</div>
-        <div class="gear-product-tag">${state.lang==="ja"?"おすすめギア":"Recommended gear"}</div>
-        <div class="gear-product-name">${name}</div>
-        <a class="gear-product-btn" href="${g.url}" target="_blank" rel="noopener">${state.lang==="ja"?"楽天市場で見る":"View on Rakuten"}</a>
-      </div>`;
-  } else {
-    content.innerHTML = `
-      <div class="gear-empty-card">${state.lang==="ja"?"このカテゴリはまだアフィリエイトリンク未登録です。楽天で商品ページを開いて「リンクを作成」→共有してもらえれば、ここに反映します。":"No affiliate link registered for this category yet. Generate one on Rakuten and share it to get it added here."}</div>`;
-  }
+  const lv = gearState.level ?? (wiz.level ?? 0);
+  const plan = GEAR_PLAN[lv];
+  const ja = state.lang==="ja";
+  document.getElementById("gearTabs").innerHTML = LEVEL_OPTS.map((k,i)=>`<button type="button" class="gear-tab-btn ${i===lv?"sel":""}" data-lv="${i}">${t(k)}</button>`).join("");
+  document.querySelectorAll("#gearTabs .gear-tab-btn").forEach(btn=>btn.addEventListener("click", ()=>{ gearState.level = Number(btn.dataset.lv); renderGearTab(); }));
+  const curated = plan.curated ? GEAR_CATEGORIES.filter(g=>g.real).map(g=>`
+      <li class="gear-item">
+        <div class="gear-item-main"><div class="gear-item-name">${ja?g.productJa:g.productEn}</div><div class="gear-item-why">${ja?g.ja:g.en}${ja?"：運営者のおすすめ":" — my pick"}</div></div>
+        <a class="cta-btn" href="${g.url}" target="_blank" rel="noopener sponsored">${ja?"楽天で見る":"View on Rakuten"}</a>
+      </li>`).join("") : "";
+  document.getElementById("gearContent").innerHTML = `
+    <p class="gear-intro">${ja?plan.introJa:plan.introEn}</p>
+    <ol class="gear-list">
+      ${plan.items.map(it=>`
+      <li class="gear-item">
+        <div class="gear-item-main"><div class="gear-item-name">${ja?it.ja:it.en}</div><div class="gear-item-why">${ja?it.whyJa:it.whyEn}</div></div>
+        <a class="cta-btn sec" href="${rakutenSearch(it.q)}" target="_blank" rel="noopener sponsored">${ja?"楽天で探す":"Search Rakuten"}</a>
+      </li>`).join("")}
+    </ol>
+    ${curated ? `<div class="section-label">${ja?"運営者のおすすめギア":"My recommended gear"}</div><ul class="gear-list gear-curated">${curated}</ul>` : ""}
+    ${ja?"":`<p class="gear-intro" style="margin-top:14px">Rakuten Ichiba is a Japanese shopping site; most shops ship within Japan only.</p>`}`;
 }
 
 function openDetail(id){
@@ -1720,6 +1770,8 @@ function openDetail(id){
         <div class="prep-btns">
           <a class="cta-btn" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=transit" target="_blank" rel="noopener">${t("prepByTrain")}</a>
           <a class="cta-btn sec" href="https://www.google.com/maps/dir/?api=1&destination=${placeQuery}&travelmode=driving" target="_blank" rel="noopener">${t("prepByCar")}</a>
+          <a class="cta-btn sec" href="${rakutenAff("https://travel.rakuten.co.jp/bus/")}" target="_blank" rel="noopener sponsored">${t("prepBus")}</a>
+          <a class="cta-btn sec" href="${rakutenAff("https://travel.rakuten.co.jp/cars/")}" target="_blank" rel="noopener sponsored">${t("prepCar")}</a>
         </div>
       </li>
       <li class="prep-step">
@@ -1735,7 +1787,7 @@ function openDetail(id){
       <li class="prep-step">
         <div class="prep-h"><span class="prep-n">3</span>${t("prepStay")}</div>
         <div class="prep-txt">${t("lodgingDesc")}</div>
-        <div class="prep-btns"><a class="cta-btn" href="https://travel.rakuten.co.jp/dosearch/?f_keyword=${lodgingQuery}" target="_blank" rel="noopener">${t("lodgingBtn")}</a></div>
+        <div class="prep-btns"><a class="cta-btn" href="${rakutenAff(`https://travel.rakuten.co.jp/dosearch/?f_keyword=${lodgingQuery}`)}" target="_blank" rel="noopener sponsored">${t("lodgingBtn")}</a></div>
       </li>
       <li class="prep-step">
         <div class="prep-h"><span class="prep-n">4</span>${t("prepRental")}</div>
@@ -1766,7 +1818,7 @@ function openDetail(id){
   document.getElementById("overlay").hidden = false;
   document.getElementById("closeBtn").addEventListener("click", closeDetail);
   document.getElementById("prepDeals")?.addEventListener("click", ()=>openDealsFor(r));
-  document.getElementById("prepGear")?.addEventListener("click", ()=>{ closeDetail(); setView("gear"); });
+  document.getElementById("prepGear")?.addEventListener("click", ()=>{ closeDetail(); gearState.level = wiz.level ?? 0; setView("gear"); });
   document.getElementById("detailFav").addEventListener("click", ()=>{
     toggleFav(r.id);
     const on = isFav(r.id), b = document.getElementById("detailFav");

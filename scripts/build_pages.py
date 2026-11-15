@@ -13,6 +13,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 SITE = json.load(open(os.path.join(DATA, "site.json"), encoding="utf-8"))
 BASE = SITE["baseUrl"].rstrip("/")
+RAKUTEN_ID = "575c1e8f.95c040c9.575c1e90.5e7d0fd7"
 
 PREF_ORDER = ["北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県", "栃木県", "群馬県", "埼玉県",
               "千葉県", "東京都", "神奈川県", "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県",
@@ -27,7 +28,7 @@ T = {
         "adult": "大人1日券", "student": "学生・ユース", "free": "無料", "elev": "標高（麓〜山頂）", "runs": "コース数",
         "lifts": "リフト数", "access": "アクセス", "terrain": "コース難易度", "beg": "初級", "int": "中級", "adv": "上級",
         "english": "英語対応", "en": {"high": "高い", "medium": "あり", "low": "限定的"}, "official": "公式サイト",
-        "maps": "Googleマップで見る", "cta": "YukiNaviで天気・7日間の降雪予報を見る", "same": "{pref}のほかのスキー場",
+        "maps": "Googleマップで見る", "stay": "周辺の宿を探す（楽天トラベル）", "cta": "YukiNaviで天気・7日間の降雪予報を見る", "same": "{pref}のほかのスキー場",
         "checked": "掲載情報の確認日：{d}。料金・営業状況は変わることがあります。お出かけ前に公式サイトでご確認ください。",
         "na": "—", "list_title": "全国のスキー場一覧（都道府県別）｜YukiNavi",
         "list_desc": "日本全国{n}か所のスキー場の2026-27シーズンのリフト券料金・コース数・アクセスを都道府県別にまとめました。",
@@ -41,7 +42,7 @@ T = {
         "adult": "Adult day pass", "student": "Student / youth", "free": "Free", "elev": "Elevation (base–top)", "runs": "Runs",
         "lifts": "Lifts", "access": "Access", "terrain": "Terrain", "beg": "Beginner", "int": "Intermediate",
         "adv": "Advanced", "english": "English support", "en": {"high": "Good", "medium": "Some", "low": "Limited"},
-        "official": "Official site", "maps": "Open in Google Maps",
+        "official": "Official site", "maps": "Open in Google Maps", "stay": "Find hotels nearby (Rakuten Travel)",
         "cta": "See weather and 7-day snowfall on YukiNavi", "same": "More ski resorts in {pref}",
         "checked": "Info last checked: {d}. Prices and operating status can change; check the official site before you go.",
         "na": "—", "list_title": "All ski resorts in Japan by prefecture | YukiNavi",
@@ -134,6 +135,8 @@ def resort_page(r, L, same_pref):
         links.append(f'<a href="{esc(r["officialUrl"])}" rel="noopener" target="_blank">{t["official"]}</a>')
     from urllib.parse import quote
     links.append(f'<a href="https://www.google.com/maps/search/?api=1&query={quote(r["nameJa"])}" rel="noopener" target="_blank">{t["maps"]}</a>')
+    stay = quote(f"https://travel.rakuten.co.jp/dosearch/?f_keyword={quote(r['nameJa'] + ' 周辺')}", safe="")
+    links.append(f'<a href="https://hb.afl.rakuten.co.jp/hgc/{RAKUTEN_ID}/?pc={stay}&m={stay}" rel="noopener sponsored" target="_blank">{t["stay"]}</a>')
 
     others = "".join(
         f'<li><a href="{page_url(L, o["id"])}">{esc(o["nameJa"] if ja else (o.get("nameEn") or o["nameJa"]))}</a></li>'
