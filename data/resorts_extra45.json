@@ -1,0 +1,621 @@
+{
+  "niseko": {
+    "courses": 77,
+    "lifts": null,
+    "accessJa": "札幌から国道230号・中山峠経由で約92〜105km／新千歳空港から直行スキーバス（要予約）",
+    "accessEn": "From Sapporo via Route 230 (Nakayama Pass), approx. 92-105km / Direct ski bus from New Chitose Airport (reservation required)",
+    "officialUrl": "https://www.niseko.ne.jp/",
+    "sources": [
+      "https://www.niseko.ne.jp/ja/getting-to-niseko/",
+      "https://www.grand-hirafu.jp/snow/maps/",
+      "https://hanazononiseko.com/ja/winter/resort/courses",
+      "https://www.niseko-village.com/ja/white/trail-maps/",
+      "https://annupuri.info/gelande/",
+      "https://surfsnow.jp/guide/htm/r0148gc1.htm"
+    ],
+    "notes": "エリア全体（4スキー場）の値。courses=各スキー場公式のコース数の合計（グラン・ヒラフ22＋HANAZONO12＋ニセコビレッジ30＋アンヌプリ13）。ユナイテッド公式に全体数の記載なし。lifts=ニセコビレッジの公式基数が確認できずnull（ヒラフ9、HANAZONO4、アンヌプリ6は確認済み）"
+  },
+  "rusutsu": {
+    "courses": 37,
+    "lifts": 18,
+    "accessJa": "札幌・新千歳空港から車で約90分／札幌・新千歳空港から路線・シャトルバスあり",
+    "accessEn": "About 90 min by car from Sapporo or New Chitose Airport / Buses from Sapporo and New Chitose Airport",
+    "officialUrl": "https://rusutsu.com/",
+    "sources": [
+      "https://rusutsu.com/rusutsu-in-winter/",
+      "https://rusutsu.com/by-car/",
+      "https://rusutsu.com/access-shuttle-bus-new-chitose-airport/",
+      "https://tenki.jp/season/ski/1/2/11727/information.html",
+      "https://surfsnow.jp/guide/htm/r0331gc1.htm"
+    ],
+    "notes": "公式『4つのゴンドラと14のリフト』『37ものコース』。tenki・surfsnowもコース37本で一致"
+  },
+  "furano": {
+    "courses": 28,
+    "lifts": 9,
+    "accessJa": "道央道 三笠ICから道道美唄富良野線経由（札幌から約2時間）／JR富良野駅からタクシー約12分",
+    "accessEn": "Doo Expwy Mikasa IC via Bibai-Furano Road (about 2h from Sapporo) / About 12 min by taxi from JR Furano Sta.",
+    "officialUrl": "https://www.princehotels.co.jp/ski/furano/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/furano/winter/",
+      "https://www.princehotels.co.jp/ski/furano/winter/coursemap/",
+      "https://www.princehotels.co.jp/ski/furano/winter/access/",
+      "https://tenki.jp/season/ski/1/1/11701/information.html",
+      "https://surfsnow.jp/guide/htm/r0118gc1.htm"
+    ],
+    "notes": "courses=公式28。lifts=公式コースマップのリフト一覧9基（ロープウェー1・ゴンドラ1含む）、tenki・surfsnowも9基で一致。ただし公式トップの運行状況表示は『リフト0/11』で差異あり"
+  },
+  "hakuba": {
+    "courses": 16,
+    "lifts": 21,
+    "accessJa": "上信越道 長野ICから白馬長野オリンピック道路経由／JR長野駅から特急バス「長野-白馬線」",
+    "accessEn": "Joshinetsu Expwy Nagano IC via Hakuba-Nagano Olympic Road / Express bus (Nagano-Hakuba line) from JR Nagano Sta.",
+    "officialUrl": "https://www.happo-one.jp/",
+    "sources": [
+      "https://www.happo-one.jp/gelande",
+      "https://www.happo-one.jp/access/tokyo"
+    ],
+    "notes": "リフト21基=ゴンドラ1+クワッド5+トリプル3+ペア12（公式コースガイド）。アクセスページに所要時間の記載なし"
+  },
+  "nozawa": {
+    "courses": 43,
+    "lifts": null,
+    "accessJa": "上信越道 豊田飯山ICから／北陸新幹線 飯山駅から直通バス「野沢温泉ライナー」",
+    "accessEn": "From Joshinetsu Expwy Toyota-Iiyama IC / Direct bus (Nozawa Onsen Liner) from Iiyama Sta. on the Hokuriku Shinkansen",
+    "officialUrl": "https://nozawaski.com/",
+    "sources": [
+      "https://nozawaski.com/winter/course/",
+      "https://nozawaski.com/winter/access/",
+      "https://nozawaski.com/winter/access/train-bus/",
+      "https://tenki.jp/season/ski/3/23/15115/information.html"
+    ],
+    "notes": "courses=公式『滑走可能コース』一覧の表示コース43本（No.1〜44、No.12は非掲載）、tenkiも43本で一致。lifts=公式に総数記載なく、tenki(15基)のみで2ソース一致せずnull。公式アクセスページに所要時間の記載なし"
+  },
+  "shiga": {
+    "courses": null,
+    "lifts": 46,
+    "accessJa": "上信越道 信州中野ICから国道292号（オリンピック道路）経由／JR長野駅東口から直通バス（長電バス）",
+    "accessEn": "From Joshinetsu Expwy Shinshu-Nakano IC via Route 292 (Olympic Road) / Direct Nagaden bus from JR Nagano Sta. east exit",
+    "officialUrl": "https://www.shigakogen-ski.or.jp/",
+    "sources": [
+      "https://www.shigakogen-ski.or.jp/",
+      "https://www.shigakogen-ski.or.jp/access/index.html"
+    ],
+    "notes": "エリア全体（志賀高原索道協会・全エリア）の値。lifts=公式トップ『リフト運行・ゲレンデ情報』の4エリア掲載リフト数の合計（10+18+6+12）。courses=エリア全体の公式総数が確認できずnull（tenkiはスキー場別のみ）"
+  },
+  "myoko": {
+    "courses": 16,
+    "lifts": 5,
+    "accessJa": "上信越道 妙高高原ICから約9分／えちごトキめき鉄道・しなの鉄道 妙高高原駅から車で約10分（路線バス約30分）",
+    "accessEn": "About 9 min from Joshinetsu Expwy Myoko-Kogen IC / About 10 min by car (30 min by local bus) from Myoko-Kogen Sta.",
+    "officialUrl": "https://www.princehotels.co.jp/ski/myoko/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/myoko/winter/",
+      "https://www.princehotels.co.jp/ski/myoko/winter/coursemap/",
+      "https://www.princehotels.co.jp/ski/myoko/winter/access/"
+    ],
+    "notes": "アクセスは公式アクセスページの案内図（画像）から読み取り"
+  },
+  "naeba": {
+    "courses": 24,
+    "lifts": 12,
+    "accessJa": "JR越後湯沢駅からタクシー（宿泊者は無料シャトルバス）",
+    "accessEn": "Taxi from JR Echigo-Yuzawa Sta. (free shuttle bus for hotel guests)",
+    "officialUrl": "https://www.princehotels.co.jp/ski/naeba/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/naeba/winter/",
+      "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/",
+      "https://www.princehotels.co.jp/naeba/access/",
+      "https://tenki.jp/season/ski/4/18/13114/information.html",
+      "https://surfsnow.jp/guide/htm/r0047gc1.htm"
+    ],
+    "notes": "公式アクセスページに車の所要時間・ICの記載なし（冬期急行バス・路線バスは未発表）。courses/liftsは公式・tenki・surfsnow一致"
+  },
+  "karuizawa": {
+    "courses": 14,
+    "lifts": 8,
+    "accessJa": "北陸新幹線 軽井沢駅南口から徒歩約10分（タクシー約2分・無料シャトルバスあり）",
+    "accessEn": "About 10 min walk from Karuizawa Sta. south exit on the Hokuriku Shinkansen (2 min by taxi; free shuttle bus)",
+    "officialUrl": "https://www.princehotels.co.jp/ski/karuizawa/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/karuizawa/winter/",
+      "https://www.princehotels.co.jp/ski/karuizawa/winter/coursemap/",
+      "https://www.princehotels.co.jp/ski/karuizawa/winter/access/",
+      "https://tenki.jp/season/ski/3/23/14109/information.html",
+      "https://surfsnow.jp/guide/htm/r0129gc1.htm"
+    ],
+    "notes": "公式アクセスページに車ルートの記載なし（駐車場案内のみ）"
+  },
+  "zao": {
+    "courses": 12,
+    "lifts": null,
+    "accessJa": "東北中央道 山形上山ICから県道21号経由／JR山形駅からバスで約40分",
+    "accessEn": "From Tohoku-Chuo Expwy Yamagata-Kaminoyama IC via Pref. Road 21 / About 40 min by bus from JR Yamagata Sta.",
+    "officialUrl": "https://zaomountainresort.com/ski/",
+    "sources": [
+      "https://zaomountainresort.com/ski/",
+      "https://zaomountainresort.com/parking/",
+      "https://tenki.jp/season/ski/2/9/15191/information.html"
+    ],
+    "notes": "courses=公式『ゲレンデ数14・コース数12』のコース数（tenkiは26本と集計方法が異なる）。lifts=公式運行状況一覧は26行だがA・B線の扱いが不明、tenki 32基のみで一致ソースなくnull"
+  },
+  "washigatake": {
+    "courses": 13,
+    "lifts": 4,
+    "accessJa": "東海北陸道 高鷲ICから約3km・約5分",
+    "accessEn": "About 3 km / 5 min from Tokai-Hokuriku Expwy Takasu IC",
+    "officialUrl": "https://ski.washigatake.jp/",
+    "sources": [
+      "https://ski.washigatake.jp/about/",
+      "https://ski.washigatake.jp/",
+      "https://tenki.jp/season/ski/5/24/15625/information.html",
+      "https://surfsnow.jp/guide/htm/r0224gc1.htm"
+    ],
+    "notes": "courses=公式『全部で13コース』（ホワイトピアたかすとの共通券で26コース）。lifts=公式に総数記載なく、tenki・surfsnowとも4基（クワッド3・ペア1）で一致"
+  },
+  "okuibuki": {
+    "courses": 13,
+    "lifts": 9,
+    "accessJa": "車で名古屋から約50分・京都から約80分・大阪から約100分／JR米原駅から直行シャトルバス（毎日運行）",
+    "accessEn": "By car about 50 min from Nagoya, 80 min from Kyoto, 100 min from Osaka / Daily direct shuttle bus from JR Maibara Sta.",
+    "officialUrl": "https://www.okuibuki.co.jp/",
+    "sources": [
+      "https://www.okuibuki.co.jp/gelande/",
+      "https://www.okuibuki.co.jp/access/",
+      "https://surfsnow.jp/guide/htm/r0244gc1.htm",
+      "https://tenki.jp/season/ski/6/28/15635/information.html"
+    ],
+    "notes": "courses=公式ゲレンデ情報のコース一覧（初級4・中級6・上級3、キッズパーク除く）でsurfsnowと一致（tenkiは14本）。lifts=公式リフト一覧（パラダイスペアA・B線を2基、動く歩道2本を除く）でtenki・surfsnowの9基と一致"
+  },
+  "tambara": {
+    "courses": 8,
+    "lifts": 6,
+    "accessJa": "関越道 沼田ICから約30分／JR沼田駅から無料シャトルバス（要予約・期間限定）",
+    "accessEn": "About 30 min from Kan-Etsu Expwy Numata IC / Free shuttle bus from JR Numata Sta. (reservation required, limited period)",
+    "officialUrl": "https://www.tambara.co.jp/winter/",
+    "sources": [
+      "https://www.tambara.co.jp/winter/",
+      "https://www.tambara.co.jp/winter/access/train/",
+      "https://tenki.jp/season/ski/3/13/14114/information.html"
+    ],
+    "notes": "courses/lifts=公式トップの運行状況表示（リフト0/6・コース0/8）。tenkiも8本・6基で一致（surfsnowはリフト5基）"
+  },
+  "marunuma": {
+    "courses": null,
+    "lifts": null,
+    "accessJa": "関越道 沼田ICから約50分／バスタ新宿から直行バス「かたしなスノーエクスプレス号」（鎌田まで、期間運行）",
+    "accessEn": "About 50 min from Kan-Etsu Expwy Numata IC / Seasonal direct bus Katashina Snow Express from Busta Shinjuku (to Kamata)",
+    "officialUrl": "https://www.marunuma.jp/winter/",
+    "sources": [
+      "https://www.marunuma.jp/winter/access/",
+      "https://www.marunuma.jp/winter/course-map/",
+      "https://tenki.jp/season/ski/3/13/14113/information.html"
+    ],
+    "notes": "公式にコース数・リフト数の記載なし（運行状況はJS表示）。tenkiは12本・8基だがsurfsnowに掲載なく、他の補助ソースも11〜13本・8〜9基とばらつくためnull"
+  },
+  "hunter": {
+    "courses": 12,
+    "lifts": 6,
+    "accessJa": "東北道 西那須野塩原ICから国道400号・日塩もみじライン経由で約29km／JR那須塩原駅・宇都宮駅から無料シャトルバス（完全予約制）",
+    "accessEn": "About 29 km from Tohoku Expwy Nishinasuno-Shiobara IC via Route 400 and Nichien Momiji Line / Free shuttle bus (reservation only) from JR Nasushiobara or Utsunomiya Sta.",
+    "officialUrl": "https://www.hunter.co.jp/winter/",
+    "sources": [
+      "https://www.hunter.co.jp/winter/",
+      "https://www.hunter.co.jp/winter/access/",
+      "https://tenki.jp/season/ski/3/12/14407/information.html",
+      "https://surfsnow.jp/guide/htm/r0067gc1.htm"
+    ],
+    "notes": "courses=公式『全12コース』。lifts=公式運行状況表示『リフト0/6』、tenki・surfsnowも6基で一致"
+  },
+  "tateyama": {
+    "courses": 8,
+    "lifts": null,
+    "accessJa": "北陸道 立山ICから約25分／富山地方鉄道 立山駅からバス約10分（冬季のみ）",
+    "accessEn": "About 25 min from Hokuriku Expwy Tateyama IC / About 10 min by bus from Toyama Chiho Railway Tateyama Sta. (winter only)",
+    "officialUrl": "https://www.tateyama36.co.jp/",
+    "sources": [
+      "https://www.tateyama36.co.jp/course/",
+      "https://www.tateyama36.co.jp/access/",
+      "https://tenki.jp/season/ski/4/19/15844/information.html"
+    ],
+    "notes": "らいちょうバレー＋極楽坂の2エリア合計。courses=公式ゲレンデ紹介のコース番号1〜8（パラダイスゲレンデは上部・下部で1番号。tenkiは7本）。lifts=公式記載なく、tenki(7基)のみでnull。アクセスは公式案内図（画像）から読み取り"
+  },
+  "appi": {
+    "courses": 21,
+    "lifts": 6,
+    "accessJa": "盛岡駅から東北道経由で約1時間／JR盛岡駅から花輪線で安比高原駅まで約1時間",
+    "accessEn": "About 1h from Morioka via Tohoku Expwy / About 1h from JR Morioka Sta. to Appi-Kogen Sta. on the JR Hanawa Line",
+    "officialUrl": "https://www.appi.co.jp/snow-mountain-resort/",
+    "sources": [
+      "https://www.appi.co.jp/snow-mountain-resort/course/",
+      "https://www.appi.co.jp/snow-mountain-resort/info/",
+      "https://www.appi.co.jp/snow-mountain-resort/access/",
+      "https://tenki.jp/season/ski/2/6/12115/information.html",
+      "https://surfsnow.jp/guide/htm/r0226gc1.htm"
+    ],
+    "notes": "courses=公式21（tenki・surfsnowも21）。lifts=公式『今シーズン運行するリフトは6基』（レギュラーシーズン通常運行6基）。tenki・surfsnowは設備数8基"
+  },
+  "inawashiro": {
+    "courses": 18,
+    "lifts": null,
+    "accessJa": "磐越道 猪苗代磐梯高原ICから／JR猪苗代駅から無料シャトルバス",
+    "accessEn": "From Ban-etsu Expwy Inawashiro-Bandai-Kogen IC / Free shuttle bus from JR Inawashiro Sta.",
+    "officialUrl": "https://www.inawashiro-ski.com/",
+    "sources": [
+      "https://www.inawashiro-ski.com/gelande/",
+      "https://www.inawashiro-ski.com/access/",
+      "https://tenki.jp/season/ski/2/10/12507/information.html",
+      "https://surfsnow.jp/guide/htm/r0944gc1.htm"
+    ],
+    "notes": "courses=公式コース情報No.1〜18（tenki・surfsnowも18）。lifts=公式記載なく、tenki(9基)のみでsurfsnowは記載なし→null。ICからの所要時間は公式記載なし"
+  },
+  "kuju": {
+    "courses": null,
+    "lifts": 3,
+    "accessJa": "大分道 九重ICから四季彩ロード経由（福岡方面から約2時間）／JR豊後中村駅から無料送迎バス（完全予約制）",
+    "accessEn": "From Oita Expwy Kokonoe IC via Shikisai Road (about 2h from Fukuoka) / Free shuttle bus from JR Bungo-Nakamura Sta. (reservation required)",
+    "officialUrl": "https://www.kujyuski.co.jp/",
+    "sources": [
+      "https://www.kujyuski.co.jp/lift",
+      "https://www.kujyuski.co.jp/facility/access",
+      "https://tenki.jp/season/ski/9/47/19302/information.html"
+    ],
+    "notes": "lifts=公式で第一・第二・第三リフトの3基に言及、tenkiも3基で一致（スノーエスカレーター除く）。courses=公式にコース総数の記載なし（tenki 6本のみ）→null"
+  },
+  "hakuba_goryu": {
+    "courses": null,
+    "lifts": 12,
+    "accessJa": "JR長野駅からバスで約1時間15分（エスカルプラザ・白馬五竜下車）／JR神城駅から無料シャトルバス",
+    "accessEn": "About 1h15m by bus from JR Nagano Sta. (Escal Plaza / Hakuba Goryu stop) / Free shuttle bus from JR Kamishiro Sta.",
+    "officialUrl": "https://www.hakubagoryu.jp/",
+    "sources": [
+      "https://www.hakubagoryu.jp/?season=winter",
+      "https://www.hakubagoryu.jp/ski/gelande/course-map/",
+      "https://www.hakubagoryu.jp/ski/gelande/lift-and-gondola-status/",
+      "https://www.hakubagoryu.jp/getting-here/",
+      "https://tenki.jp/season/ski/3/23/15135/information.html"
+    ],
+    "notes": "lifts=公式運行状況のアルプス平/とおみ・いいもり掲載リフト（アルプス第2・第4ペアを2基として計12基、早朝・ナイター重複行除く）でtenki 12基と一致。courses=公式は『白馬五竜＆Hakuba47で全24コース』表記のみで五竜単独の総数が不明確（コースガイド掲載17件、tenki16本）→null。公式アクセスページに車ルートの具体的記載なし"
+  },
+  "hakuba_iwatake": {
+    "courses": 26,
+    "lifts": 8,
+    "accessJa": "上信越道 長野ICから約60分／JR白馬駅から無料シャトルバス（期間限定）",
+    "accessEn": "About 60 min from Joshinetsu Expwy Nagano IC / Free shuttle bus from JR Hakuba Sta. (limited period)",
+    "officialUrl": "https://iwatake-mountain-resort.com/",
+    "sources": [
+      "https://iwatake-mountain-resort.com/access/",
+      "https://tenki.jp/season/ski/3/23/15132/information.html",
+      "https://surfsnow.jp/guide/htm/r0143gc1.htm"
+    ],
+    "notes": "公式のコース・リフト状況はJS表示で総数を取得できず。courses/liftsはtenki・surfsnowとも26本・8基（ゴンドラ1・クワッド1・ペア6）で一致"
+  },
+  "hakuba47": {
+    "courses": 8,
+    "lifts": 6,
+    "accessJa": "長野道 安曇野IC・上信越道 長野IC・北陸道 糸魚川ICから各約1時間（白馬へ）／JR長野駅から長野-白馬線バスで約1時間",
+    "accessEn": "About 1h to Hakuba from Nagano Expwy Azumino IC, Joshinetsu Expwy Nagano IC or Hokuriku Expwy Itoigawa IC / About 1h by Nagano-Hakuba bus from JR Nagano Sta.",
+    "officialUrl": "https://hakuba47.co.jp/",
+    "sources": [
+      "https://hakuba47.co.jp/en/getting-here",
+      "https://www.hakubagoryu.jp/ski/gelande/course-map/",
+      "https://www.hakubagoryu.jp/ski/gelande/lift-and-gondola-status/",
+      "https://tenki.jp/season/ski/3/23/15174/information.html",
+      "https://surfsnow.jp/guide/htm/r0061gc1.htm"
+    ],
+    "notes": "courses=五竜公式コースガイドのHakuba47ルート1〜8、tenki・surfsnowも8本で一致。lifts=五竜公式運行状況のHakuba47（ゴンドラLine-8、ペアLine-A.B、クワッドLine-C、ペアLine-D、高速ペアLine-E）でA・Bを2基として6基、tenkiも6基で一致"
+  },
+  "hakuba_cortina": {
+    "courses": 16,
+    "lifts": 6,
+    "accessJa": null,
+    "accessEn": null,
+    "officialUrl": "https://www.nori-cor.com/",
+    "sources": [
+      "https://www.nori-cor.com/",
+      "https://tenki.jp/season/ski/3/23/15172/information.html",
+      "https://surfsnow.jp/guide/htm/r0033gc1.htm"
+    ],
+    "notes": "公式は白馬乗鞍温泉と共同の『HAKUBA NORTH』サイト（2スキー場合計でリフト15基・30コース）。lifts=公式運行状況のコルチナ第1〜第6リフト6基、tenki・surfsnowも6基で一致。courses=公式単独数なし、tenki・surfsnowとも16本で一致。アクセス=公式に住所・駐車場のみで経路記載なし（ホテルグリーンプラザ公式は調査時メンテナンス中）→null"
+  },
+  "tsugaike": {
+    "courses": 10,
+    "lifts": null,
+    "accessJa": "JR白馬駅から路線バス（白馬駅-白馬八方-栂池高原）／JR長野駅から特急バス（長野-白馬・栂池高原）",
+    "accessEn": "Local bus from JR Hakuba Sta. (Hakuba Sta.-Happo-Tsugaike Kogen) / Express bus from JR Nagano Sta. (Nagano-Hakuba/Tsugaike Kogen)",
+    "officialUrl": "https://www.tsugaike.gr.jp/",
+    "sources": [
+      "https://www.tsugaike.gr.jp/gelande",
+      "https://www.tsugaike.gr.jp/access",
+      "https://tenki.jp/season/ski/3/23/15131/information.html"
+    ],
+    "notes": "courses=公式『コース数10コース』（tenkiは11本）。lifts=公式ページに総数の表示なし（リフト一覧はHTMLコメント内の非表示データのため不採用）、tenki 18基のみ→null。公式アクセスに車の所要時間記載なし"
+  },
+  "tomamu": {
+    "courses": 29,
+    "lifts": 6,
+    "accessJa": "JR石勝線 トマム駅（特急のみ停車）から無料送迎バスで約5〜10分",
+    "accessEn": "About 5-10 min by free shuttle from JR Tomamu Sta. (limited express only)",
+    "officialUrl": "https://www.snowtomamu.jp/winter/",
+    "sources": [
+      "https://www.snowtomamu.jp/winter/",
+      "https://www.snowtomamu.jp/winter/access/",
+      "https://tenki.jp/season/ski/1/1/11724/information.html",
+      "https://surfsnow.jp/guide/htm/r0274gc1.htm"
+    ],
+    "notes": "courses=公式『コース数29』（tenki・surfsnowも29）。lifts=公式に総数記載なく、tenki・surfsnowとも6基（ゴンドラ1・クワッド3・ペア2）で一致。公式アクセスに車の所要時間記載なし"
+  },
+  "kiroro": {
+    "courses": 24,
+    "lifts": 9,
+    "accessJa": "札樽道 朝里ICから道道1号・国道393号経由／JR小樽駅からタクシー約40分",
+    "accessEn": "From Sasson Expwy Asari IC via Pref. Road 1 and Route 393 / About 40 min by taxi from JR Otaru Sta.",
+    "officialUrl": "https://www.kiroro.co.jp/ja/",
+    "sources": [
+      "https://www.kiroro.co.jp/",
+      "https://www.kiroro.co.jp/ja/access-winter/",
+      "https://tenki.jp/season/ski/1/2/11710/information.html"
+    ],
+    "notes": "courses/lifts=公式サイトの運行状況表示（Lift Open 0/9・Trail Open 0/24）。tenkiは23本・10基で差異あり"
+  },
+  "zao_raiza": {
+    "courses": 6,
+    "lifts": null,
+    "accessJa": "山形新幹線 かみのやま温泉駅から無料シャトルバス「ホワイトエコー号」で約30分（1日2往復）",
+    "accessEn": "About 30 min by free White Echo shuttle bus from Kaminoyama-Onsen Sta. on the Yamagata Shinkansen (2 round trips/day)",
+    "officialUrl": "https://www.zaoliza.co.jp/wntr/",
+    "sources": [
+      "https://www.zaoliza.co.jp/wntr/slope/",
+      "https://www.zaoliza.co.jp/wntr/access/",
+      "https://tenki.jp/season/ski/2/9/12543/information.html"
+    ],
+    "notes": "courses=公式ゲレンデ情報の滑走コース（中央・かもしか・パノラマ・うさぎ・青い鳥・お清水。クロスカントリーコース除く）でtenki 6本と一致。lifts=公式記載なく、tenki(3基)のみ→null。所要時間はシャトル時刻表（かみのやま温泉観光案内所前9:20発→ライザ9:51着）から。公式に車ルート記載なし"
+  },
+  "gala_yuzawa": {
+    "courses": 16,
+    "lifts": 11,
+    "accessJa": "関越道 湯沢ICから約3km・約5分／JR越後湯沢駅から無料シャトルバス約10分",
+    "accessEn": "About 3 km / 5 min from Kan-Etsu Expwy Yuzawa IC / About 10 min by free shuttle bus from JR Echigo-Yuzawa Sta.",
+    "officialUrl": "https://gala.co.jp/",
+    "sources": [
+      "https://gala.co.jp/",
+      "https://gala.co.jp/winter/gelande/",
+      "https://tenki.jp/season/ski/4/18/13155/information.html",
+      "https://surfsnow.jp/guide/htm/r0001gc1.htm"
+    ],
+    "notes": "courses/lifts=公式ゲレンデ情報『リフト11基・コース本数16本（北6・中央5・南4・下山1）』、tenkiも16本・11基。注意：公式ニュースで2026-27シーズンは南エリア営業休止と告知あり"
+  },
+  "ishiuchi_maruyama": {
+    "courses": 27,
+    "lifts": 13,
+    "accessJa": "関越道 塩沢石打ICから国道17号で約5分／JR越後湯沢駅から無料シャトルバス・タクシーで約10分",
+    "accessEn": "About 5 min via Route 17 from Kan-Etsu Expwy Shiozawa-Ishiuchi IC / About 10 min by free shuttle bus or taxi from JR Echigo-Yuzawa Sta.",
+    "officialUrl": "https://ishiuchi.or.jp/winter/",
+    "sources": [
+      "https://ishiuchi.or.jp/winter/ski/lift-course/",
+      "https://ishiuchi.or.jp/winter/access/",
+      "https://surfsnow.jp/guide/htm/r0788gc1.htm"
+    ],
+    "notes": "courses=公式リフト・コース情報のコースNo.1〜27（tenki・surfsnowは23本で集計差あり）。lifts=公式リフト一覧A-1〜C-4（C-2/C-3を2基）で13基、surfsnowも13基で一致（tenkiは14基）"
+  },
+  "iwappara": {
+    "courses": 20,
+    "lifts": 9,
+    "accessJa": "関越道 湯沢IC（最寄りIC）から／JR越後湯沢駅東口から無料送迎バス",
+    "accessEn": "From Kan-Etsu Expwy Yuzawa IC (nearest) / Free shuttle bus from JR Echigo-Yuzawa Sta. east exit",
+    "officialUrl": "https://www.iwa-ppara.com/",
+    "sources": [
+      "https://www.iwa-ppara.com/",
+      "https://www.iwa-ppara.com/gelande/",
+      "https://www.iwa-ppara.com/access/",
+      "https://tenki.jp/season/ski/4/18/13113/information.html",
+      "https://surfsnow.jp/guide/htm/r0298gc1.htm"
+    ],
+    "notes": "courses=公式『全20コース』（tenki・surfsnowも20）。lifts=公式に総数記載なく、tenki・surfsnowとも9基（クワッド2・ペア7）で一致。公式アクセスにICからの所要時間記載なし"
+  },
+  "kagura": {
+    "courses": 30,
+    "lifts": 16,
+    "accessJa": "関越道 湯沢ICから国道17号で約10分（みつまたステーション）／JR越後湯沢駅から路線バス約18分",
+    "accessEn": "About 10 min via Route 17 from Kan-Etsu Expwy Yuzawa IC (Mitsumata Station) / About 18 min by bus from JR Echigo-Yuzawa Sta.",
+    "officialUrl": "https://www.princehotels.co.jp/ski/kagura/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/kagura/winter/",
+      "https://www.princehotels.co.jp/ski/kagura/winter/coursemap/",
+      "https://www.princehotels.co.jp/ski/kagura/winter/access/"
+    ],
+    "notes": "courses=公式スペック30（同ページの運行状況表示は『コース0/29』、tenki・surfsnowは32で差異あり）。lifts=公式16（tenki19・surfsnow16）。アクセスは公式案内図（画像）から読み取り"
+  },
+  "nekoma_mountain": {
+    "courses": 33,
+    "lifts": 13,
+    "accessJa": "磐越道の最寄りICから約15分（南エリア）／JR会津若松駅から路線バス約45分・JR郡山駅から有料シャトルバス（要予約）",
+    "accessEn": "About 15 min from the nearest Ban-etsu Expwy IC (South Area) / About 45 min by local bus from JR Aizu-Wakamatsu Sta.; paid shuttle bus from JR Koriyama Sta. (reservation required)",
+    "officialUrl": "https://www.nekoma.co.jp/",
+    "sources": [
+      "https://www.nekoma.co.jp/",
+      "https://www.nekoma.co.jp/liftguide/",
+      "https://www.nekoma.co.jp/access/",
+      "https://tenki.jp/season/ski/2/10/12553/information.html",
+      "https://surfsnow.jp/guide/htm/r0275gc1.htm"
+    ],
+    "notes": "courses/lifts=公式『リフト数13・コース数33』で南北エリア（旧アルツ磐梯＋旧猫魔）全体の値。tenki・surfsnowも33本・13基で一致。公式アクセスはIC名を明記せず『最寄りICから約15分』の表記"
+  },
+  "grandeco": {
+    "courses": 11,
+    "lifts": 4,
+    "accessJa": "磐越道 猪苗代磐梯高原ICから車で約30分／JR猪苗代駅から無料シャトルバス",
+    "accessEn": "About 30 min by car from Ban-etsu Expwy Inawashiro-Bandai-Kogen IC / Free shuttle bus from JR Inawashiro Sta.",
+    "officialUrl": "https://grandecoresort.co.jp/snow/",
+    "sources": [
+      "https://grandecoresort.co.jp/snow/",
+      "https://grandecoresort.co.jp/snow/course/",
+      "https://tenki.jp/season/ski/2/10/12552/information.html"
+    ],
+    "notes": "lifts=公式ゴンドラ・リフト状況（ゴンドラ1・クワッド3）、tenkiも4基で一致。courses=公式コース状況の掲載11コース（パーク除く、Hotel Road・Road To Powderを含む。tenkiは10本）"
+  },
+  "kawaba": {
+    "courses": 11,
+    "lifts": 5,
+    "accessJa": "関越道 練馬ICから車で約2時間（沼田ICから最も近いスキー場）／上毛高原駅からシャトルバス付きプランあり",
+    "accessEn": "About 2h by car from Kan-Etsu Expwy Nerima IC (closest resort to Numata IC) / Shuttle-bus plans from Jomo-Kogen Sta.",
+    "officialUrl": "https://www.kawaba.co.jp/",
+    "sources": [
+      "https://www.kawaba.co.jp/",
+      "https://www.kawaba.co.jp/access/",
+      "https://tenki.jp/season/ski/3/13/14135/information.html",
+      "https://surfsnow.jp/guide/htm/r0210gc1.htm"
+    ],
+    "notes": "公式にコース数・リフト数の明記なし（運行状況はJS表示）。tenki・surfsnowとも11本・5基（クワッド3・トリプル1・ペア1）で一致。公式アクセスの所要時間は表（画像/スクロール表）で本文テキストからは取得できず。アクセス所要時間は公式サイトのmeta description『関越・練馬ICから車で約2時間』より"
+  },
+  "manza": {
+    "courses": 14,
+    "lifts": 4,
+    "accessJa": "上信越道 碓氷軽井沢ICから鬼押ハイウェー・万座ハイウェー経由で約98分／JR万座・鹿沢口駅から西武観光バス約43分",
+    "accessEn": "About 98 min from Joshinetsu Expwy Usui-Karuizawa IC via Onioshi and Manza Highways / About 43 min by Seibu Kanko bus from JR Manza-Kazawaguchi Sta.",
+    "officialUrl": "https://www.princehotels.co.jp/ski/manza/winter/",
+    "sources": [
+      "https://www.princehotels.co.jp/ski/manza/winter/",
+      "https://www.princehotels.co.jp/ski/manza/winter/coursemap/",
+      "https://www.princehotels.co.jp/ski/manza/winter/access/"
+    ],
+    "notes": "courses/lifts=公式（surfsnowもコース14本で一致、tenkiは2本/1基で不一致のため不採用）。アクセスは公式案内図（画像）から読み取り"
+  },
+  "kusatsu": {
+    "courses": 5,
+    "lifts": 7,
+    "accessJa": "JR長野原草津口駅から路線バス／草津温泉街から無料シャトルバス（温泉街まで車で約5分）",
+    "accessEn": "Local bus from JR Naganohara-Kusatsuguchi Sta. / Free shuttle bus from Kusatsu Onsen town (about 5 min by car)",
+    "officialUrl": "https://www.932-onsen.com/winter",
+    "sources": [
+      "https://www.932-onsen.com/winter/course/",
+      "https://www.932-onsen.com/common/access/",
+      "https://tenki.jp/season/ski/3/13/14102/information.html"
+    ],
+    "notes": "courses/lifts=公式スペック『リフト数7本（ゴンドラ1・ペア4・クワッド2）、ゲレンデ数5、コース数5本』。tenkiはコース5本で一致（リフト6基）、surfsnowは10本（コース＋ゲレンデ合算とみられる）。注意：公式お知らせに『パルスゴンドラ天狗・クリスタル天 休業』（2026-10-27）あり"
+  },
+  "takasu": {
+    "courses": 13,
+    "lifts": null,
+    "accessJa": "東海北陸道 高鷲ICから約10分（ひるがの高原スマートICから約15分）",
+    "accessEn": "About 10 min from Tokai-Hokuriku Expwy Takasu IC (15 min from Hirugano-Kogen Smart IC)",
+    "officialUrl": "https://www.takasu.gr.jp/",
+    "sources": [
+      "https://www.takasu.gr.jp/gelande/",
+      "https://www.takasu.gr.jp/access/",
+      "https://tenki.jp/season/ski/5/24/15661/information.html",
+      "https://surfsnow.jp/guide/htm/r0212gc1.htm"
+    ],
+    "notes": "courses=公式エリア・コース紹介の13コース（パーク・ツリーラン除く）、tenkiも13本で一致。lifts=公式に総数記載なく、tenki 4基／surfsnow 6基（その他2基含む）で不一致→null"
+  },
+  "dynaland": {
+    "courses": 18,
+    "lifts": 5,
+    "accessJa": "東海北陸道 高鷲ICから約10分（ひるがの高原スマートICから約15分）",
+    "accessEn": "About 10 min from Tokai-Hokuriku Expwy Takasu IC (15 min from Hirugano-Kogen Smart IC)",
+    "officialUrl": "https://www.dynaland.co.jp/",
+    "sources": [
+      "https://www.dynaland.co.jp/",
+      "https://www.dynaland.co.jp/access/",
+      "https://tenki.jp/season/ski/5/24/15624/information.html",
+      "https://surfsnow.jp/guide/htm/r0231gc1.htm"
+    ],
+    "notes": "courses=公式『全18コース』（tenkiも18、surfsnowは20）。lifts=公式に総数記載なく、tenki・surfsnowとも5基（クワッド3・ペア2）で一致"
+  },
+  "rokko": {
+    "courses": null,
+    "lifts": null,
+    "accessJa": "車で神戸から約35分・大阪市内から約60分／六甲ケーブル山上駅から六甲山上バス「スノーパーク前」下車徒歩約1分",
+    "accessEn": "About 35 min by car from Kobe, 60 min from central Osaka / Rokko Sanjo bus from Rokko Cable Sanjo Sta. to Snow Park-mae stop, 1 min walk",
+    "officialUrl": "https://www.rokkosan.com/ski/",
+    "sources": [
+      "https://www.rokkosan.com/ski/ski_access/",
+      "https://tenki.jp/season/ski/6/31/10129/information.html"
+    ],
+    "notes": "公式にコース数・リフト数の記載なし。tenki(2本・3基)のみでsurfsnowに数値なし→null"
+  },
+  "skijam_katsuyama": {
+    "courses": 12,
+    "lifts": 6,
+    "accessJa": "中部縦貫道 勝山ICから約20分／えちぜん鉄道 勝山駅から無料シャトルバス（JR福井駅からは宿泊者専用送迎バス）",
+    "accessEn": "About 20 min from Chubu-Jukan Expwy Katsuyama IC / Free shuttle bus from Echizen Railway Katsuyama Sta. (hotel-guest shuttle from JR Fukui Sta.)",
+    "officialUrl": "https://jamresort.jp/",
+    "sources": [
+      "https://jamresort.jp/",
+      "https://jamresort.jp/activity-white/course-guide/",
+      "https://jamresort.jp/access/",
+      "https://tenki.jp/season/ski/4/21/15810/information.html",
+      "https://surfsnow.jp/guide/htm/r0019gc1.htm"
+    ],
+    "notes": "courses=公式ゲレンデデータ『コース数12本』（別途ツリーラン3エリア。公式トップは『ツリーランエリアを含む全15コース』表記、tenki・surfsnowは16本）。lifts=公式『ペア2基・トリプル1基・クワッド3基』計6基でtenki・surfsnowと一致"
+  },
+  "sapporo_kokusai": {
+    "courses": 7,
+    "lifts": 4,
+    "accessJa": "札幌駅エリアから直行バス「国際スキー場ダイレクト便」で約80分（予約制）／札幌市内・定山渓・小樽からスキーバスあり",
+    "accessEn": "About 80 min by direct bus from the Sapporo Sta. area (reservation required) / Ski buses from central Sapporo, Jozankei and Otaru",
+    "officialUrl": "https://www.sapporo-kokusai.jp/",
+    "sources": [
+      "https://www.sapporo-kokusai.jp/slopes/",
+      "https://www.sapporo-kokusai.jp/access/",
+      "https://tenki.jp/season/ski/1/2/11705/information.html"
+    ],
+    "notes": "courses=公式『全7コース』（そり用スペース除く）、tenkiも7本。lifts=公式リフト運行情報（スカイキャビン8・メルヘンクワッド・エコークワッド・ウッディーペア）の4基（スノーエスカレーター除く）、tenkiも4基で一致。公式アクセスページは車ルートの記載なし（バスのみ）"
+  },
+  "sapporo_teine": {
+    "courses": 15,
+    "lifts": 10,
+    "accessJa": "札樽道 手稲ICから約7分（白樺ゲレンデ）／JR手稲駅からJR北海道バスで約16分",
+    "accessEn": "About 7 min from Sasson Expwy Teine IC (Shirakaba slope) / About 16 min by JR Hokkaido Bus from JR Teine Sta.",
+    "officialUrl": "https://sapporo-teine.com/snow/",
+    "sources": [
+      "https://sapporo-teine.com/snow/",
+      "https://sapporo-teine.com/snow/access/by-car",
+      "https://sapporo-teine.com/snow/access/other",
+      "https://tenki.jp/season/ski/1/2/11706/information.html",
+      "https://surfsnow.jp/guide/htm/r0065gc1.htm"
+    ],
+    "notes": "courses=公式『全15コース』（ハイランド7・オリンピア8）。lifts=公式に総数記載なく、tenki・surfsnowとも10基（ゴンドラ1・クワッド1・トリプル1・ペア7）で一致"
+  },
+  "niseko_hanazono": {
+    "courses": 12,
+    "lifts": 4,
+    "accessJa": "新千歳空港から空港シャトルバス約2.5〜3.5時間／JR倶知安駅からタクシーまたはバス＋無料HANAZONOシャトル",
+    "accessEn": "Airport shuttle bus from New Chitose Airport approx. 2.5-3.5h / Taxi or bus + free HANAZONO shuttle from JR Kutchan Sta.",
+    "officialUrl": "https://hanazononiseko.com/ja",
+    "sources": [
+      "https://hanazononiseko.com/ja/winter/resort/courses",
+      "https://hanazononiseko.com/ja/winter/resort/access",
+      "https://www.niseko.ne.jp/ja/map/hanazono/"
+    ],
+    "notes": "lifts=ニセコユナイテッド公式のリフトスペック表の掲載数（第1リフト・第2クワッド・第3クワッド・シンフォニーゴンドラ）"
+  },
+  "niseko_grand_hirafu": {
+    "courses": 22,
+    "lifts": null,
+    "accessJa": "札幌から中山峠経由で約2時間／新千歳空港からJR・バスで約3時間30分（JR倶知安駅からバス・タクシー）",
+    "accessEn": "About 2h by car from Sapporo via Nakayama Pass / About 3.5h from New Chitose Airport by JR + bus (bus or taxi from JR Kutchan Sta.)",
+    "officialUrl": "https://www.grand-hirafu.jp/",
+    "sources": [
+      "https://www.grand-hirafu.jp/snow/maps/",
+      "https://www.grand-hirafu.jp/snow/access/",
+      "https://surfsnow.jp/guide/htm/r0148gc1.htm",
+      "https://tenki.jp/season/ski/1/2/11708/information.html",
+      "https://www.niseko.ne.jp/ja/map/grand-hirafu/"
+    ],
+    "notes": "courses=22は公式・surfsnow・tenki一致。lifts=null：公式ゲレンデガイドは『ゴンドラ9基』と表記（ラベル不明瞭）、ニセコユナイテッド公式のリフト表は11行、tenki 11基、surfsnow 9基と不一致のため未確定"
+  },
+  "zao_sarukura": {
+    "courses": 6,
+    "lifts": null,
+    "accessJa": "山形道 山形蔵王ICから国道13号・蔵王エコーライン経由（仙台から約1時間40分）／山形新幹線 かみのやま温泉駅から無料シャトルバス",
+    "accessEn": "From Yamagata Expwy Yamagata-Zao IC via Route 13 and Zao Echo Line (about 1h40m from Sendai) / Free shuttle bus from Kaminoyama-Onsen Sta. on the Yamagata Shinkansen",
+    "officialUrl": "https://www.zao-sarukura.co.jp/",
+    "sources": [
+      "https://www.zao-sarukura.co.jp/gelande/index.html",
+      "https://www.zao-sarukura.co.jp/access/index.html",
+      "https://tenki.jp/season/ski/2/9/10196/information.html"
+    ],
+    "notes": "courses=公式コース情報No.1〜6、tenkiも6本で一致。lifts=公式に記載なく、tenki(2基)のみ→null"
+  }
+}
