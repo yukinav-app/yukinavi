@@ -88,7 +88,7 @@ def head(L, title, desc, canonical, alt_ja, alt_en, jsonld=None):
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}"><link rel="alternate" hreflang="ja" href="{alt_ja}"><link rel="alternate" hreflang="en" href="{alt_en}">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{canonical}"><meta property="og:site_name" content="YukiNavi"><meta property="og:image" content="{BASE}/og.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="{canonical}"><meta property="og:site_name" content="YukiNavi"><meta property="og:image" content="{BASE}/{"og-en.png" if L == "en" else "og.png"}"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Barlow+Condensed:wght@600&display=swap"><link rel="icon" href="{BASE}/icons/icon-192.png"><link rel="apple-touch-icon" href="{BASE}/icons/apple-touch-icon.png"><style>{CSS}</style>{ld}</head><body>
 <header><div class="wrap"><a href="{BASE}/">YukiNavi</a></div></header><main class="wrap">"""
 
