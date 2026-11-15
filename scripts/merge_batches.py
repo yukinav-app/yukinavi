@@ -29,6 +29,25 @@ FIELDS = ["id", "lat", "lng", "nameJa", "nameEn", "prefJa", "prefEn", "region", 
           "terrain", "liftAdult", "liftStudent", "priceSeason", "english", "descJa", "descEn", "status"]
 
 
+NOT_OFFICIAL = ["surfsnow", "tenki.jp", "wikipedia", "kankou", "kanko", "seesaa", "weathernews", "snoway",
+                "snowjapan", "snow-japan", "gelanding", "prtimes", "x.com", "twitter", "sakigake", "skibumps", "yahoo",
+                "tabiris", "dmksnowboard", "kiniseko", "jalan", "navitime", "ski-gelende", "ameblo", "note.com",
+                "hatena", "livedoor", "fc2", "google", "facebook", "instagram", "youtube", "-np.co.jp", "nikkei",
+                "asahi", "chunichi", "nhk", "iko-yo", "rurubu", "snow-forecast", "snowforecast", "skiresort.info",
+                "japan-guide", "tripadvisor", "blog", "news", "shimbun", "minpo", "mainichi", "yomiuri", "kahoku",
+                "sankei", "jiji", "itmedia", "rakuten", "booking", "gnavi", "hotpepper", "tabelog", "powderhounds",
+                "liftopia", "japow", "hakubavalley", "openstreetmap", "skijapan", "travel", "tourism", "visit"]
+
+
+def official_url(urls):
+    from urllib.parse import urlparse
+    for u in urls or []:
+        host = urlparse(u).netloc.lower()
+        if host and not any(k in host for k in NOT_OFFICIAL):
+            return u
+    return None
+
+
 def km(a, b):
     r = 6371
     dlat, dlng = math.radians(b[0] - a[0]), math.radians(b[1] - a[1])
@@ -53,8 +72,11 @@ def main():
     excluded = set(json.load(open(_ov, encoding="utf-8")).get("exclude", [])) if os.path.exists(_ov) else set()
     closed_keys, added, unknown, problems = set(), 0, 0, []
 
+    batch_info = {}
     for path in sorted(glob.glob(os.path.join(DATA, "batches", "out_*.json"))):
+        checked = __import__("datetime").date.fromtimestamp(os.path.getmtime(path)).isoformat()
         for x in json.load(open(path, encoding="utf-8")):
+            batch_info[x.get("key")] = (official_url(x.get("sourceUrls")), checked)
             st = x.get("status")
             if st in ("closed", "notski", "merged"):
                 closed_keys.add(x.get("key"))
@@ -89,8 +111,16 @@ def main():
             r["flight"] = False
             r["status"] = "open"
             r["srcKey"] = x["key"]
+            r["officialUrl"], r["checkedAt"] = batch_info[x["key"]]
             resorts.append(r)
             added += 1
+
+    # 既に取り込み済みの調査結果にも公式URL・確認日を補う
+    for r in resorts:
+        if r.get("srcKey") in batch_info:
+            off, chk = batch_info[r["srcKey"]]
+            r.setdefault("officialUrl", off)
+            r.setdefault("checkedAt", chk)
 
     ov_path = os.path.join(DATA, "merge_overrides.json")
     if os.path.exists(ov_path):

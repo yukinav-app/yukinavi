@@ -289,6 +289,7 @@ main{padding-block:18px 24px;}
 .cta-card .cta-desc{font-size:12px;color:var(--text-muted);flex:1;}
 .cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;background:var(--accent);color:#fff;text-decoration:none;font-size:12.5px;font-weight:600;border-radius:8px;padding:8px 10px;}
 .cta-btn:hover{opacity:0.9;}
+.checked-at{font-size:12px;color:var(--text-muted);margin:-6px 0 10px;}
 .disclaimer{font-size:11.5px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:14px;margin-top:6px;}
 .empty{padding-block:40px;text-align:center;color:var(--text-muted);}
 </style>
@@ -597,6 +598,12 @@ const STRINGS = {
     stuSave:(n)=>`大人より ¥${n.toLocaleString()} お得`,
     adultDayLabel:"大人1日券",
     accessLabel:"アクセス",
+    cachedWeather:(d)=>`保存済みの天気（${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")}時点）`,
+    officialTitle:"公式サイト",
+    officialDesc:"今日の営業状況・リフト運行・最新のお知らせは公式でご確認ください。",
+    officialBtn:"公式サイトを開く",
+    officialSearchBtn:"公式サイトを検索",
+    checkedAtLabel:(d)=>`掲載情報の確認日：${d}（料金・標高・コース数など）`,
     coursesN:(n)=>`${n}コース`,
     liftsN:(n)=>`${n}基`,
     coursesLiftsLabel:"コース数 / リフト数",
@@ -746,6 +753,12 @@ const STRINGS = {
     stuSave:(n)=>`Save ¥${n.toLocaleString()} vs adult`,
     adultDayLabel:"Adult day pass",
     accessLabel:"Access",
+    cachedWeather:(d)=>`Saved weather (as of ${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,"0")})`,
+    officialTitle:"Official site",
+    officialDesc:"Check today's operating status, lift schedule and latest news on the official site.",
+    officialBtn:"Open official site",
+    officialSearchBtn:"Search official site",
+    checkedAtLabel:(d)=>`Info last checked: ${d} (prices, elevation, runs, etc.)`,
     coursesN:(n)=>`${n} runs`,
     liftsN:(n)=>`${n} lifts`,
     coursesLiftsLabel:"Runs / lifts",
@@ -1010,6 +1023,24 @@ function applyWeather(r, d){
     elevation: d.elevation!=null ? Math.round(d.elevation) : null,
   };
   r.liveWeather = true;
+  r.weatherCachedAt = null;
+}
+
+// 圏外でも直近の天気を見られるよう、取得した天気を端末に保存する
+const WX_KEY = "yukinavi_wx";
+function saveWeatherCache(){
+  try{
+    const o = {ts: Date.now(), wx: {}};
+    RESORTS.forEach(r=>{ if(r.weather && r.liveWeather) o.wx[r.id] = r.weather; });
+    localStorage.setItem(WX_KEY, JSON.stringify(o));
+  }catch(e){}
+}
+function loadWeatherCache(){
+  try{
+    const o = JSON.parse(localStorage.getItem(WX_KEY) || "null");
+    if(!o || Date.now() - o.ts > 3*86400000) return;
+    RESORTS.forEach(r=>{ if(!r.weather && o.wx[r.id]){ r.weather = o.wx[r.id]; r.weatherCachedAt = o.ts; } });
+  }catch(e){}
 }
 
 async function fetchWeatherBatch(list, useElev){
@@ -1042,6 +1073,7 @@ async function loadAllLiveWeather(){
   const withElev = list.filter(r=>r.base!=null && r.top!=null);
   const noElev = list.filter(r=>!(r.base!=null && r.top!=null));
   await Promise.all([fetchWeatherBatch(withElev,true), fetchWeatherBatch(noElev,false)]);
+  saveWeatherCache();
   render();
 }
 
@@ -1456,7 +1488,7 @@ function openDetail(id){
     <div class="info-cards">
       <div class="info-card"><div class="big num">${r.base!=null&&r.top!=null ? `${r.base}–${r.top}m` : "—"}</div><div class="label">${state.lang==="ja"?"標高（麓〜山頂）":"Elevation (base–top)"}</div></div>
       ${r.courses!=null||r.lifts!=null ? `<div class="info-card"><div class="big num">${r.courses!=null?t("coursesN")(r.courses):"—"} / ${r.lifts!=null?t("liftsN")(r.lifts):"—"}</div><div class="label">${t("coursesLiftsLabel")}</div></div>` : ""}
-      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+" ・ " : ""}${cond} ・ ${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
+      <div class="info-card"><div class="big">${weatherIcon(wx(r).condJa)} <span class="num">${nv(wx(r).tempC,"°C")}</span></div><div class="label">${r.weatherCachedAt ? `<span style="color:#C2410C">${t("cachedWeather")(new Date(r.weatherCachedAt))}</span><br>` : ""}${wx(r).elevation!=null ? t("tempAtLabel")(wx(r).elevation)+" ・ " : ""}${cond} ・ ${t("windLabel")} <span class="num">${nv(wx(r).wind,"km/h")}</span></div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snowYesterday,"cm")}</div><div class="label">${t("snowYesterdayLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).snow7d,"cm")}</div><div class="label">${t("snow7dLabel")}</div></div>
       <div class="info-card"><div class="big num">${nv(wx(r).depth,"cm")}</div><div class="label">${t("depthLabel")}</div></div>
@@ -1471,12 +1503,16 @@ function openDetail(id){
     <p style="margin-top:0;margin-bottom:20px;font-size:13.5px;color:var(--text-muted);">${englishText}</p>
     <div class="section-label">${state.lang==="ja"?"周辺サービスへ送客":"Connect to nearby services"}</div>
     <div class="cta-grid">
+      <div class="cta-card"><div class="cta-title">${icon("globe",16)} ${t("officialTitle")}</div><div class="cta-desc">${t("officialDesc")}</div>${r.officialUrl
+        ? `<a class="cta-btn" href="${safeUrl(r.officialUrl)}" target="_blank" rel="noopener">${t("officialBtn")}</a>`
+        : `<a class="cta-btn" href="https://www.google.com/search?q=${encodeURIComponent(r.nameJa+" 公式")}" target="_blank" rel="noopener">${t("officialSearchBtn")}</a>`}</div>
       <div class="cta-card"><div class="cta-title">${icon("pin",16)} ${t("placeTitle")}</div><div class="cta-desc">${t("placeDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/?api=1&query=${placeQuery}" target="_blank" rel="noopener">${t("placeBtn")}</a></div>
       <div class="cta-card"><div class="cta-title">${icon("hotel",16)} ${t("lodgingTitle")}</div><div class="cta-desc">${t("lodgingDesc")}</div><a class="cta-btn" href="https://travel.rakuten.co.jp/dosearch/?f_keyword=${lodgingQuery}" target="_blank" rel="noopener">${t("lodgingBtn")}</a></div>
       <div class="cta-card"><div class="cta-title">${icon("food",16)} ${t("foodTitle")}</div><div class="cta-desc">${t("foodDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/${foodQuery}" target="_blank" rel="noopener">${t("foodBtn")}</a></div>
       <div class="cta-card"><div class="cta-title">${icon("ski",16)} ${t("gearTitle")}</div><div class="cta-desc">${t("gearDesc")}</div><a class="cta-btn" href="https://search.rakuten.co.jp/search/mall/${gearQuery}/" target="_blank" rel="noopener">${t("gearBtn")}</a></div>
       <div class="cta-card"><div class="cta-title">${icon("onsen",16)} ${t("onsenTitle")}</div><div class="cta-desc">${t("onsenDesc")}</div><a class="cta-btn" href="https://www.google.com/maps/search/${onsenQuery}" target="_blank" rel="noopener">${t("onsenBtn")}</a></div>
     </div>
+    ${r.checkedAt ? `<div class="checked-at">${t("checkedAtLabel")(fmtDate(r.checkedAt))}</div>` : ""}
     <div class="disclaimer">${t("disclaimer")}</div>
   `;
   document.getElementById("overlay").hidden = false;
@@ -1688,7 +1724,7 @@ document.getElementById("mapLocate").innerHTML = icon("locate", 20);
 applyStaticText();
 setView("wizard");
 const resortsReady = loadResorts();
-resortsReady.then(()=>{ render(); loadAllLiveWeather(); });
+resortsReady.then(()=>{ loadWeatherCache(); render(); loadAllLiveWeather(); });
 Promise.all([resortsReady, loadAllResorts()]).then(()=>{ renderHeroStat(); buildMapPoints(); if(state.view==="map") renderMapLayer(); });
 loadDeals().then(()=>{ if(state.view==="deals") renderDeals(); });
 
