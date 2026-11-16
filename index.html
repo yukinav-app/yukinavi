@@ -380,6 +380,12 @@ ol.gear-list .gear-item::before{counter-increment:gear;content:counter(gear);fon
 .submit-hint:empty{display:none;}
 .wizard-submit:disabled{opacity:1;background:var(--surface-2);color:var(--text-muted);}
 @media (min-width:760px){.grid .card:nth-child(odd){border-right:1px solid var(--border);}}
+/* result card: weather line */
+.reco-place{margin-bottom:10px;}
+.reco-wx{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:0 0 14px;font-size:13px;color:var(--text);}
+.reco-wx .rw-now{display:inline-flex;align-items:center;gap:4px;font-weight:700;}
+.reco-wx .rw-now .num{font-size:15px;}
+.reco-wx .rw-asof{font-size:11.5px;color:var(--text-muted);}
 /* reco card v2 */
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 .reco-card{padding:22px 20px 18px;box-shadow:0 10px 30px -18px rgba(20,38,58,0.35);}
@@ -626,6 +632,7 @@ const ICONS = {
   pin:'<path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/>',
   sun:'<circle cx="12" cy="12" r="4.3"/><path d="M12 2.5v3M12 18.5v3M4.4 4.4l2.1 2.1M17.5 17.5l2.1 2.1M2.5 12h3M18.5 12h3M4.4 19.6l2.1-2.1M17.5 6.5l2.1-2.1"/>',
   cloud:'<path d="M7 18a4.3 4.3 0 1 1 .7-8.5A5.3 5.3 0 0 1 18 11a3.3 3.3 0 0 1-.4 7H7z"/>',
+  rain:'<path d="M7 15a4.3 4.3 0 1 1 .7-8.5A5.3 5.3 0 0 1 18 8a3.3 3.3 0 0 1-.4 7H7z"/><path d="M8.5 18l-1 2.5M12.5 18l-1 2.5M16.5 18l-1 2.5"/>',
   snow:'<path d="M12 2.5v19M4.3 7.2l15.4 9.6M19.7 7.2L4.3 16.8M2.5 12h19"/>',
   map:'<path d="M4 7c6-5 10 3 16-2v12c-6 5-10-3-16 2z"/>',
   backpack:'<path d="M8 8V6.3a4 4 0 0 1 8 0V8"/><rect x="5" y="8" width="14" height="13" rx="3"/><path d="M9 12.5h6M9 16h6"/>',
@@ -1583,7 +1590,7 @@ function nv(v, unit){ return v==null ? "—" : `${v}${unit||""}`; }
 function weatherIcon(condJa){
   if(!condJa) return "";
   if(condJa.includes("雪")||condJa.includes("みぞれ")||condJa.includes("Snow")||condJa.includes("Sleet")||condJa.includes("パウダー")||condJa.includes("Powder")) return icon("snow",18);
-  if(condJa.includes("雨")||condJa.includes("Rain")||condJa.includes("雷")||condJa.includes("Thunderstorm")) return icon("cloud",18);
+  if(condJa.includes("雨")||condJa.includes("Rain")||condJa.includes("雷")||condJa.includes("Thunderstorm")) return icon("rain",18);
   if(condJa.includes("曇")||condJa.includes("くもり")||condJa.includes("霧")||condJa.includes("Cloud")||condJa.includes("Fog")) return icon("cloud",18);
   return icon("sun",18);
 }
@@ -1702,8 +1709,9 @@ function initMap(){
   L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/hillshademap/{z}/{x}/{y}.png", {maxZoom:18, maxNativeZoom:16, opacity:0.28}).addTo(m);
   mapState.map = m;
   mapState.layer = L.layerGroup().addTo(m);
-  if(m.getContainer().clientWidth < 640) m.setView([37.6,138.5], 5.6);
-  else m.fitBounds([[31.0,129.6],[45.4,145.6]], {padding:[6,6]});
+  // 検索欄・フィルター（上）と件数表示（下）に隠れないよう、余白を取って全国のスキー場を収める
+  const topH = (document.querySelector(".map-top")?.offsetHeight || 90) + 20;
+  m.fitBounds([[33.0,130.9],[45.5,145.2]], {paddingTopLeft:[14, topH], paddingBottomRight:[14, 56]});
   m.on("moveend", renderMapLayer);
   m.on("click", closeMapPreview);
 }
@@ -2229,6 +2237,14 @@ function computeRanking(){
   return RESORTS.filter(r=>r.lat!=null && !r.winterClosed).map(r=>({r, s:scoreResort(r, pref, terrIdx(), isDayTrip)})).sort((a,b)=>b.s-a.s).map(x=>x.r);
 }
 
+// 診断結果：現地の天気と、7日間の雪予報を1行で
+function recoWeatherLine(r){
+  const w = wx(r);
+  if(w.tempC==null) return "";
+  const cond = state.lang==="ja" ? w.condJa : w.condEn;
+  const asOf = r.weatherAsOf ? `<span class="rw-asof">${t("cachedWeather")(new Date(r.weatherAsOf))}</span>` : "";
+  return `<div class="reco-wx"><span class="rw-now">${weatherIcon(w.condJa)}<span class="num">${w.tempC}°C</span> ${cond||""}</span>${snowBadge(r)}${asOf}</div>`;
+}
 // 診断結果：大きく見せる3つの数字
 function recoStats(r, fromKm){
   const tiles = [];
@@ -2285,9 +2301,14 @@ function renderRecommendation(){
   const accessLine = time ? `${time}<br><span class="rv-sub">${t("fromPrefKm")(prefName, fromKm)}</span>` : t("fromPrefKm")(prefName, fromKm);
 
   // 一番目立つボタンは、答えに合わせて予約に一番近いものにする
+  // 電車派は、表示しているルートに高速バスが入っているときだけバス予約を主役にする
+  const routeText = `${r.timeJa||""} ${r.accessJa||""}`;
+  const busRoute = /高速バス|直行バス|ツアーバス|シャトルバス.*(東京|新宿|大阪|名古屋)/.test(routeText);
+  const onlineTicket = (r.ticket && r.ticket.onlineUrl) ? {label:t("prepBuyOnline"), href:safeUrl(r.ticket.onlineUrl)} : null;
+  const transitRoute = {label:t("prepByTrain"), href:`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(state.lang==="ja"?r.nameJa:r.nameEn)}&travelmode=transit`, plain:true};
   const primary = wiz.trip===1 ? {label:t("ctaStay"), href:stayUrl(r)}
-    : wiz.transport===1 ? {label:t("prepBus"), href:busUrl(r)}
-    : (r.ticket && r.ticket.onlineUrl) ? {label:t("prepBuyOnline"), href:safeUrl(r.ticket.onlineUrl)} : null;
+    : wiz.transport===1 ? (busRoute ? {label:t("prepBus"), href:busUrl(r)} : (onlineTicket || transitRoute))
+    : onlineTicket;
   const box = document.getElementById("wizardResult");
   box.hidden = false;
   box.innerHTML = `
@@ -2296,6 +2317,7 @@ function renderRecommendation(){
       <h2>${name}</h2>
       <div class="reco-place">${icon("pin",14)} ${state.lang==="ja" ? r.prefJa : r.prefEn}</div>
       ${openInfo(r) ? `<div class="open-soon-line">${icon("alert",14)} ${openInfo(r).long}</div>` : ""}
+      ${recoWeatherLine(r)}
       ${recoStats(r, fromKm)}
       ${recoMatches(r, fromKm)}
       ${BUDGET_LIMITS[wiz.budget]!=null && r.liftAdult!=null && r.liftAdult > BUDGET_LIMITS[wiz.budget] ? `<div class="reco-approx-note">${t("overBudgetNote")(r.liftAdult)}</div>` : ""}
@@ -2312,7 +2334,7 @@ function renderRecommendation(){
       <div class="reco-actions">
         <button class="reco-secondary-btn" id="anotherBtn">${icon("refresh",15)} ${t("another")}</button>
         <button class="reco-secondary-btn" id="shareRecoBtn" style="flex:0 0 auto">${icon("share",15)} ${t("shareReco")}</button>
-        ${primary ? `<button class="reco-secondary-btn" id="seeDetailBtn">${t("seeDetail")}</button><a class="reco-detail-btn" href="${primary.href}" target="_blank" rel="noopener sponsored" style="text-align:center;text-decoration:none">${primary.label}</a>` : `<button class="reco-detail-btn" id="seeDetailBtn">${t("seeDetail")}</button>`}
+        ${primary ? `<button class="reco-secondary-btn" id="seeDetailBtn">${t("seeDetail")}</button><a class="reco-detail-btn" href="${primary.href}" target="_blank" rel="${primary.plain ? "noopener" : "noopener sponsored"}" style="text-align:center;text-decoration:none">${primary.label}</a>` : `<button class="reco-detail-btn" id="seeDetailBtn">${t("seeDetail")}</button>`}
       </div>
     </div>
     <button class="reco-secondary-btn" id="startOverBtn" style="width:100%">${t("startOver")}</button>
