@@ -892,7 +892,6 @@ const STRINGS = {
       const parts = [];
       parts.push(rental===true ? "レンタルあり" : rental===false ? "レンタルなし" : "レンタル：公式サイトで確認");
       parts.push(school===true ? "スクールあり" : school===false ? "スクールなし" : "スクール：公式サイトで確認");
-      if(english===true) parts.push("英語レッスンあり");
       return parts.join("／");
     },
     prepRentalBtn:"レンタルを予約",
@@ -931,6 +930,7 @@ const STRINGS = {
     qMust:"これは欲しい！",
     qOptional:"（任意・いくつでも）",
     mustRental:"レンタルがある", mustSchool:"スクールがある", mustEnglish:"英語レッスンがある", mustOnline:"リフト券をネットで買える",
+    mustNight:"ナイターがある", mustOnsen:"温泉が近い", mustKids:"子ども連れ向け", mustStudent:"学割がある", mustBig:"コースが多い（15本以上）", mustEnglishOk:"英語が通じる",
     mustUnmetNote:(labels)=>`※「${labels.join("」「")}」は、このスキー場では確認できていません。公式サイトでご確認ください。`,
     transitTaxiNote:"※最寄り駅からはタクシーでの移動になります（バス・シャトルの案内はありません）。",
     overBudgetNote:(p)=>`※ご予算内で条件に合うスキー場が近くに見つからなかったため、少し予算オーバー（大人1日券 ¥${p.toLocaleString()}）の候補です。`,
@@ -1170,6 +1170,7 @@ const STRINGS = {
     qMust:"Must-haves",
     qOptional:"(optional, pick any)",
     mustRental:"Rentals", mustSchool:"Ski school", mustEnglish:"English lessons", mustOnline:"Buy lift pass online",
+    mustNight:"Night skiing", mustOnsen:"Onsen nearby", mustKids:"Good for kids", mustStudent:"Student rate", mustBig:"Lots of runs (15+)", mustEnglishOk:"English-friendly",
     mustUnmetNote:(labels)=>`We couldn't confirm ${labels.join(", ")} at this resort. Please check the official site.`,
     transitTaxiNote:"From the nearest station you'll need a taxi (no bus or shuttle listed).",
     overBudgetNote:(p)=>`No resort nearby matched your budget, so this one is a little over (adult day pass ¥${p.toLocaleString()}).`,
@@ -1359,8 +1360,20 @@ function terrIdx(){ return Math.max(0, (wiz.level ?? 1) - 1); }
 const BUDGET_OPTS = ["budget4","budget6","budget8","budgetAny"];
 const BUDGET_LIMITS = [4000, 6000, 8000, null];
 const TRANSPORT_OPTS = ["transCar","transPublic"];
-const MUST_OPTS = ["mustRental","mustSchool","mustEnglish","mustOnline"];
+const MUST_ALL = ["mustRental","mustSchool","mustOnline","mustNight","mustOnsen","mustKids","mustStudent","mustBig","mustEnglishOk","mustEnglish"];
+// 英語まわりは日本語で使う人には不要なので、英語表示のときだけ出す
+const MUST_EN_ONLY = ["mustEnglish","mustEnglishOk"];
+function mustOpts(){ return state.lang==="ja" ? MUST_ALL.filter(k=>!MUST_EN_ONLY.includes(k)) : MUST_ALL; }
+// ナイター・温泉・子ども連れは公式情報をもとにした紹介文に書かれているかで判断（書かれていなければ「公式で確認」）
+const NO_NIGHT = /ナイター(営業)?(は)?(なし|ありません|休止)/;
 function mustValue(r, key){
+  const desc = r.descJa || "";
+  if(key==="mustNight") return NO_NIGHT.test(desc) ? false : desc.includes("ナイター") ? true : null;
+  if(key==="mustOnsen") return (desc + r.nameJa).includes("温泉") ? true : null;
+  if(key==="mustKids") return /キッズ|ファミリー|子ども|子供|ちびっこ/.test(desc) ? true : null;
+  if(key==="mustStudent") return r.liftStudent!=null ? true : null;
+  if(key==="mustBig") return r.courses==null ? null : r.courses >= 15;
+  if(key==="mustEnglishOk") return r.english ? (r.english==="medium" || r.english==="high") : null;
   if(key==="mustRental") return r.rental ? r.rental.available : null;
   if(key==="mustSchool") return r.school ? r.school.available : null;
   if(key==="mustEnglish") return r.school ? r.school.english : null;
@@ -1369,7 +1382,8 @@ function mustValue(r, key){
 }
 function buildMustPills(){
   const el = document.getElementById("pillMust");
-  el.innerHTML = MUST_OPTS.map(k=>`<button type="button" class="pill ${wiz.must.has(k)?"sel":""}" data-must="${k}">${t(k)}</button>`).join("");
+  if(state.lang==="ja") MUST_EN_ONLY.forEach(k=>wiz.must.delete(k));
+  el.innerHTML = mustOpts().map(k=>`<button type="button" class="pill ${wiz.must.has(k)?"sel":""}" data-must="${k}">${t(k)}</button>`).join("");
   el.querySelectorAll(".pill").forEach(btn=>btn.addEventListener("click", ()=>{
     const k = btn.dataset.must;
     if(wiz.must.has(k)) wiz.must.delete(k); else wiz.must.add(k);
@@ -2282,6 +2296,7 @@ function renderRecommendation(){
   const ranked = computeRanking();
   const notYetShown = ranked.find(r=>!wiz.shown.includes(r.id)) || ranked[0];
   wiz.lastId = notYetShown.id;
+  if(window.track) track("diagnosis_result", {resort: notYetShown.id, level: wiz.level, trip: wiz.trip, transport: wiz.transport, lang: state.lang});
   wiz.shown.push(notYetShown.id);
   if(wiz.shown.length > RESORTS.length) wiz.shown = [notYetShown.id];
 
@@ -2505,6 +2520,29 @@ if("serviceWorker" in navigator && !IS_NATIVE){
 }
 </script>
 
+<script>
+// アクセス解析（Google アナリティクス 4）。Webサイトだけで使い、アプリ版では読み込まない（App Storeの「データの収集なし」を守るため）
+const GA_ID = "";
+function track(name, params){ try{ if(window.gtag) window.gtag("event", name, params || {}); }catch(e){} }
+(function(){
+  if(IS_NATIVE || !GA_ID) return;
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA_ID, {anonymize_ip: true});
+  const sc = document.createElement("script");
+  sc.async = true; sc.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+  document.head.appendChild(sc);
+  // 予約・購入サイトへのクリック（初シーズンの一番大事な数字）
+  document.addEventListener("click", e=>{
+    const a = e.target.closest && e.target.closest("a[href^='http']");
+    if(!a) return;
+    const href = a.href;
+    const partner = /rakuten/.test(href) ? "rakuten" : /klook/.test(href) ? "klook" : /a8\.net/.test(href) ? "a8" : /google\.com\/maps/.test(href) ? "maps" : "official";
+    track("outbound_booking", {partner, place: a.closest(".sheet-bar") ? "bar" : a.closest(".reco-card") ? "result" : a.closest(".prep") ? "prep" : "other", link_text: (a.textContent||"").trim().slice(0,40)});
+  }, true);
+})();
+</script>
 <script>
 // A8の自動リンク変換（Webサイトのみ。A8は通常アカウントの広告をアプリに載せるのを禁止しているので、アプリ版では読み込まない）。
 // 読み込み時に1回しか走らないので、画面を開くたびに出るリンクにも掛け直す
